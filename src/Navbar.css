@@ -1,0 +1,15 @@
+nav.navbar {
+	width: 100%;
+	height: 5rem;
+	justify-content: space-between;
+	background-color: var(--prim-color);
+}
+
+nav .navbar-menu,
+nav .navbar-bran {
+	align-items: center;
+}
+nav .navbar-item {
+	color: var(--text-sec-color);
+	font-size: 1.5rem;
+}

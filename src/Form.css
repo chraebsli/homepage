@@ -1,0 +1,46 @@
+.form-gap {
+	gap: 1rem;
+}
+.btn-cont,
+.input-cont {
+	justify-content: space-between;
+}
+.btn-cont button,
+.input-cont input {
+	padding: 0.3rem 0.5rem;
+	height: 2rem;
+}
+.btn-cont button.full,
+.input-cont-full input {
+	width: 100%;
+}
+.btn-cont button.half,
+.input-cont-half input {
+	width: 48%;
+}
+input,
+button {
+	font-size: 1.2rem;
+	transition: background-color 0.5s;
+}
+button.btn-prim {
+	background-color: var(--btn-prim-color);
+	color: var(--text-prim-color);
+}
+button.btn-prim:hover {
+	background-color: var(--btn-prim-hover-color);
+}
+button {
+	background-color: var(--btn-color);
+	border: 0;
+	border-radius: 0.5rem;
+}
+button:hover {
+	background-color: var(--btn-hover-color);
+}
+input {
+	background-color: var(--inp-color);
+}
+input:hover {
+	background-color: var(--inp-hover-color);
+}
