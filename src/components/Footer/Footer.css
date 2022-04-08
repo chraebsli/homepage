@@ -1,0 +1,16 @@
+footer.footer {
+	padding: 1rem;
+	width: 100%;
+	background-color: var(--prim-color);
+	bottom: 0;
+	position: absolute;
+	align-items: center;
+	gap: 1rem;
+}
+footer.footer .links {
+	gap: 1rem;
+}
+
+footer.footer .copyright {
+	font-size: 1rem;
+}

@@ -27,7 +27,7 @@ body {
 	font-size: 16px;
 	overflow: hidden;
 }
-.main {
+#root {
 	width: 100%;
 	height: 100%;
 }
@@ -48,6 +48,11 @@ body {
 .row {
 	flex-direction: row;
 }
+a,
+a:hover,
+a:visited {
+	color: var(--prim-color);
+}
 a.n,
 a.n:hover,
 a.n:visited {
@@ -59,7 +64,23 @@ a.n:visited {
 	width: 50%;
 }
 
-/* components */
-#navbar {
+/* elements */
+.text-sec {
+	color: var(--text-sec-color) !important;
+}
+.text-center {
+	text-align: center;
+}
+.home {
 	width: 100%;
+	padding: 2rem;
+}
+.home .header {
+	margin-bottom: 1rem;
+}
+.home .content {
+	gap: 1rem;
+}
+.home .section-title {
+	font-size: 1.5em;
 }

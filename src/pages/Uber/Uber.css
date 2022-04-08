@@ -1,0 +1,6 @@
+.uber .lebenslauf {
+	gap: 1rem;
+}
+.uber .lebenslauf .name {
+	font-weight: 600;
+}
