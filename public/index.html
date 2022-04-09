@@ -15,10 +15,20 @@
 		<div id="root"></div>
 	</body>
 
-	<script type="text/javascript" src="%PUBLIC_URL%/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function () {
-			$(".owl-carousel").owlCarousel();
+			$(".owl-carousel").owlCarousel({
+				loop: true,
+				items: 1,
+				nav: true,
+				navText: ["<i class='owl-before'></i>", "<i class='owl-next'></i>"],
+				margin: 50,
+				center: true,
+				dots: true,
+				autoHeight: true,
+			});
 		});
 	</script>
 </html>

@@ -51,11 +51,9 @@ body {
 a,
 a:hover,
 a:visited {
-	color: var(--prim-color);
+	color: var(--text-color);
 }
-a.n,
-a.n:hover,
-a.n:visited {
+a.n {
 	text-decoration: none;
 }
 
@@ -76,11 +74,24 @@ a.n:visited {
 	padding: 2rem;
 }
 .home .header {
-	margin-bottom: 1rem;
+	margin-bottom: 2rem;
 }
 .home .content {
 	gap: 1rem;
 }
 .home .section-title {
 	font-size: 1.5em;
+}
+.home a.btn {
+	align-self: center;
+	text-align: center;
+	padding: 0.5rem 1rem;
+
+	color: var(--text-sec-color);
+	background-color: var(--btn-prim-color);
+	transition: background-color 0.3s;
+	border-radius: 1rem;
+}
+.home a.btn:hover {
+	background-color: var(--btn-prim-hover-color);
 }

@@ -1,6 +1,24 @@
-div.home .title-text {
+.dienstleistungen .title-text {
 	font-size: 2em;
 }
-div.home .title-description {
+.dienstleistungen .title-description {
 	font-size: 1.5em;
+}
+
+.dienstleistungen .dienste-cont .owl-carousel {
+	width: 40%;
+}
+.dienstleistungen .dienst-short {
+	width: 100%;
+	gap: 1rem;
+}
+
+.dienstleistungen .dienst-short .dienst-title {
+	font-size: 1.5em;
+}
+.dienstleistungen .dienst-short .dienst-teaser {
+	font-style: italic;
+}
+.dienstleistungen .dienst-short a.btn {
+	width: 40%;
 }

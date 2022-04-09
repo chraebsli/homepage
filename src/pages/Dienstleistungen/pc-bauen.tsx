@@ -1,13 +1,7 @@
-import React, { useEffect } from "react";
-import { useParams } from "react-router";
+import React from "react";
+import "./Dienstleistungen.css";
 
 function PCBauen() {
-	let { postSlug } = useParams();
-
-	useEffect(() => {
-		// Fetch post using the postSlug
-	}, [postSlug]);
-
 	return (
 		<div className="home">
 			<div className="dienst-full">
