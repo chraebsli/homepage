@@ -1,17 +1,17 @@
 /* ********************************************* footer ********************************************* */
-footer.footer {
-	padding: 1rem;
+footer {
+	padding: var(--padding-gap-normal);
 	width: 100%;
 	background-color: var(--prim-color);
 	bottom: 0;
 	position: absolute;
 	align-items: center;
-	gap: 1rem;
+	gap: var(--padding-gap-normal);
 }
-footer.footer .links {
-	gap: 1rem;
+footer .links {
+	gap: var(--padding-gap-normal);
 }
 
-footer.footer .copyright {
-	font-size: 1rem;
+footer .copyright {
+	font-size: var(--font-size-mini);
 }

@@ -1,21 +1,44 @@
 /* ********************************************* header ********************************************* */
-header.navbar {
+header {
 	width: 100%;
-	padding: 1rem;
+	padding: var(--padding-gap-normal);
 	background-color: var(--prim-color);
 	align-content: center;
 	justify-content: space-between;
 }
 
-header.navbar .navbar-content,
-header.navbar .navbar-brand {
+header .navbar-content,
+header .navbar-brand {
 	align-items: center;
-	gap: 2rem;
+	gap: var(--padding-gap-huge);
 }
 
-header.navbar .navbar-brand {
-	font-size: 1.8rem;
+header .navbar-brand {
+	font-size: var(--font-size-big);
 }
-header.navbar .nav-link {
-	font-size: 1.5rem;
+header .nav-link {
+	font-size: var(--font-size-normal);
+}
+
+/* ********************************************* responsive ********************************************* */
+header .mobile,
+header .mobile .dropdown-menu {
+	display: none;
+}
+
+header .mobile .nav-link {
+	background-color: var(--prim-color);
+}
+
+header .mobile .dropdown:hover .dropdown-menu {
+	display: flex;
+	position: absolute;
+	right: 0.1rem;
+}
+
+header .mobile .dropdown-menu {
+}
+header .mobile .dropdown-menu .nav-link {
+	padding: var(--padding-gap-small);
+	font-size: var(--font-size-small);
 }
