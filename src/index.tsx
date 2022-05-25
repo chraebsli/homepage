@@ -1,10 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-import "./elements.css";
-import "./components/OwlCarousel/OwlCarousel.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //import * as serviceWorker from "./serviceWorker";
+
+// import css
+import "./css/main.css";
+import "./css/elements.css";
+import "./css/responsive.css";
+import "./components/OwlCarousel/OwlCarousel.css";
 
 // import components
 import Header from "./components/Header/Header";
