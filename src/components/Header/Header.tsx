@@ -1,11 +1,11 @@
 import React from "react";
 import logo from "./logo.svg";
-import "./Navbar.css";
+import "./Header.css";
 import { NavLink } from "react-router-dom";
 
-function Navbar() {
+function Header() {
 	return (
-		<nav className="navbar f row">
+		<header className="navbar f row">
 			<NavLink className="navbar-brand n text-sec f row" to="/">
 				<img src={logo} alt="Logo" width="50" height="50" />
 				chraebsli Dienstleistungen
@@ -21,8 +21,8 @@ function Navbar() {
 					Über mich
 				</NavLink>
 			</div>
-		</nav>
+		</header>
 	);
 }
 
-export default Navbar;
+export default Header;

@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 //import * as serviceWorker from "./serviceWorker";
 
 // import components
-import Navigation from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 // import pages
@@ -24,7 +24,7 @@ import Datenschutz from "./pages/Datenschutz/Datenschutz";
 
 ReactDOM.render(
 	<Router>
-		<Navigation />
+		<Header />
 		<Routes>
 			<Route path="/" element={<Home />} />
 			<Route path="/dienstleistungen" element={<Dienstleistungen />}></Route>

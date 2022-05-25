@@ -1,0 +1,21 @@
+/* ********************************************* header ********************************************* */
+header.navbar {
+	width: 100%;
+	padding: 1rem;
+	background-color: var(--prim-color);
+	align-content: center;
+	justify-content: space-between;
+}
+
+header.navbar .navbar-content,
+header.navbar .navbar-brand {
+	align-items: center;
+	gap: 2rem;
+}
+
+header.navbar .navbar-brand {
+	font-size: 1.8rem;
+}
+header.navbar .nav-link {
+	font-size: 1.5rem;
+}

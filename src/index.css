@@ -1,20 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,300&display=swap");
 
+/* ********************************************* colors ********************************************* */
 :root {
 	--text-color: #000000;
 	--text-prim-color: #ffffff;
 	--text-sec-color: #ffffff;
-	--prim-color: #235aff;
+	--prim-color: #507cff;
 
 	/* interaction */
 	--btn-color: #bbbbbb;
 	--btn-hover-color: #9c9c9c;
-	--btn-prim-color: #2f7fff;
-	--btn-prim-hover-color: #0062ff;
+	--btn-prim-color: #507cff;
+	--btn-prim-hover-color: #3769ff;
 	--inp-color: #f5f5f5;
 	--inp-hover-color: #e2e2e2;
 }
 
+/* ********************************************* css reset ********************************************* */
 * {
 	margin: 0;
 	padding: 0;
@@ -32,7 +34,7 @@ body {
 	height: 100%;
 }
 
-/* shortforms */
+/* ********************************************* shortforms ********************************************* */
 .f {
 	display: flex;
 }
@@ -48,6 +50,8 @@ body {
 .row {
 	flex-direction: row;
 }
+
+/* ********************************************* links ********************************************* */
 a,
 a:hover,
 a:visited {
@@ -57,12 +61,12 @@ a.n {
 	text-decoration: none;
 }
 
-/* size styling */
+/* ********************************************* sizes ********************************************* */
 .w50 {
 	width: 50%;
 }
 
-/* elements */
+/* ********************************************* elements ********************************************* */
 .text-sec {
 	color: var(--text-sec-color) !important;
 }
