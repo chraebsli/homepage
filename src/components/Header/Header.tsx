@@ -29,9 +29,7 @@ const Header = () => (
 
 		<nav className="navbar-content mobile f col">
 			<div className="dropdown">
-				<div className="dropdown-btn">
-					<img src={menuIcon} alt="menu" width="50" height="50" />
-				</div>
+				<img className="dropdown-btn" src={menuIcon} alt="menu" width="50" height="50" />
 
 				<div className="dropdown-menu f col">
 					<NavLink className="nav-link text-sec n" to="/dienstleistungen">

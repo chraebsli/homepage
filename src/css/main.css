@@ -18,20 +18,17 @@
 
 /* ********************************************* sizes ********************************************* */
 :root {
-	/* ****************** all ****************** */
 	--padding-gap-huge: 2rem;
 	--padding-gap-big: 1.5rem;
 	--padding-gap-normal: 1rem;
 	--padding-gap-small: 0.5rem;
+	--padding-gap-mini: 0.3rem;
 
 	--font-size-big: 1.8rem;
 	--font-size-normal: 1.5rem;
 	--font-size-small: 1.2rem;
 	--font-size-mini: 1rem;
-
-	/* ****************** header ****************** */
-
-	/* ****************** footer ****************** */
+	--font-size-micro: 0.8rem;
 }
 
 /* ********************************************* css reset ********************************************* */

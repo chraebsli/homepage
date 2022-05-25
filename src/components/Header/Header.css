@@ -26,19 +26,17 @@ header .mobile .dropdown-menu {
 	display: none;
 }
 
-header .mobile .nav-link {
-	background-color: var(--prim-color);
-}
-
 header .mobile .dropdown:hover .dropdown-menu {
 	display: flex;
 	position: absolute;
-	right: 0.1rem;
+	right: 0rem;
 }
-
-header .mobile .dropdown-menu {
+header .mobile .dropdown-btn {
+	width: 40px;
+	height: 40px;
 }
-header .mobile .dropdown-menu .nav-link {
+header .mobile .nav-link {
+	background-color: var(--prim-color);
 	padding: var(--padding-gap-small);
 	font-size: var(--font-size-small);
 }
