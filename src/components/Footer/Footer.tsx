@@ -13,7 +13,7 @@ function Footer() {
 					Datenschutz
 				</NavLink>
 			</div>
-			<p className="text-sec copyright">Copyright &copy; chraebsli Dienstleistungen 2022</p>
+			<p className="text-sec copyright">copyright &copy; chraebsli Dienstleistungen 2022</p>
 		</footer>
 	);
 }

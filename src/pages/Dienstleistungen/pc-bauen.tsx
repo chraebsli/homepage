@@ -3,7 +3,7 @@ import "./Dienstleistungen.css";
 
 function PCBauen() {
 	return (
-		<div className="home">
+		<main className="dienst">
 			<div className="dienst-full">
 				<p className="dienst-title">PC bauen</p>
 				<p className="dienst-teaser">
@@ -15,7 +15,7 @@ function PCBauen() {
 					mlahms nltbqprh
 				</p>
 			</div>
-		</div>
+		</main>
 	);
 }
 

@@ -3,7 +3,7 @@ import "./Kontakt.css";
 
 function Kontakt() {
 	return (
-		<div className="home contact">
+		<main className="contact">
 			<div className="header">
 				<p className="title-text">Kontakt</p>
 			</div>
@@ -13,7 +13,7 @@ function Kontakt() {
 					<p className="section-title">Kontakt</p>
 				</section>
 			</div>
-		</div>
+		</main>
 	);
 }
 

@@ -3,7 +3,7 @@ import "./Uber.css";
 
 function Uber() {
 	return (
-		<div className="home uber">
+		<main className="uber">
 			<div className="header">
 				<p className="title-text">Über mich</p>
 			</div>
@@ -16,6 +16,7 @@ function Uber() {
 						Ich interessiere mich hauptsächlich für Webentwicklung und Hardware.
 					</p>
 				</section>
+
 				<section>
 					<p className="section-title">Lebenslauf</p>
 					<div className="lebenslauf f col c">
@@ -59,7 +60,7 @@ function Uber() {
 					</div>
 				</section>
 			</div>
-		</div>
+		</main>
 	);
 }
 

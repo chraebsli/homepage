@@ -1,11 +1,4 @@
 /* ********************************************* dienstleistungen ********************************************* */
-.dienstleistungen .title-text {
-	font-size: 2em;
-}
-.dienstleistungen .title-description {
-	font-size: 1.5em;
-}
-
 .dienstleistungen .dienste-cont .owl-carousel {
 	width: 40%;
 }

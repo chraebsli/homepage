@@ -14,7 +14,7 @@ import DatenschutzIcon from "./assets/Datenschutz.svg";
 
 function Ubersicht() {
 	return (
-		<div className="home ubersicht">
+		<main className="ubersicht">
 			<div className="header">
 				<p className="title-text">Übersicht</p>
 			</div>
@@ -64,7 +64,7 @@ function Ubersicht() {
 					</div>
 				</section>
 			</div>
-		</div>
+		</main>
 	);
 }
 

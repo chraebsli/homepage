@@ -3,7 +3,7 @@ import "./Impressum.css";
 
 function Impressum() {
 	return (
-		<div className="home impressum">
+		<main className="impressum">
 			<div className="header">
 				<p className="title-text">Impressum</p>
 			</div>
@@ -20,7 +20,7 @@ function Impressum() {
 					<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
 				</section>
 			</div>
-		</div>
+		</main>
 	);
 }
 

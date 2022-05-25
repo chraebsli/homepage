@@ -3,7 +3,7 @@ import "./Datenschutz.css";
 
 function Datenschutz() {
 	return (
-		<div className="home datenschutz">
+		<main className="datenschutz">
 			<div className="header">
 				<p className="title-text">Datenschutz</p>
 			</div>
@@ -13,7 +13,7 @@ function Datenschutz() {
 					<p className="section-title">Datenschutz</p>
 				</section>
 			</div>
-		</div>
+		</main>
 	);
 }
 

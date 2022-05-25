@@ -3,7 +3,7 @@ import "./Home.css";
 
 function Home() {
 	return (
-		<div className="home start">
+		<main className="home">
 			<div className="header">
 				<p className="title-text">Home</p>
 			</div>
@@ -13,7 +13,7 @@ function Home() {
 					<p className="section-title">Home</p>
 				</section>
 			</div>
-		</div>
+		</main>
 	);
 }
 

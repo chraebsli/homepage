@@ -4,7 +4,7 @@ import "./Dienstleistungen.css";
 
 function Dienstleistungen() {
 	return (
-		<div className="home dienstleistungen">
+		<main className="dienstleistungen">
 			<div className="header">
 				<p className="title-text">Dienstleistungen</p>
 			</div>
@@ -38,7 +38,7 @@ function Dienstleistungen() {
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 }
 
