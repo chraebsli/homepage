@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./css/main.css";
 import "./css/elements.css";
 import "./css/responsive.css";
+import "./css/smoother.css";
 import "./components/OwlCarousel/OwlCarousel.css";
 
 // import components

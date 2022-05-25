@@ -3,10 +3,11 @@
 	width: 50%;
 }
 .dienstleistungen .dienst-short {
+	background-color: #0000006e;
+	border-radius: 20px;
 	width: 100%;
 	gap: var(--padding-gap-normal);
 	padding: var(--padding-gap-normal);
-	background-color: #0000004b;
 	font-size: var(--font-size-small);
 }
 

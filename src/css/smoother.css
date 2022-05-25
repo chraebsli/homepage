@@ -1,0 +1,10 @@
+/* ********************************************* smoother ********************************************* */
+:root {
+	--soft-dark-shadow: 10px 10px 15px 8px #0000001c;
+	--mid-dark-shadow: 10px 10px 15px 10px #0000003d;
+	--hard-dark-shadow: 10px 10px 15px 10px #0000005e;
+}
+
+.owl-stage-outer {
+	box-shadow: var(--hard-dark-shadow);
+}

@@ -14,7 +14,7 @@ const Dienstleistungen = () => (
 
 		<div className="content dienste-cont f c">
 			<div className="owl-carousel">
-				<div className="dienst-short f col">
+				<div className="dienst-short soft-dark-shadow f col">
 					<p className="dienst-title">Website erstellen</p>
 					<p className="dienst-teaser">Benötigen Sie eine Website für Ihre Produkte oder Dienstleistungen?</p>
 					<p className="dienst-description">
@@ -33,7 +33,7 @@ const Dienstleistungen = () => (
 					</a>
 				</div>
 
-				<div className="dienst-short f col">
+				<div className="dienst-short soft-dark-shadow f col">
 					<p className="dienst-title">PC bauen</p>
 					<p className="dienst-teaser">Ich baue oder erweitere für Sie einen PC, wie Sie benötigen.</p>
 					<ul className="dienst-description">

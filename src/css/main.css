@@ -2,9 +2,11 @@
 
 /* ********************************************* colors ********************************************* */
 :root {
+	--background-color: #1c1d20;
 	--text-color: #000000;
 	--text-prim-color: #ffffff;
 	--text-sec-color: #ffffff;
+	--text-sec-color-low: #ffffffd6;
 	--prim-color: #507cff;
 
 	/* interaction */
@@ -40,6 +42,7 @@
 	box-sizing: border-box;
 }
 body {
+	background-color: var(--background-color);
 	width: 100vw;
 	height: 100vh;
 	font-family: "Roboto", sans-serif;
@@ -69,11 +72,13 @@ body {
 }
 
 /* ********************************************* links ********************************************* */
+/*
 a,
 a:hover,
 a:visited {
 	color: var(--text-color);
 }
+*/
 a.n {
 	text-decoration: none;
 }
@@ -95,4 +100,10 @@ a.n {
 }
 .text-center {
 	text-align: center;
+}
+
+p,
+a,
+span {
+	color: var(--text-sec-color-low);
 }
