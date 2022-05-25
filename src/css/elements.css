@@ -1,8 +1,9 @@
 /* ********************************************* elements ********************************************* */
 
 main {
-	width: 100%;
+	width: 70%;
 	padding: 2rem;
+	align-self: center;
 }
 
 main .header {
@@ -33,4 +34,9 @@ main a.btn {
 }
 main a.btn:hover {
 	background-color: var(--btn-prim-hover-color);
+}
+
+main .section-text.text-space {
+	margin-top: var(--text-space-normal);
+	margin-bottom: var(--text-space-normal);
 }

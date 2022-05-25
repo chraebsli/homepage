@@ -17,7 +17,7 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Dienstleistungen from "./pages/Dienstleistungen/Dienstleistungen";
 import PCBauen from "./pages/Dienstleistungen/pc-bauen";
-import WebsiteErstellen from "./pages/Dienstleistungen/pc-bauen";
+import WebsiteErstellen from "./pages/Dienstleistungen/website-erstellen";
 
 import Kontakt from "./pages/Kontakt/Kontakt";
 import Uber from "./pages/Uber/Uber";

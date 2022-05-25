@@ -14,6 +14,7 @@ const Impressum = () => (
 		<div className="content f col">
 			<section>
 				<p className="section-title">Betreiber</p>
+				<p className="section-text text-space">Diese Website wurde erstellt und wird Betrieben von:</p>
 				<address>
 					Nicholas Krebs<br></br>
 					Breitebüneweg 5<br></br>
@@ -21,6 +22,7 @@ const Impressum = () => (
 					CH
 				</address>
 				<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
+				<p className="section-text text-space">Bitte melden SIe sich bei Fragen oder Anmerkungen</p>
 			</section>
 		</div>
 	</main>
