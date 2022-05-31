@@ -25,41 +25,41 @@ const Ubersicht = () => (
 				<p className="section-title">Übersicht der Seiten</p>
 				<div className="sites-cont f col">
 					<a href="./" className="site-link f row">
-						<img src={HomeIcon} alt="home icon" width="30" height="30" />
+						<img src={ HomeIcon } alt="home icon" width="30" height="30" />
 						Startseite
 					</a>
 					<a href="./dienstleistungen" className="site-link f row">
-						<img src={DiensteIcon} alt="dienstleistungen icon" width="30" height="30" />
+						<img src={ DiensteIcon } alt="dienstleistungen icon" width="30" height="30" />
 						Dienstleistungen
 					</a>
 					<div className="site-subcont f col">
 						<a href="./dienstleistungen/pc-bauen" className="site-link f row">
-							<img src={PCBauenIcon} alt="pc bauen icon" width="30" height="30" />
+							<img src={ PCBauenIcon } alt="pc bauen icon" width="30" height="30" />
 							PC bauen
 						</a>
 						<a href="./dienstleistungen/website-erstellen" className="site-link f row">
-							<img src={WebsiteErstellenIcon} alt="website erstellen icon" width="30" height="30" />
+							<img src={ WebsiteErstellenIcon } alt="website erstellen icon" width="30" height="30" />
 							Website erstellen
 						</a>
 					</div>
 					<a href="./kontakt" className="site-link f row">
-						<img src={KontaktIcon} alt="kontakt icon" width="30" height="30" />
+						<img src={ KontaktIcon } alt="kontakt icon" width="30" height="30" />
 						Kontakt
 					</a>
 					<a href="./uber" className="site-link f row">
-						<img src={UberIcon} alt="uber icon" width="30" height="30" />
+						<img src={ UberIcon } alt="uber icon" width="30" height="30" />
 						Über
 					</a>
 					<a href="./ubersicht" className="site-link f row">
-						<img src={UbersichtIcon} alt="ubersicht icon" width="30" height="30" />
+						<img src={ UbersichtIcon } alt="ubersicht icon" width="30" height="30" />
 						Übersicht
 					</a>
 					<a href="./impressum" className="site-link f row">
-						<img src={ImpressumIcon} alt="impressum icon" width="30" height="30" />
+						<img src={ ImpressumIcon } alt="impressum icon" width="30" height="30" />
 						Impressum
 					</a>
 					<a href="./datenschutz" className="site-link f row">
-						<img src={DatenschutzIcon} alt="datenschutz icon" width="30" height="30" />
+						<img src={ DatenschutzIcon } alt="datenschutz icon" width="30" height="30" />
 						Datenschutz
 					</a>
 				</div>

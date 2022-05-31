@@ -14,8 +14,8 @@ const PCBauen = () => (
 		<section className="dienst-full f col">
 			<p className="dienst-teaser">Benötigen Sie eine Website für Ihre Produkte oder Dienstleistungen?</p>
 			<p className="dienst-description">
-				Ich erstelle für Sie die Website, die Ihre Bedürfnisse erfüllen. Auf ihren Wunsch kann ich zusätzlich das
-				Hosting und die Domain mit allem konfigurieren.
+				Ich erstelle für Sie die Website, die Ihre Bedürfnisse erfüllen. Auf ihren Wunsch kann ich zusätzlich
+				das Hosting und die Domain mit allem konfigurieren.
 			</p>
 			<p className="dienst-refs">
 				<span>Referezen:</span>

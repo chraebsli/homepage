@@ -4,7 +4,9 @@
 		{
 			"label": "npm: start",
 			"type": "shell",
-			"problemMatcher": ["$tsc-watch"],
+			"problemMatcher": [
+				"$tsc-watch"
+			],
 			"command": "npm start",
 			"windows": {
 				"command": "npm start"
@@ -20,7 +22,9 @@
 		{
 			"label": "tsc: watch - user/tsconfig.json",
 			"type": "shell",
-			"problemMatcher": ["$tsc-watch"],
+			"problemMatcher": [
+				"$tsc-watch"
+			],
 			"command": "npx tsc -w",
 			"windows": {
 				"command": "npx tsc -w"

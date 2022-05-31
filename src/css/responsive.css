@@ -5,20 +5,22 @@
 	body header {
 		padding: var(--padding-gap-small);
 	}
+
 	body header .navbar-brand {
 		font-size: var(--font-size-normal);
 		gap: var(--padding-gap-big);
 	}
+
 	body header .nav-link {
 		font-size: var(--font-size-small);
 	}
+
 	body header .navbar-content,
 	body header .navbar-brand {
 		gap: var(--padding-gap-normal);
 	}
 
 	/* ****************** main ****************** */
-
 	/* ****************** footer ****************** */
 	body footer {
 		padding: var(--padding-gap-normal);
@@ -32,9 +34,11 @@
 		width: 40px;
 		height: 40px;
 	}
+
 	body header .navbar-brand {
 		font-size: var(--font-size-small);
 	}
+
 	body header .nav-link {
 		font-size: var(--font-size-mini);
 	}
@@ -45,6 +49,7 @@
 	body header .desktop {
 		display: none;
 	}
+
 	body header .mobile {
 		display: block;
 	}
@@ -63,10 +68,12 @@
 		width: 40px;
 		height: 40px;
 	}
+
 	body header .navbar-brand {
-		font-size: var(--font-size-SMALL);
+		font-size: var(--font-size-small);
 		gap: var(--padding-gap-normal);
 	}
+
 	body header .mobile .nav-link {
 		padding: var(--padding-gap-mini);
 		font-size: var(--font-size-mini);

@@ -9,9 +9,11 @@ main {
 main .header {
 	margin-bottom: 2rem;
 }
+
 main .header .title-text {
 	font-size: 2em;
 }
+
 main .header .title-description {
 	font-size: 1.5em;
 }
@@ -19,9 +21,11 @@ main .header .title-description {
 main .content {
 	gap: 1rem;
 }
+
 main .section-title {
 	font-size: 1.5em;
 }
+
 main a.btn {
 	align-self: center;
 	text-align: center;
@@ -32,6 +36,7 @@ main a.btn {
 	transition: background-color 0.3s;
 	border-radius: 1rem;
 }
+
 main a.btn:hover {
 	background-color: var(--btn-prim-hover-color);
 }

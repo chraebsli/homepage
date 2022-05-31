@@ -1,8 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-//import * as serviceWorker from "./serviceWorker";
-
+//import * as serviceWorker from "./serviceWorker"; 
 // import css
 import "./css/main.css";
 import "./css/elements.css";
@@ -31,22 +30,22 @@ ReactDOM.render(
 	<Router>
 		<Header />
 		<Routes>
-			<Route path="/" element={<Home />} />
-			<Route path="/dienstleistungen" element={<Dienstleistungen />}></Route>
-			<Route path="/dienstleistungen/pc-bauen" element={<PCBauen />} />
-			<Route path="/dienstleistungen/website-erstellen" element={<WebsiteErstellen />} />
+			<Route path="/" element={ <Home /> } />
+			<Route path="/dienstleistungen" element={ <Dienstleistungen /> }></Route>
+			<Route path="/dienstleistungen/pc-bauen" element={ <PCBauen /> } />
+			<Route path="/dienstleistungen/website-erstellen" element={ <WebsiteErstellen /> } />
 
-			<Route path="/kontakt" element={<Kontakt />} />
-			<Route path="/uber" element={<Uber />} />
+			<Route path="/kontakt" element={ <Kontakt /> } />
+			<Route path="/uber" element={ <Uber /> } />
 
-			<Route path="/ubersicht" element={<Ubersicht />} />
-			<Route path="/impressum" element={<Impressum />} />
-			<Route path="/datenschutz" element={<Datenschutz />} />
+			<Route path="/ubersicht" element={ <Ubersicht /> } />
+			<Route path="/impressum" element={ <Impressum /> } />
+			<Route path="/datenschutz" element={ <Datenschutz /> } />
 		</Routes>
 		<Footer />
 	</Router>,
 
-	document.getElementById("root")
+	document.getElementById( "root" )
 );
 
 //serviceWorker.unregister();

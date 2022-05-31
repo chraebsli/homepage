@@ -14,9 +14,10 @@ const Uber = () => (
 		<div className="content f col">
 			<section>
 				<p className="text">
-					Ich bin Nicholas Krebs, ein Informatiklehrling im 2. Lehrjahr in der{" "}
+					Ich bin Nicholas Krebs, ein Informatiklehrling im 2. Lehrjahr in der{ " " }
 					<a href="https://tfbern.ch">Technischen Fachschule Bern</a>. <br></br>
-					Am meisten interessiert mich die Webentwicklung. Ich erstelle gerne Websites und Webapps. Mehr dazu in meinen{" "}
+					Am meisten interessiert mich die Webentwicklung. Ich erstelle gerne Websites und Webapps. Mehr dazu
+					in meinen{ " " }
 					<a href="/referenzen">Referenzen</a>.
 				</p>
 			</section>
