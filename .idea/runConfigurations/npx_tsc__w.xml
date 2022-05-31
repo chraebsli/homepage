@@ -1,0 +1,14 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="npx tsc -w" type="TypeScriptProgramRunner" factoryName="TypeScript" singleton="false">
+    <module name="homepage" />
+    <option name="interpreterRef" value="project" />
+    <option name="enabledTsNodeEsmLoader" value="false" />
+    <option name="interpreterOptions" value="npx tsc -w" />
+    <option name="workingDirectory" value="" />
+    <option name="tsconfigFile" value="C:\Users\chrae\OneDrive\_git\homepage\tsconfig.json" />
+    <option name="extraTypeScriptOptions" value="" />
+    <option name="scriptName" value="" />
+    <option name="programParameters" value="" />
+    <method v="2" />
+  </configuration>
+</component>
