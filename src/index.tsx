@@ -1,8 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-//import * as serviceWorker from "./serviceWorker"; 
+import ThemeProvider from "react-bootstrap/ThemeProvider";
+//import * as serviceWorker from "./serviceWorker";
 // import css
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/bootstrap-overrides.css";
 import "./css/main.css";
 import "./css/elements.css";
 import "./css/responsive.css";
@@ -27,23 +30,27 @@ import Impressum from "./pages/Impressum/Impressum";
 import Datenschutz from "./pages/Datenschutz/Datenschutz";
 
 ReactDOM.render(
-	<Router>
-		<Header />
-		<Routes>
-			<Route path="/" element={ <Home /> } />
-			<Route path="/dienstleistungen" element={ <Dienstleistungen /> }></Route>
-			<Route path="/dienstleistungen/pc-bauen" element={ <PCBauen /> } />
-			<Route path="/dienstleistungen/website-erstellen" element={ <WebsiteErstellen /> } />
+	<ThemeProvider
+		breakpoints={ [ "xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs" ] }
+	>
+		<Router>
+			<Header />
+			<Routes>
+				<Route path="/" element={ <Home /> } />
+				<Route path="/services" element={ <Dienstleistungen /> }></Route>
+				<Route path="/services/pc-bauen" element={ <PCBauen /> } />
+				<Route path="/services/website-erstellen" element={ <WebsiteErstellen /> } />
 
-			<Route path="/kontakt" element={ <Kontakt /> } />
-			<Route path="/uber" element={ <Uber /> } />
+				<Route path="/contact" element={ <Kontakt /> } />
+				<Route path="/uber" element={ <Uber /> } />
 
-			<Route path="/ubersicht" element={ <Ubersicht /> } />
-			<Route path="/impressum" element={ <Impressum /> } />
-			<Route path="/datenschutz" element={ <Datenschutz /> } />
-		</Routes>
-		<Footer />
-	</Router>,
+				<Route path="/ubersicht" element={ <Ubersicht /> } />
+				<Route path="/impressum" element={ <Impressum /> } />
+				<Route path="/datenschutz" element={ <Datenschutz /> } />
+			</Routes>
+			<Footer />
+		</Router>
+	</ThemeProvider>,
 
 	document.getElementById( "root" )
 );

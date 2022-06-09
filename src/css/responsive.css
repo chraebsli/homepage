@@ -1,25 +1,6 @@
 /* ********************************************* responsive ********************************************* */
 
 @media only screen and (max-width: 1250px) {
-	/* ****************** header ****************** */
-	body header {
-		padding: var(--padding-gap-small);
-	}
-
-	body header .navbar-brand {
-		font-size: var(--font-size-normal);
-		gap: var(--padding-gap-big);
-	}
-
-	body header .nav-link {
-		font-size: var(--font-size-small);
-	}
-
-	body header .navbar-content,
-	body header .navbar-brand {
-		gap: var(--padding-gap-normal);
-	}
-
 	/* ****************** main ****************** */
 	/* ****************** footer ****************** */
 	body footer {
@@ -29,31 +10,9 @@
 }
 
 @media only screen and (max-width: 850px) {
-	/* ****************** header ****************** */
-	body header .navbar-brand img {
-		width: 40px;
-		height: 40px;
-	}
-
-	body header .navbar-brand {
-		font-size: var(--font-size-small);
-	}
-
-	body header .nav-link {
-		font-size: var(--font-size-mini);
-	}
 }
 
 @media only screen and (max-width: 650px) {
-	/* ****************** header ****************** */
-	body header .desktop {
-		display: none;
-	}
-
-	body header .mobile {
-		display: block;
-	}
-
 	/* ****************** footer ****************** */
 	body footer a,
 	body footer .copyright {
@@ -62,20 +21,4 @@
 }
 
 @media only screen and (max-width: 400px) {
-	/* ****************** header ****************** */
-	body header .navbar-brand img,
-	body header .mobile .dropdown-btn {
-		width: 40px;
-		height: 40px;
-	}
-
-	body header .navbar-brand {
-		font-size: var(--font-size-small);
-		gap: var(--padding-gap-normal);
-	}
-
-	body header .mobile .nav-link {
-		padding: var(--padding-gap-mini);
-		font-size: var(--font-size-mini);
-	}
 }

@@ -6,18 +6,6 @@ main {
 	align-self: center;
 }
 
-main .header {
-	margin-bottom: 2rem;
-}
-
-main .header .title-text {
-	font-size: 2em;
-}
-
-main .header .title-description {
-	font-size: 1.5em;
-}
-
 main .content {
 	gap: 1rem;
 }
