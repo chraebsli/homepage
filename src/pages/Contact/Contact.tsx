@@ -23,6 +23,9 @@ const Contact = () => (
 						und freue mich über Feedback jeglicher Art.
 					</p>
 				</section>
+
+				{/* TODO: add contact form */ }
+
 			</div>
 		</Container>
 	</main>

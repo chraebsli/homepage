@@ -16,6 +16,10 @@ import DatenschutzIcon from "./assets/Datenschutz.svg";
 // render the page übersicht
 const Ubersicht = () => (
 	<main className="ubersicht">
+		{/* TODO: fix container */ }
+		{/* TODO: fix rename to overview */ }
+		{/* TODO: fix display content */ }
+
 		<div className="header">
 			<p className="title-text">Übersicht</p>
 		</div>

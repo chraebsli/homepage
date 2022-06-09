@@ -7,6 +7,7 @@ import "./Impressum.css";
 // render the page impressum
 const Impressum = () => (
 	<main className="impressum">
+		{/* TODO: fix container */ }
 		<div className="header">
 			<p className="title-text">Impressum</p>
 		</div>

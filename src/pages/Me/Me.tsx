@@ -6,7 +6,7 @@ import { Card, Container, Stack } from "react-bootstrap";
 import "./Me.css";
 //import ImageOfMe from "./assets/me.jpg";
 
-// render the page über
+// render the page me
 const Me = () => (
 	<main className={ "me" }>
 		<Container>

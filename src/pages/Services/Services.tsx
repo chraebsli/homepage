@@ -10,6 +10,7 @@ import ImageBuildPC from "./assets/build-pc.jpg";
 // render the page services
 const Services = () => (
 	<main className={ "services" }>
+		{/* TODO: add more services */ }
 		<Container>
 			<div className={ "page-title" }>
 				<p>Dienstleistungen</p>
@@ -35,6 +36,7 @@ const Services = () => (
 										</ul>
 									</p>
 								</Card.Text>
+								{/* TODO: fix centered button */ }
 								<Button variant="primary"
 								        className="btn n text-center"
 								        href="/services/website-erstellen">
@@ -60,6 +62,7 @@ const Services = () => (
 										</ul>
 									</p>
 								</Card.Text>
+								{/* TODO: fix centered button */ }
 								<Button variant="primary" className="btn n" href="/services/pc-bauen">
 									Mehr erfahren
 								</Button></Card.Body></Card>

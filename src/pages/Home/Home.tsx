@@ -7,6 +7,7 @@ import "./Home.css";
 // render the page home
 const Home = () => (
 	<main className="home">
+		{/* TODO: fix container */ }
 		<div className="header">
 			<p className="title-text">Home</p>
 		</div>

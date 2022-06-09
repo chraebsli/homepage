@@ -7,6 +7,7 @@ import "./Datenschutz.css";
 // render the page datenschutz
 const Datenschutz = () => (
 	<main className="datenschutz">
+		{/* TODO: fix container */ }
 		<div className="header">
 			<p className="title-text">Datenschutz</p>
 		</div>

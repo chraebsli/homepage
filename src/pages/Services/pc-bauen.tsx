@@ -7,6 +7,9 @@ import "./Services.css";
 // render the page pc bauen
 const PCBauen = () => (
 	<main className="dienst">
+		{/* TODO: fix container */ }
+		{/* TODO: add content */ }
+
 		<div className="dienst-full">
 			<p className="dienst-title">PC bauen</p>
 			<p className="dienst-teaser">
