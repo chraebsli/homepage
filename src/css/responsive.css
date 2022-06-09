@@ -1,5 +1,13 @@
 /* ********************************************* responsive ********************************************* */
 
+@media only screen and (max-width: 1920px) {
+	/* ****************** footer ****************** */
+	body footer {
+		padding: var(--padding-gap-normal);
+		gap: var(--padding-gap-small);
+	}
+}
+
 @media only screen and (max-width: 1250px) {
 	/* ****************** main ****************** */
 	/* ****************** footer ****************** */
