@@ -10,9 +10,8 @@ main .content {
 	gap: 1rem;
 }
 
-main .section-title {
-	font-size: 1.5em;
-}
+main .page-title { font-size: 1.5em;}
+main .section-title { font-size: 1.5em;}
 
 main a.btn {
 	align-self: center;

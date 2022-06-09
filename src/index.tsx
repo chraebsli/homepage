@@ -10,6 +10,7 @@ import "./css/main.css";
 import "./css/elements.css";
 import "./css/responsive.css";
 import "./css/smoother.css";
+import "./css/Card.css";
 
 // import components
 import Header from "./components/Header/Header";
@@ -22,7 +23,7 @@ import PCBauen from "./pages/Dienstleistungen/pc-bauen";
 import WebsiteErstellen from "./pages/Dienstleistungen/website-erstellen";
 
 import Kontakt from "./pages/Kontakt/Kontakt";
-import Uber from "./pages/Uber/Uber";
+import Me from "./pages/Me/Me";
 
 import Ubersicht from "./pages/Ubersicht/Ubersicht";
 import Impressum from "./pages/Impressum/Impressum";
@@ -41,7 +42,7 @@ ReactDOM.render(
 				<Route path="/services/website-erstellen" element={ <WebsiteErstellen /> } />
 
 				<Route path="/contact" element={ <Kontakt /> } />
-				<Route path="/uber" element={ <Uber /> } />
+				<Route path="/me" element={ <Me /> } />
 
 				<Route path="/ubersicht" element={ <Ubersicht /> } />
 				<Route path="/impressum" element={ <Impressum /> } />

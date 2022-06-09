@@ -1,6 +1,4 @@
-.page-content {width: 100%}
 /* ********************************************* services ********************************************* */
- 
 .services .card { max-width: 30rem}
 .service-title { font-size: var(--font-size-normal);}
 .service-teaser { font-style: italic;}
