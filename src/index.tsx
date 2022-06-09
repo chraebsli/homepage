@@ -10,7 +10,6 @@ import "./css/main.css";
 import "./css/elements.css";
 import "./css/responsive.css";
 import "./css/smoother.css";
-import "./components/OwlCarousel/OwlCarousel.css";
 
 // import components
 import Header from "./components/Header/Header";
@@ -18,7 +17,7 @@ import Footer from "./components/Footer/Footer";
 
 // import pages
 import Home from "./pages/Home/Home";
-import Dienstleistungen from "./pages/Dienstleistungen/Dienstleistungen";
+import Services from "./pages/Dienstleistungen/Services";
 import PCBauen from "./pages/Dienstleistungen/pc-bauen";
 import WebsiteErstellen from "./pages/Dienstleistungen/website-erstellen";
 
@@ -37,7 +36,7 @@ ReactDOM.render(
 			<Header />
 			<Routes>
 				<Route path="/" element={ <Home /> } />
-				<Route path="/services" element={ <Dienstleistungen /> }></Route>
+				<Route path="/services" element={ <Services /> }></Route>
 				<Route path="/services/pc-bauen" element={ <PCBauen /> } />
 				<Route path="/services/website-erstellen" element={ <WebsiteErstellen /> } />
 

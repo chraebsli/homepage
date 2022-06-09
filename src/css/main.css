@@ -71,4 +71,4 @@ a.n { text-decoration: none;}
 .text-sec { color: var(--text-sec-color) !important;}
 .text-center { text-align: center;}
 
-p, a, span { color: var(--text-sec-color-low);}
+p, a, span { color: var(--text-color);}

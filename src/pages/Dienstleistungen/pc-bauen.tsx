@@ -2,7 +2,7 @@
 import React from "react";
 
 // import assets and css
-import "./Dienstleistungen.css";
+import "./Services.css";
 
 // render the page pc bauen
 const PCBauen = () => (
