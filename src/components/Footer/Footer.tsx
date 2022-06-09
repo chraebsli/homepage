@@ -11,14 +11,10 @@ const Footer = () => (
 	<footer>
 		<Stack direction={ "vertical" } className={ "text-center" }>
 			<Stack direction={ "horizontal" } className={ "link-cont d-flex justify-content-center" }>
-				<NavLink className="link text-sec " to="/impressum">
-					Impressum
-				</NavLink>
-				<NavLink className="link text-sec " to="/datenschutz">
-					Datenschutz
-				</NavLink>
+				<NavLink className={ "link text-sec" } to={ "/impressum" }>Impressum</NavLink>
+				<NavLink className={ "link text-sec" } to={ "/datenschutz" }>Datenschutz</NavLink>
 			</Stack>
-			<span className="text-sec copyright">&copy; 2022 chraebsli IT-Services</span>
+			<span className={ "text-sec copyright" }>&copy; 2022 chraebsli IT-Services</span>
 		</Stack>
 	</footer>
 );
