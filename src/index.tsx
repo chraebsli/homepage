@@ -18,11 +18,11 @@ import Footer from "./components/Footer/Footer";
 
 // import pages
 import Home from "./pages/Home/Home";
-import Services from "./pages/Dienstleistungen/Services";
-import PCBauen from "./pages/Dienstleistungen/pc-bauen";
-import WebsiteErstellen from "./pages/Dienstleistungen/website-erstellen";
+import Services from "./pages/Services/Services";
+import PCBauen from "./pages/Services/pc-bauen";
+import WebsiteErstellen from "./pages/Services/website-erstellen";
 
-import Kontakt from "./pages/Kontakt/Kontakt";
+import Contact from "./pages/Contact/Contact";
 import Me from "./pages/Me/Me";
 
 import Ubersicht from "./pages/Ubersicht/Ubersicht";
@@ -41,7 +41,7 @@ ReactDOM.render(
 				<Route path="/services/pc-bauen" element={ <PCBauen /> } />
 				<Route path="/services/website-erstellen" element={ <WebsiteErstellen /> } />
 
-				<Route path="/contact" element={ <Kontakt /> } />
+				<Route path="/contact" element={ <Contact /> } />
 				<Route path="/me" element={ <Me /> } />
 
 				<Route path="/ubersicht" element={ <Ubersicht /> } />

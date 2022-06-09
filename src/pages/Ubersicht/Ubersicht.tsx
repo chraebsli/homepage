@@ -33,11 +33,11 @@ const Ubersicht = () => (
 						Dienstleistungen
 					</a>
 					<div className="site-subcont f col">
-						<a href="./dienstleistungen/pc-bauen" className="site-link f row">
+						<a href="./Services/pc-bauen" className="site-link f row">
 							<img src={ PCBauenIcon } alt="pc bauen icon" width="30" height="30" />
 							PC bauen
 						</a>
-						<a href="./dienstleistungen/website-erstellen" className="site-link f row">
+						<a href="./Services/website-erstellen" className="site-link f row">
 							<img src={ WebsiteErstellenIcon } alt="website erstellen icon" width="30" height="30" />
 							Website erstellen
 						</a>
