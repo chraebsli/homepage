@@ -25,7 +25,7 @@ import WebsiteErstellen from "./pages/Services/website-erstellen";
 import Contact from "./pages/Contact/Contact";
 import Me from "./pages/Me/Me";
 
-import Ubersicht from "./pages/Ubersicht/Ubersicht";
+import Overview from "./pages/Overview/Overview";
 import Impressum from "./pages/Impressum/Impressum";
 import Datenschutz from "./pages/Datenschutz/Datenschutz";
 
@@ -44,7 +44,7 @@ ReactDOM.render(
 				<Route path="/contact" element={ <Contact /> } />
 				<Route path="/me" element={ <Me /> } />
 
-				<Route path="/ubersicht" element={ <Ubersicht /> } />
+				<Route path="/overview" element={ <Overview /> } />
 				<Route path="/impressum" element={ <Impressum /> } />
 				<Route path="/datenschutz" element={ <Datenschutz /> } />
 			</Routes>

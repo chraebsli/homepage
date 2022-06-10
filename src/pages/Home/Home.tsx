@@ -1,22 +1,21 @@
 // import libraries
 import React from "react";
+import { Container } from "react-bootstrap";
 
 // import assets and css
 import "./Home.css";
 
 // render the page home
 const Home = () => (
-	<main className="home">
-		{/* TODO: fix container */ }
-		<div className="header">
-			<p className="title-text">Home</p>
-		</div>
+	<main className={ "home" }>
+		<Container>
+			<div className={ "page-title" }>
+				<p>Home</p>
+			</div>
 
-		<div className="content f col">
-			<section>
-				<p className="section-title">Home</p>
-			</section>
-		</div>
+			<div className="page-content d-flex justify-content-center">
+			</div>
+		</Container>
 	</main>
 );
 
