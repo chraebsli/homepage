@@ -1,25 +1,16 @@
 // import libraries
 import React from "react";
 import Grid from "@mui/material/Grid";
-import StarIcon from "@mui/icons-material/StarBorder";
 import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
-import {
-	Box,
-	Button,
-	Card,
-	CardMedia,
-	CardHeader,
-	CardContent,
-	CardActions,
-} from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, } from "@mui/material";
 //import { Outlet } from "react-router-dom";
 // import assets and css
 import "./Services.css";
 import servicesList from "./services-list";
 
-const services = servicesList
+const services = servicesList;
 
 // render the page services
 const Services = () => (
@@ -34,10 +25,10 @@ const Services = () => (
 				<React.Fragment>
 					<Container maxWidth="md" component="main">
 						<Grid container spacing={ 5 } alignItems="flex-end">
-							{ services.map( ( tier ) => (
+							{ services.map( ( service ) => (
 								<Grid
 									item
-									key={ tier.title }
+									key={ service.title }
 									xs={ 12 }
 									sm={ 6 }
 									md={ 6 }
@@ -46,12 +37,12 @@ const Services = () => (
 										<CardMedia
 											component={ "img" }
 											height={ "200" }
-											image={ tier.image }
+											image={ service.image }
 											alt={ "image" }
 										/>
 
 										<CardHeader
-											title={ tier.title }
+											title={ service.title }
 											titleTypographyProps={ { align: "center" } }
 										/>
 										<CardContent>
@@ -68,21 +59,20 @@ const Services = () => (
 												            className="service-teaser"
 												            variant="body1"
 												            color="text.primary">
-													{ tier.teaser }
+													{ service.teaser }
 												</Typography>
 												<Typography component="p"
 												            className="service-description"
 												            variant="body1"
 												            color="text.primary">
-													{ tier.description }
+													{ service.description }
 												</Typography>
 											</Box>
 											<ul>
-												{ tier.features.map( ( line ) => (
+												{ service.features.map( ( line ) => (
 													<Typography
 														component="li"
 														variant="subtitle1"
-														//align="center"
 														key={ line }
 													>
 														{ line }
@@ -93,11 +83,10 @@ const Services = () => (
 										<CardActions>
 											<Button
 												fullWidth
-												variant={ tier.buttonVariant as "outlined" | "contained" }
-												href={tier.href}
-
+												variant={ service.buttonVariant as "outlined" | "contained" }
+												href={ service.href }
 											>
-												{ tier.buttonText }
+												{ service.buttonText }
 											</Button>
 										</CardActions>
 									</Card>

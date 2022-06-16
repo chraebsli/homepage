@@ -1,13 +1,14 @@
-import ImageCreateWebsite from "./assets/create-website.jpg";
-import ImageBuildPC from "./assets/build-pc.jpg";
+import ImageCreateWebsite from "./assets/create-website-min.jpg";
+import ImageBuildPC from "./assets/build-pc-min.jpg";
+import Service from "../../models/service";
 
 {/* TODO: add more services */ }
 const servicesList = () => {
 	return [
-		{
-			id:"create-website",
+		new Service( {
+			id: "create-website",
 			title: "Website erstellen",
-			href: "/services/website-erstellen",
+			href: "/service/create-website",
 			image: ImageCreateWebsite,
 			teaser: "Benötigen Sie eine Website für Ihre Produkte oder Dienstleistungen?",
 			description: "Ich erstelle für Sie die Website, die Ihre Bedürfnisse erfüllen. Auf ihren Wunsch kann ich zusätzlich das Hosting und die Domain mit allem konfigurieren.",
@@ -18,11 +19,12 @@ const servicesList = () => {
 			],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
-		},
-		{
-			id:"build-pc",
+		} ),
+
+		new Service( {
+			id: "build-pc",
 			title: "PC bauen",
-			href: "/services/pc-bauen",
+			href: "/service/build-pc",
 			image: ImageBuildPC,
 			teaser: "Ich baue oder erweitere für Sie einen PC, wie Sie benötigen.",
 			description: "",
@@ -31,7 +33,7 @@ const servicesList = () => {
 			],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
-		},
+		} ),
 	];
 
 };
