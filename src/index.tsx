@@ -22,7 +22,7 @@ import Services from "./pages/Services/Services";
 import SingleService from "./pages/Services/single-service";
 
 import Contact from "./pages/Contact/Contact";
-import Me from "./pages/Me/Me";
+import Me from "./pages/Me2/Me";
 
 import Overview from "./pages/Overview/Overview";
 import Impressum from "./pages/Impressum/Impressum";
