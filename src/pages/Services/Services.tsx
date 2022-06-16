@@ -30,7 +30,7 @@ const Services = () => (
 									item
 									key={ service.title }
 									xs={ 12 }
-									sm={ 6 }
+									sm={ 9 }
 									md={ 6 }
 								>
 									<Card>

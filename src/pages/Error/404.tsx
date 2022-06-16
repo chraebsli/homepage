@@ -14,6 +14,7 @@ const Error404 = () => (
 			</div>
 
 			<div className="page-content d-flex justify-content-center">
+				<h6>Diese Seite existiert nicht.</h6>
 			</div>
 		</Container>
 	</main>

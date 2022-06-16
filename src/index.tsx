@@ -41,8 +41,7 @@ ReactDOM.render(
 				<Route path="*" element={ <Error404 /> } />
 				<Route path="/services" element={ <Services /> } />
 				<Route path="/service/:service" element={ <SingleService /> } />
-				{/*<Route path="build-pc" element={ <ServiceBuildPC /> } />*/ }
-				{/*<Route path="create-website" element={ <ServiceCreateWebsite /> } />*/ }
+
 				<Route path="/contact" element={ <Contact /> } />
 				<Route path="/me" element={ <Me /> } />
 
