@@ -1,21 +1,23 @@
 // import libraries
 import React from "react";
+import { Container } from "react-bootstrap";
 
 // import assets and css
 import "./Datenschutz.css";
 
 // render the page datenschutz
 const Datenschutz = () => (
-	<main className="datenschutz">
-		<div className="header">
-			<p className="title-text">Datenschutz</p>
-		</div>
+	<main className={ "datenschutz" }>
+		<Container>
+			<div className={ "page-title" }>
+				<p>Datenschutz</p>
+			</div>
 
-		<div className="content f col">
-			<section>
-				<p className="section-title">Datenschutz</p>
-			</section>
-		</div>
+			<div className="page-content d-flex justify-content-center">
+				<section>
+				</section>
+			</div>
+		</Container>
 	</main>
 );
 

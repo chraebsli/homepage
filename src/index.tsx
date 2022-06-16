@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-//import * as serviceWorker from "./serviceWorker"; 
+import ThemeProvider from "react-bootstrap/ThemeProvider";
+//import * as serviceWorker from "./serviceWorker";
 // import css
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./css/overrides.css";
 import "./css/main.css";
 import "./css/elements.css";
 import "./css/responsive.css";
 import "./css/smoother.css";
-import "./components/OwlCarousel/OwlCarousel.css";
+import "./css/Card.css";
 
 // import components
 import Header from "./components/Header/Header";
@@ -15,35 +18,40 @@ import Footer from "./components/Footer/Footer";
 
 // import pages
 import Home from "./pages/Home/Home";
-import Dienstleistungen from "./pages/Dienstleistungen/Dienstleistungen";
-import PCBauen from "./pages/Dienstleistungen/pc-bauen";
-import WebsiteErstellen from "./pages/Dienstleistungen/website-erstellen";
+import Services from "./pages/Services/Services";
+import SingleService from "./pages/Services/single-service";
 
-import Kontakt from "./pages/Kontakt/Kontakt";
-import Uber from "./pages/Uber/Uber";
+import Contact from "./pages/Contact/Contact";
+import Me from "./pages/Me/Me";
 
-import Ubersicht from "./pages/Ubersicht/Ubersicht";
+import Overview from "./pages/Overview/Overview";
 import Impressum from "./pages/Impressum/Impressum";
 import Datenschutz from "./pages/Datenschutz/Datenschutz";
 
+import Error404 from "./pages/Error/404";
+
 ReactDOM.render(
-	<Router>
-		<Header />
-		<Routes>
-			<Route path="/" element={ <Home /> } />
-			<Route path="/dienstleistungen" element={ <Dienstleistungen /> }></Route>
-			<Route path="/dienstleistungen/pc-bauen" element={ <PCBauen /> } />
-			<Route path="/dienstleistungen/website-erstellen" element={ <WebsiteErstellen /> } />
+	<ThemeProvider
+		breakpoints={ [ "xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs" ] }
+	>
+		<Router>
+			<Header />
+			<Routes>
+				<Route path="/" element={ <Home /> } />
+				<Route path="*" element={ <Error404 /> } />
+				<Route path="/services" element={ <Services /> } />
+				<Route path="/service/:service" element={ <SingleService /> } />
 
-			<Route path="/kontakt" element={ <Kontakt /> } />
-			<Route path="/uber" element={ <Uber /> } />
+				<Route path="/contact" element={ <Contact /> } />
+				<Route path="/me" element={ <Me /> } />
 
-			<Route path="/ubersicht" element={ <Ubersicht /> } />
-			<Route path="/impressum" element={ <Impressum /> } />
-			<Route path="/datenschutz" element={ <Datenschutz /> } />
-		</Routes>
-		<Footer />
-	</Router>,
+				<Route path="/overview" element={ <Overview /> } />
+				<Route path="/impressum" element={ <Impressum /> } />
+				<Route path="/datenschutz" element={ <Datenschutz /> } />
+			</Routes>
+			<Footer />
+		</Router>
+	</ThemeProvider>,
 
 	document.getElementById( "root" )
 );

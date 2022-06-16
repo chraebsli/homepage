@@ -1,50 +1,36 @@
 // import libraries
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Container, Nav, Navbar } from "react-bootstrap";
 
 // import assets and css
-import logo from "./assets/logo.svg";
-import menuIcon from "./assets/menu.svg";
 import "./Header.css";
+import logo from "../../assets/logo.svg";
 
 // render the header component
 const Header = () => (
-	<header className="f row">
-		<NavLink className="navbar-brand n text-sec f row" to="/">
-			<img src={logo} alt="logo" width="50" height="50" />
-			chraebsli Dienstleistungen
-		</NavLink>
+	<Navbar collapseOnSelect expand={ "lg" } bg={ "primary" } variant={ "dark" }>
+		<Container>
+			<Navbar.Brand href={ "/" }>
+				<img src={ logo }
+				     alt={ "logo" }
+				     width={ 50 }
+				     height={ 50 }
+				     className={ "d-inline-block align-center" } />
+				<span className={ "brand-name" }>chraebsli IT-Services</span>
+			</Navbar.Brand>
 
-		<nav className="navbar-content desktop f row">
-			<NavLink className="nav-link text-sec n" to="/dienstleistungen">
-				Dienstleistungen
-			</NavLink>
-			<NavLink className="nav-link text-sec n" to="/ubersicht">
-				Übersicht
-			</NavLink>
-			<NavLink className="nav-link text-sec n" to="/kontakt">
-				Kontakt
-			</NavLink>
-		</nav>
+			<Navbar.Toggle aria-controls={ "header-nav" } />
 
-		<nav className="navbar-content mobile f col">
-			<div className="dropdown">
-				<img className="dropdown-btn" src={menuIcon} alt="menu" width="50" height="50" />
-
-				<div className="dropdown-menu f col">
-					<NavLink className="nav-link text-sec n" to="/dienstleistungen">
-						Dienstleistungen
-					</NavLink>
-					<NavLink className="nav-link text-sec n" to="/ubersicht">
-						Übersicht
-					</NavLink>
-					<NavLink className="nav-link text-sec n" to="/kontakt">
-						Kontakt
-					</NavLink>
-				</div>
-			</div>
-		</nav>
-	</header>
+			<Navbar.Collapse id={ "responsive-navbar-nav" }>
+				<Nav className={ "me-auto" }></Nav>
+				<Nav>
+					<Nav.Link href={ "/services" }>Services</Nav.Link>
+					<Nav.Link href={ "/me" }>Über mich</Nav.Link>
+					<Nav.Link href={ "/contact" }>Kontakt</Nav.Link>
+				</Nav>
+			</Navbar.Collapse>
+		</Container>
+	</Navbar>
 );
 
 export default Header;

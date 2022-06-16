@@ -1,0 +1,7 @@
+/* ********************************************* services ********************************************* */
+.service-title { font-size: var(--font-size-normal);}
+.service-teaser { font-style: italic;}
+
+.swiper-slide {
+	max-width: 25rem;
+}

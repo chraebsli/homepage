@@ -2,9 +2,10 @@
 
 /* ********************************************* colors ********************************************* */
 :root {
-	--background-color: #1c1d20;
+	/* normal */
+	--background-color: #ffffff;
 	--text-color: #000000;
-	--text-prim-color: #ffffff;
+	--text-prim-color: #000000;
 	--text-sec-color: #ffffff;
 	--text-sec-color-low: #ffffffd6;
 	--prim-color: #507cff;
@@ -20,12 +21,14 @@
 
 /* ********************************************* sizes ********************************************* */
 :root {
+	/* gaps */
 	--padding-gap-huge: 2rem;
 	--padding-gap-big: 1.5rem;
 	--padding-gap-normal: 1rem;
 	--padding-gap-small: 0.5rem;
 	--padding-gap-mini: 0.3rem;
 
+	/* font */
 	--font-size-big: 1.8rem;
 	--font-size-normal: 1.5rem;
 	--font-size-small: 1.2rem;
@@ -35,84 +38,27 @@
 	--text-space-normal: 0.5rem;
 }
 
-/* ********************************************* css reset ********************************************* */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body {
+	position: relative;
 	background-color: var(--background-color);
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 	font-family: "Roboto", sans-serif;
-	font-size: 16px;
-	overflow: hidden;
-}
-
-#root {
-	width: 100%;
-	height: 100%;
+	overflow-x: hidden;
 }
 
 /* ********************************************* shortforms ********************************************* */
-.f {
-	display: flex;
-}
-
-.c {
-	justify-content: center;
-}
-
-.a {
-	align-items: center;
-}
-
-.col {
-	flex-direction: column;
-}
-
-.row {
-	flex-direction: row;
-}
+.f { display: flex;}
+.c { justify-content: center;}
+.a { align-items: center;}
+.col { flex-direction: column;}
+.row { flex-direction: row;}
 
 /* ********************************************* links ********************************************* */
-/*
-a,
-a:hover,
-a:visited {
-	color: var(--text-color);
-}
-*/
-a.n {
-	text-decoration: none;
-}
-
-/* ********************************************* sizes ********************************************* */
-.w100 {
-	width: 100%;
-}
-
-.w75 {
-	width: 75%;
-}
-
-.w50 {
-	width: 50%;
-}
+a.n { text-decoration: none;}
 
 /* ********************************************* other ********************************************* */
-.text-sec {
-	color: var(--text-sec-color) !important;
-}
+.text-sec { color: var(--text-sec-color) !important;}
+.text-center { text-align: center;}
 
-.text-center {
-	text-align: center;
-}
-
-p,
-a,
-span {
-	color: var(--text-sec-color-low);
-}
+p, a, span { color: var(--text-color);}

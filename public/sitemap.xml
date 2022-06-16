@@ -2,26 +2,44 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>http://www.chraebsli.dev/</loc>
-        <lastmod>2022-04-08</lastmod>
+        <lastmod>2022-06-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>http://www.chraebsli.dev/dienstleistungen</loc>
-        <lastmod>2022-04-08</lastmod>
+        <loc>http://www.chraebsli.dev/services</loc>
+        <lastmod>2022-06-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
     <url>
-        <loc>http://www.chraebsli.dev/dienstleistungen/pc-bauen</loc>
-        <lastmod>2022-04-08</lastmod>
+        <loc>http://www.chraebsli.dev/contact</loc>
+        <lastmod>2022-06-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.chraebsli.dev/services/create-website</loc>
+        <lastmod>2022-06-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>http://www.chraebsli.dev/services/it-support</loc>
+        <lastmod>2022-06-16</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>http://www.chraebsli.dev/kontakt</loc>
-        <lastmod>2022-04-08</lastmod>
+        <loc>http://www.chraebsli.dev/services/build-pc</loc>
+        <lastmod>2022-06-16</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.7</priority>
     </url>
-</urlset> 
+    <url>
+        <loc>http://www.chraebsli.dev/me</loc>
+        <lastmod>2022-06-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>
