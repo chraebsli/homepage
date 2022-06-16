@@ -7,6 +7,7 @@ import { Stack } from "react-bootstrap";
 import "./Footer.css";
 
 // render the footer component
+
 const Footer = () => (
 	<footer>
 		<Stack direction={ "vertical" } className={ "text-center" }>
@@ -14,7 +15,7 @@ const Footer = () => (
 				<NavLink className={ "link text-sec" } to={ "/impressum" }>Impressum</NavLink>
 				<NavLink className={ "link text-sec" } to={ "/datenschutz" }>Datenschutz</NavLink>
 			</Stack>
-			<span className={ "text-sec copyright" }>&copy; 2022 chraebsli IT-Services</span>
+			<span className={ "text-sec copyright" }>&copy; { new Date().getFullYear() } chraebsli IT-Services</span>
 		</Stack>
 	</footer>
 );
