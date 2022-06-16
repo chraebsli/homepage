@@ -9,7 +9,6 @@
 }
 
 @media only screen and (max-width: 1250px) {
-	/* ****************** main ****************** */
 	/* ****************** footer ****************** */
 	body footer {
 		padding: var(--padding-gap-normal);

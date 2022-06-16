@@ -5,7 +5,7 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 //import * as serviceWorker from "./serviceWorker";
 // import css
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/bootstrap-overrides.css";
+import "./css/overrides.css";
 import "./css/main.css";
 import "./css/elements.css";
 import "./css/responsive.css";

@@ -1,5 +1,2 @@
-.cards .card { max-width: 30rem}
 .card-title { font-size: var(--font-size-normal);}
 .card-teaser { font-style: italic;}
-.card-list ul { margin-left: var(--padding-gap-normal);}
-.cards a.btn { width: 20rem;}

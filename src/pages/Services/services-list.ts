@@ -1,6 +1,6 @@
-import ImageCreateWebsite from "./assets/create-website-min.jpg";
-import ImageBuildPC from "./assets/build-pc-min.jpg";
-import ImageITSupport from "./assets/it-support-min.jpg";
+import ImageCreateWebsite from "./assets/create-website.jpg";
+import ImageBuildPC from "./assets/build-pc.jpg";
+import ImageITSupport from "./assets/it-support.jpg";
 import Service from "../../models/service";
 
 {/* TODO: add more services */ }

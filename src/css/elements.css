@@ -5,30 +5,15 @@ main {
 	padding: 2rem;
 	align-self: center;
 }
-
-main .content {
-	gap: 1rem;
+main > div {
+	margin-bottom: 3rem;
 }
 
-main .page-title { font-size: 1.5em;}
-main .section-title { font-size: 1.5em;}
+.page-content-only {margin-top: 3rem}
+.page-title { font-size: 1.5em;}
+.section-title { font-size: 1.5em;}
 
-main a.btn {
-	align-self: center;
-	text-align: center;
-	padding: 0.5rem 1rem;
-
-	color: var(--text-sec-color);
-	background-color: var(--btn-prim-color);
-	transition: background-color 0.3s;
-	border-radius: 1rem;
-}
-
-main a.btn:hover {
-	background-color: var(--btn-prim-hover-color);
-}
-
-main .section-text.text-space {
+.section-text.text-space {
 	margin-top: var(--text-space-normal);
 	margin-bottom: var(--text-space-normal);
 }
