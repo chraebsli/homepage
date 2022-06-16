@@ -1,73 +1,111 @@
 // import libraries
 import React from "react";
-import { Button, Card, Carousel, Container } from "react-bootstrap";
+import Grid from "@mui/material/Grid";
+import StarIcon from "@mui/icons-material/StarBorder";
+import Typography from "@mui/material/Typography";
+import GlobalStyles from "@mui/material/GlobalStyles";
+import Container from "@mui/material/Container";
+import {
+	Box,
+	Button,
+	Card,
+	CardMedia,
+	CardHeader,
+	CardContent,
+	CardActions,
+} from "@mui/material";
 //import { Outlet } from "react-router-dom";
 // import assets and css
 import "./Services.css";
-import ImageCreateWebsite from "./assets/create-website.jpg";
-import ImageBuildPC from "./assets/build-pc.jpg";
+import servicesList from "./services-list";
+
+const services = servicesList
 
 // render the page services
 const Services = () => (
 	<main className={ "services" }>
-		{/* TODO: add more services */ }
 		<Container>
 			<div className={ "page-title" }>
 				<p>Dienstleistungen</p>
 			</div>
 
-			<div className="page-content d-flex justify-content-center">
-				<Carousel variant="dark">
-					<Carousel.Item className={ "soft-dark-shadow" }>
-						<Card>
-							<Card.Img variant={ "top" } src={ ImageCreateWebsite } />
-							<Card.Body>
-								<Card.Title className="service-title">Website erstellen</Card.Title>
-								<Card.Subtitle className="service-teaser mb-2 text-muted">Benötigen Sie eine Website für
-									Ihre Produkte oder Dienstleistungen?</Card.Subtitle>
-								<Card.Text className="service-description">
-									<p>Ich erstelle für Sie die Website, die Ihre Bedürfnisse erfüllen. Auf ihren Wunsch
-										kann ich zusätzlich das Hosting und die Domain mit allem konfigurieren.</p>
-									<p className="service-list">
-										<ul>
-											<li>Website</li>
-											<li>Domain (nach Wunsch)</li>
-											<li>Hosting (nach Wunsch)</li>
-										</ul>
-									</p>
-								</Card.Text>
-								{/* TODO: fix centered button */ }
-								<Button variant="primary"
-								        className="btn n text-center"
-								        href="/services/website-erstellen">
-									Mehr erfahren
-								</Button>
-							</Card.Body>
-						</Card>
-					</Carousel.Item>
+			<div className="page-content c-flex justify-content-center">
+				<GlobalStyles styles={ { ul: { margin: 0, padding: 0, listStyle: "none" } } } />
+				<React.Fragment>
+					<Container maxWidth="md" component="main">
+						<Grid container spacing={ 5 } alignItems="flex-end">
+							{ services.map( ( tier ) => (
+								<Grid
+									item
+									key={ tier.title }
+									xs={ 12 }
+									sm={ 6 }
+									md={ 6 }
+								>
+									<Card>
+										<CardMedia
+											component={ "img" }
+											height={ "200" }
+											image={ tier.image }
+											alt={ "image" }
+										/>
 
-					<Carousel.Item className=" soft-dark-shadow ">
-						<Card>
-							<Card.Img variant="top" src={ ImageBuildPC } />
-							<Card.Body>
-								<Card.Title className="service-title">PC bauen</Card.Title>
-								<Card.Subtitle className="service-teaser">Ich baue oder erweitere für Sie einen PC, wie
-									Sie benötigen.</Card.Subtitle>
-								<Card.Text className="service-description">
-									<p></p>
-									<p>
-										<ul>
-											<li>Beratung</li>
-											<li></li>
-										</ul>
-									</p>
-								</Card.Text>
-								{/* TODO: fix centered button */ }
-								<Button variant="primary" className="btn n" href="/services/pc-bauen">
-									Mehr erfahren
-								</Button></Card.Body></Card>
-					</Carousel.Item>
-				</Carousel>
+										<CardHeader
+											title={ tier.title }
+											titleTypographyProps={ { align: "center" } }
+										/>
+										<CardContent>
+											<Box
+												sx={ {
+													display: "flex",
+													flexDirection: "column",
+													justifyContent: "flex-start",
+													alignItems: "baseline",
+													mb: 2,
+												} }
+											>
+												<Typography component="p"
+												            className="service-teaser"
+												            variant="body1"
+												            color="text.primary">
+													{ tier.teaser }
+												</Typography>
+												<Typography component="p"
+												            className="service-description"
+												            variant="body1"
+												            color="text.primary">
+													{ tier.description }
+												</Typography>
+											</Box>
+											<ul>
+												{ tier.features.map( ( line ) => (
+													<Typography
+														component="li"
+														variant="subtitle1"
+														//align="center"
+														key={ line }
+													>
+														{ line }
+													</Typography>
+												) ) }
+											</ul>
+										</CardContent>
+										<CardActions>
+											<Button
+												fullWidth
+												variant={ tier.buttonVariant as "outlined" | "contained" }
+												href={tier.href}
+
+											>
+												{ tier.buttonText }
+											</Button>
+										</CardActions>
+									</Card>
+								</Grid>
+							) ) }
+						</Grid>
+					</Container>
+				</React.Fragment>
 			</div>
 		</Container>
 	</main>

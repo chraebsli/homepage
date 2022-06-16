@@ -1,24 +1,3 @@
 /* ********************************************* services ********************************************* */
-.services .card { max-width: 30rem}
 .service-title { font-size: var(--font-size-normal);}
 .service-teaser { font-style: italic;}
-.service-list ul { margin-left: var(--padding-gap-normal);}
-.services a.btn { width: 20rem;}
-
-/* ********************************************* einzelne ********************************************* */
-.service-full {
-	gap: var(--padding-gap-normal);
-	font-size: var(--font-size-small);
-}
-
-.service-full .service-teaser { font-style: italic;}
-
-.service-full .service-refs ul,
-.service-full .service-list ul {
-	margin-left: var(--padding-gap-big);
-}
-
-.service-full a.btn {
-	margin-top: var(--padding-gap-big);
-	width: 25%;
-}
