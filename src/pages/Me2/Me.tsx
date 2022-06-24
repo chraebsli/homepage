@@ -1,7 +1,7 @@
 // import libraries
 import React from "react";
 import { Card, Container, Stack } from "react-bootstrap";
-import Progress from "../../components/common/Progress";
+import Progress from "../../components/Progress";
 
 // import assets and css
 import "./Me.css";

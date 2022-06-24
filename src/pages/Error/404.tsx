@@ -4,7 +4,7 @@ import { Container } from "react-bootstrap";
 
 // import assets and css
 import ImageError from "./assets/error-404.jpg";
-import PageCard from "../../components/common/PageCard";
+import PageCard from "../../components/PageCard";
 
 const card = {
 	title: "Error 404",

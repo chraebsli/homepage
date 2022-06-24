@@ -11,8 +11,8 @@ import "./css/comonents.css";
 import "./css/responsive.css";
 
 // import components
-import Header from "./components/common/Header";
-import Footer from "./components/common/Footer";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 // import pages
 import Home from "./pages/Home";
