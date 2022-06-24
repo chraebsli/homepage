@@ -61,7 +61,7 @@ class PageCard extends React.Component<{
 						</Typography>
 					</Box>
 				</CardContent>
-				
+
 				<CardActions>
 					<Button
 						fullWidth

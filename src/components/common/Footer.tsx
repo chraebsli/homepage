@@ -7,7 +7,7 @@ import { Stack } from "react-bootstrap";
 const Footer = () => (
 	<footer>
 		<Stack direction={ "vertical" } className={ "text-center" }>
-			<Stack gap={2} direction={ "horizontal" } className={ "d-flex justify-content-center" }>
+			<Stack gap={ 2 } direction={ "horizontal" } className={ "d-flex justify-content-center" }>
 				<NavLink className={ "link text-sec" } to={ "/impressum" }>Impressum</NavLink>
 				<NavLink className={ "link text-sec" } to={ "/datenschutz" }>Datenschutz</NavLink>
 			</Stack>

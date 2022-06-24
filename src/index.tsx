@@ -15,16 +15,16 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 
 // import pages
-import Home from "./pages/Home/Home";
+import Home from "./pages/Home";
 import Services from "./pages/Services/Services";
 import SingleService from "./pages/Services/single-service";
 
-import Contact from "./pages/Contact/Contact";
+import Contact from "./pages/Contact";
 import Me from "./pages/Me2/Me";
 
 import Overview from "./pages/Overview/Overview";
-import Impressum from "./pages/Impressum/Impressum";
-import Datenschutz from "./pages/Datenschutz/Datenschutz";
+import Impressum from "./pages/Impressum";
+import Datenschutz from "./pages/Datenschutz";
 
 import Error404 from "./pages/Error/404";
 

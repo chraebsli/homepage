@@ -2,9 +2,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-// import assets and css
-import "./Contact.css";
-
 // render the page contact
 const Contact = () => (
 	<main className={ "contact" }>
