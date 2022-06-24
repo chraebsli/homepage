@@ -3,7 +3,6 @@ import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
 // import assets and css
-import "./Header.css";
 import logo from "../../assets/logo.svg";
 
 // render the header component

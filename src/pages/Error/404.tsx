@@ -3,9 +3,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 
 // import assets and css
-//import "./Error.css";
 import ImageError from "./assets/error-404.jpg";
-import PageCard from "../../components/PageCard/PageCard";
+import PageCard from "../../components/common/PageCard";
 
 const card = {
 	title: "Error 404",

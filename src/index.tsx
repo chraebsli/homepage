@@ -7,14 +7,12 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/overrides.css";
 import "./css/main.css";
-import "./css/elements.css";
+import "./css/comonents.css";
 import "./css/responsive.css";
-import "./css/smoother.css";
-import "./css/Card.css";
 
 // import components
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 
 // import pages
 import Home from "./pages/Home/Home";
