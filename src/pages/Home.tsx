@@ -4,14 +4,13 @@ import { Container } from "react-bootstrap";
 
 // render the page home
 const Home = () => (
-	<main className={ "home" }>
+	<main className={"home"}>
 		<Container>
-			<div className={ "page-title" }>
+			<div className={"page-title"}>
 				<p>Home</p>
 			</div>
 
-			<div className="page-content d-flex justify-content-center">
-			</div>
+			<div className="page-content d-flex justify-content-center"></div>
 		</Container>
 	</main>
 );

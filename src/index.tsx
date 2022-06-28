@@ -29,29 +29,27 @@ import Datenschutz from "./pages/Datenschutz";
 import Error404 from "./pages/Error/404";
 
 ReactDOM.render(
-	<ThemeProvider
-		breakpoints={ [ "xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs" ] }
-	>
+	<ThemeProvider breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}>
 		<Router>
 			<Header />
 			<Routes>
-				<Route path="/" element={ <Home /> } />
-				<Route path="*" element={ <Error404 /> } />
-				<Route path="/services" element={ <Services /> } />
-				<Route path="/service/:service" element={ <SingleService /> } />
+				<Route path="/" element={<Home />} />
+				<Route path="*" element={<Error404 />} />
+				<Route path="/services" element={<Services />} />
+				<Route path="/service/:service" element={<SingleService />} />
 
-				<Route path="/contact" element={ <Contact /> } />
-				<Route path="/me" element={ <Me /> } />
+				<Route path="/contact" element={<Contact />} />
+				<Route path="/me" element={<Me />} />
 
-				<Route path="/overview" element={ <Overview /> } />
-				<Route path="/impressum" element={ <Impressum /> } />
-				<Route path="/datenschutz" element={ <Datenschutz /> } />
+				<Route path="/overview" element={<Overview />} />
+				<Route path="/impressum" element={<Impressum />} />
+				<Route path="/datenschutz" element={<Datenschutz />} />
 			</Routes>
 			<Footer />
 		</Router>
 	</ThemeProvider>,
 
-	document.getElementById( "root" )
+	document.getElementById("root")
 );
 
 //serviceWorker.unregister();

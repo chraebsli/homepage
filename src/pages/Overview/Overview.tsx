@@ -8,10 +8,10 @@ import "./Overview.css";
 
 // render the page overview
 const Overview = () => (
-	<main className={ "overview" }>
-		{/* TODO: fix display content */ }
+	<main className={"overview"}>
+		{/* TODO: fix display content */}
 		<Container>
-			<div className={ "page-title" }>
+			<div className={"page-title"}>
 				<p>Übersicht</p>
 			</div>
 
@@ -33,7 +33,7 @@ const Overview = () => (
 						<ListItem href={ "./overview" } icon={ UbersichtIcon } text={ "Übersicht" } />
 						<ListItem href={ "./impressum" } icon={ ImpressumIcon } text={ "Impressum" } />
 						<ListItem href={ "./datenschutz" } icon={ DatenschutzIcon } text={ "Datenschutz" } />
-						*/ }
+						*/}
 					</div>
 				</section>
 			</div>

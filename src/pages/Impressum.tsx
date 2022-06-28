@@ -4,9 +4,9 @@ import React from "react";
 
 // render the page impressum
 const Impressum = () => (
-	<main className={ "impressum" }>
+	<main className={"impressum"}>
 		<Container>
-			<div className={ "page-title" }>
+			<div className={"page-title"}>
 				<p>Impressum</p>
 			</div>
 
