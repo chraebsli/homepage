@@ -10,11 +10,7 @@ const Header = () => (
 	<Navbar collapseOnSelect expand={ "lg" } bg={ "primary" } variant={ "dark" }>
 		<Container>
 			<Navbar.Brand href={ "/" }>
-				<img src={ logo }
-				     alt={ "logo" }
-				     width={ 50 }
-				     height={ 50 }
-				     className={ "d-inline-block align-center" } />
+				<img src={ logo } alt={ "logo" } width={ 50 } height={ 50 } className={ "d-inline-block align-center" } />
 				<span className={ "brand-name" }>chraebsli IT-Services</span>
 			</Navbar.Brand>
 

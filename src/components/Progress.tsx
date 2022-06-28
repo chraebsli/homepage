@@ -12,7 +12,7 @@ class Progress extends React.Component<{
 		max: 100,
 	};
 
-	render() {
+	render(){
 		const {
 			text,
 			icon,

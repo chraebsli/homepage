@@ -57,16 +57,10 @@ const SingleService = () => {
 													mb: 2,
 												} }
 											>
-												<Typography component="p"
-												            className="service-teaser"
-												            variant="body1"
-												            color="text.primary">
+												<Typography component="p" className="service-teaser" variant="body1" color="text.primary">
 													{ service.teaser }
 												</Typography>
-												<Typography component="p"
-												            className="service-description"
-												            variant="body1"
-												            color="text.primary">
+												<Typography component="p" className="service-description" variant="body1" color="text.primary">
 													{ service.description }
 												</Typography>
 											</Box>

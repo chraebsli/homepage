@@ -19,7 +19,7 @@ class PageCard extends React.Component<{
 		buttonVariant: "outlined"
 	};
 
-	render() {
+	render(){
 		const {
 			cardTitle,
 			image,
@@ -54,9 +54,7 @@ class PageCard extends React.Component<{
 							mb: 0,
 						} }
 					>
-						<Typography component="h5"
-						            variant="h5"
-						            color="text.primary">
+						<Typography component="h5" variant="h5" color="text.primary">
 							{ content }
 						</Typography>
 					</Box>

@@ -24,13 +24,7 @@ const Error404 = () => (
 		<Container>
 
 			<div className="page-content page-content-only d-flex justify-content-center">
-				<PageCard cardTitle={ card.title }
-				          image={ card.image }
-				          imageHeight={ "400" }
-				          content={ card.content }
-				          buttonVariant={ card.action.variant }
-				          buttonHref={ card.action.href }
-				          buttonText={ card.action.text } />
+				<PageCard cardTitle={ card.title } image={ card.image } imageHeight={ "400" } content={ card.content } buttonVariant={ card.action.variant } buttonHref={ card.action.href } buttonText={ card.action.text } />
 			</div>
 		</Container>
 	</main>

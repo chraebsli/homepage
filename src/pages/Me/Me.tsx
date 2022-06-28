@@ -23,7 +23,7 @@ const Me = () => (
 							Informatiklehrling im 2. Lehrjahr in der{ " " } <a href="https://tfbern.ch">Technischen
 								Fachschule Bern</a>. <br></br> Am meisten interessiert mich die Webentwicklung. Ich
 							erstelle gerne Websites und Webapps. Mehr dazu in meinen{ " " }
-							<a href="/referenzen">Referenzen</a>.
+						<a href="/referenzen">Referenzen</a>.
 						</Card.Subtitle>
 						<Card.Text className="card-description">
 							<section>

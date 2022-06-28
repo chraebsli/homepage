@@ -14,6 +14,7 @@ import DatenschutzIcon from "../pages/Overview/assets/Datenschutz.svg";
 import IconItem from "../models/iconItem";
 
 // render component
+// eslint-disable-next-line @typescript-eslint/ban-types
 class IconList extends React.Component<{}> {
 
 	size = 25;
@@ -33,7 +34,7 @@ class IconList extends React.Component<{}> {
 		{ text: "Datenschutz", icon: DatenschutzIcon, href: "/datenschutz" },
 	];
 
-	parse(items:IconItem[]) {
+	parse( items: IconItem[] ){
 		return items.map( ( item ) => {
 			if ( !item.subItems ) {
 				return (
@@ -45,14 +46,18 @@ class IconList extends React.Component<{}> {
 			} else {
 				return (
 					<div className="site-subcont f col">
-						{ item.subItems.map( ( subItem ) => {
-							return (this.parse(subItem));
-						}); }
+						{
+							item.subItems.map( ( subItem ) => {
+								// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+								// @ts-ignore
+								return this.parse( subItem );
+							} )
+						}
 
-					<a href={ item.href } className="site-link f">
-						<img src={ item.icon } alt={ item.text } width={ this.size } height={ this.size } />
-						<span>{ item.text }</span>
-					</a>
+						<a href={ item.href } className="site-link f">
+							<img src={ item.icon } alt={ item.text } width={ this.size } height={ this.size } />
+							<span>{ item.text }</span>
+						</a>
 					</div>
 				);
 			}
@@ -60,8 +65,10 @@ class IconList extends React.Component<{}> {
 
 	}
 
-	render() {
-		return (this.parse(this.items));
+	render(){
+		// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+		// @ts-ignore
+		return (this.parse( this.items ));
 	}
 }
 
