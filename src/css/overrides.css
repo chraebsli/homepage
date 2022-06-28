@@ -1,2 +1,4 @@
 /* ********************************************* colors ********************************************* */
-.bg-primary {background-color: var(--prim-color) !important;}
+.bg-primary {
+	background-color: var(--prim-color) !important;
+}

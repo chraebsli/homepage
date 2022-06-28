@@ -2,14 +2,11 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 
-// import assets and css
-import "./Contact.css";
-
 // render the page contact
 const Contact = () => (
-	<main className={ "contact" }>
+	<main className={"contact"}>
 		<Container>
-			<div className={ "page-title" }>
+			<div className={"page-title"}>
 				<p>Über mich</p>
 			</div>
 
@@ -17,15 +14,13 @@ const Contact = () => (
 				<section>
 					<p className="section-title">Kontaktieren Sie mich</p>
 					<p className="section-text">
-						Wenn Sie Fragen oder Anmerkungen haben, wenden Sie sich bitte an{ " " }
+						Wenn Sie Fragen oder Anmerkungen haben, wenden Sie sich bitte an{" "}
 						<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>. Ich beantworte gerne Ihre
-						Fragen
-						und freue mich über Feedback jeglicher Art.
+						Fragen und freue mich über Feedback jeglicher Art.
 					</p>
 				</section>
 
-				{/* TODO: add contact form */ }
-
+				{/* TODO: add contact form */}
 			</div>
 		</Container>
 	</main>

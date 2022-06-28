@@ -19,6 +19,13 @@
 	--inp-hover-color: #e2e2e2;
 }
 
+/* ********************************************* smoother ********************************************* */
+:root {
+	--soft-dark-shadow: 10px 10px 15px 8px #0000001c;
+	--mid-dark-shadow: 10px 10px 15px 10px #0000003d;
+	--hard-dark-shadow: 10px 10px 15px 10px #0000005e;
+}
+
 /* ********************************************* sizes ********************************************* */
 :root {
 	/* gaps */
@@ -48,17 +55,37 @@ body {
 }
 
 /* ********************************************* shortforms ********************************************* */
-.f { display: flex;}
-.c { justify-content: center;}
-.a { align-items: center;}
-.col { flex-direction: column;}
-.row { flex-direction: row;}
+.f {
+	display: flex;
+}
+.c {
+	justify-content: center;
+}
+.a {
+	align-items: center;
+}
+.col {
+	flex-direction: column;
+}
+.row {
+	flex-direction: row;
+}
 
 /* ********************************************* links ********************************************* */
-a.n { text-decoration: none;}
+a.n {
+	text-decoration: none;
+}
 
 /* ********************************************* other ********************************************* */
-.text-sec { color: var(--text-sec-color) !important;}
-.text-center { text-align: center;}
+.text-sec {
+	color: var(--text-sec-color) !important;
+}
+.text-center {
+	text-align: center;
+}
 
-p, a, span { color: var(--text-color);}
+p,
+a,
+span {
+	color: var(--text-color);
+}
