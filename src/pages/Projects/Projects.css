@@ -1,0 +1,11 @@
+/* ********************************************* projects ********************************************* */
+.project-title {
+	font-size: var(--font-size-normal);
+}
+.project-teaser {
+	font-style: italic;
+}
+
+.swiper-slide {
+	max-width: 25rem;
+}

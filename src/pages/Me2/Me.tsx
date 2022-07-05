@@ -135,16 +135,16 @@ export default class Me extends React.Component {
 										<div>
 											<ul>
 												<li className={"project-text"}>
-													<a href={"/projects/chraebsli.dev"}>Homepage</a>
+													<a href={"/project/portfolio"}>Portfolio</a>
 												</li>
 												<li className={"project-text"}>
-													<a href={"/projects/fischlehrpfad.ch"}>fischlehrpfad.ch</a>
+													<a href={"/project/fischlehrpfad.ch"}>fischlehrpfad.ch</a>
 												</li>
 												<li className={"project-text"}>
-													<a href={"/projects/sgrumisberg.ch"}>sgrumisberg.ch</a>
+													<a href={"/project/sgrumisberg.ch"}>sgrumisberg.ch</a>
 												</li>
 												<li className={"project-text"}>
-													<a href={"/projects/mgrumisberg.ch"}>mgrumisberg.ch</a>
+													<a href={"/project/mgrumisberg.ch"}>mgrumisberg.ch</a>
 												</li>
 											</ul>
 										</div>

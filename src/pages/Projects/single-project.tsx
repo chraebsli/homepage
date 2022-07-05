@@ -7,24 +7,25 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia } from "@mui/material";
 import { useParams } from "react-router-dom";
-// import assets and css
-import "./Services.css";
-import Service from "../../models/service";
-import servicesList from "./services-list";
 
-// render the page services
-const SingleService = () => {
-	const name = useParams().service;
-	const service = servicesList.find(s => s.id === name) as Service;
-	const pageName = service.title;
+// import assets and css
+import "./Projects.css";
+import Project from "../../models/project";
+import projectsList from "./projects-list";
+
+// render the page projects
+const SingleProject = () => {
+	const name = useParams().project;
+	const project = projectsList.find(s => s.id === name) as Project;
+	const pageName = project.title;
 
 	return (
 		<>
 			<Head title={pageName} />
-			<main className={"services"}>
+			<main className={"projects"}>
 				<Container>
 					<div className={"page-title"}>
-						<p>{service.title}</p>
+						<p>{project.title}</p>
 					</div>
 
 					<div className="page-content c-flex justify-content-center">
@@ -32,17 +33,17 @@ const SingleService = () => {
 						<React.Fragment>
 							<Container maxWidth="md" component="main">
 								<Grid container spacing={5} alignItems="flex-end">
-									<Grid item key={service.title} xs={12} sm={6} md={6}>
+									<Grid item key={project.title} xs={12} sm={6} md={6}>
 										<Card>
 											<CardMedia
 												component={"img"}
 												height={"200"}
-												image={service.image}
+												image={project.image}
 												alt={"image"}
 											/>
 
 											<CardHeader
-												title={service.title}
+												title={project.title}
 												titleTypographyProps={{ align: "center" }}
 											/>
 											<CardContent>
@@ -56,21 +57,14 @@ const SingleService = () => {
 													}}>
 													<Typography
 														component="p"
-														className="service-teaser"
+														className="project-description"
 														variant="body1"
 														color="text.primary">
-														{service.teaser}
-													</Typography>
-													<Typography
-														component="p"
-														className="service-description"
-														variant="body1"
-														color="text.primary">
-														{service.description}
+														{project.description}
 													</Typography>
 												</Box>
 												<ul>
-													{service.features.map(line => (
+													{project.content.map(line => (
 														<Typography component="li" variant="subtitle1" key={line}>
 															{line}
 														</Typography>
@@ -80,9 +74,9 @@ const SingleService = () => {
 											<CardActions>
 												<Button
 													fullWidth
-													variant={service.buttonVariant as "outlined" | "contained"}
-													href={service.href}>
-													{service.buttonText}
+													variant={project.buttonVariant as "outlined" | "contained"}
+													href={project.href}>
+													{project.buttonText}
 												</Button>
 											</CardActions>
 										</Card>
@@ -97,4 +91,4 @@ const SingleService = () => {
 	);
 };
 
-export default SingleService;
+export default SingleProject;
