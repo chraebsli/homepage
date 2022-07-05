@@ -1,20 +1,27 @@
 // import libraries
 import React from "react";
-import { Container } from "react-bootstrap";
+import Head from "../components/Head";
+import Container from "@mui/material/Container";
 
-// render the page datenschutz
-const Datenschutz = () => (
-	<main className={"datenschutz"}>
-		<Container>
-			<div className={"page-title"}>
-				<p>Datenschutz</p>
-			</div>
+export default class Datenschutz extends React.Component {
+	pageName = "Datenschutz";
 
-			<div className="page-content d-flex justify-content-center">
-				<section></section>
-			</div>
-		</Container>
-	</main>
-);
+	render() {
+		return (
+			<>
+				<Head title={this.pageName} />
+				<main className={this.pageName.toLowerCase()}>
+					<Container>
+						<div className={"page-title"}>
+							<p>{this.pageName}</p>
+						</div>
 
-export default Datenschutz;
+						<div className="page-content d-flex justify-content-center">
+							<section></section>
+						</div>
+					</Container>
+				</main>
+			</>
+		);
+	}
+}

@@ -10,82 +10,90 @@ import { useParams } from "react-router-dom";
 import "./Services.css";
 import servicesList from "./services-list";
 import Service from "../../models/service";
+import Head from "../../components/Head";
 
 // render the page services
 const SingleService = () => {
 	const name = useParams().service;
 	const service = servicesList.find(s => s.id === name) as Service;
+	const pageName = service.title;
 
 	return (
-		<main className={"services"}>
-			<Container>
-				<div className={"page-title"}>
-					<p>{service.title}</p>
-				</div>
+		<>
+			<Head title={pageName} />
+			<main className={"services"}>
+				<Container>
+					<div className={"page-title"}>
+						<p>{service.title}</p>
+					</div>
 
-				<div className="page-content c-flex justify-content-center">
-					<GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }} />
-					<React.Fragment>
-						<Container maxWidth="md" component="main">
-							<Grid container spacing={5} alignItems="flex-end">
-								<Grid item key={service.title} xs={12} sm={6} md={6}>
-									<Card>
-										<CardMedia
-											component={"img"}
-											height={"200"}
-											image={service.image}
-											alt={"image"}
-										/>
+					<div className="page-content c-flex justify-content-center">
+						<GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }} />
+						<React.Fragment>
+							<Container maxWidth="md" component="main">
+								<Grid container spacing={5} alignItems="flex-end">
+									<Grid item key={service.title} xs={12} sm={6} md={6}>
+										<Card>
+											<CardMedia
+												component={"img"}
+												height={"200"}
+												image={service.image}
+												alt={"image"}
+											/>
 
-										<CardHeader title={service.title} titleTypographyProps={{ align: "center" }} />
-										<CardContent>
-											<Box
-												sx={{
-													display: "flex",
-													flexDirection: "column",
-													justifyContent: "flex-start",
-													alignItems: "baseline",
-													mb: 2,
-												}}>
-												<Typography
-													component="p"
-													className="service-teaser"
-													variant="body1"
-													color="text.primary">
-													{service.teaser}
-												</Typography>
-												<Typography
-													component="p"
-													className="service-description"
-													variant="body1"
-													color="text.primary">
-													{service.description}
-												</Typography>
-											</Box>
-											<ul>
-												{service.features.map(line => (
-													<Typography component="li" variant="subtitle1" key={line}>
-														{line}
+											<CardHeader
+												title={service.title}
+												titleTypographyProps={{ align: "center" }}
+											/>
+											<CardContent>
+												<Box
+													sx={{
+														display: "flex",
+														flexDirection: "column",
+														justifyContent: "flex-start",
+														alignItems: "baseline",
+														mb: 2,
+													}}>
+													<Typography
+														component="p"
+														className="service-teaser"
+														variant="body1"
+														color="text.primary">
+														{service.teaser}
 													</Typography>
-												))}
-											</ul>
-										</CardContent>
-										<CardActions>
-											<Button
-												fullWidth
-												variant={service.buttonVariant as "outlined" | "contained"}
-												href={service.href}>
-												{service.buttonText}
-											</Button>
-										</CardActions>
-									</Card>
+													<Typography
+														component="p"
+														className="service-description"
+														variant="body1"
+														color="text.primary">
+														{service.description}
+													</Typography>
+												</Box>
+												<ul>
+													{service.features.map(line => (
+														<Typography component="li" variant="subtitle1" key={line}>
+															{line}
+														</Typography>
+													))}
+												</ul>
+											</CardContent>
+											<CardActions>
+												<Button
+													fullWidth
+													variant={service.buttonVariant as "outlined" | "contained"}
+													href={service.href}>
+													{service.buttonText}
+												</Button>
+											</CardActions>
+										</Card>
+									</Grid>
 								</Grid>
-							</Grid>
-						</Container>
-					</React.Fragment>
-				</div>
-			</Container>
-		</main>
+							</Container>
+						</React.Fragment>
+					</div>
+				</Container>
+			</main>
+		</>
 	);
 };
 

@@ -1,40 +1,47 @@
 // import libraries
 import React from "react";
 import { Container } from "react-bootstrap";
+import PageCard from "../../components/PageCard";
+import Head from "../../components/Head";
 
 // import assets and css
 import ImageError from "./assets/error-404.jpg";
-import PageCard from "../../components/PageCard";
 
-const card = {
-	title: "Error 404",
-	name: "Error 404",
-	image: ImageError,
-	content: "Die Seite wurde nicht gefunden.",
-	action: {
-		variant: "outlined",
-		href: "/",
-		text: "zur Startseite",
-	},
-};
+// render the page error 404
+export default class Home extends React.Component {
+	pageName = "Error 404";
+	card = {
+		title: "Error 404",
+		name: "Error 404",
+		image: ImageError,
+		content: "Diese Seite wurde nicht gefunden.",
+		action: {
+			variant: "outlined",
+			href: "/",
+			text: "zur Startseite",
+		},
+	};
 
-// render the page home
-const Error404 = () => (
-	<main className={"error"}>
-		<Container>
-			<div className="page-content page-content-only d-flex justify-content-center">
-				<PageCard
-					cardTitle={card.title}
-					image={card.image}
-					imageHeight={"400"}
-					content={card.content}
-					buttonVariant={card.action.variant}
-					buttonHref={card.action.href}
-					buttonText={card.action.text}
-				/>
-			</div>
-		</Container>
-	</main>
-);
-
-export default Error404;
+	render() {
+		return (
+			<>
+				<Head title={this.pageName} />
+				<main className={this.pageName.toLowerCase()}>
+					<Container>
+						<div className="page-content page-content-only d-flex justify-content-center">
+							<PageCard
+								cardTitle={this.card.title}
+								image={this.card.image}
+								imageHeight={"400"}
+								content={this.card.content}
+								buttonVariant={this.card.action.variant}
+								buttonHref={this.card.action.href}
+								buttonText={this.card.action.text}
+							/>
+						</div>
+					</Container>
+				</main>
+			</>
+		);
+	}
+}
