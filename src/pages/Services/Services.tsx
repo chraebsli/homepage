@@ -10,7 +10,7 @@ import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-//import { Outlet } from "react-router-dom";
+
 // import assets and css
 import "./Services.css";
 import servicesList from "./services-list";

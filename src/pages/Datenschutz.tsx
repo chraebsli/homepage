@@ -16,9 +16,8 @@ export default class Datenschutz extends React.Component {
 							<p>{this.pageName}</p>
 						</div>
 
-						<div className="page-content d-flex justify-content-center">
-							<section></section>
-						</div>
+						<p>noch kein Inhalt vorhanden</p>
+						<div className="page-content d-flex justify-content-center"></div>
 					</Container>
 				</main>
 			</>

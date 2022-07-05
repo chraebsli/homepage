@@ -20,17 +20,18 @@ export default class Impressum extends React.Component {
 							<section>
 								<p className="section-title">Betreiber</p>
 								<p className="section-text text-space">
-									Diese Website wurde erstellt und wird Betrieben von:
+									Diese Website wurde erstellt und wird Betrieben von
 								</p>
 								<address>
 									Nicholas Krebs<br></br>
 									Breitebüneweg 5<br></br>
 									4539 Rumisberg<br></br>
-									CH
+									Bern, CH
 								</address>
 								<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
 								<p className="section-text text-space">
-									Bitte melden SIe sich bei Fragen oder Anmerkungen
+									Bitte melden Sie sich bei Fragen oder Anmerkungen an die oben angegebene
+									Email-Adresse.
 								</p>
 							</section>
 						</div>

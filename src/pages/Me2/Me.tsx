@@ -1,6 +1,8 @@
 // import libraries
 import React from "react";
-import { Card, Container, Stack } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import Container from "@mui/material/Container";
+import Stack from "@mui/material/Stack";
 import Progress from "../../components/Progress";
 import Head from "../../components/Head";
 
@@ -36,7 +38,7 @@ export default class Me extends React.Component {
 				<Head title={this.pageName} />
 				<main className={this.pageName.toLowerCase()}>
 					<Container>
-						<Stack>
+						<Stack spacing={3}>
 							<Card className={"me-card"} id={"me"}>
 								<Card.Body>
 									<Card.Title>
@@ -59,15 +61,15 @@ export default class Me extends React.Component {
 								<Card.Body>
 									<Card.Title>
 										<h2>
-											<GiProgression /> skills{" "}
+											<GiProgression /> skills
 										</h2>
 									</Card.Title>
-									<Stack direction={"horizontal"}>
+									<Stack direction={"row"} spacing={3}>
 										<Card className={"skills-techs-card"} id={"skills-techs"}>
 											<Card.Body>
 												<Card.Title>
 													<h2>
-														<RiCodeSSlashFill /> languages{" "}
+														<RiCodeSSlashFill /> languages
 													</h2>
 												</Card.Title>
 												<Card.Text>
@@ -77,7 +79,7 @@ export default class Me extends React.Component {
 															HTML / <SiCss3 />
 															CSS
 														</span>
-														<progress className={"progress"} value={"90"} max={"100"} />
+														<progress className={"progress"} value={"70"} max={"100"} />
 													</div>
 													<div>
 														<span className={"progress-text"}>
@@ -85,12 +87,12 @@ export default class Me extends React.Component {
 															JS / <SiTypescript />
 															TS
 														</span>
-														<progress className={"progress"} value={"70"} max={"100"} />
+														<progress className={"progress"} value={"50"} max={"100"} />
 													</div>
-													<Progress text={"MySQL"} icon={<SiMysql />} progress={90} />
-													<Progress text={"Python"} icon={<SiPython />} progress={90} />
-													<Progress text={"React"} icon={<SiReact />} progress={90} />
-													<Progress text={"PHP"} icon={<SiPhp />} progress={90} />
+													<Progress text={"MySQL"} icon={<SiMysql />} progress={80} />
+													<Progress text={"React"} icon={<SiReact />} progress={60} />
+													<Progress text={"PHP"} icon={<SiPhp />} progress={70} />
+													<Progress text={"Python"} icon={<SiPython />} progress={50} />
 												</Card.Text>
 											</Card.Body>
 										</Card>
@@ -98,24 +100,24 @@ export default class Me extends React.Component {
 											<Card.Body>
 												<Card.Title>
 													<h2>
-														<FaTools /> tools{" "}
+														<FaTools /> tools
 													</h2>
 												</Card.Title>
 												<Card.Text>
-													<Progress text={"Jira"} icon={<SiJirasoftware />} progress={90} />
-													<Progress text={"Webstorm"} icon={<SiWebstorm />} progress={90} />
 													<Progress
-														text={"VSCode"}
+														text={"VS Code"}
 														icon={<SiVisualstudiocode />}
-														progress={90}
+														progress={80}
 													/>
-													<Progress text={"Github"} icon={<SiGithub />} progress={90} />
+													<Progress text={"Webstorm"} icon={<SiWebstorm />} progress={70} />
+													<Progress text={"Github"} icon={<SiGithub />} progress={80} />
 													<Progress
 														text={"Cloudflare"}
 														icon={<SiCloudflare />}
-														progress={90}
+														progress={75}
 													/>
-													<Progress text={"Linux"} icon={<SiLinux />} progress={90} />
+													<Progress text={"Jira"} icon={<SiJirasoftware />} progress={60} />
+													<Progress text={"Linux"} icon={<SiLinux />} progress={50} />
 												</Card.Text>
 											</Card.Body>
 										</Card>
@@ -133,16 +135,16 @@ export default class Me extends React.Component {
 										<div>
 											<ul>
 												<li className={"project-text"}>
-													<a href={"https://chraebsli.dev"}>Homepage</a>
+													<a href={"/projects/chraebsli.dev"}>Homepage</a>
 												</li>
 												<li className={"project-text"}>
-													<a href={"https://fischlehrpfad.ch"}>fischlehrpfad.ch</a>
+													<a href={"/projects/fischlehrpfad.ch"}>fischlehrpfad.ch</a>
 												</li>
 												<li className={"project-text"}>
-													<a href={"https://sgrumisberg.ch"}>sgrumisberg.ch</a>
+													<a href={"/projects/sgrumisberg.ch"}>sgrumisberg.ch</a>
 												</li>
 												<li className={"project-text"}>
-													<a href={"https://mgrumisberg.ch"}>mgrumisberg.ch</a>
+													<a href={"/projects/mgrumisberg.ch"}>mgrumisberg.ch</a>
 												</li>
 											</ul>
 										</div>
