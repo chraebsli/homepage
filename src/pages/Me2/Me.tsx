@@ -8,7 +8,6 @@ import Head from "../../components/Head";
 
 // import assets and css
 import "./Me.css";
-import PersonIcon from "@mui/icons-material/Person";
 import {
 	SiCloudflare,
 	SiCss3,
@@ -25,9 +24,11 @@ import {
 	SiVisualstudiocode,
 	SiWebstorm,
 } from "react-icons/si";
-import { GiProgression } from "react-icons/gi";
-import { FaLaptopCode, FaTools } from "react-icons/fa";
-import { RiCodeSSlashFill } from "react-icons/ri";
+import PersonIcon from "@mui/icons-material/Person";
+import SchoolIcon from "@mui/icons-material/School";
+import CodeIcon from "@mui/icons-material/Code";
+import ConstructionIcon from "@mui/icons-material/Construction";
+import WebIcon from "@mui/icons-material/Web";
 
 export default class Me extends React.Component {
 	pageName = "Me";
@@ -43,16 +44,27 @@ export default class Me extends React.Component {
 								<Card.Body>
 									<Card.Title>
 										<h2>
-											<PersonIcon /> about me{" "}
+											<PersonIcon /> about me
 										</h2>
 									</Card.Title>
 									<Card.Text>
 										<p>
-											Mein Name ist Nicholas Krebs und ich bin ein Informatik Lehrling im 2.
-											Lehrjahr in der <a href="https://www.tfbern.ch/">Technischen Fachschule</a>{" "}
-											in Bern. Ich interessiere mich sehr für Informatik und vorallem für die
-											Webentwicklung. Ich programmiere gerne Webseiten sowie auch Webapps. Mehr
-											dazu in den <a href={"#references"}>Referenzen</a>
+											Mein Name ist Nicholas Krebs und ich bin ein <b>Informatik Lehrling</b>{" "}
+											Fachrichtung Betriebsinformatik im <b>3. Lehrjahr</b> in der{" "}
+											<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
+											interessiere mich sehr für die Informatik und speziell für die{" "}
+											<b>Webentwicklung</b> in der Ich dieses Jahr mich spezialisieren werde.
+											<br />
+											Auch in meiner <b>Freizeit</b> investiere ich meine Zeit gerne in das{" "}
+											<b>Lernen oder Weiterbilden</b> neuer Programmiersprachen. Früher habe ich
+											kleinere Projekte erstellt um praktische lernen zu können. Nun möchte ich
+											aber anfangen, <b>grössere Projekte</b> neben meiner Arbeit zu entwickeln.
+											Ein Beispiel ist diese Website, die ich{" "}
+											<b>selbstständig gestalten und entwickelt</b> habe.
+											<br />
+											Aber auch für Vereine aus meiner Umgebung habe ich bereits eine Website
+											entwickelt oder entwickle gerade eine. Mehr dazu bei den{" "}
+											<a href={"#projects"}>Projekten</a>
 										</p>
 									</Card.Text>
 								</Card.Body>
@@ -61,16 +73,22 @@ export default class Me extends React.Component {
 								<Card.Body>
 									<Card.Title>
 										<h2>
-											<GiProgression /> skills
+											<SchoolIcon /> skills
 										</h2>
 									</Card.Title>
+									<Card.Text>
+										<p>
+											Hier sind einzelne Skills, die ich in meiner Freizeit und bei meiner Arbeit
+											erlernt und weiterentwickelt habe.
+										</p>
+									</Card.Text>
 									<Stack direction={"row"} spacing={3}>
 										<Card className={"skills-techs-card"} id={"skills-techs"}>
 											<Card.Body>
 												<Card.Title>
-													<h2>
-														<RiCodeSSlashFill /> languages
-													</h2>
+													<h3>
+														<CodeIcon /> languages
+													</h3>
 												</Card.Title>
 												<Card.Text>
 													<div>
@@ -99,9 +117,9 @@ export default class Me extends React.Component {
 										<Card className={"skills-soft-card"} id={"skills-soft"}>
 											<Card.Body>
 												<Card.Title>
-													<h2>
-														<FaTools /> tools
-													</h2>
+													<h3>
+														<ConstructionIcon /> dev tools
+													</h3>
 												</Card.Title>
 												<Card.Text>
 													<Progress
@@ -124,27 +142,30 @@ export default class Me extends React.Component {
 									</Stack>
 								</Card.Body>
 							</Card>
-							<Card className={"references-card"} id={"references"}>
+							<Card className={"projects-card"} id={"projects"}>
 								<Card.Body>
 									<Card.Title>
 										<h2>
-											<FaLaptopCode /> references{" "}
+											<WebIcon /> projects
 										</h2>
 									</Card.Title>
+									<Card.Text>
+										<p>
+											Projekte, an denen ich von der Arbeit asu beteiligt war oder die in meiner
+											Freizeit entwickelt habe.
+										</p>
+									</Card.Text>
 									<Card.Text>
 										<div>
 											<ul>
 												<li className={"project-text"}>
-													<a href={"/project/portfolio"}>Portfolio</a>
+													<a href={"/project/personal-website"}>eigene Website</a>
 												</li>
 												<li className={"project-text"}>
-													<a href={"/project/fischlehrpfad.ch"}>fischlehrpfad.ch</a>
+													<a href={"/project/fischlehrpfad"}>Fischlehrpfad</a>
 												</li>
 												<li className={"project-text"}>
 													<a href={"/project/sgrumisberg.ch"}>sgrumisberg.ch</a>
-												</li>
-												<li className={"project-text"}>
-													<a href={"/project/mgrumisberg.ch"}>mgrumisberg.ch</a>
 												</li>
 											</ul>
 										</div>

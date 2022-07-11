@@ -1,8 +1,34 @@
 /* ********************************************* über ********************************************* */
-.me .lebenslauf {
-	gap: 1rem;
+.me #skills .card {
+	width: auto;
+}
+.me b {
+	font-weight: 600;
+}
+.me h2, .me h3 {
+	margin-bottom: 1rem;
+}
+.me h2 svg, .me h3 svg{
+	margin-right: 1rem;
 }
 
-.me .lebenslauf .name {
-	font-weight: 500;
+.me #skills progress {
+	width: 100%;
+	border-radius: 0;
+	margin-bottom: .7rem;
+}
+.me #skills progress::-webkit-progress-bar {
+	background: #bbbbbb;
+}
+
+.me #skills progress::-webkit-progress-value {
+	background: var(--prim-color);
+}
+
+.me #skills .progress-text {
+	display: flex;
+	align-items: center;
+}
+.me #skills .progress-text svg {
+	margin-right: .2rem;
 }
