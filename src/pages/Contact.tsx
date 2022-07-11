@@ -1,6 +1,6 @@
 // import libraries
 import React from "react";
-import Head from "../components/Head";
+import Head from "../components/common/Head";
 import Container from "@mui/material/Container";
 
 export default class Contact extends React.Component {

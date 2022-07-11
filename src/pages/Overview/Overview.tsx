@@ -2,7 +2,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import IconList from "../../components/IconList";
-import Head from "../../components/Head";
+import Head from "../../components/common/Head";
 
 // import assets and css
 import "./Overview.css";

@@ -1,6 +1,6 @@
 // import libraries
 import React from "react";
-import Head from "../../components/Head";
+import Head from "../../components/common/Head";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";

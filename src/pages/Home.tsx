@@ -1,7 +1,7 @@
 // import libraries
 import React from "react";
 import { Container } from "react-bootstrap";
-import Head from "../components/Head";
+import Head from "../components/common/Head";
 
 // render the page home
 export default class Home extends React.Component {

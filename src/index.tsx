@@ -11,17 +11,14 @@ import "./css/comonents.css";
 import "./css/responsive.css";
 
 // import components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Fallback from "./components/Fallback";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
+import Fallback from "./components/common/Fallback";
 
 // import pages
 import Home from "./pages/Home";
 import Services from "./pages/Services/Services";
 import SingleService from "./pages/Services/single-service";
-
-import Projects from "./pages/Projects/Projects";
-import SingleProject from "./pages/Projects/single-project";
 
 import Contact from "./pages/Contact";
 import Me from "./pages/Me2/Me";
@@ -42,9 +39,6 @@ ReactDOM.render(
 					<Route path="*" element={<Error404 />} />
 					<Route path="/services" element={<Services />} />
 					<Route path="/service/:service" element={<SingleService />} />
-
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/project/:project" element={<SingleProject />} />
 
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/me" element={<Me />} />

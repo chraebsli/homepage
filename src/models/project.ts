@@ -4,7 +4,7 @@ export default class Project {
 	href: string;
 	image: string;
 	description: string;
-	content: string[];
+	content: string;
 	buttonText: string;
 	buttonVariant: string;
 
@@ -14,7 +14,7 @@ export default class Project {
 		href: string;
 		image: string;
 		description: string;
-		content: string[];
+		content: string;
 		buttonText: string;
 		buttonVariant: string;
 	}) {

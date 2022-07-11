@@ -3,35 +3,21 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
-import Progress from "../../components/Progress";
-import Head from "../../components/Head";
+import Head from "../../components/common/Head";
+import Projects from "../../components/me/Projects";
+import Languages from "../../components/me/Languages";
+import DevTools from "../../components/me/DevTools";
 
 // import assets and css
 import "./Me.css";
-import {
-	SiCloudflare,
-	SiCss3,
-	SiGithub,
-	SiHtml5,
-	SiJavascript,
-	SiJirasoftware,
-	SiLinux,
-	SiMysql,
-	SiPhp,
-	SiPython,
-	SiReact,
-	SiTypescript,
-	SiVisualstudiocode,
-	SiWebstorm,
-} from "react-icons/si";
+import projectsList from "../Projects/projects-list";
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
-import CodeIcon from "@mui/icons-material/Code";
-import ConstructionIcon from "@mui/icons-material/Construction";
 import WebIcon from "@mui/icons-material/Web";
 
 export default class Me extends React.Component {
 	pageName = "Me";
+	projects = projectsList;
 
 	render() {
 		return (
@@ -83,62 +69,8 @@ export default class Me extends React.Component {
 										</p>
 									</Card.Text>
 									<Stack direction={"row"} spacing={3}>
-										<Card className={"skills-techs-card"} id={"skills-techs"}>
-											<Card.Body>
-												<Card.Title>
-													<h3>
-														<CodeIcon /> languages
-													</h3>
-												</Card.Title>
-												<Card.Text>
-													<div>
-														<span className={"progress-text"}>
-															<SiHtml5 />
-															HTML / <SiCss3 />
-															CSS
-														</span>
-														<progress className={"progress"} value={"70"} max={"100"} />
-													</div>
-													<div>
-														<span className={"progress-text"}>
-															<SiJavascript />
-															JS / <SiTypescript />
-															TS
-														</span>
-														<progress className={"progress"} value={"50"} max={"100"} />
-													</div>
-													<Progress text={"MySQL"} icon={<SiMysql />} progress={80} />
-													<Progress text={"React"} icon={<SiReact />} progress={60} />
-													<Progress text={"PHP"} icon={<SiPhp />} progress={70} />
-													<Progress text={"Python"} icon={<SiPython />} progress={50} />
-												</Card.Text>
-											</Card.Body>
-										</Card>
-										<Card className={"skills-soft-card"} id={"skills-soft"}>
-											<Card.Body>
-												<Card.Title>
-													<h3>
-														<ConstructionIcon /> dev tools
-													</h3>
-												</Card.Title>
-												<Card.Text>
-													<Progress
-														text={"VS Code"}
-														icon={<SiVisualstudiocode />}
-														progress={80}
-													/>
-													<Progress text={"Webstorm"} icon={<SiWebstorm />} progress={70} />
-													<Progress text={"Github"} icon={<SiGithub />} progress={80} />
-													<Progress
-														text={"Cloudflare"}
-														icon={<SiCloudflare />}
-														progress={75}
-													/>
-													<Progress text={"Jira"} icon={<SiJirasoftware />} progress={60} />
-													<Progress text={"Linux"} icon={<SiLinux />} progress={50} />
-												</Card.Text>
-											</Card.Body>
-										</Card>
+										<Languages />
+										<DevTools />
 									</Stack>
 								</Card.Body>
 							</Card>
@@ -151,25 +83,11 @@ export default class Me extends React.Component {
 									</Card.Title>
 									<Card.Text>
 										<p>
-											Projekte, an denen ich von der Arbeit asu beteiligt war oder die in meiner
+											Projekte, an denen ich von der Arbeit aus beteiligt war oder die in meiner
 											Freizeit entwickelt habe.
 										</p>
 									</Card.Text>
-									<Card.Text>
-										<div>
-											<ul>
-												<li className={"project-text"}>
-													<a href={"/project/personal-website"}>eigene Website</a>
-												</li>
-												<li className={"project-text"}>
-													<a href={"/project/fischlehrpfad"}>Fischlehrpfad</a>
-												</li>
-												<li className={"project-text"}>
-													<a href={"/project/sgrumisberg.ch"}>sgrumisberg.ch</a>
-												</li>
-											</ul>
-										</div>
-									</Card.Text>
+									<Projects />
 								</Card.Body>
 							</Card>
 						</Stack>
