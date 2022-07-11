@@ -13,6 +13,7 @@ import "./css/responsive.css";
 // import components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Fallback from "./components/Fallback";
 
 // import pages
 import Home from "./pages/Home";
@@ -35,22 +36,24 @@ ReactDOM.render(
 	<ThemeProvider breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}>
 		<Router>
 			<Header />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="*" element={<Error404 />} />
-				<Route path="/services" element={<Services />} />
-				<Route path="/service/:service" element={<SingleService />} />
+			<React.Suspense fallback={Fallback}>
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="*" element={<Error404 />} />
+					<Route path="/services" element={<Services />} />
+					<Route path="/service/:service" element={<SingleService />} />
 
-				<Route path="/projects" element={<Projects />} />
-				<Route path="/project/:project" element={<SingleProject />} />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/project/:project" element={<SingleProject />} />
 
-				<Route path="/contact" element={<Contact />} />
-				<Route path="/me" element={<Me />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/me" element={<Me />} />
 
-				<Route path="/overview" element={<Overview />} />
-				<Route path="/impressum" element={<Impressum />} />
-				<Route path="/datenschutz" element={<Datenschutz />} />
-			</Routes>
+					<Route path="/overview" element={<Overview />} />
+					<Route path="/impressum" element={<Impressum />} />
+					<Route path="/datenschutz" element={<Datenschutz />} />
+				</Routes>
+			</React.Suspense>
 			<Footer />
 		</Router>
 	</ThemeProvider>,
