@@ -46,6 +46,7 @@ ReactDOM.render(
 					<Route path="/overview" element={<Overview />} />
 					<Route path="/impressum" element={<Impressum />} />
 					<Route path="/datenschutz" element={<Datenschutz />} />
+					<Route path="/loader" element={<Fallback />} />
 				</Routes>
 			</React.Suspense>
 			<Footer />

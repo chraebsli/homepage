@@ -4,18 +4,24 @@ import { Card } from "react-bootstrap";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Grid from "@mui/material/Grid";
-import { Box, Button, CardActions, CardContent, CardHeader, CardMedia } from "@mui/material";
+import { Box, Button, CardActions, CardContent, CardHeader, CardMedia, Skeleton } from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 // import assets
-import projectsList from "../../pages/Projects/projects-list";
-import Project from "../../models/project";
+import projectsList from "../pages/Projects/projects-list";
+import Project from "../models/project";
 
 // render component
-class Projects extends React.Component {
-	private projects: Project[] = projectsList;
+class ProjectsList extends React.Component<{
+	loading?: boolean;
+}> {
+	static defaultProps = {
+		loading: false,
+	};
+	projects: Project[] = projectsList;
 
 	render() {
+		const { loading } = this.props;
 		return (
 			<Swiper
 				slidesPerView={"auto"}
@@ -37,7 +43,11 @@ class Projects extends React.Component {
 					<SwiperSlide>
 						<Grid item key={project.title} xs={12} sm={9} md={6}>
 							<Card>
-								<CardMedia component={"img"} height={"200"} image={project.image} alt={"image"} />
+								{loading ? (
+									<Skeleton animation="wave" variant="rectangular" height={200} />
+								) : (
+									<CardMedia component={"img"} height={"200"} image={project.image} alt={"image"} />
+								)}
 
 								<CardHeader title={project.title} titleTypographyProps={{ align: "center" }} />
 								<CardContent>
@@ -82,4 +92,4 @@ class Projects extends React.Component {
 	}
 }
 
-export default Projects;
+export default ProjectsList;

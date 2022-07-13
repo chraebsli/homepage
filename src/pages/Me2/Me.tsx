@@ -4,7 +4,7 @@ import { Card } from "react-bootstrap";
 import Container from "@mui/material/Container";
 import Stack from "@mui/material/Stack";
 import Head from "../../components/common/Head";
-import Projects from "../../components/me/Projects";
+import ProjectsList from "../../components/ProjectsList";
 import Languages from "../../components/me/Languages";
 import DevTools from "../../components/me/DevTools";
 
@@ -87,7 +87,7 @@ export default class Me extends React.Component {
 											Freizeit entwickelt habe.
 										</p>
 									</Card.Text>
-									<Projects />
+									<ProjectsList />
 								</Card.Body>
 							</Card>
 						</Stack>
