@@ -16,7 +16,7 @@ import Footer from "./components/common/Footer";
 import Fallback from "./components/common/Fallback";
 
 // import pages
-import Home from "./pages/Home";
+import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import SingleService from "./pages/Services/single-service";
 

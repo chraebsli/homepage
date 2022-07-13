@@ -23,8 +23,9 @@ const servicesList = () => {
 			href: "/project/personal-website",
 			image: ImageITSupport,
 			description:
-				"Dieses Projekt ist kurz gesagt die Website, die Sie gerade betrachten. Ich habe diese selber" +
-				" designed und programmiert. Dazu habe ich Node.js und React mit Typescript verwendet.",
+				"Dieses Projekt ist kurz gesagt die Website, die Sie gerade betrachten. Ich habe diese Website selber" +
+				" designed und anschliessen programmiert. Dazu habe ich Node.js und React mit Typescript verwendet," +
+				" die ich selbständig erlernt habe.",
 			content: "",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "contained",
@@ -35,8 +36,9 @@ const servicesList = () => {
 			href: "/project/sgrumisberg",
 			image: ImageITSupport,
 			description:
-				"Ein Verein aus meinem Dorf wollte eine neue Website für ihren Schützenverein eröffnen. Ich habe die" +
-				" Website mit dem CMS Grav entwickelt.",
+				"Meine erste Website für einen privaten Kunden. Es ist ein Verein aus meinem Dorf, der eine " +
+				" Website für ihren Schützenverein eröffnen wollte. Ich habe die Website mit dem CMS Grav entwickelt" +
+				" und konnte so erste Erfahrungen sammeln.",
 			content: "",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",

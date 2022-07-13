@@ -14,18 +14,20 @@ import Project from "../models/project";
 // render component
 class ProjectsList extends React.Component<{
 	loading?: boolean;
+	space?: number;
 }> {
 	static defaultProps = {
 		loading: false,
+		space: 30,
 	};
 	projects: Project[] = projectsList;
 
 	render() {
-		const { loading } = this.props;
+		const { loading, space } = this.props;
 		return (
 			<Swiper
 				slidesPerView={"auto"}
-				spaceBetween={30}
+				spaceBetween={space}
 				loop={true}
 				pagination={{
 					clickable: true,
