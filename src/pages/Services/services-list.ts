@@ -43,8 +43,8 @@ const servicesList = () => {
 			image: ImageBuildPC,
 			teaser: "Möchten Sie einen PC für zu Hause der Ihren Anforderungen entspricht?",
 			description:
-				"Ich baue oder erweitere für Sie einen PC, mit den Spezifikationen, die er für Ihren" +
-				" gebrauch benötigt. So haben Sie einen PC, der optimiert für Sie ist. ",
+				"Ich baue oder erweitere für Sie einen PC, mit den Spezifikationen, die für Ihren" +
+				" Gebrauch perfekt angepasst sind. So haben Sie einen PC, der optimiert für Sie ist. ",
 			features: ["für Sie optimiert", "neuer PC", "Beratung"],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",

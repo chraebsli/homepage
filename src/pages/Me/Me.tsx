@@ -1,83 +1,99 @@
 // import libraries
 import React from "react";
-import { Card, Container, Stack } from "react-bootstrap";
+import { Card } from "react-bootstrap";
+import Container from "@mui/material/Container";
+import Stack from "@mui/material/Stack";
+import Head from "../../components/common/Head";
+import ProjectsList from "../../components/ProjectsList";
+import Languages from "../../components/me/Languages";
+import DevTools from "../../components/me/DevTools";
 
 // import assets and css
 import "./Me.css";
-//import ImageOfMe from "./assets/me.jpg";
+import projectsList from "../Projects/projects-list";
+import PersonIcon from "@mui/icons-material/Person";
+import SchoolIcon from "@mui/icons-material/School";
+import WebIcon from "@mui/icons-material/Web";
 
-// render the page me
-const Me = () => (
-	<main className={"me"}>
-		<Container>
-			<div className={"page-title"}>
-				<p>Über mich</p>
-			</div>
+export default class Me extends React.Component {
+	pageName = "Me";
+	projects = projectsList;
 
-			<div className="page-content d-flex justify-content-center">
-				<Card>
-					<Card.Img variant={"top"} /*src={ ImageOfMe }*/ />
-					<Card.Body>
-						<Card.Title className="card-title">Über mich</Card.Title>
-						<Card.Subtitle className="card-teaser mb-2 text-muted">
-							Ich bin Nicholas Krebs, ein Informatiklehrling im 2. Lehrjahr in der{" "}
-							<a href="https://tfbern.ch">Technischen Fachschule Bern</a>. <br></br> Am meisten
-							interessiert mich die Webentwicklung. Ich erstelle gerne Websites und Webapps. Mehr dazu in
-							meinen <a href="/referenzen">Referenzen</a>.
-						</Card.Subtitle>
-						<Card.Text className="card-description">
-							<section>
-								<p className="section-title">Lebenslauf</p>
-								<Stack gap={3} className="lebenslauf f col c">
-									<Stack gap={0}>
-										<span className="name">Name</span>
-										<span className="value">Nicholas Krebs</span>
+	render() {
+		return (
+			<>
+				<Head title={this.pageName} />
+				<main className={this.pageName.toLowerCase()}>
+					<Container>
+						<Stack spacing={3}>
+							<Card className={"me-card"} id={"me"}>
+								<Card.Body>
+									<Card.Title>
+										<h2>
+											<PersonIcon /> about me
+										</h2>
+									</Card.Title>
+									<Card.Text>
+										<p>
+											Mein Name ist Nicholas Krebs und ich bin ein <b>Informatik Lehrling</b>{" "}
+											Fachrichtung Betriebsinformatik im <b>3. Lehrjahr</b> in der{" "}
+											<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
+											interessiere mich sehr für die Informatik und speziell für die{" "}
+											<b>Webentwicklung</b> in der Ich dieses Jahr mich spezialisieren werde.
+											<br />
+											Auch in meiner <b>Freizeit</b> investiere ich meine Zeit gerne in das{" "}
+											<b>Lernen oder Weiterbilden</b> neuer Programmiersprachen. Früher habe ich
+											kleinere Projekte erstellt um praktische lernen zu können. Nun möchte ich
+											aber anfangen, <b>grössere Projekte</b> neben meiner Arbeit zu entwickeln.
+											Ein Beispiel ist diese Website, die ich{" "}
+											<b>selbstständig gestalten und entwickelt</b> habe.
+											<br />
+											Aber auch für Vereine aus meiner Umgebung habe ich bereits eine Website
+											entwickelt oder entwickle gerade eine. Mehr dazu bei den{" "}
+											<a href={"#projects"}>Projekten</a>
+										</p>
+									</Card.Text>
+								</Card.Body>
+							</Card>
+							<Card className={"skills-card"} id={"skills"}>
+								<Card.Body>
+									<Card.Title>
+										<h2>
+											<SchoolIcon /> skills
+										</h2>
+									</Card.Title>
+									<Card.Text>
+										<p>
+											Hier sind einzelne Skills, die ich in meiner Freizeit und bei meiner Arbeit
+											erlernt und weiterentwickelt habe.
+										</p>
+									</Card.Text>
+									<Stack direction={"row"} spacing={3}>
+										<Languages />
+										<DevTools />
 									</Stack>
-									<Stack gap={0}>
-										<span className="name">Geburtsdatum</span>
-										<span className="value">29.12.2004</span>
-									</Stack>
-									<Stack gap={0}>
-										<span className="name">Nationalität</span>
-										<span className="value">Schweiz</span>
-									</Stack>
-									<Stack gap={0}>
-										<span className="name">Interessen</span>
-										<span className="value">
-											Programmieren, Musik machen, Pfadi leiten, snowboarden
-										</span>
-									</Stack>
-									<Stack gap={0}>
-										<span className="name">Ausbildung</span>
-										<span className="value">
-											Betriebsinformatiker EFZ mit BMS (momentan im 2. Lehrjahr)
-										</span>
-									</Stack>
-									<Stack gap={0}>
-										<span className="name">Besuchte Schulen</span>
-										<span className="value">
-											2011 - 2017: 1. - 6. Primarschule, SV Rumisberg <br></br>
-											2017 - 2019: 1. / 2. Sekundarschule, Wiedlisbach <br></br>
-											2019 - 2020: 1. Gymnasium, Langenthal <br></br>
-											2020 - jetzt: Technische Fachschule Bern
-										</span>
-									</Stack>
-									<Stack gap={0}>
-										<span className="name">Schnupperlehren</span>
-										<span className="value">
-											15.1.2019: Schaerer AG Zuchwil, Informatik <br></br>
-											08.-12.4.2019: Steiner- Arch Wiedlisbach, Architekt <br></br>
-											15.-16.4.2019: AZM Langenthal, Informatik
-										</span>
-									</Stack>
-								</Stack>
-							</section>
-						</Card.Text>
-					</Card.Body>
-				</Card>
-			</div>
-		</Container>
-	</main>
-);
-
-export default Me;
+								</Card.Body>
+							</Card>
+							<Card className={"projects-card"} id={"projects"}>
+								<Card.Body>
+									<Card.Title>
+										<h2>
+											<WebIcon /> projects
+										</h2>
+									</Card.Title>
+									<Card.Text>
+										<p>
+											Projekte, an denen ich von der Arbeit aus beteiligt war oder die in meiner
+											Freizeit entwickelt habe.
+										</p>
+									</Card.Text>
+									<ProjectsList />
+								</Card.Body>
+							</Card>
+						</Stack>
+					</Container>
+				</main>
+			</>
+		);
+	}
+}
