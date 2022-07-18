@@ -1,13 +1,17 @@
 import React from "react";
 
-const Fallback = () => (
-	<>
-		<div className={"fallback"}>
-			<div className={"text"}>
-				<span>loading</span>
-			</div>
-		</div>
-	</>
-);
+class Fallback extends React.Component {
+	render() {
+		return (
+			<>
+				<div className={"fallback"}>
+					<div className={"text"}>
+						<span>loading</span>
+					</div>
+				</div>
+			</>
+		);
+	}
+}
 
 export default Fallback;

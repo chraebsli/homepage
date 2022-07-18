@@ -20,20 +20,18 @@ export default class Services extends React.Component<{
 	pageName = "Services";
 	services = servicesList;
 
-	render() {
-		const { loading } = this.props;
-
+	render(){
 		return (
 			<>
-				<Head title={this.pageName} />
-				<main className={this.pageName.toLowerCase()}>
+				<Head title={ this.pageName }></Head>
+				<main className={ this.pageName.toLowerCase() }>
 					<Container>
-						<div className={"page-title"}>
+						<div className={ "page-title" }>
 							<p>Dienstleistungen</p>
 						</div>
 
 						<div className="page-content c-flex justify-content-center">
-							<GlobalStyles styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }} />
+							<GlobalStyles styles={ { ul: { margin: 0, padding: 0, listStyle: "none" } } } />
 							<React.Fragment>
 								<Container maxWidth="md" component="main">
 									<ServicesList />

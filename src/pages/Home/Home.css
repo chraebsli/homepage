@@ -9,7 +9,8 @@
 	max-width: 50rem;
 }
 
-.home .card, .home .swiper-slide {
+.home .card,
+.home .swiper-slide {
 	max-width: 25rem;
 }
 

@@ -4,6 +4,7 @@ import React from "react";
 // render component
 class Progress extends React.Component<{
 	text: string;
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	icon: any;
 	progress: number;
 	max: number;
