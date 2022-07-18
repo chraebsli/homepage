@@ -37,8 +37,8 @@ export default class Overview extends React.Component {
 									<ListItem href={ "./kontakt" } icon={ KontaktIcon } text={ "Kontakt" } />
 									<ListItem href={ "./uber" } icon={ UberIcon } text={ "Über" } />
 									<ListItem href={ "./overview" } icon={ UbersichtIcon } text={ "Übersicht" } />
-									<ListItem href={ "./impressum" } icon={ ImpressumIcon } text={ "Impressum" } />
-									<ListItem href={ "./datenschutz" } icon={ DatenschutzIcon } text={ "Datenschutz" } />
+									<ListItem href={ "./impressum" } icon={ ImpressumIcon } text={ "Imprint" } />
+									<ListItem href={ "./datenschutz" } icon={ DatenschutzIcon } text={ "Privacy" } />
 									*/}
 								</div>
 							</section>
