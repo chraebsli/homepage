@@ -28,7 +28,7 @@ export default class Home extends React.Component {
 				<Head title={this.pageName} />
 				<main className={this.pageName.toLowerCase()}>
 					<Container>
-						<div className="page-content page-content-only d-flex justify-content-center">
+						<article className="page-content page-content-only d-flex justify-content-center">
 							<PageCard
 								cardTitle={this.card.title}
 								image={this.card.image}
@@ -38,7 +38,7 @@ export default class Home extends React.Component {
 								buttonHref={this.card.action.href}
 								buttonText={this.card.action.text}
 							/>
-						</div>
+						</article>
 					</Container>
 				</main>
 			</>

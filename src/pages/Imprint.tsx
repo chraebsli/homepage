@@ -50,6 +50,22 @@ export default class Imprint extends React.Component {
 									<li>Inhalt: Nicholas Krebs</li>
 								</ul>
 							</section>
+							<hr />
+							<section>
+								<h2 className="section-title">Ressourcen</h2>
+								<p className="section-text text-space">
+									Bilder, Grafiken, Videos, und andere Ressourcen wurden von folgenden Quellen
+									verwendet:
+								</p>
+								<ul>
+									<li>
+										Illustrationen: <a href="https://www.freepik.com">vectorjuice / Freepik</a>
+									</li>
+									<li>
+										Icons: <a href="https://mui.com/">Material UI</a>
+									</li>
+								</ul>
+							</section>
 						</article>
 					</Container>
 				</main>

@@ -8,6 +8,7 @@ class Footer extends React.Component {
 	render() {
 		return (
 			<>
+				<div className={"footer-space"}></div>
 				<footer>
 					<nav>
 						<Stack direction={"vertical"} className={"text-center"}>

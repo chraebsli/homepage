@@ -7,7 +7,7 @@ import ThemeProvider from "react-bootstrap/ThemeProvider";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/overrides.css";
 import "./css/main.css";
-import "./css/comonents.css";
+import "./css/components.css";
 import "./css/responsive.css";
 
 // import components
@@ -42,8 +42,8 @@ ReactDOM.render(
 					<Route path="/contact" element={ <Contact /> } />
 					<Route path="/me" element={ <Me /> } />
 
-					<Route path="/imprint" element={<Imprint />} />
-					<Route path="/privacy" element={<Privacy />} />
+					<Route path="/imprint" element={ <Imprint /> } />
+					<Route path="/privacy" element={ <Privacy /> } />
 				</Routes>
 			</React.Suspense>
 			<Footer />

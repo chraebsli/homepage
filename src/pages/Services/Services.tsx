@@ -1,7 +1,6 @@
 // import libraries
 import React from "react";
 import Head from "../../components/common/Head";
-import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -20,24 +19,19 @@ export default class Services extends React.Component<{
 	pageName = "Services";
 	services = servicesList;
 
-	render(){
+	render() {
 		return (
 			<>
-				<Head title={ this.pageName }></Head>
-				<main className={ this.pageName.toLowerCase() }>
+				<Head title={this.pageName}></Head>
+				<main className={this.pageName.toLowerCase()}>
 					<Container>
-						<div className={ "page-title" }>
+						<section className={"page-title"}>
 							<p>Dienstleistungen</p>
-						</div>
+						</section>
 
-						<div className="page-content c-flex justify-content-center">
-							<GlobalStyles styles={ { ul: { margin: 0, padding: 0, listStyle: "none" } } } />
-							<React.Fragment>
-								<Container maxWidth="md" component="main">
-									<ServicesList />
-								</Container>
-							</React.Fragment>
-						</div>
+						<article className="page-content">
+							<ServicesList />
+						</article>
 					</Container>
 				</main>
 			</>

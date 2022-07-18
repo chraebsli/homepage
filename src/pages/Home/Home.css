@@ -1,6 +1,9 @@
 #welcome {
 	margin-top: 10rem;
 }
+#welcome-teaser {
+	font-style: italic;
+}
 #welcome h1 {
 	color: var(--prim-color);
 }
