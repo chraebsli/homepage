@@ -7,6 +7,7 @@
 /* ********************************************* footer ********************************************* */
 footer {
 	width: 100%;
+	color: var(--text-sec-color);
 	background-color: var(--prim-color);
 	bottom: 0;
 	position: absolute;
