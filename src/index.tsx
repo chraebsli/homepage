@@ -23,7 +23,6 @@ import SingleService from "./pages/Services/single-service";
 import Contact from "./pages/Contact";
 import Me from "./pages/Me/Me";
 
-import Overview from "./pages/Overview/Overview";
 import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
 
@@ -43,9 +42,8 @@ ReactDOM.render(
 					<Route path="/contact" element={ <Contact /> } />
 					<Route path="/me" element={ <Me /> } />
 
-					<Route path="/overview" element={ <Overview /> } />
-					<Route path="/imprint" element={ <Imprint /> } />
-					<Route path="/privacy" element={ <Privacy /> } />
+					<Route path="/imprint" element={<Imprint />} />
+					<Route path="/privacy" element={<Privacy />} />
 				</Routes>
 			</React.Suspense>
 			<Footer />
