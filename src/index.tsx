@@ -19,7 +19,12 @@ import Fallback from "./components/common/Fallback";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import SingleService from "./pages/Services/single-service";
+
 import Projects from "./pages/Projects/Projects";
+import Fischlehrpfad from "./pages/Projects/fischlehrpfad";
+import Personal from "./pages/Projects/personal";
+import SGRumisberg from "./pages/Projects/sgrumisberg";
+import MGRumisberg from "./pages/Projects/mgrumisberg";
 
 import Contact from "./pages/Contact";
 import Me from "./pages/Me/Me";
@@ -39,7 +44,12 @@ ReactDOM.render(
 					<Route path="*" element={<Error404 />} />
 					<Route path="/services" element={<Services />} />
 					<Route path="/service/:service" element={<SingleService />} />
+
 					<Route path="/projects" element={<Projects />} />
+					<Route path="/project/fischlehrpfad" element={<Fischlehrpfad />} />
+					<Route path="/project/personal" element={<Personal />} />
+					<Route path="/project/sgrumisberg" element={<SGRumisberg />} />
+					<Route path="/project/mgrumisberg" element={<MGRumisberg />} />
 
 					<Route path="/contact" element={<Contact />} />
 					<Route path="/me" element={<Me />} />
