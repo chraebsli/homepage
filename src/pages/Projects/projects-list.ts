@@ -2,7 +2,7 @@ import ImageITSupport from "./assets/it-support.jpg";
 import Project from "../../models/project";
 
 //TODO: add projects
-const servicesList = () => {
+const projectsList = () => {
 	return [
 		new Project({
 			id: "fischlehrpfad",
@@ -46,4 +46,4 @@ const servicesList = () => {
 	];
 };
 
-export default servicesList();
+export default projectsList();

@@ -37,7 +37,7 @@ export default class Home extends React.Component {
 							<hr />
 							<section>
 								<h2>Projekte</h2>
-								<p>An folgenden Projekte war ich beteiligt:</p>
+								<p>An folgenden Projekte bin ich beteiligt:</p>
 								<ProjectsList space={70} />
 							</section>
 						</article>

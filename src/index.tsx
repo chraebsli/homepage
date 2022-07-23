@@ -19,6 +19,7 @@ import Fallback from "./components/common/Fallback";
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import SingleService from "./pages/Services/single-service";
+import Projects from "./pages/Projects/Projects";
 
 import Contact from "./pages/Contact";
 import Me from "./pages/Me/Me";
@@ -29,28 +30,29 @@ import Privacy from "./pages/Privacy";
 import Error404 from "./pages/Error/404";
 
 ReactDOM.render(
-	<ThemeProvider breakpoints={ [ "xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs" ] }>
+	<ThemeProvider breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}>
 		<Router>
 			<Header />
-			<React.Suspense fallback={ Fallback }>
+			<React.Suspense fallback={Fallback}>
 				<Routes>
-					<Route path="/" element={ <Home /> } />
-					<Route path="*" element={ <Error404 /> } />
-					<Route path="/services" element={ <Services /> } />
-					<Route path="/service/:service" element={ <SingleService /> } />
+					<Route path="/" element={<Home />} />
+					<Route path="*" element={<Error404 />} />
+					<Route path="/services" element={<Services />} />
+					<Route path="/service/:service" element={<SingleService />} />
+					<Route path="/projects" element={<Projects />} />
 
-					<Route path="/contact" element={ <Contact /> } />
-					<Route path="/me" element={ <Me /> } />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/me" element={<Me />} />
 
-					<Route path="/imprint" element={ <Imprint /> } />
-					<Route path="/privacy" element={ <Privacy /> } />
+					<Route path="/imprint" element={<Imprint />} />
+					<Route path="/privacy" element={<Privacy />} />
 				</Routes>
 			</React.Suspense>
 			<Footer />
 		</Router>
 	</ThemeProvider>,
 
-	document.getElementById( "root" ),
+	document.getElementById("root")
 );
 
 //serviceWorker.unregister();
