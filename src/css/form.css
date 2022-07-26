@@ -1,58 +1,31 @@
 /* ********************************************* forms ********************************************* */
-.form-gap {
-	gap: 1rem;
+.btn-primary {
+	background-color: var(--prim-color);
 }
 
-.btn-cont,
-.input-cont {
-	justify-content: space-between;
+form {
+	max-width: 50rem;
 }
-
-.btn-cont button,
-.input-cont input {
-	padding: 0.3rem 0.5rem;
-	height: 2rem;
-}
-
-.btn-cont button.full,
-.input-cont-full input {
+.full-width {
 	width: 100%;
 }
-
-.btn-cont button.half,
-.input-cont-half input {
-	width: 48%;
+.form-group {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding-bottom: 1rem;
 }
 
-input,
-button {
-	font-size: 1.2rem;
-	transition: background-color 0.5s;
+.form-element {
+	width: 100%;
+}
+.form-element-multi:nth-child(1) {
+	padding-right: 0.5rem;
+}
+.form-element-multi:nth-child(2) {
+	padding-left: 0.5rem;
 }
 
-button.btn-prim {
-	background-color: var(--btn-prim-color);
-	color: var(--text-prim-color);
-}
-
-button.btn-prim:hover {
-	background-color: var(--btn-prim-hover-color);
-}
-
-button {
-	background-color: var(--btn-color);
-	border: 0;
-	border-radius: 0.5rem;
-}
-
-button:hover {
-	background-color: var(--btn-hover-color);
-}
-
-input {
-	background-color: var(--inp-color);
-}
-
-input:hover {
-	background-color: var(--inp-hover-color);
+.after-submit {
+	display: none;
 }

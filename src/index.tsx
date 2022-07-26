@@ -9,6 +9,7 @@ import "./css/overrides.css";
 import "./css/main.css";
 import "./css/components.css";
 import "./css/responsive.css";
+import "./css/form.css";
 
 // import components
 import Header from "./components/common/Header";
