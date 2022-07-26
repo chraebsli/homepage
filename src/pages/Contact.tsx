@@ -30,7 +30,7 @@ export default class Contact extends React.Component {
 								<p>
 									E-Mail Adresse:
 									<br />
-									<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>.
+									<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
 								</p>
 							</section>
 
