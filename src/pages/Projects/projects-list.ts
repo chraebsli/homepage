@@ -4,7 +4,6 @@ import ImageSGRumisberg from "./assets/sgrumisberg.jpg";
 import ImageMGRumisberg from "./assets/mgrumisberg.jpg";
 import Project from "../../models/project";
 
-//TODO: add projects
 const projectsList = () => {
 	return [
 		new Project({

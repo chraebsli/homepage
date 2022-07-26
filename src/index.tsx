@@ -18,7 +18,9 @@ import Fallback from "./components/common/Fallback";
 // import pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
-import SingleService from "./pages/Services/single-service";
+import CreateWebsite from "./pages/Services/single/CreateWebsite";
+import ITSupport from "./pages/Services/single/ITSupport";
+import BuildPC from "./pages/Services/single/BuildPC";
 
 import Projects from "./pages/Projects/Projects";
 import Fischlehrpfad from "./pages/Projects/fischlehrpfad";
@@ -43,7 +45,7 @@ ReactDOM.render(
 					<Route path="/" element={<Home />} />
 					<Route path="*" element={<Error404 />} />
 					<Route path="/services" element={<Services />} />
-					<Route path="/service/:service" element={<SingleService />} />
+					<Route path="/service/create-website" element={<CreateWebsite />} />
 
 					<Route path="/projects" element={<Projects />} />
 					<Route path="/project/fischlehrpfad" element={<Fischlehrpfad />} />
