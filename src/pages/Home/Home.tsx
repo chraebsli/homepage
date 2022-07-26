@@ -22,7 +22,7 @@ export default class Home extends React.Component {
 							<section id={"welcome"}>
 								<h1>Willkommen bei chraebsli IT-Services!</h1>
 								<p>
-									<span id={"welcome-teaser"}>- Dienstleistungen jeglicher Art -</span>
+									<span id={"welcome-teaser"}>- IT-Dienstleistungen jeglicher Art -</span>
 									<br />
 									Ich biete diverse IT Dienstleistungen an, um neben meiner schulischen Lehre als
 									Informatiker etwas Geld zu verdienen.
