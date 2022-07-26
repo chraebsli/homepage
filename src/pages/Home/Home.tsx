@@ -24,8 +24,8 @@ export default class Home extends React.Component {
 								<p>
 									<span id={"welcome-teaser"}>- Dienstleistungen jeglicher Art -</span>
 									<br />
-									Ich biete verschiedene IT Dienstleistungen für jedermann an, um neben meiner Lehre
-									als Informatiker etwas zu verdienen.
+									Ich biete diverse IT Dienstleistungen an, um neben meiner schulischen Lehre als
+									Informatiker etwas Geld zu verdienen.
 								</p>
 							</section>
 							<hr />
