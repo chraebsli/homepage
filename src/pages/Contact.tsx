@@ -12,22 +12,30 @@ export default class Contact extends React.Component {
 				<Head title={this.pageName} />
 				<main className={this.pageName.toLowerCase()}>
 					<Container>
-						<div className={"page-title"}>
-							<p>{this.pageName}</p>
-						</div>
+						<section className={"page-title"}>
+							<h1>{this.pageName}</h1>
+							<hr />
+						</section>
 
-						<div className="page-content d-flex justify-content-center">
+						<article className="page-content">
 							<section>
-								<p className="section-title">Kontaktieren Sie mich</p>
-								<p className="section-text">
-									Wenn Sie Fragen oder Anmerkungen haben, wenden Sie sich bitte an{" "}
-									<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>. Ich beantworte
-									gerne Ihre Fragen und freue mich über Feedback jeglicher Art.
+								<h2 className="section-title">Kontaktangaben</h2>
+								<p>
+									Bei Fragen oder Anregungen können Sie gerne per Mail due unten stehende Adresse
+									kontaktieren. Im Normalfall werde ich mich innerhalb von 2-4 Tagen bei ihnen melden.
+									<br />
+									Natürlich dürfen Sie mir auch eine Rückmeldung und Verbesserungsvorschläge für diese
+									Website geben.
+								</p>
+								<p>
+									E-Mail Adresse:
+									<br />
+									<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
 								</p>
 							</section>
 
 							{/* TODO: add contact form */}
-						</div>
+						</article>
 					</Container>
 				</main>
 			</>

@@ -1,6 +1,9 @@
 #welcome {
 	margin-top: 10rem;
 }
+#welcome-teaser {
+	font-style: italic;
+}
 #welcome h1 {
 	color: var(--prim-color);
 }
@@ -9,7 +12,8 @@
 	max-width: 50rem;
 }
 
-.home .card, .home .swiper-slide {
+.home .card,
+.home .swiper-slide {
 	max-width: 25rem;
 }
 

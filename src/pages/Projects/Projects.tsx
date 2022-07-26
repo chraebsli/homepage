@@ -6,18 +6,18 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import assets and css
-import "./Services.css";
-import servicesList from "./services-list";
-import ServicesList from "../../components/ServicesList";
+import "./Projects.css";
+import projectsList from "../Projects/projects-list";
+import ProjectsList from "../../components/ProjectsList";
 
-export default class Services extends React.Component<{
+export default class Projects extends React.Component<{
 	loading?: boolean;
 }> {
 	static defaultProps = {
 		loading: false,
 	};
-	pageName = "Services";
-	services = servicesList;
+	pageName = "Projects";
+	projects = projectsList;
 
 	render() {
 		return (
@@ -26,11 +26,11 @@ export default class Services extends React.Component<{
 				<main className={this.pageName.toLowerCase()}>
 					<Container>
 						<section className={"page-title"}>
-							<p>Dienstleistungen</p>
+							<p>Projekte</p>
 						</section>
 
 						<article className="page-content">
-							<ServicesList />
+							<ProjectsList />
 						</article>
 					</Container>
 				</main>

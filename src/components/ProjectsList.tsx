@@ -15,15 +15,16 @@ import Project from "../models/project";
 class ProjectsList extends React.Component<{
 	loading?: boolean;
 	space?: number;
+	projects?: Project[];
 }> {
 	static defaultProps = {
 		loading: false,
 		space: 30,
+		projects: projectsList,
 	};
-	projects: Project[] = projectsList;
 
 	render() {
-		const { loading, space } = this.props;
+		const { loading, space, projects } = this.props;
 		return (
 			<Swiper
 				slidesPerView={"auto"}
@@ -40,7 +41,7 @@ class ProjectsList extends React.Component<{
 				}}
 				modules={[Mousewheel, Autoplay, Pagination, Navigation]}
 				className="services-carousel">
-				{this.projects.map(project => (
+				{projects?.map(project => (
 					// eslint-disable-next-line react/jsx-key
 					<SwiperSlide>
 						<Grid item key={project.title} xs={12} sm={9} md={6}>
