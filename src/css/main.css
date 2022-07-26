@@ -86,7 +86,9 @@ a.n {
 .text-center {
 	text-align: center;
 }
-
+hr {
+	border: 2px solid var(--prim-color);
+}
 /* ********************************************* other ********************************************* */
 p,
 a,
