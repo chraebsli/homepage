@@ -23,10 +23,10 @@ import ITSupport from "./pages/Services/single/ITSupport";
 import BuildPC from "./pages/Services/single/BuildPC";
 
 import Projects from "./pages/Projects/Projects";
-import Fischlehrpfad from "./pages/Projects/fischlehrpfad";
-import Personal from "./pages/Projects/personal";
-import SGRumisberg from "./pages/Projects/sgrumisberg";
-import MGRumisberg from "./pages/Projects/mgrumisberg";
+import Fischlehrpfad from "./pages/Projects/single/fischlehrpfad";
+import Personal from "./pages/Projects/single/personal";
+import SGRumisberg from "./pages/Projects/single/sgrumisberg";
+import MGRumisberg from "./pages/Projects/single/mgrumisberg";
 
 import Contact from "./pages/Contact";
 import Me from "./pages/Me/Me";
@@ -46,6 +46,8 @@ ReactDOM.render(
 					<Route path="*" element={<Error404 />} />
 					<Route path="/services" element={<Services />} />
 					<Route path="/service/create-website" element={<CreateWebsite />} />
+					<Route path="/service/it-support" element={<ITSupport />} />
+					<Route path="/service/build-pc" element={<BuildPC />} />
 
 					<Route path="/projects" element={<Projects />} />
 					<Route path="/project/fischlehrpfad" element={<Fischlehrpfad />} />

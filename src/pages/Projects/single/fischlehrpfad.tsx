@@ -1,11 +1,11 @@
 // import libraries
 import React from "react";
-import Head from "../../components/common/Head";
+import Head from "../../../components/common/Head";
 import Container from "@mui/material/Container";
 
 // import assets and css
-import "./Projects.css";
-import ToolImage from "../../components/ToolImage";
+import "../Projects.css";
+import ToolImage from "../../../components/ToolImage";
 import { Stack } from "@mui/material";
 
 export default class Fischlehrpfad extends React.Component<{
