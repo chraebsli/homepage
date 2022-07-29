@@ -19,15 +19,15 @@ export default class Me extends React.Component {
 	pageName = "Me";
 	projects = projectsList;
 
-	render() {
+	render(){
 		return (
 			<>
-				<Head title={this.pageName} />
-				<main className={this.pageName.toLowerCase()}>
+				<Head title={ this.pageName } />
+				<main className={ this.pageName.toLowerCase() }>
 					<Container>
 						<article>
-							<Stack spacing={3}>
-								<Card className={"me-card"} id={"me"}>
+							<Stack spacing={ 3 }>
+								<Card className={ "me-card" } id={ "me" }>
 									<Card.Body>
 										<Card.Title>
 											<h2>
@@ -37,27 +37,27 @@ export default class Me extends React.Component {
 										<Card.Text>
 											<p>
 												Mein Name ist Nicholas Krebs und ich bin ein Informatik Lehrling
-												Fachrichtung Betriebsinformatik im 3. Lehrjahr in der{" "}
+												Fachrichtung Betriebsinformatik im 3. Lehrjahr in der{ " " }
 												<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
-												interessiere mich sehr für die Informatik und am meisten für die{" "}
+												interessiere mich sehr für die Informatik und am meisten für die{ " " }
 												<b>Webentwicklung</b>, in der ich mich dieses Jahr auch spezialisieren
 												werde.
 												<br />
 												In meiner Freizeit investiere ich meine Zeit gerne in das Lernen oder
 												Weiterbilden neuer Programmiersprachen. Früher habe ich kleinere
 												Projekte erstellt um praktische lernen zu können. Nun möchte ich aber
-												anfangen, mittel grosse Projekte <b>neben meiner Arbeit</b>{" "}
+												anfangen, mittel grosse Projekte <b>neben meiner Arbeit</b>{ " " }
 												selbstständig zu entwickeln. Ein Beispiel dafür ist diese Website, da
 												ich sie ganz alleine gestalten und anschliessend programmiert habe.
 												<br />
 												Aber auch für Vereine aus meiner Umgebung habe ich bereits eine Website
 												entwickelt oder bin in der Planung, eine zu entwickeln. Mehr dazu bei
-												den <a href={"#projects"}>Projekten</a>
+												den <a href={ "#projects" }>Projekten</a>
 											</p>
 										</Card.Text>
 									</Card.Body>
 								</Card>
-								<Card className={"skills-card"} id={"skills"}>
+								<Card className={ "skills-card" } id={ "skills" }>
 									<Card.Body>
 										<Card.Title>
 											<h2>
@@ -70,13 +70,13 @@ export default class Me extends React.Component {
 												erlernt und weiterentwickelt habe.
 											</p>
 										</Card.Text>
-										<Stack direction={"row"} spacing={3}>
+										<Stack direction={ { xs: "column", sm: "row" } } spacing={ 3 }>
 											<Languages />
 											<DevTools />
 										</Stack>
 									</Card.Body>
 								</Card>
-								<Card className={"projects-card"} id={"projects"}>
+								<Card className={ "projects-card" } id={ "projects" }>
 									<Card.Body>
 										<Card.Title>
 											<h2>
