@@ -26,7 +26,6 @@ class ProjectsList extends React.Component<{
 
 	render() {
 		const { loading, space, projects } = this.props;
-		// @ts-ignore
 		return (
 			<Swiper
 				slidesPerView={"auto"}
