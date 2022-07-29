@@ -9,9 +9,9 @@ import Progress from "../Progress";
 
 // render component
 class DevTools extends React.Component {
-	render() {
+	render(){
 		return (
-			<Card className={"skills-soft-card"} id={"skills-soft"}>
+			<Card className={ "skills-soft-card" } id={ "skills-soft" }>
 				<Card.Body>
 					<Card.Title>
 						<h3>
@@ -19,12 +19,12 @@ class DevTools extends React.Component {
 						</h3>
 					</Card.Title>
 					<Card.Text>
-						<Progress text={"VS Code"} icon={<SiVisualstudiocode />} progress={80} />
-						<Progress text={"Webstorm"} icon={<SiWebstorm />} progress={70} />
-						<Progress text={"Github"} icon={<SiGithub />} progress={80} />
-						<Progress text={"Cloudflare"} icon={<SiCloudflare />} progress={75} />
-						<Progress text={"Jira"} icon={<SiJirasoftware />} progress={60} />
-						<Progress text={"Linux"} icon={<SiLinux />} progress={50} />
+						<Progress text={ "Webstorm" } icon={ <SiWebstorm /> } progress={ 70 } />
+						<Progress text={ "VS Code" } icon={ <SiVisualstudiocode /> } progress={ 80 } />
+						<Progress text={ "Github" } icon={ <SiGithub /> } progress={ 80 } />
+						<Progress text={ "Cloudflare" } icon={ <SiCloudflare /> } progress={ 75 } />
+						<Progress text={ "Jira" } icon={ <SiJirasoftware /> } progress={ 70 } />
+						<Progress text={ "Linux" } icon={ <SiLinux /> } progress={ 50 } />
 					</Card.Text>
 				</Card.Body>
 			</Card>

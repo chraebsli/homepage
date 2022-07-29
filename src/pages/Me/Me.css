@@ -1,6 +1,6 @@
 /* ********************************************* über ********************************************* */
 .me #skills .card {
-	width: auto;
+	width: -webkit-fill-available;
 }
 .me b {
 	font-weight: 600;
