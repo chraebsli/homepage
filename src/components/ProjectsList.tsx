@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 // import assets
 import projectsList from "../pages/Projects/projects-list";
 import Project from "../models/project";
+import Tag from "./Tag";
 
 // render component
 class ProjectsList extends React.Component<{
@@ -25,6 +26,7 @@ class ProjectsList extends React.Component<{
 
 	render() {
 		const { loading, space, projects } = this.props;
+		// @ts-ignore
 		return (
 			<Swiper
 				slidesPerView={"auto"}
@@ -54,6 +56,12 @@ class ProjectsList extends React.Component<{
 
 								<CardHeader title={project.title} titleTypographyProps={{ align: "center" }} />
 								<CardContent>
+									<div>
+										{project.tags?.map(tag => (
+											// eslint-disable-next-line react/jsx-key
+											<Tag name={tag} />
+										))}
+									</div>
 									<Box
 										sx={{
 											display: "flex",
@@ -70,13 +78,6 @@ class ProjectsList extends React.Component<{
 											{project.description}
 										</Typography>
 									</Box>
-									<Typography
-										component="p"
-										className="project-content"
-										variant="body1"
-										color="text.primary">
-										{project.content}
-									</Typography>
 								</CardContent>
 								<CardActions>
 									<Button
