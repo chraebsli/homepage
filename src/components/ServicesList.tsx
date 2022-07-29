@@ -35,7 +35,7 @@ class ServicesList extends React.Component<{
 				navigation={true}
 				mousewheel={true}
 				autoplay={{
-					delay: 5000,
+					delay: 10000,
 					disableOnInteraction: false,
 				}}
 				modules={[Mousewheel, Autoplay, Pagination, Navigation]}
