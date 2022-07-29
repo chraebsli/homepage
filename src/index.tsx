@@ -22,6 +22,7 @@ import Services from "./pages/Services/Services";
 import CreateWebsite from "./pages/Services/single/CreateWebsite";
 import ITSupport from "./pages/Services/single/ITSupport";
 import BuildPC from "./pages/Services/single/BuildPC";
+import DevelopWebapp from "./pages/Services/single/DevelopWebapp";
 
 import Projects from "./pages/Projects/Projects";
 import Fischlehrpfad from "./pages/Projects/single/fischlehrpfad";
@@ -38,36 +39,37 @@ import Privacy from "./pages/Privacy";
 import Error404 from "./pages/Error/404";
 
 ReactDOM.render(
-	<ThemeProvider breakpoints={ [ "xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs" ] }>
+	<ThemeProvider breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}>
 		<Router>
 			<Header />
-			<React.Suspense fallback={ Fallback }>
+			<React.Suspense fallback={Fallback}>
 				<Routes>
-					<Route path="/" element={ <Home /> } />
-					<Route path="*" element={ <Error404 /> } />
-					<Route path="/services" element={ <Services /> } />
-					<Route path="/service/create-website" element={ <CreateWebsite /> } />
-					<Route path="/service/it-support" element={ <ITSupport /> } />
-					<Route path="/service/build-pc" element={ <BuildPC /> } />
+					<Route path="/" element={<Home />} />
+					<Route path="*" element={<Error404 />} />
+					<Route path="/services" element={<Services />} />
+					<Route path="/service/create-website" element={<CreateWebsite />} />
+					<Route path="/service/it-support" element={<ITSupport />} />
+					<Route path="/service/build-pc" element={<BuildPC />} />
+					<Route path="/service/develop-webapp" element={<DevelopWebapp />} />
 
-					<Route path="/projects" element={ <Projects /> } />
-					<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
-					<Route path="/project/personal" element={ <Personal /> } />
-					<Route path="/project/sgrumisberg" element={ <SGRumisberg /> } />
-					<Route path="/project/mgrumisberg" element={ <MGRumisberg /> } />
+					<Route path="/projects" element={<Projects />} />
+					<Route path="/project/fischlehrpfad" element={<Fischlehrpfad />} />
+					<Route path="/project/personal" element={<Personal />} />
+					<Route path="/project/sgrumisberg" element={<SGRumisberg />} />
+					<Route path="/project/mgrumisberg" element={<MGRumisberg />} />
 
-					<Route path="/me" element={ <Me /> } />
-					<Route path="/contact" element={ <Contact /> } />
+					<Route path="/me" element={<Me />} />
+					<Route path="/contact" element={<Contact />} />
 
-					<Route path="/imprint" element={ <Imprint /> } />
-					<Route path="/privacy" element={ <Privacy /> } />
+					<Route path="/imprint" element={<Imprint />} />
+					<Route path="/privacy" element={<Privacy />} />
 				</Routes>
 			</React.Suspense>
 			<Footer />
 		</Router>
 	</ThemeProvider>,
 
-	document.getElementById( "root" ),
+	document.getElementById("root")
 );
 
 //serviceWorker.unregister();

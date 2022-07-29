@@ -1,9 +1,9 @@
 import ImageCreateWebsite from "./assets/create-website.jpg";
 import ImageBuildPC from "./assets/build-pc.jpg";
 import ImageITSupport from "./assets/it-support.jpg";
+import ImageDevelopWebapp from "./assets/develop-webapp.jpg";
 import Service from "../../models/service";
 
-// TODO: add services
 const servicesList = () => {
 	return [
 		new Service({
@@ -37,6 +37,20 @@ const servicesList = () => {
 			features: ["professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen"],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "contained",
+		}),
+
+		new Service({
+			id: "develop-webapp",
+			title: "Webapplikation entwickeln",
+			href: "/service/develop-webapp",
+			image: ImageDevelopWebapp,
+			teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
+			description:
+				"Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen" +
+				" Zweck mit Login und anderen Funktionen.",
+			features: ["moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten"],
+			buttonText: "Mehr erfahren",
+			buttonVariant: "outlined",
 		}),
 
 		new Service({
