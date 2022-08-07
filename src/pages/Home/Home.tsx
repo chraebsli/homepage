@@ -4,6 +4,7 @@ import { Container } from "react-bootstrap";
 import Head from "../../components/common/Head";
 import ServicesList from "../../components/ServicesList";
 import ProjectsList from "../../components/ProjectsList";
+import SocialMediaList from "../../components/SocialMediaList";
 
 // import css
 import "./Home.css";
@@ -39,6 +40,12 @@ export default class Home extends React.Component {
 								<h2>Projekte</h2>
 								<p>An folgenden Projekte bin ich beteiligt:</p>
 								<ProjectsList space={70} />
+							</section>
+							<hr />
+							<section>
+								<h2>Social Media</h2>
+								<p>Ich bin auf folgenden Social Media Platformen:</p>
+								<SocialMediaList />
 							</section>
 						</article>
 					</Container>

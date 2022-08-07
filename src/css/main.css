@@ -95,3 +95,6 @@ a,
 span {
 	color: var(--text-color);
 }
+a:hover {
+	color: var(--prim-color);
+}

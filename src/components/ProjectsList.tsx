@@ -53,7 +53,7 @@ class ProjectsList extends React.Component<{
 									<CardMedia component={ "img" }
 									           height={ "200" }
 									           image={ project.image }
-									           alt={ "image" } />
+									           alt={ `Bild Projekt ${ project.title }` } />
 								) }
 
 								<CardHeader title={ project.title } titleTypographyProps={ { align: "center" } } />
