@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container } from "@mui/material";
 import PageCard from "../../components/PageCard";
 import Head from "../../components/common/Head";
 
