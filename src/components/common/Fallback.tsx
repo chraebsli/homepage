@@ -1,6 +1,6 @@
 import React from "react";
 
-class Fallback extends React.Component {
+export default class Fallback extends React.Component {
 	render() {
 		return (
 			<>
@@ -13,5 +13,3 @@ class Fallback extends React.Component {
 		);
 	}
 }
-
-export default Fallback;

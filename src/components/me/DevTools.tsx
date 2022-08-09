@@ -1,14 +1,12 @@
-// import libraries
 import React from "react";
 import { Card } from "react-bootstrap";
-
-// import assets
-import { SiGit, SiGithub, SiJirasoftware, SiPhpstorm, SiVisualstudiocode, SiWebstorm } from "react-icons/si";
-import ConstructionIcon from "@mui/icons-material/Construction";
 import Progress from "../Progress";
 
-// render component
-class DevTools extends React.Component {
+// assets and css
+import { SiGit, SiGithub, SiJirasoftware, SiPhpstorm, SiVisualstudiocode, SiWebstorm } from "react-icons/si";
+import ConstructionIcon from "@mui/icons-material/Construction";
+
+export default class DevTools extends React.Component {
 	render() {
 		return (
 			<Card className={"skills-soft-card"} id={"skills-soft"}>
@@ -31,5 +29,3 @@ class DevTools extends React.Component {
 		);
 	}
 }
-
-export default DevTools;

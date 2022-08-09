@@ -1,14 +1,12 @@
-// import libraries
 import React from "react";
 import { Card } from "react-bootstrap";
-
-// import assets
-import { SiCss3, SiHtml5, SiJavascript, SiMysql, SiNodedotjs, SiPhp, SiReact, SiTypescript } from "react-icons/si";
-import CodeIcon from "@mui/icons-material/Code";
 import Progress from "../Progress";
 
-// render component
-class Languages extends React.Component {
+// assets and css
+import { SiCss3, SiHtml5, SiJavascript, SiMysql, SiNodedotjs, SiPhp, SiReact, SiTypescript } from "react-icons/si";
+import CodeIcon from "@mui/icons-material/Code";
+
+export default class Languages extends React.Component {
 	render() {
 		return (
 			<Card className={"skills-techs-card"} id={"skills-techs"}>
@@ -45,5 +43,3 @@ class Languages extends React.Component {
 		);
 	}
 }
-
-export default Languages;

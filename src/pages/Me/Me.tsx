@@ -1,20 +1,18 @@
-// import libraries
 import React from "react";
 import { Card } from "react-bootstrap";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
+import { Container, Stack } from "@mui/material";
 import Head from "../../components/common/Head";
 import ProjectsList from "../../components/ProjectsList";
 import Languages from "../../components/me/Languages";
 import DevTools from "../../components/me/DevTools";
 
-// import assets and css
+// assets and css
 import "./Me.css";
-import projectsList from "../Projects/projects-list";
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
 import WebIcon from "@mui/icons-material/Web";
 import PollIcon from "@mui/icons-material/Poll";
+import projectsList from "../Projects/projects-list";
 import Server from "../../components/me/Server";
 
 export default class Me extends React.Component {

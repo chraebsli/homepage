@@ -1,8 +1,6 @@
-// import libraries
 import React from "react";
 
-// render component
-class Progress extends React.Component<{
+export default class Progress extends React.Component<{
 	text: string;
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	icon: any;
@@ -26,5 +24,3 @@ class Progress extends React.Component<{
 		);
 	}
 }
-
-export default Progress;

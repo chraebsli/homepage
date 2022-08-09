@@ -1,11 +1,9 @@
-// import libraries
 import React from "react";
+import { Container, Stack } from "@mui/material";
 import Head from "../../../components/common/Head";
-import Container from "@mui/material/Container";
 
-// import assets and css
+// assets and css
 import "../Services.css";
-import { Stack } from "@mui/material";
 import ProjectsList from "../../../components/ProjectsList";
 import projectsList from "../../Projects/projects-list";
 import ImageCreateWebsite from "../assets/create-website.jpg";

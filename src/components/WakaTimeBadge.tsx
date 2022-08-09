@@ -1,8 +1,6 @@
-// import libraries
 import React from "react";
 
-// render component
-class WakaTimeBadge extends React.Component<{
+export default class WakaTimeBadge extends React.Component<{
 	url: string;
 }> {
 	static defaultProps = {};
@@ -17,5 +15,3 @@ class WakaTimeBadge extends React.Component<{
 		);
 	}
 }
-
-export default WakaTimeBadge;

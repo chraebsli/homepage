@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ThemeProvider from "react-bootstrap/ThemeProvider";
-//import * as serviceWorker from "./serviceWorker";
-// import css
+
+// css
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./css/overrides.css";
 import "./css/main.css";
@@ -11,12 +11,12 @@ import "./css/components.css";
 import "./css/responsive.css";
 import "./css/form.css";
 
-// import components
+// components
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Fallback from "./components/common/Fallback";
 
-// import pages
+// pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import CreateWebsite from "./pages/Services/single/CreateWebsite";
@@ -71,5 +71,3 @@ ReactDOM.render(
 
 	document.getElementById("root")
 );
-
-//serviceWorker.unregister();

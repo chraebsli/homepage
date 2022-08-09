@@ -1,11 +1,10 @@
-// import libraries
 import React from "react";
 import Head from "../../components/common/Head";
-import Container from "@mui/material/Container";
+import { Container } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import assets and css
+// assets and css
 import "./Projects.css";
 import projectsList from "../Projects/projects-list";
 import ProjectsList from "../../components/ProjectsList";

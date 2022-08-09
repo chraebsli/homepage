@@ -1,8 +1,6 @@
-// import libraries
 import React from "react";
 
-// render component
-class SocialMediaItem extends React.Component<{
+export default class SocialMediaItem extends React.Component<{
 	href: string;
 	icon: React.ReactNode;
 	name: string;
@@ -26,5 +24,3 @@ class SocialMediaItem extends React.Component<{
 		);
 	}
 }
-
-export default SocialMediaItem;

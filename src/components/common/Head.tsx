@@ -3,7 +3,7 @@ import React from "react";
 // @ts-ignore
 import { Helmet } from "react-helmet";
 
-class Head extends React.PureComponent<{
+export default class Head extends React.PureComponent<{
 	title: string;
 }> {
 	protected separator = " | ";
@@ -22,5 +22,3 @@ class Head extends React.PureComponent<{
 		return title + this.separator + this.siteName;
 	};
 }
-
-export default Head;

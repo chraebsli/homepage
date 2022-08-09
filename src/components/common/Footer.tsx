@@ -1,10 +1,8 @@
-// import libraries
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Stack } from "react-bootstrap";
 
-// render the footer component
-class Footer extends React.Component {
+export default class Footer extends React.Component {
 	render() {
 		return (
 			<>
@@ -35,5 +33,3 @@ class Footer extends React.Component {
 		);
 	}
 }
-
-export default Footer;

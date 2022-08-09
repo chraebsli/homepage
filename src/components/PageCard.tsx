@@ -1,10 +1,7 @@
-// import libraries
 import React from "react";
-import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
 
-// render component
-class PageCard extends React.Component<{
+export default class PageCard extends React.Component<{
 	cardTitle: string;
 	image: string;
 	imageHeight: string;
@@ -52,5 +49,3 @@ class PageCard extends React.Component<{
 		);
 	}
 }
-
-export default PageCard;

@@ -1,4 +1,3 @@
-// import libraries
 import React from "react";
 import { Container } from "react-bootstrap";
 import Head from "../../components/common/Head";
@@ -6,10 +5,9 @@ import ServicesList from "../../components/ServicesList";
 import ProjectsList from "../../components/ProjectsList";
 import SocialMediaList from "../../components/SocialMediaList";
 
-// import css
+// assets and css
 import "./Home.css";
 
-// render the page home
 export default class Home extends React.Component {
 	pageName = "Home";
 

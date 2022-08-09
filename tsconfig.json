@@ -21,7 +21,25 @@
 		"jsx": "react-jsx",
 		"typeRoots": [
 			"node_modules/@types"
-		]
+		],
+		"baseUrl": "./src",
+		"paths": {
+			"@assets/*": [
+				"assets/*"
+			],
+			"@components/*": [
+				"components/*"
+			],
+			"@css/*": [
+				"css/*"
+			],
+			"@models/*": [
+				"models/*"
+			],
+			"@pages/*": [
+				"pages/*"
+			],
+		}
 	},
 	"include": [
 		"src"

@@ -1,11 +1,11 @@
 // import libraries
 import React from "react";
 import Head from "../../components/common/Head";
-import Container from "@mui/material/Container";
+import { Container } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// import assets and css
+// assets and css
 import "./Services.css";
 import servicesList from "./services-list";
 import ServicesList from "../../components/ServicesList";
@@ -19,13 +19,13 @@ export default class Services extends React.Component<{
 	pageName = "Services";
 	services = servicesList;
 
-	render() {
+	render(){
 		return (
 			<>
-				<Head title={this.pageName}></Head>
-				<main className={this.pageName.toLowerCase()}>
+				<Head title={ this.pageName }></Head>
+				<main className={ this.pageName.toLowerCase() }>
 					<Container>
-						<section className={"page-title"}>
+						<section className={ "page-title" }>
 							<p>Dienstleistungen</p>
 						</section>
 

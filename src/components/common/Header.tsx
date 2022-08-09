@@ -1,37 +1,35 @@
-// import libraries
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 
-// import assets and css
+// assets and css
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
 
-// render the header component
-class Header extends React.Component {
-	render(){
+export default class Header extends React.Component {
+	render() {
 		return (
 			<>
-				<Navbar collapseOnSelect expand={ "lg" } bg={ "primary" } variant={ "dark" }>
+				<Navbar collapseOnSelect expand={"lg"} bg={"primary"} variant={"dark"}>
 					<Container>
-						<Navbar.Brand href={ "/" }>
+						<Navbar.Brand href={"/"}>
 							<img
-								src={ LogoWhiteTransparent }
-								alt={ "logo" }
-								width={ 50 }
-								height={ 50 }
-								className={ "d-inline-block align-center" }
+								src={LogoWhiteTransparent}
+								alt={"logo"}
+								width={50}
+								height={50}
+								className={"d-inline-block align-center"}
 							/>
-							<span className={ "brand-name" }>chraebsli IT-Services</span>
+							<span className={"brand-name"}>chraebsli IT-Services</span>
 						</Navbar.Brand>
 
-						<Navbar.Toggle aria-controls={ "header-nav" } />
+						<Navbar.Toggle aria-controls={"header-nav"} />
 
-						<Navbar.Collapse id={ "responsive-navbar-nav" }>
-							<Nav className={ "me-auto" }></Nav>
+						<Navbar.Collapse id={"responsive-navbar-nav"}>
+							<Nav className={"me-auto"}></Nav>
 							<Nav>
-								<Nav.Link href={ "/me" }>Über mich</Nav.Link>
-								<Nav.Link href={ "/services" }>Services</Nav.Link>
-								<Nav.Link href={ "/projects" }>Projekte</Nav.Link>
-								<Nav.Link href={ "/contact" }>Kontakt</Nav.Link>
+								<Nav.Link href={"/me"}>Über mich</Nav.Link>
+								<Nav.Link href={"/services"}>Services</Nav.Link>
+								<Nav.Link href={"/projects"}>Projekte</Nav.Link>
+								<Nav.Link href={"/contact"}>Kontakt</Nav.Link>
 							</Nav>
 						</Navbar.Collapse>
 					</Container>
@@ -40,5 +38,3 @@ class Header extends React.Component {
 		);
 	}
 }
-
-export default Header;

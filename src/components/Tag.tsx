@@ -1,8 +1,6 @@
-// import libraries
 import React from "react";
 import { Avatar, Chip } from "@mui/material";
 
-// render component
 export default class Tag extends React.Component<{
 	name: string;
 }> {

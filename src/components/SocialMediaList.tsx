@@ -1,15 +1,13 @@
-// import libraries
 import React from "react";
 import { Stack } from "@mui/material";
 
-// import assets
+// assets and css
 import "../pages/SocialMedia/SocialMedia.css";
 import socialMediaList from "../pages/SocialMedia/social-media-list";
 import SocialMedia from "../models/socialMedia";
 import SocialMediaItem from "./SocialMediaItem";
 
-// render component
-class ProjectsList extends React.Component<{
+export default class ProjectsList extends React.Component<{
 	loading?: boolean;
 	items?: SocialMedia[];
 }> {
@@ -36,5 +34,3 @@ class ProjectsList extends React.Component<{
 		);
 	}
 }
-
-export default ProjectsList;

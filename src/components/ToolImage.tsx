@@ -1,8 +1,6 @@
-// import libraries
 import React from "react";
 
-// render component
-class ToolImage extends React.Component<{
+export default class ToolImage extends React.Component<{
 	name: string;
 }> {
 	static defaultProps = {};
@@ -15,5 +13,3 @@ class ToolImage extends React.Component<{
 		);
 	}
 }
-
-export default ToolImage;
