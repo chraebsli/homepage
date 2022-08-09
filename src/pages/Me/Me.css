@@ -34,3 +34,7 @@
 .me #skills .progress-text svg {
 	margin-right: 0.2rem;
 }
+
+.me figure {
+	width: 100%;
+}
