@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Progress from "./Progress";
 
-// assets and css
+// assets and sass
 import { SiAzuredevops, SiCloudflare, SiFirebase, SiHeroku, SiNetlify, SiVercel } from "react-icons/si";
 import StorageIcon from "@mui/icons-material/Storage";
 

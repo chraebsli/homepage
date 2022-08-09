@@ -5,8 +5,8 @@ import { Container } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// assets and css
-import "./Services.css";
+// assets and sass
+import "./Services.sass";
 import servicesList from "../Services/services-list";
 import ServicesList from "../../components/services/ServicesList";
 

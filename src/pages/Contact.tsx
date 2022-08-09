@@ -2,7 +2,7 @@ import React from "react";
 import Head from "../components/common/Head";
 import { Alert, Button, Container, TextField } from "@mui/material";
 
-// assets and css
+// assets and sass
 import "../components/form/FormSubmissionHandler.js";
 
 export default class Contact extends React.Component {

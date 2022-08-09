@@ -14,7 +14,7 @@ import {
 	Typography,
 } from "@mui/material";
 
-// assets and css
+// assets and sass
 import servicesList from "../../pages/Services/services-list";
 import Service from "@models/service";
 

@@ -3,13 +3,12 @@ import ReactDOM from "react-dom";
 import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-// css
+// sass
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/overrides.css";
-import "./css/main.css";
-import "./css/components.css";
-import "./css/responsive.css";
-import "./css/form.css";
+import "./sass/main.sass";
+import "./sass/components.sass";
+import "./sass/responsive.sass";
+import "./sass/form.sass";
 
 // components
 import Header from "./components/common/Header";

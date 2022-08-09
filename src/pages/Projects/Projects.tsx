@@ -4,8 +4,8 @@ import { Container } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
 
-// assets and css
-import "./Projects.css";
+// assets and sass
+import "./Projects.sass";
 import projectsList from "../Projects/projects-list";
 import ProjectsList from "../../components/projects/ProjectsList";
 

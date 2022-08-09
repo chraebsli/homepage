@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Stack } from "@mui/material";
 import Head from "../../../components/common/Head";
 
-// assets and css
-import "../Services.css";
+// assets and sass
+import "../Services.sass";
 import ImageDevelopWebapp from "../assets/develop-webapp.jpg";
 
 export default class DevelopWebapp extends React.Component<{

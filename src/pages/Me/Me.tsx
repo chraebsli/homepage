@@ -6,8 +6,8 @@ import ProjectsList from "../../components/projects/ProjectsList";
 import Languages from "../../components/me/Languages";
 import DevTools from "../../components/me/DevTools";
 
-// assets and css
-import "./Me.css";
+// assets and sass
+import "./Me.sass";
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
 import WebIcon from "@mui/icons-material/Web";

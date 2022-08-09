@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 import PageCard from "../../components/PageCard";
 import Head from "../../components/common/Head";
 
-// assets and css
+// assets and sass
 import ImageError from "./assets/error-404.jpg";
 
 export default class Home extends React.Component {

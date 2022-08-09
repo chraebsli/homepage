@@ -24,21 +24,21 @@
 		],
 		"baseUrl": "./src",
 		"paths": {
-			"@assets/*": [
-				"assets/*"
-			],
-			"@components/*": [
-				"components/*"
-			],
-			"@css/*": [
-				"css/*"
-			],
+			//"@assets/*": [
+			//	"assets/*"
+			//],
+			//"@components/*": [
+			//	"components/*"
+			//],
+			//"@sass/*": [
+			//	"sass/*"
+			//],
 			"@models/*": [
 				"models/*"
 			],
-			"@pages/*": [
-				"pages/*"
-			],
+			//"@pages/*": [
+			//	"pages/*"
+			//],
 		}
 	},
 	"include": [

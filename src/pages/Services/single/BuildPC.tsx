@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Stack } from "@mui/material";
 import Head from "../../../components/common/Head";
 
-// assets and css
-import "../Services.css";
+// assets and sass
+import "../Services.sass";
 import ImageBuildPC from "../assets/build-pc.jpg";
 
 export default class BuildPC extends React.Component<{

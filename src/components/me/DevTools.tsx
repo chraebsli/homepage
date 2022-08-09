@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import Progress from "./Progress";
 
-// assets and css
+// assets and sass
 import { SiGit, SiGithub, SiJirasoftware, SiPhpstorm, SiVisualstudiocode, SiWebstorm } from "react-icons/si";
 import ConstructionIcon from "@mui/icons-material/Construction";
 

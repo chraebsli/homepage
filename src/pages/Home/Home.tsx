@@ -5,8 +5,8 @@ import ServicesList from "../../components/services/ServicesList";
 import ProjectsList from "../../components/projects/ProjectsList";
 import SocialMediaList from "../../components/SocialMediaList";
 
-// assets and css
-import "./Home.css";
+// assets and sass
+import "./Home.sass";
 
 export default class Home extends React.Component {
 	pageName = "Home";

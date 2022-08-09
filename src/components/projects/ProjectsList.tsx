@@ -14,7 +14,7 @@ import {
 	Typography,
 } from "@mui/material";
 
-// assets and css
+// assets and sass
 import projectsList from "../../pages/Projects/projects-list";
 import Project from "@models/project";
 import Tag from "../projects/Tag";

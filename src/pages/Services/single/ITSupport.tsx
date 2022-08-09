@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Stack } from "@mui/material";
 import Head from "../../../components/common/Head";
 
-// assets and css
-import "../Services.css";
+// assets and sass
+import "../Services.sass";
 import ImageITSupport from "../assets/it-support.jpg";
 
 export default class ITSupport extends React.Component<{

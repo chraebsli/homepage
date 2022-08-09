@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Stack } from "@mui/material";
 import Head from "../../../components/common/Head";
 
-// assets and css
-import "../Projects.css";
+// assets and sass
+import "../Projects.sass";
 import ToolImage from "../../../components/projects/ToolImage";
 import WakaTimeBadge from "../../../components/projects/WakaTimeBadge";
 import projectsList from "../projects-list";
