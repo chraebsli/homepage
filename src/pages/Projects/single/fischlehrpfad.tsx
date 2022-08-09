@@ -2,11 +2,13 @@
 import React from "react";
 import Head from "../../../components/common/Head";
 import Container from "@mui/material/Container";
+import { Stack } from "@mui/material";
 
 // import assets and css
 import "../Projects.css";
 import ToolImage from "../../../components/ToolImage";
-import { Stack } from "@mui/material";
+import WakaTimeBadge from "../../../components/WakaTimeBadge";
+import projectsList from "../projects-list";
 
 export default class Fischlehrpfad extends React.Component<{
 	loading?: boolean;
@@ -17,6 +19,7 @@ export default class Fischlehrpfad extends React.Component<{
 	pageName = "Fischlehrpfad";
 	urlName = "fischlehrpfad.ch";
 	url = `https://${this.urlName}`;
+	project = projectsList.find(project => project.id === "fischlehrpfad");
 
 	render() {
 		return (
@@ -26,6 +29,7 @@ export default class Fischlehrpfad extends React.Component<{
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
+							<WakaTimeBadge url={this.project!.wakatimeBadge} />
 						</section>
 
 						<article className="page-content">

@@ -18,6 +18,7 @@ const projectsList = () => {
 				" dem CMS Grav entwickelt wurde.",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
+			wakatimeBadge: "https://wakatime.com/badge/github/chraebslii/Fischlehrpfad-Burgdorf",
 		}),
 		new Project({
 			id: "personal-website",
@@ -31,6 +32,7 @@ const projectsList = () => {
 				" die ich selbständig erlernt habe.",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
+			wakatimeBadge: "https://wakatime.com/badge/github/chraebsli/homepage",
 		}),
 		new Project({
 			id: "sgrumisberg",
@@ -44,6 +46,7 @@ const projectsList = () => {
 				" und konnte so erste Erfahrungen sammeln.",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
+			wakatimeBadge: "https://wakatime.com/badge/github/chraebsli/sgrumisberg.ch",
 		}),
 		new Project({
 			id: "mgrumisberg",
@@ -57,6 +60,7 @@ const projectsList = () => {
 				" wieder für das CMS Grav entschieden.",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
+			wakatimeBadge: "https://wakatime.com/badge/github/chraebslii/mgrumisberg.ch",
 		}),
 	];
 };
