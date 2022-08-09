@@ -7,7 +7,7 @@
 	flex-grow: 1;
 }
 .social-media-item {
-	flex-basis: calc(100% / 5);
+	flex-basis: calc(100% / 5);;
 }
 .social-media-item-icon {
 	padding: 1rem;
@@ -15,4 +15,12 @@
 }
 .social-media-item-text {
 	text-align: center;
+}
+
+.social-media-item-text, .social-media-item-icon {
+	color: #000000;
+}
+
+.social-media-item:hover .social-media-item-text, .social-media-item:hover .social-media-item-icon {
+	color: var(--primary-color);
 }

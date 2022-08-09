@@ -1,7 +1,4 @@
 /* ********************************************* forms ********************************************* */
-.btn-primary {
-	background-color: var(--prim-color);
-}
 
 form {
 	max-width: 50rem;
@@ -28,4 +25,8 @@ form {
 
 .after-submit {
 	display: none;
+}
+
+label {
+	color: var(--text-primary-color) !important;
 }

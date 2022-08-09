@@ -16,7 +16,7 @@
 	padding: 0.3rem;
 }
 .single-project iframe {
-	border: 5px solid var(--prim-color);
+	border: 5px solid var(--primary-color);
 }
 
 .single-project .iframe-container {

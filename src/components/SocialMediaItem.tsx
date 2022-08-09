@@ -1,4 +1,5 @@
 import React from "react";
+import { Box } from "@mui/material";
 
 export default function SocialMediaItem({
 	href,
@@ -12,15 +13,35 @@ export default function SocialMediaItem({
 	user: string;
 }) {
 	return (
-		<div className="social-media-item">
+		<Box
+			className="social-media-item"
+			sx={
+				{
+					//color: "text.primary",
+				}
+			}>
 			<a href={href} target="_blank" rel="noreferrer">
-				<div className="social-media-item-icon">{icon}</div>
-				<div className="social-media-item-text">
+				<Box
+					className="social-media-item-icon"
+					sx={
+						{
+							//color: "text.primary",
+						}
+					}>
+					{icon}
+				</Box>
+				<Box
+					className="social-media-item-text"
+					sx={
+						{
+							//color: "text.primary",
+						}
+					}>
 					{name}: <br />
 					{user}
-				</div>
+				</Box>
 			</a>
-		</div>
+		</Box>
 	);
 }
 

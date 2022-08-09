@@ -24,7 +24,7 @@
 }
 
 .me #skills progress::-webkit-progress-value {
-	background: var(--prim-color);
+	background: var(--primary-color);
 }
 
 .me #skills .progress-text {
