@@ -14,7 +14,7 @@ import "./css/form.css";
 // components
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
-import Fallback from "./components/common/Fallback";
+import Loader from "./components/common/Loader";
 
 // pages
 import Home from "./pages/Home/Home";
@@ -42,7 +42,7 @@ ReactDOM.render(
 	<ThemeProvider breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}>
 		<Router>
 			<Header />
-			<React.Suspense fallback={Fallback}>
+			<React.Suspense fallback={Loader}>
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="*" element={<Error404 />} />
