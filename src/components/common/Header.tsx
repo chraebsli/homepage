@@ -1,14 +1,22 @@
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import * as React from "react";
+import { AppBar, Container } from "@mui/material";
+import { Nav, Navbar } from "react-bootstrap";
 
 // assets and css
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
 
+const pages = [
+	{ href: "/me", label: "Über mich" },
+	{ href: "/services", label: "Services" },
+	{ href: "/projects", label: "Projekte" },
+	{ href: "/contact", label: "Kontakt" },
+];
+
 export default function Header() {
 	return (
-		<>
-			<Navbar collapseOnSelect expand={"lg"} bg={"primary"} variant={"dark"}>
-				<Container>
+		<AppBar position="static">
+			<Container>
+				<Navbar collapseOnSelect expand={"sm"} bg={"none"} variant={"dark"}>
 					<Navbar.Brand href={"/"}>
 						<img
 							src={LogoWhiteTransparent}
@@ -25,15 +33,17 @@ export default function Header() {
 					<Navbar.Collapse id={"responsive-navbar-nav"}>
 						<Nav className={"me-auto"}></Nav>
 						<Nav>
-							<Nav.Link href={"/me"}>Über mich</Nav.Link>
-							<Nav.Link href={"/services"}>Services</Nav.Link>
-							<Nav.Link href={"/projects"}>Projekte</Nav.Link>
-							<Nav.Link href={"/contact"}>Kontakt</Nav.Link>
+							{pages.map(page => (
+								<Nav.Link key={page.label} href={page.href}>
+									{page.label}
+								</Nav.Link>
+							))}
 						</Nav>
 					</Navbar.Collapse>
-				</Container>
-			</Navbar>
-		</>
+				</Navbar>
+			</Container>
+		</AppBar>
 	);
-}
+};
+
 
