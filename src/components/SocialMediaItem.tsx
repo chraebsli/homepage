@@ -1,26 +1,26 @@
 import React from "react";
 
-export default class SocialMediaItem extends React.Component<{
+export default function SocialMediaItem({
+	href,
+	icon,
+	name,
+	user,
+}: {
 	href: string;
 	icon: React.ReactNode;
 	name: string;
 	user: string;
-}> {
-	static defaultProps = {};
-
-	render() {
-		const { href, icon, name, user } = this.props;
-
-		return (
-			<div className="social-media-item">
-				<a href={href} target="_blank" rel="noreferrer">
-					<div className="social-media-item-icon">{icon}</div>
-					<div className="social-media-item-text">
-						{name}: <br />
-						{user}
-					</div>
-				</a>
-			</div>
-		);
-	}
+}) {
+	return (
+		<div className="social-media-item">
+			<a href={href} target="_blank" rel="noreferrer">
+				<div className="social-media-item-icon">{icon}</div>
+				<div className="social-media-item-text">
+					{name}: <br />
+					{user}
+				</div>
+			</a>
+		</div>
+	);
 }
+

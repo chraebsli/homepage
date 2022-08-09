@@ -1,51 +1,49 @@
 import React from "react";
 import { Box, Button, Card, CardActions, CardContent, CardHeader, CardMedia, Typography } from "@mui/material";
 
-export default class PageCard extends React.Component<{
+export default function PageCard({
+	cardTitle,
+	image,
+	imageHeight = "300",
+	content = "",
+	buttonVariant = "outlined",
+	buttonHref,
+	buttonText,
+}: {
 	cardTitle: string;
 	image: string;
-	imageHeight: string;
-	content: string;
-	buttonVariant: string;
+	imageHeight?: string;
+	content?: string;
+	buttonVariant?: string;
 	buttonHref: string;
 	buttonText: string;
-}> {
-	static defaultProps = {
-		imageHeight: "300",
-		content: "",
-		buttonVariant: "outlined",
-	};
+}) {
+	return (
+		<Card>
+			<CardMedia component={"img"} height={imageHeight} image={image} alt={"image"} />
 
-	render() {
-		const { cardTitle, image, imageHeight, content, buttonVariant, buttonHref, buttonText } = this.props;
+			<CardHeader title={cardTitle} titleTypographyProps={{ align: "center" }} />
 
-		return (
-			<Card>
-				<CardMedia component={"img"} height={imageHeight} image={image} alt={"image"} />
+			<CardContent>
+				<Box
+					sx={{
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "center",
+						alignItems: "center",
+						mb: 0,
+					}}>
+					<Typography component="h5" variant="h5" color="text.primary">
+						{content}
+					</Typography>
+				</Box>
+			</CardContent>
 
-				<CardHeader title={cardTitle} titleTypographyProps={{ align: "center" }} />
-
-				<CardContent>
-					<Box
-						sx={{
-							display: "flex",
-							flexDirection: "column",
-							justifyContent: "center",
-							alignItems: "center",
-							mb: 0,
-						}}>
-						<Typography component="h5" variant="h5" color="text.primary">
-							{content}
-						</Typography>
-					</Box>
-				</CardContent>
-
-				<CardActions>
-					<Button fullWidth variant={buttonVariant as "outlined" | "contained"} href={buttonHref}>
-						{buttonText}
-					</Button>
-				</CardActions>
-			</Card>
-		);
-	}
+			<CardActions>
+				<Button fullWidth variant={buttonVariant as "outlined" | "contained"} href={buttonHref}>
+					{buttonText}
+				</Button>
+			</CardActions>
+		</Card>
+	);
 }
