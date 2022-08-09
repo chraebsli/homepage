@@ -4,8 +4,8 @@ import Head from "../../../components/common/Head";
 
 // assets and css
 import "../Projects.css";
-import ToolImage from "../../../components/ToolImage";
-import WakaTimeBadge from "../../../components/WakaTimeBadge";
+import ToolImage from "../../../components/projects/ToolImage";
+import WakaTimeBadge from "../../../components/projects/WakaTimeBadge";
 import projectsList from "../projects-list";
 
 export default class SGRumisberg extends React.Component<{

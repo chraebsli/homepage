@@ -1,8 +1,8 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Head from "../../components/common/Head";
-import ServicesList from "../../components/ServicesList";
-import ProjectsList from "../../components/ProjectsList";
+import ServicesList from "../../components/services/ServicesList";
+import ProjectsList from "../../components/projects/ProjectsList";
 import SocialMediaList from "../../components/SocialMediaList";
 
 // assets and css

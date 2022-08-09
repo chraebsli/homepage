@@ -7,8 +7,8 @@ import "swiper/css/pagination";
 
 // assets and css
 import "./Services.css";
-import servicesList from "./services-list";
-import ServicesList from "../../components/ServicesList";
+import servicesList from "../Services/services-list";
+import ServicesList from "../../components/services/ServicesList";
 
 export default class Services extends React.Component<{
 	loading?: boolean;

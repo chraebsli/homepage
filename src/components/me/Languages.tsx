@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Progress from "../Progress";
+import Progress from "./Progress";
 
 // assets and css
 import { SiCss3, SiHtml5, SiJavascript, SiMysql, SiNodedotjs, SiPhp, SiReact, SiTypescript } from "react-icons/si";

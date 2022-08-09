@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Progress from "../Progress";
+import Progress from "./Progress";
 
 // assets and css
 import { SiAzuredevops, SiCloudflare, SiFirebase, SiHeroku, SiNetlify, SiVercel } from "react-icons/si";

@@ -15,19 +15,12 @@ import {
 } from "@mui/material";
 
 // assets and css
-import projectsList from "../pages/Projects/projects-list";
-import Project from "../models/project";
-import Tag from "./Tag";
+import servicesList from "../../pages/Services/services-list";
+import Service from "@models/service";
 
-export default function ProjectsList({
-	loading = false,
-	space = 30,
-	projects = projectsList,
-}: {
-	loading?: boolean;
-	space?: number;
-	projects?: Project[];
-}) {
+export default function ServicesList({ loading = false, space = 30 }: { loading?: boolean; space?: number }) {
+	const services: Service[] = servicesList;
+
 	return (
 		<Swiper
 			slidesPerView={"auto"}
@@ -44,10 +37,10 @@ export default function ProjectsList({
 			}}
 			modules={[Mousewheel, Autoplay, Pagination, Navigation]}
 			className="services-carousel">
-			{projects?.map(project => (
+			{services.map(service => (
 				// eslint-disable-next-line react/jsx-key
 				<SwiperSlide>
-					<Grid item key={project.title} xs={12} sm={9} md={6}>
+					<Grid item key={service.title} xs={12} sm={9} md={6}>
 						<Card>
 							{loading ? (
 								<Skeleton animation="wave" variant="rectangular" height={200} />
@@ -55,19 +48,13 @@ export default function ProjectsList({
 								<CardMedia
 									component={"img"}
 									height={"200"}
-									image={project.image}
-									alt={`Bild Projekt ${project.title}`}
+									image={service.image}
+									alt={`Illustration ${service.title}`}
 								/>
 							)}
 
-							<CardHeader title={project.title} titleTypographyProps={{ align: "center" }} />
+							<CardHeader title={service.title} titleTypographyProps={{ align: "center" }} />
 							<CardContent>
-								<div>
-									{project.tags?.map(tag => (
-										// eslint-disable-next-line react/jsx-key
-										<Tag name={tag} />
-									))}
-								</div>
 								<Box
 									sx={{
 										display: "flex",
@@ -78,19 +65,33 @@ export default function ProjectsList({
 									}}>
 									<Typography
 										component="p"
-										className="project-description"
+										className="service-teaser"
 										variant="body1"
 										color="text.primary">
-										{project.description}
+										{service.teaser}
+									</Typography>
+									<Typography
+										component="p"
+										className="service-description"
+										variant="body1"
+										color="text.primary">
+										{service.description}
 									</Typography>
 								</Box>
+								<ul>
+									{service.features.map(line => (
+										<Typography component="li" variant="subtitle1" key={line}>
+											{line}
+										</Typography>
+									))}
+								</ul>
 							</CardContent>
 							<CardActions>
 								<Button
 									fullWidth
-									variant={project.buttonVariant as "outlined" | "contained"}
-									href={project.href}>
-									{project.buttonText}
+									variant={service.buttonVariant as "outlined" | "contained"}
+									href={service.href}>
+									{service.buttonText}
 								</Button>
 							</CardActions>
 						</Card>

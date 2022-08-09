@@ -15,12 +15,19 @@ import {
 } from "@mui/material";
 
 // assets and css
-import servicesList from "../pages/Services/services-list";
-import Service from "../models/service";
+import projectsList from "../../pages/Projects/projects-list";
+import Project from "@models/project";
+import Tag from "../projects/Tag";
 
-export default function ServicesList({ loading = false, space = 30 }: { loading?: boolean; space?: number }) {
-	const services: Service[] = servicesList;
-
+export default function ProjectsList({
+	loading = false,
+	space = 30,
+	projects = projectsList,
+}: {
+	loading?: boolean;
+	space?: number;
+	projects?: Project[];
+}) {
 	return (
 		<Swiper
 			slidesPerView={"auto"}
@@ -37,10 +44,10 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 			}}
 			modules={[Mousewheel, Autoplay, Pagination, Navigation]}
 			className="services-carousel">
-			{services.map(service => (
+			{projects?.map(project => (
 				// eslint-disable-next-line react/jsx-key
 				<SwiperSlide>
-					<Grid item key={service.title} xs={12} sm={9} md={6}>
+					<Grid item key={project.title} xs={12} sm={9} md={6}>
 						<Card>
 							{loading ? (
 								<Skeleton animation="wave" variant="rectangular" height={200} />
@@ -48,13 +55,19 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 								<CardMedia
 									component={"img"}
 									height={"200"}
-									image={service.image}
-									alt={`Illustration ${service.title}`}
+									image={project.image}
+									alt={`Bild Projekt ${project.title}`}
 								/>
 							)}
 
-							<CardHeader title={service.title} titleTypographyProps={{ align: "center" }} />
+							<CardHeader title={project.title} titleTypographyProps={{ align: "center" }} />
 							<CardContent>
+								<div>
+									{project.tags?.map(tag => (
+										// eslint-disable-next-line react/jsx-key
+										<Tag name={tag} />
+									))}
+								</div>
 								<Box
 									sx={{
 										display: "flex",
@@ -65,33 +78,19 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 									}}>
 									<Typography
 										component="p"
-										className="service-teaser"
+										className="project-description"
 										variant="body1"
 										color="text.primary">
-										{service.teaser}
-									</Typography>
-									<Typography
-										component="p"
-										className="service-description"
-										variant="body1"
-										color="text.primary">
-										{service.description}
+										{project.description}
 									</Typography>
 								</Box>
-								<ul>
-									{service.features.map(line => (
-										<Typography component="li" variant="subtitle1" key={line}>
-											{line}
-										</Typography>
-									))}
-								</ul>
 							</CardContent>
 							<CardActions>
 								<Button
 									fullWidth
-									variant={service.buttonVariant as "outlined" | "contained"}
-									href={service.href}>
-									{service.buttonText}
+									variant={project.buttonVariant as "outlined" | "contained"}
+									href={project.href}>
+									{project.buttonText}
 								</Button>
 							</CardActions>
 						</Card>

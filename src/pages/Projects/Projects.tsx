@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 // assets and css
 import "./Projects.css";
 import projectsList from "../Projects/projects-list";
-import ProjectsList from "../../components/ProjectsList";
+import ProjectsList from "../../components/projects/ProjectsList";
 
 export default class Projects extends React.Component<{
 	loading?: boolean;

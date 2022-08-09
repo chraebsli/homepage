@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import { Container, Stack } from "@mui/material";
 import Head from "../../components/common/Head";
-import ProjectsList from "../../components/ProjectsList";
+import ProjectsList from "../../components/projects/ProjectsList";
 import Languages from "../../components/me/Languages";
 import DevTools from "../../components/me/DevTools";
 

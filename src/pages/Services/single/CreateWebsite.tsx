@@ -4,7 +4,7 @@ import Head from "../../../components/common/Head";
 
 // assets and css
 import "../Services.css";
-import ProjectsList from "../../../components/ProjectsList";
+import ProjectsList from "../../../components/projects/ProjectsList";
 import projectsList from "../../Projects/projects-list";
 import ImageCreateWebsite from "../assets/create-website.jpg";
 
