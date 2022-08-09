@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ThemeProvider from "react-bootstrap/ThemeProvider";
 
 // css
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -38,9 +38,24 @@ import Privacy from "./pages/Privacy";
 
 import Error404 from "./pages/Error/404";
 
+const defaultTheme = createTheme({
+	palette: {
+		primary: { main: "#507cff" },
+		secondary: { main: "#ffffff" },
+		text: {
+			primary: "#000000",
+			secondary: "#ffffff",
+		},
+		background: {
+			default: "#ffffff",
+		},
+	},
+});
+
 ReactDOM.render(
-	<ThemeProvider breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}>
+	<ThemeProvider theme={defaultTheme}>
 		<Router>
+			<CssBaseline />
 			<Header />
 			<React.Suspense fallback={Loader}>
 				<Routes>

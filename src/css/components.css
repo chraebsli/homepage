@@ -5,19 +5,6 @@
 }
 
 /* ********************************************* footer ********************************************* */
-.footer-space {
-	height: 2rem;
-}
-footer {
-	width: 100%;
-	color: var(--text-sec-color);
-	background-color: var(--prim-color);
-	bottom: 0;
-	position: absolute;
-}
-footer .copyright {
-	font-size: var(--font-size-mini);
-}
 
 /* ********************************************* cards ********************************************* */
 .card-title {
