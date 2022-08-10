@@ -1,30 +1,47 @@
-// import libraries
 import React from "react";
+import { Box } from "@mui/material";
 
-// render component
-class SocialMediaItem extends React.Component<{
+export default function SocialMediaItem({
+	href,
+	icon,
+	name,
+	user,
+}: {
 	href: string;
 	icon: React.ReactNode;
 	name: string;
 	user: string;
-}> {
-	static defaultProps = {};
-
-	render() {
-		const { href, icon, name, user } = this.props;
-
-		return (
-			<div className="social-media-item">
-				<a href={href} target="_blank" rel="noreferrer">
-					<div className="social-media-item-icon">{icon}</div>
-					<div className="social-media-item-text">
-						{name}: <br />
-						{user}
-					</div>
-				</a>
-			</div>
-		);
-	}
+}) {
+	return (
+		<Box
+			className="social-media-item"
+			sx={
+				{
+					//color: "text.primary",
+				}
+			}>
+			<a href={href} target="_blank" rel="noreferrer">
+				<Box
+					className="social-media-item-icon"
+					sx={
+						{
+							//color: "text.primary",
+						}
+					}>
+					{icon}
+				</Box>
+				<Box
+					className="social-media-item-text"
+					sx={
+						{
+							//color: "text.primary",
+						}
+					}>
+					{name}: <br />
+					{user}
+				</Box>
+			</a>
+		</Box>
+	);
 }
 
-export default SocialMediaItem;

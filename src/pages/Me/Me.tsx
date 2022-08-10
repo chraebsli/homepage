@@ -1,19 +1,18 @@
-// import libraries
 import React from "react";
 import { Card } from "react-bootstrap";
-import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack";
+import { Container, Stack } from "@mui/material";
 import Head from "../../components/common/Head";
-import ProjectsList from "../../components/ProjectsList";
+import ProjectsList from "../../components/projects/ProjectsList";
 import Languages from "../../components/me/Languages";
 import DevTools from "../../components/me/DevTools";
 
-// import assets and css
-import "./Me.css";
-import projectsList from "../Projects/projects-list";
+// assets and sass
+import "./Me.sass";
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
 import WebIcon from "@mui/icons-material/Web";
+import PollIcon from "@mui/icons-material/Poll";
+import projectsList from "../Projects/projects-list";
 import Server from "../../components/me/Server";
 
 export default class Me extends React.Component {
@@ -95,6 +94,29 @@ export default class Me extends React.Component {
 											</p>
 										</Card.Text>
 										<ProjectsList />
+									</Card.Body>
+								</Card>
+								<Card className={"stats"} id={"stats"}>
+									<Card.Body>
+										<Card.Title>
+											<h2>
+												<PollIcon /> stats
+											</h2>
+										</Card.Title>
+										<Card.Text>
+											<p>Statistiken</p>
+										</Card.Text>
+										<Stack
+											className={"card-container"}
+											direction={{ xs: "column", md: "row" }}
+											spacing={3}>
+											<figure>
+												<embed src="https://wakatime.com/share/@chraebsli/e7bc95fa-f16d-45da-bae8-2320d8191b65.svg"></embed>
+											</figure>
+											<figure>
+												<embed src="https://wakatime.com/share/@chraebsli/ec37c5b1-ba15-4ac0-b6d6-4b93866d58cc.svg"></embed>
+											</figure>
+										</Stack>
 									</Card.Body>
 								</Card>
 							</Stack>

@@ -1,22 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import ThemeProvider from "react-bootstrap/ThemeProvider";
-//import * as serviceWorker from "./serviceWorker";
-// import css
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./css/overrides.css";
-import "./css/main.css";
-import "./css/components.css";
-import "./css/responsive.css";
-import "./css/form.css";
 
-// import components
+// sass
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./sass/main.sass";
+import "./sass/components.sass";
+import "./sass/responsive.sass";
+import "./sass/form.sass";
+
+// components
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
-import Fallback from "./components/common/Fallback";
+import Loader from "./components/common/Loader";
 
-// import pages
+// pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import CreateWebsite from "./pages/Services/single/CreateWebsite";
@@ -38,11 +37,26 @@ import Privacy from "./pages/Privacy";
 
 import Error404 from "./pages/Error/404";
 
+const defaultTheme = createTheme({
+	palette: {
+		primary: { main: "#507cff" },
+		secondary: { main: "#ffffff" },
+		text: {
+			primary: "#000000",
+			secondary: "#ffffff",
+		},
+		background: {
+			default: "#ffffff",
+		},
+	},
+});
+
 ReactDOM.render(
-	<ThemeProvider breakpoints={["xxxl", "xxl", "xl", "lg", "md", "sm", "xs", "xxs"]}>
+	<ThemeProvider theme={defaultTheme}>
 		<Router>
+			<CssBaseline />
 			<Header />
-			<React.Suspense fallback={Fallback}>
+			<React.Suspense fallback={Loader}>
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="*" element={<Error404 />} />
@@ -71,5 +85,3 @@ ReactDOM.render(
 
 	document.getElementById("root")
 );
-
-//serviceWorker.unregister();

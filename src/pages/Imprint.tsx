@@ -1,7 +1,6 @@
-// import libraries
 import React from "react";
 import Head from "../components/common/Head";
-import Container from "@mui/material/Container";
+import { Container } from "@mui/material";
 
 export default class Imprint extends React.Component {
 	pageName = "Impressum";

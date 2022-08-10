@@ -1,44 +1,49 @@
-// import libraries
-import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap";
+import * as React from "react";
+import { AppBar, Container } from "@mui/material";
+import { Nav, Navbar } from "react-bootstrap";
 
-// import assets and css
+// assets and sass
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
 
-// render the header component
-class Header extends React.Component {
-	render(){
-		return (
-			<>
-				<Navbar collapseOnSelect expand={ "lg" } bg={ "primary" } variant={ "dark" }>
-					<Container>
-						<Navbar.Brand href={ "/" }>
-							<img
-								src={ LogoWhiteTransparent }
-								alt={ "logo" }
-								width={ 50 }
-								height={ 50 }
-								className={ "d-inline-block align-center" }
-							/>
-							<span className={ "brand-name" }>chraebsli IT-Services</span>
-						</Navbar.Brand>
+const pages = [
+	{ href: "/me", label: "Über mich" },
+	{ href: "/services", label: "Services" },
+	{ href: "/projects", label: "Projekte" },
+	{ href: "/contact", label: "Kontakt" },
+];
 
-						<Navbar.Toggle aria-controls={ "header-nav" } />
+export default function Header() {
+	return (
+		<AppBar position="static">
+			<Container>
+				<Navbar collapseOnSelect expand={"sm"} bg={"none"} variant={"dark"}>
+					<Navbar.Brand href={"/"}>
+						<img
+							src={LogoWhiteTransparent}
+							alt={"logo"}
+							width={50}
+							height={50}
+							className={"d-inline-block align-center"}
+						/>
+						<span className={"brand-name"}>chraebsli IT-Services</span>
+					</Navbar.Brand>
 
-						<Navbar.Collapse id={ "responsive-navbar-nav" }>
-							<Nav className={ "me-auto" }></Nav>
-							<Nav>
-								<Nav.Link href={ "/me" }>Über mich</Nav.Link>
-								<Nav.Link href={ "/services" }>Services</Nav.Link>
-								<Nav.Link href={ "/projects" }>Projekte</Nav.Link>
-								<Nav.Link href={ "/contact" }>Kontakt</Nav.Link>
-							</Nav>
-						</Navbar.Collapse>
-					</Container>
+					<Navbar.Toggle aria-controls={"header-nav"} />
+
+					<Navbar.Collapse id={"responsive-navbar-nav"}>
+						<Nav className={"me-auto"}></Nav>
+						<Nav>
+							{pages.map(page => (
+								<Nav.Link key={page.label} href={page.href}>
+									{page.label}
+								</Nav.Link>
+							))}
+						</Nav>
+					</Navbar.Collapse>
 				</Navbar>
-			</>
-		);
-	}
-}
+			</Container>
+		</AppBar>
+	);
+};
 
-export default Header;
+

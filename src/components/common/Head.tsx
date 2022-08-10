@@ -3,24 +3,10 @@ import React from "react";
 // @ts-ignore
 import { Helmet } from "react-helmet";
 
-class Head extends React.PureComponent<{
-	title: string;
-}> {
-	protected separator = " | ";
-	protected siteName = "chraebsli IT-Services";
-
-	render() {
-		return (
-			<Helmet>
-				<title>{this.renderTitle()}</title>
-			</Helmet>
-		);
-	}
-
-	renderTitle = () => {
-		const { title } = this.props;
-		return title + this.separator + this.siteName;
-	};
+export default function Head({ title }: { title: string }) {
+	return (
+		<Helmet>
+			<title>{`${title} | chraebsli IT-Services`}</title>
+		</Helmet>
+	);
 }
-
-export default Head;

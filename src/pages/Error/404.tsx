@@ -1,13 +1,11 @@
-// import libraries
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container } from "@mui/material";
 import PageCard from "../../components/PageCard";
 import Head from "../../components/common/Head";
 
-// import assets and css
+// assets and sass
 import ImageError from "./assets/error-404.jpg";
 
-// render the page error 404
 export default class Home extends React.Component {
 	pageName = "Error 404";
 	card = {

@@ -1,15 +1,13 @@
-// import libraries
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container } from "@mui/material";
 import Head from "../../components/common/Head";
-import ServicesList from "../../components/ServicesList";
-import ProjectsList from "../../components/ProjectsList";
+import ServicesList from "../../components/services/ServicesList";
+import ProjectsList from "../../components/projects/ProjectsList";
 import SocialMediaList from "../../components/SocialMediaList";
 
-// import css
-import "./Home.css";
+// assets and sass
+import "./Home.sass";
 
-// render the page home
 export default class Home extends React.Component {
 	pageName = "Home";
 

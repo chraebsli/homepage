@@ -1,12 +1,12 @@
-// import libraries
 import React from "react";
+import { Container, Stack } from "@mui/material";
 import Head from "../../../components/common/Head";
-import Container from "@mui/material/Container";
 
-// import assets and css
-import "../Projects.css";
-import ToolImage from "../../../components/ToolImage";
-import { Stack } from "@mui/material";
+// assets and sass
+import "../Projects.sass";
+import ToolImage from "../../../components/projects/ToolImage";
+import WakaTimeBadge from "../../../components/projects/WakaTimeBadge";
+import projectsList from "../projects-list";
 
 export default class SGRumisberg extends React.Component<{
 	loading?: boolean;
@@ -17,6 +17,7 @@ export default class SGRumisberg extends React.Component<{
 	pageName = "SG Rumisberg";
 	urlName = "sgrumisberg.ch";
 	url = `https://${this.urlName}`;
+	project = projectsList.find(project => project.id === "fischlehrpfad");
 
 	render() {
 		return (
@@ -26,6 +27,7 @@ export default class SGRumisberg extends React.Component<{
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
+							<WakaTimeBadge url={this.project!.wakatimeBadge} />
 						</section>
 
 						<article className="page-content">
