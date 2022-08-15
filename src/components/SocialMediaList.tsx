@@ -7,13 +7,7 @@ import socialMediaList from "../pages/SocialMedia/social-media-list";
 import SocialMedia from "../models/socialMedia";
 import SocialMediaItem from "./SocialMediaItem";
 
-export default function SocialMediaList({
-	loading = false,
-	items = socialMediaList,
-}: {
-	loading?: boolean;
-	items?: SocialMedia[];
-}) {
+export default function SocialMediaList({ items = socialMediaList }: { loading?: boolean; items?: SocialMedia[] }) {
 	return (
 		<Stack
 			className="social-media-container"
