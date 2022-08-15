@@ -111,10 +111,10 @@ export default class Me extends React.Component {
 											direction={{ xs: "column", md: "row" }}
 											spacing={3}>
 											<figure>
-												<embed src="https://wakatime.com/share/@chraebsli/e7bc95fa-f16d-45da-bae8-2320d8191b65.svg"></embed>
+												<embed src="https://wakatime.com/share/@chraebsli/e7bc95fa-f16d-45da-bae8-2320d8191b65.svg" />
 											</figure>
 											<figure>
-												<embed src="https://wakatime.com/share/@chraebsli/ec37c5b1-ba15-4ac0-b6d6-4b93866d58cc.svg"></embed>
+												<embed src="https://wakatime.com/share/@chraebsli/ec37c5b1-ba15-4ac0-b6d6-4b93866d58cc.svg" />
 											</figure>
 										</Stack>
 									</Card.Body>

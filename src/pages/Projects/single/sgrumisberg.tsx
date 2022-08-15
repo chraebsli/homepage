@@ -22,7 +22,7 @@ export default class SGRumisberg extends React.Component<{
 	render() {
 		return (
 			<>
-				<Head title={this.pageName}></Head>
+				<Head title={this.pageName} />
 				<main className={"single-project"}>
 					<Container>
 						<section className={"page-title"}>
@@ -90,7 +90,7 @@ export default class SGRumisberg extends React.Component<{
 											width={1280}
 											height={720}
 											title={"Schützengesellschaft Rumisberg"}
-											loading={"lazy"}></iframe>
+											loading={"lazy"} />
 									</div>
 								</section>
 							</Stack>

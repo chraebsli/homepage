@@ -31,7 +31,7 @@ export default function Header() {
 					<Navbar.Toggle aria-controls={"header-nav"} />
 
 					<Navbar.Collapse id={"responsive-navbar-nav"}>
-						<Nav className={"me-auto"}></Nav>
+						<Nav className={"me-auto"} />
 						<Nav>
 							{pages.map(page => (
 								<Nav.Link key={page.label} href={page.href}>
