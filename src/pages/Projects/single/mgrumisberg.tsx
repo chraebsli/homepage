@@ -22,7 +22,7 @@ export default class MGRumisberg extends React.Component<{
 	render() {
 		return (
 			<>
-				<Head title={this.pageName}></Head>
+				<Head title={this.pageName} />
 				<main className={"single-project"}>
 					<Container>
 						<section className={"page-title"}>

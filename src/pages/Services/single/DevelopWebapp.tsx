@@ -17,7 +17,7 @@ export default class DevelopWebapp extends React.Component<{
 	render() {
 		return (
 			<>
-				<Head title={this.pageName}></Head>
+				<Head title={this.pageName} />
 				<main className={"single-service"}>
 					<Container>
 						<section className={"page-title"}>

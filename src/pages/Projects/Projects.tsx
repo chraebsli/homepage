@@ -21,7 +21,7 @@ export default class Projects extends React.Component<{
 	render() {
 		return (
 			<>
-				<Head title={this.pageName}></Head>
+				<Head title={this.pageName} />
 				<main className={this.pageName.toLowerCase()}>
 					<Container>
 						<section className={"page-title"}>
