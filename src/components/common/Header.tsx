@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { AppBar, Container } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
 

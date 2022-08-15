@@ -27,7 +27,7 @@ export default class MGRumisberg extends React.Component<{
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
-							<WakaTimeBadge url={this.project!.wakatimeBadge} />
+							<WakaTimeBadge url={this.project?.wakatimeBadge} />
 						</section>
 
 						<article className="page-content">

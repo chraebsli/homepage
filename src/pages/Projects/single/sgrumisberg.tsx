@@ -27,7 +27,7 @@ export default class SGRumisberg extends React.Component<{
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
-							<WakaTimeBadge url={this.project!.wakatimeBadge} />
+							<WakaTimeBadge url={this.project?.wakatimeBadge} />
 						</section>
 
 						<article className="page-content">
@@ -90,7 +90,8 @@ export default class SGRumisberg extends React.Component<{
 											width={1280}
 											height={720}
 											title={"Schützengesellschaft Rumisberg"}
-											loading={"lazy"} />
+											loading={"lazy"}
+										/>
 									</div>
 								</section>
 							</Stack>
