@@ -10,7 +10,7 @@ const links = [
 export default function Footer() {
 	return (
 		<>
-			<div className={"footer-space"}></div>
+			<div className={"footer-space"} />
 			<Box
 				sx={{
 					bottom: 0,

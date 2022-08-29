@@ -22,12 +22,12 @@ export default class Personal extends React.Component<{
 	render() {
 		return (
 			<>
-				<Head title={this.pageName}></Head>
+				<Head title={this.pageName} />
 				<main className={"single-project"}>
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
-							<WakaTimeBadge url={this.project!.wakatimeBadge} />
+							<WakaTimeBadge url={this.project?.wakaTimeBadge} />
 						</section>
 
 						<article className="page-content">
@@ -35,46 +35,46 @@ export default class Personal extends React.Component<{
 								<section>
 									<h3>Beschreibung</h3>
 									<p>
-										Ich wollte schon längere Zeit eine eigene Website haben, die ich selber
-										entwickelt habe. Somit kann ich lernen, was mich interessiert und bin frei, was
-										ich wie umsetzten möchte. So habe ich mehrmals angefangen aber nicht wieder
-										weitergemacht, da ich irgendwann keine Zeit mehr hatte.
+										Ich wollte schon längere Zeit eine eigene Website haben, die ich ohne CMS
+										entwickelt habe. So kann ich zusätzlich lernen, was mich interessiert und bin
+										frei, wie ich es umsetzten möchte. Ich habe mehrmals angefangen aber immer
+										wieder aufgehört, weil ich keine Zeit mehr hatte. Schlussendlich konnte ich mich
+										überreden und war motiviert, mit der JavaScript Bibliothek React die Website zu
+										erstellen.
 									</p>
 								</section>
 								<section>
 									<h3>Inhalt</h3>
 									<p>
-										Auf meiner Website möchte ich Dienstleistungen anbieten, um in meiner Freizeit
-										zu arbeiten und zu lernen. Zusätzlich kann ich noch ein bisschen Geld verdienen.
-										Ich möchte auch meine vergangenen Projekte zeigen, die ich entwickelt habe und
-										um meine Kenntnisse zu zeigen
+										Auf meiner Website biete ich Dienstleistungen an, um in meiner Freizeit zu
+										arbeiten und mich weiterzubilden. Zusätzlich möchte ich Geld verdienen, da ich
+										in meiner Ausbildung kein Lohn erhalte. Ich möchte auch meine vergangenen
+										Projekte zeigen, die ich erstellt habe und so meine Erfahrung zeigen.
 									</p>
 								</section>
 								<section>
 									<h3>Vorgehen</h3>
 									<p>
-										Da ich mich in den Programmiersprache NodeJS, React und TypeScript weiterbilden
-										will, habe ich angefangen mit React die Website zu entwickeln. Für kleinere
-										Sachen habe ich auch noch Express verwendet. Ich werde an dieser Website öfters
-										updaten, wenn ich neue Ideen habe.
+										Da ich mich in der Programmiersprache JavaScript/ TypeScript weiterbilden will,
+										habe ich angefangen mit React die Website zu entwickeln. Ich werde an dieser
+										Website öfters Verbesserungen vornehmen, da ich immer wieder neue Ideen habe.
 									</p>
 								</section>
 								<section>
 									<h3>Fazit</h3>
 									<p>
-										Es macht sehr Spass und ich habe viel Motivation, an diesem Projekt zu arbeiten.
+										Es macht sehr Spass und ich habe viel Motivation, an dieser Website zu arbeiten.
 										Vor allem weil ich sehr viel Zeit und Aufwand hatte, um die Technologien zu
-										lernen und zu verwenden. Jedoch gehe ich ohne Planung vor und mache, auf was ich
-										gerade Lust habe, was die Produktivität beeinträchtigt. Jedoch habe ich mich auf
-										diese Weise entschieden, da ich so freier bin.
+										lernen und zu verwenden. Ich will ohne Planung an diesem Projekt arbeiten, da
+										ich so machen kann was ich möchte und weniger Stress habe, mich möglichst an die
+										Planung zu halten.
 									</p>
 								</section>
 								<section>
 									<h3>Tools</h3>
-									<div className={"project-tools"} data-count={6}>
-										<ToolImage name={"Node.JS"} />
-										<ToolImage name={"Express"} />
+									<div className={"project-tools"} data-count={4}>
 										<ToolImage name={"React"} />
+										<ToolImage name={"Node.JS"} />
 										<ToolImage name={"TypeScript"} />
 										<ToolImage name={"MUI"} />
 									</div>

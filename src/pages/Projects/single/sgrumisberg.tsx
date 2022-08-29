@@ -22,12 +22,12 @@ export default class SGRumisberg extends React.Component<{
 	render() {
 		return (
 			<>
-				<Head title={this.pageName}></Head>
+				<Head title={this.pageName} />
 				<main className={"single-project"}>
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
-							<WakaTimeBadge url={this.project!.wakatimeBadge} />
+							<WakaTimeBadge url={this.project?.wakaTimeBadge} />
 						</section>
 
 						<article className="page-content">
@@ -37,35 +37,34 @@ export default class SGRumisberg extends React.Component<{
 									<p>
 										Diese Website ist die erste Website, die ich für einen privaten Kunden
 										entwickelt habe. Der Kunde ist ein Verein aus meinem Dorf, der eine neue Website
-										möchte, jedoch kaum Geld zur Verfügung hat. Deshalb habe ich die Website gratis
-										erstellt, es das erste Projekt für einen Kunden ist, bei dem ich auf mich
-										alleine gestellt bin und so auch etwas für mich lernen kann.
+										möchte. Sie wollen ihren Verein vorstellen und Bilder von Events teilen.
 									</p>
 								</section>
 								<section>
 									<h3>Inhalt</h3>
 									<p>
-										Die Website soll einfach und simpel sein und ist für die Vereinsmitglieder
-										vorgesehen, damit sie die aktuellen Daten und andere Informationen und Daten
-										teilen können. Es soll aber auch eine Seite haben, um neue Mitglieder anwerben
-										zu können.
+										Die Website simpel gestaltet, da auch ältere Mitglieder auf der Seite zurecht
+										kommen und die Inhalte einfach finden können. Die verschiedenen Seiten enthalten
+										Inhalte von Events, Bilder, Ranglisten, etc. Auf ein paar Seiten gibt es auch
+										Inhalte über den Verein und wie man ein Mitglied werden kann.
 									</p>
 								</section>
 								<section>
 									<h3>Vorgehen</h3>
 									<p>
 										Ich habe diese Website mit dem CMS Grav entwickelt. Durch meine Arbeit am
-										Projekt <a href={"/project/fischlehrpfad"}>Fischlehrpfad</a> konnte ich gewisse
-										Funktionen und Einstellungen aber auch Daten aus diesem Projekt kopieren und so
+										Projekt <a href={"/project/fischlehrpfad"}>Fischlehrpfad</a> konnte ich das
+										Grunddesign und einzelne Elemente aus dem Projekt verwenden und konnte so
 										Aufwand und Zeit zu sparen.
 									</p>
 								</section>
 								<section>
 									<h3>Fazit</h3>
 									<p>
-										Es war ein bisschen stressig, da ich mich am Ende des 2. Lehrjahr gewesen bin
-										und für viele Prüfungen lernen musste. Ich finde aber es hat sich gelohnt weil
-										ich jetzt mehr Erfahrung im Projektmanagement und dem CMS Grav habe.
+										Es war ein bisschen stressig, da ich zurzeit am Ende des 2. Lehrjahr gewesen bin
+										und für viele Prüfungen lernen musste. Ich finde aber, dass es sich gelohnt weil
+										ich jetzt mehr Erfahrung im Projektmanagement und den Umgang mit Kunden sowie
+										dem CMS Grav habe.
 									</p>
 								</section>
 								<section>
@@ -77,7 +76,6 @@ export default class SGRumisberg extends React.Component<{
 										<ToolImage name={"HTML5"} />
 										<ToolImage name={"CSS3"} />
 										<ToolImage name={"JavaScript"} />
-										<ToolImage name={"TypeScript"} />
 									</div>
 								</section>
 								<section>
@@ -90,7 +88,8 @@ export default class SGRumisberg extends React.Component<{
 											width={1280}
 											height={720}
 											title={"Schützengesellschaft Rumisberg"}
-											loading={"lazy"}></iframe>
+											loading={"lazy"}
+										/>
 									</div>
 								</section>
 							</Stack>

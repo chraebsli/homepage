@@ -28,6 +28,7 @@ import Fischlehrpfad from "./pages/Projects/single/fischlehrpfad";
 import Personal from "./pages/Projects/single/personal";
 import SGRumisberg from "./pages/Projects/single/sgrumisberg";
 import MGRumisberg from "./pages/Projects/single/mgrumisberg";
+import HomeDashboard from "./pages/Projects/single/home-dashboard";
 
 import Contact from "./pages/Contact";
 import Me from "./pages/Me/Me";
@@ -71,6 +72,7 @@ ReactDOM.render(
 					<Route path="/project/personal" element={<Personal />} />
 					<Route path="/project/sgrumisberg" element={<SGRumisberg />} />
 					<Route path="/project/mgrumisberg" element={<MGRumisberg />} />
+					<Route path="/project/home-dashboard" element={<HomeDashboard />} />
 
 					<Route path="/me" element={<Me />} />
 					<Route path="/contact" element={<Contact />} />

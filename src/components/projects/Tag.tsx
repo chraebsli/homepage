@@ -3,22 +3,22 @@ import { Avatar, Chip } from "@mui/material";
 
 export default function Tag({ name }: { name: string }) {
 	let color: "secondary" | "default" | "success" | "warning" | "error" | "primary" | "info";
-	let avatar: string;
+	let avatar: any;
 	switch (name) {
-	case "done":
+	case "deployed":
 		color = "success";
 		avatar = "D";
 		break;
-	case "in-progress":
+	case "development":
 		color = "warning";
 		avatar = "I";
 		break;
-	case "work":
+	case "client":
 		color = "error";
-		avatar = "W";
+		avatar = "C";
 		break;
-	case "private":
-		color = "secondary";
+	case "personal":
+		color = "info";
 		avatar = "P";
 		break;
 	case "web":

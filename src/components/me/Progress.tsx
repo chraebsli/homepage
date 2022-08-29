@@ -7,7 +7,7 @@ export default function Progress({
 	max = 100,
 }: {
 	text: string;
-	icon: any;
+	icon: React.ReactNode;
 	progress: number;
 	max?: number;
 }) {

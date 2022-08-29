@@ -7,7 +7,7 @@ export default class Project {
 	description: string;
 	buttonText: string;
 	buttonVariant: string;
-	wakatimeBadge: string;
+	wakaTimeBadge: string;
 
 	constructor(s: {
 		id: string;
@@ -18,7 +18,7 @@ export default class Project {
 		description: string;
 		buttonText: string;
 		buttonVariant: string;
-		wakatimeBadge: string;
+		wakaTimeBadge: string;
 	}) {
 		this.id = s.id;
 		this.title = s.title;
@@ -28,6 +28,6 @@ export default class Project {
 		this.description = s.description;
 		this.buttonText = s.buttonText;
 		this.buttonVariant = s.buttonVariant;
-		this.wakatimeBadge = s.wakatimeBadge;
+		this.wakaTimeBadge = s.wakaTimeBadge;
 	}
 }
