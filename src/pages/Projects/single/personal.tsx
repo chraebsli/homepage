@@ -72,7 +72,7 @@ export default class Personal extends React.Component<{
 								</section>
 								<section>
 									<h3>Tools</h3>
-									<div className={"project-tools"} data-count={6}>
+									<div className={"project-tools"} data-count={4}>
 										<ToolImage name={"React"} />
 										<ToolImage name={"Node.JS"} />
 										<ToolImage name={"TypeScript"} />

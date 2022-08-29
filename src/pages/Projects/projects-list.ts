@@ -2,6 +2,7 @@ import ImageFischlehrpfad from "./assets/fischlehrpfad.jpg";
 import ImagePersonal from "./assets/personal.jpg";
 import ImageSGRumisberg from "./assets/sgrumisberg.jpg";
 import ImageMGRumisberg from "./assets/mgrumisberg.jpg";
+import ImageHomeDasboard from "./assets/home-dashboard.jpg";
 import Project from "../../models/project";
 
 const projectsList = () => {
@@ -61,6 +62,20 @@ const projectsList = () => {
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
 			wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/mgrumisberg.ch",
+		}),
+		new Project({
+			id: "home-dashboard",
+			title: "Home Dashboard",
+			href: "/project/home-dashboard",
+			tags: ["web", "personal", "development"],
+			image: ImageHomeDasboard,
+			description:
+				"Dieses Projekt ist ein Dashboard für mein Smart Home. Die Daten werden mit einer API von Next.js" +
+				" verarbeitet und anschliessend mit TypeScript React bereitgestellt. Es gibt Elemente für Zeit," +
+				" Wetter und Kalender. Weitere kommen.",
+			buttonText: "Mehr erfahren",
+			buttonVariant: "outlined",
+			wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/home-dashboard",
 		}),
 	];
 };
