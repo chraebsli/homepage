@@ -27,7 +27,7 @@ export default class MGRumisberg extends React.Component<{
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
-							<WakaTimeBadge url={this.project?.wakatimeBadge} />
+							<WakaTimeBadge url={this.project?.wakaTimeBadge} />
 						</section>
 
 						<article className="page-content">
@@ -36,34 +36,36 @@ export default class MGRumisberg extends React.Component<{
 									<h3>Beschreibung</h3>
 									<p>
 										Diese Website ist für die Musikgesellschaft Rumisberg, in der ich seit mehreren
-										Jahren dabei bin. Unsere alte Website war schwierig zu verwalten und aus diesem
-										Grund sollte ich eine neue Website erstellen, die einfach zu verwalten ist.{" "}
-										<br />
-										Dieses Projekt ist momentan noch in entwicklung.
+										Jahren Mitglied bin. Unsere alte Website war schwierig zu verwalten und ändern.
+										Aus diesem Grund sollte ich eine neue Website erstellen, die einfach zu
+										verwalten ist. <br />
+										Dieses Projekt ist in Entwicklung.
 									</p>
 								</section>
 								<section>
 									<h3>Inhalt</h3>
 									<p>
-										Auf der Website sollen Daten geteilt werden für unsere Auftritte und wir möchten
+										Auf der Website sollen Daten für unsere Auftritte gelistet und wir möchten
 										unseren Verein vorstellen. Es soll aber auch eine Art blogging Beiträge geben,
-										um zum Beispiel unsere Erfolge oder andere Beiträge zu teilen.
+										bei denen wir Aktuelles aus dem Verein öffentlich teilen wollen. Dazu gehört zB
+										das Teilen von Erfolgen und Veränderungen.
 									</p>
 								</section>
 								<section>
 									<h3>Vorgehen</h3>
 									<p>
-										Die Website werde ich mit dem CMS Grav erstellen, da ich bereits viel Erfahrung
-										mit diesem CMS gemacht habe und auch gutes Feedback von den Benutzern erhalten
-										habe. Das Design wurde bereits festgelegt und ich arbeite im Moment am Inhalt
-										der Website.
+										Die Website wird mit dem CMS Grav erstellen, da ich bereits viel Erfahrung mit
+										diesem CMS gemacht habe und auch gutes Feedback von den Benutzern erhalten habe.
+										Das Design wurde bereits festgelegt und ich arbeite im Moment am Inhalt der
+										Website.
 									</p>
 								</section>
 								<section>
 									<h3>Fazit</h3>
 									<p>
-										Bis jetzt läuft alles gut und ich freue mich, als jüngstes Mitglied auch einen
-										grossen Beitrag leisten zu können, sobald die Website einmal fertig ist.
+										Bis jetzt läuft alles wie geplant und ich freue mich, als jüngstes Mitglied nun
+										auch einen Beitrag zu meinem Verein leisten zu können, sobald die Website fertig
+										ist.
 									</p>
 								</section>
 								<section>
@@ -75,7 +77,6 @@ export default class MGRumisberg extends React.Component<{
 										<ToolImage name={"HTML5"} />
 										<ToolImage name={"CSS3"} />
 										<ToolImage name={"JavaScript"} />
-										<ToolImage name={"TypeScript"} />
 									</div>
 								</section>
 							</Stack>

@@ -32,7 +32,7 @@ export default class Contact extends React.Component {
 								<p>
 									E-Mail Adresse:
 									<br />
-									<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
+									<a href="mailto:contact@nicholas-krebs.ch">contact@nicholas-krebs.ch</a>
 								</p>
 							</section>
 
@@ -106,7 +106,7 @@ export default class Contact extends React.Component {
 									</div>
 									<div className={"after-submit"}>
 										<Alert severity="success">
-											Danke für Ihre Nachricht. Ich werde mich in nächster Zeit bei Ihnen melden.
+											Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.
 										</Alert>
 									</div>
 								</form>

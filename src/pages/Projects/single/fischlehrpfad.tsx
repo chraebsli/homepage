@@ -27,7 +27,7 @@ export default class Fischlehrpfad extends React.Component<{
 					<Container>
 						<section className={"page-title"}>
 							<h2>{this.pageName}</h2>
-							<WakaTimeBadge url={this.project?.wakatimeBadge} />
+							<WakaTimeBadge url={this.project?.wakaTimeBadge} />
 						</section>
 
 						<article className="page-content">
@@ -36,40 +36,41 @@ export default class Fischlehrpfad extends React.Component<{
 									<h3>Beschreibung</h3>
 									<p>
 										Der Fischlehrpfad war mein erstes grösseres Projekt, das ich entwickelt habe. Im
-										2. Lehrjahr meiner Informatikausbildung bekam ich den Auftrag, eine Website mit
-										einem Kollegen zu erstellen. Die Website sei für einen Verein, der ein Lernpfad
-										an der Emme in Burgdorf erstellen möchte. Auf diesem Lernpfad können dann
-										Familien oder Schulen entlanglaufen und etwas über die Gewässer und Fische zu
-										lernen.
+										2. Lehrjahr meiner Ausbildung habe ich mit einem Kollegen das Projekt für den
+										Fischereiverein an der Emme in Burgdorf geplant und anschliessend entwickelt.
+										Der Verein wollte einen Lernpfad über Fische und andere Tierarten in der Emme
+										erstellen, bei dem Schulen und Familien etwas über die verschiedenen Tierarten
+										lernen können.
 									</p>
 								</section>
 								<section>
 									<h3>Inhalt</h3>
 									<p>
-										Der Besucher soll dann einen QR-Code an einem Posten einscannen können und auf
-										die jeweilige Seite weitergeleitet werden. Auf dieser Seite befinden sich dann
-										verschiedene grundlegende Elemente wie Text, Bilder, Videos, Audios. Es soll
-										aber auch mehr interaktive Elemente geben, wie zB ein Slider, ein Quiz und
-										andere.
+										Der Besucher kann einen QR-Code an einem Posten einscannen und wird auf die
+										jeweilige Seite weitergeleitet. Auf dieser Seite befinden sich Inhalte wie Text,
+										Bilder, Videos, Audios bei denen man etwas lernt. Es hat aber auch interaktive
+										Elemente, wie zB ein Slider, ein Quiz und andere, bei dem man dann das gelernte
+										überprüfen kann.
 									</p>
 								</section>
 								<section>
 									<h3>Vorgehen</h3>
 									<p>
-										Wir haben dann mit dem CMS Grav in knapp 6 Monaten eine Website erstellt. Dazu
-										gehörte auch das ganze planen, sowie auch das erstellen von Mockups. Anfangs
-										hatten wir beide Schwierigkeiten, da das CMS komplett neu für uns war wir die
-										ganzen Grundlagen gleichzeitig lernen mussten sowie die Programmiersprache PHP
-										und Twig.
+										Zuerst haben wird das Projekt mit einem GANTT Diagramm geplant. Danach haben wir
+										verschiedene Mockups erstellt und gemeinsam mit dem Kunden ein passendes Design
+										ausgewählt. Anschliessend erstellten wir mit dem CMS Grav in knapp 6 Monaten
+										eine Website erstellt. Anfangs hatten wir Schwierigkeiten, da das CMS komplett
+										neu für uns war unf wir die ganzen Grundlagen gleichzeitig mit den
+										Programmiersprachen PHP und Twig zuerst erlernen mussten.
 									</p>
 								</section>
 								<section>
 									<h3>Fazit</h3>
 									<p>
-										Schlussendlich hat alles funktioniert und das Projekt war ein Erfolg.
-										Rückblickend war es ziemlich stressig eine Website zu erstellen mit einem Tool
-										das man nicht kennt, aber es hat mir Spass gemacht und habe viele Fähigkeiten
-										gelernt.
+										Schlussendlich konnten wir das Projekt erfolgreich abschliessen und bekamen
+										viele positive Rückmeldungen. Rückblickend war es ziemlich stressig eine Website
+										zu erstellen mit einem Tool das man nicht kennt, aber es hat uns Spass gemacht
+										und wir haben viele Fähigkeiten gelernt oder weiterentwickelt.
 									</p>
 								</section>
 								<section>
@@ -81,7 +82,6 @@ export default class Fischlehrpfad extends React.Component<{
 										<ToolImage name={"HTML5"} />
 										<ToolImage name={"CSS3"} />
 										<ToolImage name={"JavaScript"} />
-										<ToolImage name={"TypeScript"} />
 									</div>
 								</section>
 								<section>

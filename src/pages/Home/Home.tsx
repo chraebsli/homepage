@@ -34,7 +34,7 @@ export default class Home extends React.Component {
 										- IT-Dienstleistungen jeglicher Art -
 									</Typography>
 									<br />
-									Ich biete diverse IT Dienstleistungen an, um neben meiner schulischen Lehre als
+									Ich biete verschiedene IT Dienstleistungen an, um neben meiner schulischen Lehre als
 									Informatiker etwas Geld zu verdienen.
 								</Typography>
 							</section>
@@ -51,7 +51,7 @@ export default class Home extends React.Component {
 								<Typography component={"h2"} variant={"h4"}>
 									Projekte
 								</Typography>
-								<p>An folgenden Projekte bin ich beteiligt:</p>
+								<p>Diese Projekte habe ich realisiert:</p>
 								<ProjectsList space={70} />
 							</section>
 							<Hr />
@@ -59,7 +59,7 @@ export default class Home extends React.Component {
 								<Typography component={"h2"} variant={"h4"}>
 									Social Media
 								</Typography>
-								<p>Ich bin auf folgenden Social Media Platformen:</p>
+								<p>Ich bin auf folgenden Social Media Plattformen:</p>
 								<SocialMediaList />
 							</section>
 						</article>

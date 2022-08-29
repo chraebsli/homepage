@@ -36,23 +36,23 @@ export default class Me extends React.Component {
 										</Card.Title>
 										<Card.Text>
 											<p>
-												Mein Name ist Nicholas Krebs und ich bin ein Informatik Lehrling
+												Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling
 												Fachrichtung Betriebsinformatik im 3. Lehrjahr in der{" "}
 												<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
 												interessiere mich sehr für die Informatik und am meisten für die{" "}
 												<b>Webentwicklung</b>, in der ich mich dieses Jahr auch spezialisieren
 												werde.
 												<br />
-												In meiner Freizeit investiere ich meine Zeit gerne in das Lernen oder
-												Weiterbilden neuer Programmiersprachen. Früher habe ich kleinere
-												Projekte erstellt um praktische lernen zu können. Nun möchte ich aber
-												anfangen, mittel grosse Projekte <b>neben meiner Arbeit</b>{" "}
-												selbstständig zu entwickeln. Ein Beispiel dafür ist diese Website, da
-												ich sie ganz alleine gestalten und anschliessend programmiert habe.
+												In meiner Freizeit investiere ich meine Zeit gerne in das Weiterbilden
+												von JavaScript/ TypeScript und anderen Programmiersprachen für Web und
+												Bibliotheken wie React. Früher habe ich kleinere Projekte erstellt, um
+												mit praktischen Aufgaben lernen zu können. Das waren aber nur Projekte
+												wie Tic-Tac-Toe. Nun möchte ich aber grössere Projekte{" "}
+												<b>neben meiner Ausbildung</b> zu entwickeln für mich oder für Kunden.
 												<br />
-												Aber auch für Vereine aus meiner Umgebung habe ich bereits eine Website
-												entwickelt oder bin in der Planung, eine zu entwickeln. Mehr dazu bei
-												den <a href={"#projects"}>Projekten</a>
+												Ich habe bereits für 2 Vereine aus meiner Umgebung eine Website
+												entwickelt oder bin aktiv in der Entwicklung. Mehr dazu bei den
+												<a href={"#projects"}>Projekten</a>
 											</p>
 										</Card.Text>
 									</Card.Body>
@@ -66,8 +66,8 @@ export default class Me extends React.Component {
 										</Card.Title>
 										<Card.Text>
 											<p>
-												Hier sind einzelne Skills, die ich in meiner Freizeit oder meiner Arbeit
-												erlernt und weiterentwickelt habe.
+												Hier sind einzelne Skills, die ich in meiner Freizeit oder bei der
+												Ausbildung erlernt und weiterentwickelt habe.
 											</p>
 										</Card.Text>
 										<Stack
@@ -88,10 +88,7 @@ export default class Me extends React.Component {
 											</h2>
 										</Card.Title>
 										<Card.Text>
-											<p>
-												Projekte, an denen ich von der Arbeit aus beteiligt war oder die in
-												meiner Freizeit entwickelt habe.
-											</p>
+											<p>Projekte, die ich realisiert habe:</p>
 										</Card.Text>
 										<ProjectsList />
 									</Card.Body>
@@ -100,11 +97,11 @@ export default class Me extends React.Component {
 									<Card.Body>
 										<Card.Title>
 											<h2>
-												<PollIcon /> stats
+												<PollIcon /> Statistiken
 											</h2>
 										</Card.Title>
 										<Card.Text>
-											<p>Statistiken</p>
+											<p>WakaTime Statistiken zu Sprachen und Aktivität </p>
 										</Card.Text>
 										<Stack
 											className={"card-container"}
