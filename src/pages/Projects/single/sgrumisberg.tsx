@@ -17,7 +17,7 @@ export default class SGRumisberg extends React.Component<{
 	pageName = "SG Rumisberg";
 	urlName = "sgrumisberg.ch";
 	url = `https://${this.urlName}`;
-	project = projectsList.find(project => project.id === "fischlehrpfad");
+	project = projectsList.find(project => project.id === "sgrumisberg");
 
 	render() {
 		return (
