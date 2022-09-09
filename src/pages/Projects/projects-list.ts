@@ -47,7 +47,7 @@ const projectsList = () => {
 				" und konnte viele Erfahrungen sammeln.",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
-			wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/sgrumisberg.ch",
+			wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/sgrumisberg.ch",
 		}),
 		new Project({
 			id: "mgrumisberg",
