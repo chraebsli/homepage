@@ -4,7 +4,7 @@ import Head from "../../../components/common/Head";
 
 // assets and sass
 import "../Services.sass";
-import ImageDevelopWebapp from "../assets/develop-webapp.jpg";
+import ImageDevelopWebapp from "../assets/webapp.jpg";
 
 export default class DevelopWebapp extends React.Component<{
 	loading?: boolean;

@@ -6,7 +6,7 @@ import Head from "../../../components/common/Head";
 import "../Services.sass";
 import ProjectsList from "../../../components/projects/ProjectsList";
 import projectsList from "../../Projects/projects-list";
-import ImageCreateWebsite from "../assets/create-website.jpg";
+import ImageCreateWebsite from "../assets/website.jpg";
 
 export default class CreateWebsite extends React.Component<{
 	loading?: boolean;

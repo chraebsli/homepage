@@ -4,7 +4,7 @@ import Head from "../../../components/common/Head";
 
 // assets and sass
 import "../Services.sass";
-import ImageITSupport from "../assets/it-support.jpg";
+import ImageITSupport from "../assets/support.jpg";
 
 export default class ITSupport extends React.Component<{
 	loading?: boolean;

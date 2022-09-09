@@ -20,7 +20,7 @@ import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
 import CreateWebsite from "./pages/Services/single/CreateWebsite";
 import ITSupport from "./pages/Services/single/ITSupport";
-import BuildPC from "./pages/Services/single/BuildPC";
+import Database from "./pages/Services/single/Database";
 import DevelopWebapp from "./pages/Services/single/DevelopWebapp";
 
 import Projects from "./pages/Projects/Projects";
@@ -57,15 +57,15 @@ ReactDOM.render(
 		<Router>
 			<CssBaseline />
 			<Header />
-			<React.Suspense fallback={Loader}>
+			<React.Suspense fallback={<Loader />}>
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="*" element={<NotFound404 />} />
 					<Route path="/services" element={<Services />} />
 					<Route path="/service/create-website" element={<CreateWebsite />} />
 					<Route path="/service/it-support" element={<ITSupport />} />
-					<Route path="/service/build-pc" element={<BuildPC />} />
 					<Route path="/service/develop-webapp" element={<DevelopWebapp />} />
+					<Route path="/service/database" element={<Database />} />
 
 					<Route path="/projects" element={<Projects />} />
 					<Route path="/project/fischlehrpfad" element={<Fischlehrpfad />} />
