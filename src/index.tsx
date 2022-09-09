@@ -36,7 +36,7 @@ import Me from "./pages/Me/Me";
 import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
 
-import Error404 from "./pages/Error/404";
+import NotFound404 from "./pages/Error/404";
 
 const defaultTheme = createTheme({
 	palette: {
@@ -60,7 +60,7 @@ ReactDOM.render(
 			<React.Suspense fallback={Loader}>
 				<Routes>
 					<Route path="/" element={<Home />} />
-					<Route path="*" element={<Error404 />} />
+					<Route path="*" element={<NotFound404 />} />
 					<Route path="/services" element={<Services />} />
 					<Route path="/service/create-website" element={<CreateWebsite />} />
 					<Route path="/service/it-support" element={<ITSupport />} />
