@@ -12,21 +12,21 @@ import projectsList from "../projects-list";
 export default function Personal() {
 	const pageName = "Persönliche Website";
 	const urlName = "homepage.dev.chraebsli.dev";
-	const url = `https://${urlName}`;
+	const url = `https://${ urlName }`;
 	const project = projectsList.find(project => project.id === "personal-website");
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-project"}>
+			<Head title={ pageName } />
+			<main className={ "single-project" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<WakaTimeBadge url={project?.wakaTimeBadge} />
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<WakaTimeBadge url={ project?.wakaTimeBadge } />
+						<Line bottom={ 2 } />
 					</section>
 
 					<article className="page-content">
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
 								<SectionTitle>Beschreibung</SectionTitle>
 								<Typography>
@@ -66,11 +66,11 @@ export default function Personal() {
 							</section>
 							<section>
 								<SectionTitle>Tools</SectionTitle>
-								<div className={"project-tools"} data-count={4}>
-									<ToolImage name={"React"} />
-									<ToolImage name={"Node.JS"} />
-									<ToolImage name={"TypeScript"} />
-									<ToolImage name={"MUI"} />
+								<div className={ "project-tools" } data-count={ 4 }>
+									<ToolImage name={ "React" } />
+									<ToolImage name={ "Node.JS" } />
+									<ToolImage name={ "TypeScript" } />
+									<ToolImage name={ "MUI" } />
 								</div>
 							</section>
 						</Stack>

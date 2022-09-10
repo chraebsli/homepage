@@ -11,24 +11,24 @@ export default function Webapp() {
 	const pageName = "Webapplikation erstellen";
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-service"}>
+			<Head title={ pageName } />
+			<main className={ "single-service" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<Line bottom={ 2 } />
 					</section>
 
 					<article>
 						<img
-							src={ImageDevelopWebapp}
-							alt={"Illustration Webapplikation erstellen"}
-							height={200}
-							style={{ marginBottom: "2rem" }}
+							src={ ImageDevelopWebapp }
+							alt={ "Illustration Webapplikation erstellen" }
+							height={ 200 }
+							style={ { marginBottom: "2rem" } }
 						/>
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
-								<Typography className={"italic"}>
+								<Typography className={ "italic" }>
 									Benötigen Sie eine Webapplikation um zum Beispiel bei ihrem Startup Arbeitszeiten
 									oder ähnliches zu erfassen?
 								</Typography>

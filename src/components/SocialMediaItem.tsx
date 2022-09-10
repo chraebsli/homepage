@@ -14,13 +14,13 @@ export default function SocialMediaItem({
 }) {
 	return (
 		<Box className="social-media-item">
-			<a href={href} target="_blank" rel="noreferrer">
-				<Box className="social-media-item-icon" sx={{ color: "text.primary" }}>
-					{icon}
+			<a href={ href } target="_blank" rel="noreferrer">
+				<Box className="social-media-item-icon" sx={ { color: "text.primary" } }>
+					{ icon }
 				</Box>
-				<Box className="social-media-item-text" sx={{ color: "text.primary" }}>
-					{name}: <br />
-					{user}
+				<Box className="social-media-item-text" sx={ { color: "text.primary" } }>
+					{ name }: <br />
+					{ user }
 				</Box>
 			</a>
 		</Box>

@@ -13,24 +13,24 @@ export default function Website() {
 	const pageName = "Website erstellen";
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-service"}>
+			<Head title={ pageName } />
+			<main className={ "single-service" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<Line bottom={ 2 } />
 					</section>
 
 					<article>
 						<img
-							src={ImageCreateWebsite}
-							alt={"Illustration Website erstellen"}
-							height={200}
-							style={{ marginBottom: "2rem" }}
+							src={ ImageCreateWebsite }
+							alt={ "Illustration Website erstellen" }
+							height={ 200 }
+							style={ { marginBottom: "2rem" } }
 						/>
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
-								<Typography className={"italic"}>
+								<Typography className={ "italic" }>
 									Brauchen Sie eine kleine und einfache Website für Ihren Verein, Startup oder für
 									einen persönlichen Zweck?
 								</Typography>
@@ -55,7 +55,7 @@ export default function Website() {
 							</section>
 							<section>
 								<Typography>Lassen Sie sich gerne von folgenden Projekten inspirieren:</Typography>
-								<ProjectsList space={70} projects={getMatchingProjects()} />
+								<ProjectsList space={ 70 } projects={ getMatchingProjects() } />
 							</section>
 						</Stack>
 					</article>
@@ -66,6 +66,6 @@ export default function Website() {
 }
 
 const getMatchingProjects = () => {
-	const projects = ["fischlehrpfad", "sgrumisberg", "mgrumisberg"];
+	const projects = [ "fischlehrpfad", "sgrumisberg", "mgrumisberg" ];
 	return projectsList.filter(project => projects.includes(project.id));
 };

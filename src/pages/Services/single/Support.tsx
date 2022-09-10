@@ -11,24 +11,24 @@ export default function Support() {
 	const pageName = "IT Support";
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-service"}>
+			<Head title={ pageName } />
+			<main className={ "single-service" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<Line bottom={ 2 } />
 					</section>
 
 					<article>
 						<img
-							src={ImageITSupport}
-							alt={"Illustration Support"}
-							height={200}
-							style={{ marginBottom: "2rem" }}
+							src={ ImageITSupport }
+							alt={ "Illustration Support" }
+							height={ 200 }
+							style={ { marginBottom: "2rem" } }
 						/>
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
-								<Typography className={"italic"}>
+								<Typography className={ "italic" }>
 									Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?
 								</Typography>
 								<Typography>

@@ -15,41 +15,41 @@ const pages = [
 
 export default function Header({ toggleTheme, checked }: { toggleTheme: () => void; checked: boolean }) {
 	return (
-		<AppBar position={"static"} enableColorOnDark>
+		<AppBar position={ "static" } enableColorOnDark>
 			<Container>
-				<Navbar collapseOnSelect expand={"sm"} bg={"none"} variant={"dark"}>
-					<Navbar.Brand href={"/"}>
+				<Navbar collapseOnSelect expand={ "sm" } bg={ "none" } variant={ "dark" }>
+					<Navbar.Brand href={ "/" }>
 						<img
-							src={LogoWhiteTransparent}
-							alt={"logo"}
-							width={50}
-							height={50}
-							className={"d-inline-block align-center"}
+							src={ LogoWhiteTransparent }
+							alt={ "logo" }
+							width={ 50 }
+							height={ 50 }
+							className={ "d-inline-block align-center" }
 						/>
 						<Typography
-							component={"span"}
-							variant={"h6"}
-							sx={{
+							component={ "span" }
+							variant={ "h6" }
+							sx={ {
 								marginLeft: "1rem",
-							}}>
+							} }>
 							chraebsli IT-Services
 						</Typography>
 					</Navbar.Brand>
 
-					<Navbar.Toggle aria-controls={"header-nav"} />
+					<Navbar.Toggle aria-controls={ "header-nav" } />
 
-					<Navbar.Collapse id={"responsive-navbar-nav"}>
-						<Nav className={"me-auto"} />
+					<Navbar.Collapse id={ "responsive-navbar-nav" }>
+						<Nav className={ "me-auto" } />
 						<Nav>
-							{pages.map(page => (
-								<Nav.Link key={page.label} href={page.href}>
-									{page.label}
+							{ pages.map(page => (
+								<Nav.Link key={ page.label } href={ page.href }>
+									{ page.label }
 								</Nav.Link>
-							))}
+							)) }
 						</Nav>
 					</Navbar.Collapse>
 
-					<MaterialUISwitch sx={{ m: 1 }} onChange={toggleTheme} checked={checked} />
+					<MaterialUISwitch sx={ { m: 1 } } onChange={ toggleTheme } checked={ checked } />
 				</Navbar>
 			</Container>
 		</AppBar>

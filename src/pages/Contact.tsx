@@ -10,16 +10,16 @@ import "../components/form/FormSubmissionHandler.js";
 import FormGroup from "../components/form/FormGroup";
 import FormElement from "../components/form/FormElement";
 
-export default function Contact(){
+export default function Contact() {
 	const pageName = "Kontakt";
-	const service = { name: new URLSearchParams( window.location.search ).get( "service" ) };
-	const services = servicesList.map( service => {
+	const service = { name: new URLSearchParams(window.location.search).get("service") };
+	const services = servicesList.map(service => {
 		return { name: service.title };
-	} );
+	});
 
-	useEffect( () => {
-		document.getElementById( "service" )?.setAttribute( "name", "service" );
-	} );
+	useEffect(() => {
+		document.getElementById("service")?.setAttribute("name", "service");
+	});
 
 	return (
 		<>
@@ -98,7 +98,7 @@ export default function Contact(){
 											<Autocomplete
 												freeSolo
 												aria-required
-												options={ services.map( service => service.name ) }
+												options={ services.map(service => service.name) }
 												getOptionLabel={ option => option }
 												id={ "service" }
 												value={ service.name ? service.name : "" }
@@ -134,7 +134,7 @@ export default function Contact(){
 									<FormGroup>
 										<FormElement>
 											<Button
-												variant="contained"
+												variant={ "contained" }
 												type={ "submit" }
 												size={ "large" }
 												endIcon={ <SendIcon color={ "secondary" } /> }>

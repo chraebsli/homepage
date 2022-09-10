@@ -14,12 +14,12 @@ export default function Projects() {
 
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={pageName.toLowerCase()}>
+			<Head title={ pageName } />
+			<main className={ pageName.toLowerCase() }>
 				<Container>
-					<section className={"page-title"}>
+					<section className={ "page-title" }>
 						<PageTitle>Projekte</PageTitle>
-						<Line bottom={2} />
+						<Line bottom={ 2 } />
 					</section>
 
 					<article className="page-content">

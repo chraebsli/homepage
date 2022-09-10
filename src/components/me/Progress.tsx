@@ -14,10 +14,10 @@ export default function Progress({
 }) {
 	return (
 		<Box>
-			<Typography component={"span"}>
-				{icon} {text}
+			<Typography component={ "span" }>
+				{ icon } { text }
 			</Typography>
-			<progress className={"progress"} value={progress} max={max} />
+			<progress className={ "progress" } value={ progress } max={ max } />
 		</Box>
 	);
 }

@@ -6,7 +6,7 @@ import { Image, Line, PageTitle, SectionTitle } from "../../components/Text";
 // assets
 import ImageError404 from "./assets/404.jpg";
 
-export default function NotFound404(){
+export default function NotFound404() {
 	const pageName = "Error 404";
 	return (
 		<>

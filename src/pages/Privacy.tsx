@@ -7,12 +7,12 @@ export default function Privacy() {
 	const pageName = "Datenschutz";
 	return (
 		<>
-			<Head title={pageName} />
+			<Head title={ pageName } />
 			<main>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<Line bottom={ 2 } />
 					</section>
 
 					<article>

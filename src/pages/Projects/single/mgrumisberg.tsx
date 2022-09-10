@@ -12,27 +12,28 @@ import projectsList from "../projects-list";
 export default function MGRumisberg() {
 	const pageName = "MG Rumisberg";
 	const urlName = "mgrumisberg.chraebsli.dev";
-	const url = `https://${urlName}`;
+	const url = `https://${ urlName }`;
 	const project = projectsList.find(project => project.id === "mgrumisberg");
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-project"}>
+			<Head title={ pageName } />
+			<main className={ "single-project" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<WakaTimeBadge url={project?.wakaTimeBadge} />
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<WakaTimeBadge url={ project?.wakaTimeBadge } />
+						<Line bottom={ 2 } />
 					</section>
 
 					<article className="page-content">
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
 								<SectionTitle>Beschreibung</SectionTitle>
 								<Typography>
 									Diese Website ist für die Musikgesellschaft Rumisberg, in der ich seit mehreren
 									Jahren Mitglied bin. Unsere alte Website war schwierig zu verwalten und ändern. Aus
-									diesem Grund sollte ich eine neue Website erstellen, die einfach zu verwalten ist.{" "}
+									diesem Grund sollte ich eine neue Website erstellen, die einfach zu verwalten
+									ist.{ " " }
 									<br />
 									Dieses Projekt ist in Entwicklung.
 								</Typography>
@@ -63,13 +64,13 @@ export default function MGRumisberg() {
 							</section>
 							<section>
 								<SectionTitle>Tools</SectionTitle>
-								<div className={"project-tools"} data-count={6}>
-									<ToolImage name={"Grav"} />
-									<ToolImage name={"PHP"} />
-									<ToolImage name={"Twig"} />
-									<ToolImage name={"HTML5"} />
-									<ToolImage name={"CSS3"} />
-									<ToolImage name={"JavaScript"} />
+								<div className={ "project-tools" } data-count={ 6 }>
+									<ToolImage name={ "Grav" } />
+									<ToolImage name={ "PHP" } />
+									<ToolImage name={ "Twig" } />
+									<ToolImage name={ "HTML5" } />
+									<ToolImage name={ "CSS3" } />
+									<ToolImage name={ "JavaScript" } />
 								</div>
 							</section>
 						</Stack>

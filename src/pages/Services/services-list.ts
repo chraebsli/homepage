@@ -34,7 +34,7 @@ const servicesList = () => {
 			description:
 				"Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen " +
 				"persönlichen Zweck nach Ihren Wünschen.",
-			features: ["professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen"],
+			features: [ "professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen" ],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
 		}),
@@ -48,7 +48,7 @@ const servicesList = () => {
 			description:
 				"Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen" +
 				" Zweck mit Login und anderen Funktionen.",
-			features: ["moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten"],
+			features: [ "moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten" ],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
 		}),

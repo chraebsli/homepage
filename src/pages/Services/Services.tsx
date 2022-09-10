@@ -10,7 +10,7 @@ import { Line, PageTitle } from "../../components/Text";
 import "./Services.sass";
 import ServicesList from "../../components/services/ServicesList";
 
-export default function Services(){
+export default function Services() {
 	const pageName = "Services";
 
 	return (

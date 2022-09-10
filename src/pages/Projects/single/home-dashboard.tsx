@@ -14,22 +14,23 @@ export default function HomeDashboard() {
 	const project = projectsList.find(project => project.id === "home-dashboard");
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-project"}>
+			<Head title={ pageName } />
+			<main className={ "single-project" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<WakaTimeBadge url={project?.wakaTimeBadge} />
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<WakaTimeBadge url={ project?.wakaTimeBadge } />
+						<Line bottom={ 2 } />
 					</section>
 
 					<article className="page-content">
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
 								<SectionTitle>Beschreibung</SectionTitle>
 								<Typography>
-									Vor etwas längerer Zeit hatte ich im Internet das Projekt{" "}
-									<a href={"https://magicmirror.builders/"}>Magic Mirror</a> gesehen. Meine Mutter hat
+									Vor etwas längerer Zeit hatte ich im Internet das Projekt{ " " }
+									<a href={ "https://magicmirror.builders/" }>Magic Mirror</a> gesehen. Meine Mutter
+									hat
 									dann etwas Geld ausgegeben für einen TouchScreen und einen Raspberry Pi, auf dem die
 									Software laufen soll. Den Bildschirm haben wir beim Eingang der Wohnung aufgehängt.
 									Da aber viele Features nicht existieren die wir wollten, habe ich angefangen, selber
@@ -64,12 +65,12 @@ export default function HomeDashboard() {
 							</section>
 							<section>
 								<SectionTitle>Tools</SectionTitle>
-								<div className={"project-tools"} data-count={5}>
-									<ToolImage name={"React"} />
-									<ToolImage name={"Next.JS"} />
-									<ToolImage name={"Node.JS"} />
-									<ToolImage name={"TypeScript"} />
-									<ToolImage name={"MUI"} />
+								<div className={ "project-tools" } data-count={ 5 }>
+									<ToolImage name={ "React" } />
+									<ToolImage name={ "Next.JS" } />
+									<ToolImage name={ "Node.JS" } />
+									<ToolImage name={ "TypeScript" } />
+									<ToolImage name={ "MUI" } />
 								</div>
 							</section>
 						</Stack>

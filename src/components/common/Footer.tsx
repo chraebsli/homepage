@@ -10,28 +10,28 @@ const links = [
 export default function Footer() {
 	return (
 		<Box
-			sx={{
+			sx={ {
 				bottom: 0,
 				position: "absolute",
 				width: "100%",
 				padding: "0",
 				backgroundColor: "primary.main",
-			}}>
+			} }>
 			<footer>
 				<nav>
-					<Stack direction={"column"} sx={{ textAlign: "center", color: "secondary.main" }}>
-						<Stack gap={2} direction={"row"} sx={{ display: "flex", justifyContent: "center" }}>
-							{links.map((link, index) => (
+					<Stack direction={ "column" } sx={ { textAlign: "center", color: "secondary.main" } }>
+						<Stack gap={ 2 } direction={ "row" } sx={ { display: "flex", justifyContent: "center" } }>
+							{ links.map((link, index) => (
 								<>
-									<Link href={link.href} sx={{ color: "secondary.main" }} key={index}>
-										{link.label}
+									<Link href={ link.href } sx={ { color: "secondary.main" } } key={ index }>
+										{ link.label }
 									</Link>
-									<Typography key={index + 100}>{index < links.length - 1 && "|"}</Typography>
+									<Typography key={ index + 100 }>{ index < links.length - 1 && "|" }</Typography>
 								</>
-							))}
+							)) }
 						</Stack>
-						<Typography component={"span"} sx={{ color: "secondary.main" }}>
-							&copy; {new Date().getFullYear()} chraebsli IT-Services
+						<Typography component={ "span" } sx={ { color: "secondary.main" } }>
+							&copy; { new Date().getFullYear() } chraebsli IT-Services
 						</Typography>
 					</Stack>
 				</nav>

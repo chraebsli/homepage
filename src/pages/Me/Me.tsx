@@ -18,20 +18,20 @@ export default function Me() {
 
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={pageName.toLowerCase()}>
+			<Head title={ pageName } />
+			<main className={ pageName.toLowerCase() }>
 				<Container>
 					<article>
-						<Stack spacing={3}>
-							<Card id={"me"} sx={{ padding: "2rem" }}>
+						<Stack spacing={ 3 }>
+							<Card id={ "me" } sx={ { padding: "2rem" } }>
 								<h2>
 									<PersonIcon /> Über mich
 								</h2>
 								<Typography>
 									Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling Fachrichtung
-									Betriebsinformatik im 3. Lehrjahr in der{" "}
+									Betriebsinformatik im 3. Lehrjahr in der{ " " }
 									<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
-									interessiere mich sehr für die Informatik und am meisten für die{" "}
+									interessiere mich sehr für die Informatik und am meisten für die{ " " }
 									<b>Webentwicklung</b>, in der ich mich dieses Jahr auch spezialisieren werde.
 									<br />
 									In meiner Freizeit investiere ich meine Zeit gerne in das Weiterbilden von
@@ -42,10 +42,10 @@ export default function Me() {
 									Kunden.
 									<br />
 									Ich habe bereits für 2 Vereine aus meiner Umgebung eine Website entwickelt oder bin
-									aktiv in der Entwicklung. Mehr dazu bei den <a href={"#projects"}>Projekten</a>
+									aktiv in der Entwicklung. Mehr dazu bei den <a href={ "#projects" }>Projekten</a>
 								</Typography>
 							</Card>
-							<Card id={"skills"} sx={{ padding: "2rem" }}>
+							<Card id={ "skills" } sx={ { padding: "2rem" } }>
 								<h2>
 									<SchoolIcon /> Skills
 								</h2>
@@ -53,27 +53,27 @@ export default function Me() {
 									Hier sind einzelne Skills, die ich in meiner Freizeit oder bei der Ausbildung
 									erlernt und weiterentwickelt habe.
 								</Typography>
-								<Grid container spacing={3} sx={{ padding: "1rem 0" }}>
-									<Languages size={{ xs: 12, sm: 6, md: 4 }} />
-									<DevTools size={{ xs: 12, sm: 6, md: 4 }} />
-									<Server size={{ xs: 12, sm: 6, md: 4 }} />
+								<Grid container spacing={ 3 } sx={ { padding: "1rem 0" } }>
+									<Languages size={ { xs: 12, sm: 6, md: 4 } } />
+									<DevTools size={ { xs: 12, sm: 6, md: 4 } } />
+									<Server size={ { xs: 12, sm: 6, md: 4 } } />
 								</Grid>
 							</Card>
-							<Card id={"projects"} sx={{ padding: "2rem" }}>
+							<Card id={ "projects" } sx={ { padding: "2rem" } }>
 								<h2>
 									<WebIcon /> Projekte
 								</h2>
 								<Typography>Projekte, die ich realisiert habe:</Typography>
 								<ProjectsList />
 							</Card>
-							<Card id={"stats"} sx={{ padding: "2rem" }}>
+							<Card id={ "stats" } sx={ { padding: "2rem" } }>
 								<h2>
 									<PollIcon /> Statistiken
 								</h2>
 								<Typography>
 									WakaTime Statistiken zu Programmiersprachen und Aktivität in den letzten 30 Tagen
 								</Typography>
-								<Stack direction={{ xs: "column", md: "row" }} spacing={3}>
+								<Stack direction={ { xs: "column", md: "row" } } spacing={ 3 }>
 									<figure>
 										<embed src="https://wakatime.com/share/@chraebsli/e7bc95fa-f16d-45da-bae8-2320d8191b65.svg" />
 									</figure>

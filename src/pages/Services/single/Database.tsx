@@ -11,24 +11,24 @@ export default function Database() {
 	const pageName = "Database";
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-service"}>
+			<Head title={ pageName } />
+			<main className={ "single-service" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<Line bottom={ 2 } />
 					</section>
 
 					<article>
 						<img
-							src={ImageDatabase}
-							alt={"Illustration Datenbank"}
-							height={200}
-							style={{ marginBottom: "2rem" }}
+							src={ ImageDatabase }
+							alt={ "Illustration Datenbank" }
+							height={ 200 }
+							style={ { marginBottom: "2rem" } }
 						/>
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
-								<Typography className={"italic"}>
+								<Typography className={ "italic" }>
 									Möchten Sie eine Datenbank erstellen oder von einer anderen alle Daten in eine neue
 									übernehmen?
 								</Typography>

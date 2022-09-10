@@ -12,21 +12,21 @@ import projectsList from "../projects-list";
 export default function SGRumisberg() {
 	const pageName = "SG Rumisberg";
 	const urlName = "sgrumisberg.ch";
-	const url = `https://${urlName}`;
+	const url = `https://${ urlName }`;
 	const project = projectsList.find(project => project.id === "sgrumisberg");
 	return (
 		<>
-			<Head title={pageName} />
-			<main className={"single-project"}>
+			<Head title={ pageName } />
+			<main className={ "single-project" }>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<WakaTimeBadge url={project?.wakaTimeBadge} />
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<WakaTimeBadge url={ project?.wakaTimeBadge } />
+						<Line bottom={ 2 } />
 					</section>
 
 					<article className="page-content">
-						<Stack spacing={3}>
+						<Stack spacing={ 3 }>
 							<section>
 								<SectionTitle>Beschreibung</SectionTitle>
 								<Typography>
@@ -47,8 +47,10 @@ export default function SGRumisberg() {
 							<section>
 								<SectionTitle>Vorgehen</SectionTitle>
 								<Typography>
-									Ich habe diese Website mit dem CMS Grav entwickelt. Durch meine Arbeit am Projekt{" "}
-									<a href={"/project/fischlehrpfad"}>Fischlehrpfad</a> konnte ich das Grunddesign und
+									Ich habe diese Website mit dem CMS Grav entwickelt. Durch meine Arbeit am
+									Projekt{ " " }
+									<a href={ "/project/fischlehrpfad" }>Fischlehrpfad</a> konnte ich das Grunddesign
+									und
 									einzelne Elemente aus dem Projekt verwenden und konnte so Aufwand und Zeit zu
 									sparen.
 								</Typography>
@@ -64,26 +66,26 @@ export default function SGRumisberg() {
 							</section>
 							<section>
 								<SectionTitle>Tools</SectionTitle>
-								<div className={"project-tools"} data-count={6}>
-									<ToolImage name={"Grav"} />
-									<ToolImage name={"PHP"} />
-									<ToolImage name={"Twig"} />
-									<ToolImage name={"HTML5"} />
-									<ToolImage name={"CSS3"} />
-									<ToolImage name={"JavaScript"} />
+								<div className={ "project-tools" } data-count={ 6 }>
+									<ToolImage name={ "Grav" } />
+									<ToolImage name={ "PHP" } />
+									<ToolImage name={ "Twig" } />
+									<ToolImage name={ "HTML5" } />
+									<ToolImage name={ "CSS3" } />
+									<ToolImage name={ "JavaScript" } />
 								</div>
 							</section>
 							<section>
 								<SectionTitle>
-									Website - <a href={url}>{urlName}</a>
+									Website - <a href={ url }>{ urlName }</a>
 								</SectionTitle>
-								<div className={"iframe-container"}>
+								<div className={ "iframe-container" }>
 									<iframe
-										src={url}
-										width={1280}
-										height={720}
-										title={"Schützengesellschaft Rumisberg"}
-										loading={"lazy"}
+										src={ url }
+										width={ 1280 }
+										height={ 720 }
+										title={ "Schützengesellschaft Rumisberg" }
+										loading={ "lazy" }
 									/>
 								</div>
 							</section>

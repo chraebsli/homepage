@@ -52,15 +52,15 @@ const dark = createTheme({
 });
 
 function App() {
-	const [cookies, setCookie] = useCookies(["colorScheme"]);
+	const [ cookies, setCookie ] = useCookies([ "colorScheme" ]);
 	const colorScheme = cookies.colorScheme;
 	if (!colorScheme) {
 		const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/" });
 	}
 
-	const [theme, setTheme] = useState<"light" | "dark">(colorScheme);
-	const [checked, setChecked] = React.useState<boolean>(theme !== "light");
+	const [ theme, setTheme ] = useState<"light" | "dark">(colorScheme);
+	const [ checked, setChecked ] = React.useState<boolean>(theme !== "light");
 
 	const toggleTheme = () => {
 		setChecked(!checked);
@@ -70,40 +70,40 @@ function App() {
 	};
 
 	return (
-		<ThemeProvider theme={theme === "light" ? light : dark}>
+		<ThemeProvider theme={ theme === "light" ? light : dark }>
 			<Router>
 				<CssBaseline />
-				<Header toggleTheme={toggleTheme} checked={checked} />
-				<React.Suspense fallback={<Loader />}>
+				<Header toggleTheme={ toggleTheme } checked={ checked } />
+				<React.Suspense fallback={ <Loader /> }>
 					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="*" element={<NotFound404 />} />
-						<Route path="/services" element={<Services />} />
-						<Route path="/service/website" element={<Website />} />
-						<Route path="/service/support" element={<Support />} />
-						<Route path="/service/webapp" element={<Webapp />} />
-						<Route path="/service/database" element={<Database />} />
+						<Route path="/" element={ <Home /> } />
+						<Route path="*" element={ <NotFound404 /> } />
+						<Route path="/services" element={ <Services /> } />
+						<Route path="/service/website" element={ <Website /> } />
+						<Route path="/service/support" element={ <Support /> } />
+						<Route path="/service/webapp" element={ <Webapp /> } />
+						<Route path="/service/database" element={ <Database /> } />
 
-						<Route path="/projects" element={<Projects />} />
-						<Route path="/project/fischlehrpfad" element={<Fischlehrpfad />} />
-						<Route path="/project/personal" element={<Personal />} />
-						<Route path="/project/sgrumisberg" element={<SGRumisberg />} />
-						<Route path="/project/mgrumisberg" element={<MGRumisberg />} />
-						<Route path="/project/home-dashboard" element={<HomeDashboard />} />
+						<Route path="/projects" element={ <Projects /> } />
+						<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
+						<Route path="/project/personal" element={ <Personal /> } />
+						<Route path="/project/sgrumisberg" element={ <SGRumisberg /> } />
+						<Route path="/project/mgrumisberg" element={ <MGRumisberg /> } />
+						<Route path="/project/home-dashboard" element={ <HomeDashboard /> } />
 
-						<Route path="/me" element={<Me />} />
-						<Route path="/contact" element={<Contact />} />
+						<Route path="/me" element={ <Me /> } />
+						<Route path="/contact" element={ <Contact /> } />
 
-						<Route path="/imprint" element={<Imprint />} />
-						<Route path="/privacy" element={<Privacy />} />
+						<Route path="/imprint" element={ <Imprint /> } />
+						<Route path="/privacy" element={ <Privacy /> } />
 					</Routes>
 				</React.Suspense>
-				<Box sx={{ height: "3rem" }} />
+				<Box sx={ { height: "3rem" } } />
 				<Footer />
 			</Router>
 		</ThemeProvider>
 	);
 }
 
-const root = createRoot( document.getElementById( "root" )! );
-root.render( <App /> );
+const root = createRoot(document.getElementById("root")!);
+root.render(<App />);

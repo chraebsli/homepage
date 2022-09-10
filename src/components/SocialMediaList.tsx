@@ -11,14 +11,18 @@ export default function SocialMediaList({ items = socialMediaList }: { items?: S
 	return (
 		<Stack
 			className="social-media-container"
-			gap={8}
-			direction={"row"}
-			alignItems={"center"}
-			justifyContent={"center"}
-			marginY={10}>
-			{items?.map(item => (
-				<SocialMediaItem href={item.href} icon={item.icon} name={item.name} user={item.user} key={item.name} />
-			))}
+			gap={ 8 }
+			direction={ "row" }
+			alignItems={ "center" }
+			justifyContent={ "center" }
+			marginY={ 10 }>
+			{ items?.map(item => (
+				<SocialMediaItem href={ item.href }
+				                 icon={ item.icon }
+				                 name={ item.name }
+				                 user={ item.user }
+				                 key={ item.name } />
+			)) }
 		</Stack>
 	);
 }
