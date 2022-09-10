@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Head from "../components/common/Head";
-import { Alert, Button, Container, TextField } from "@mui/material";
+import servicesList from "./Services/services-list";
+import { Alert, Autocomplete, Button, Container, TextField } from "@mui/material";
 
 // assets and sass
 import "../components/form/FormSubmissionHandler.js";
 
-export default class Contact extends React.Component {
-	pageName = "Kontakt";
+export default function Contact() {
+	const pageName = "Kontakt";
+	const service = { name: new URLSearchParams(window.location.search).get("service") };
+	const services = servicesList.map(service => {
+		return { name: service.title };
+	});
 
-	render() {
-		return (
+	useEffect(() => {
+		document.getElementById("service")?.setAttribute("name", "service");
+	});
+
+	return (
+		<>
 			<>
-				<Head title={this.pageName} />
-				<main className={this.pageName.toLowerCase()}>
+				<Head title={pageName} />
+				<main className={pageName.toLowerCase()}>
 					<Container>
 						<section className={"page-title"}>
-							<h1>{this.pageName}</h1>
+							<h1>{pageName}</h1>
 							<hr />
 						</section>
 
@@ -81,6 +90,26 @@ export default class Contact extends React.Component {
 										</div>
 										<div className={"form-group"}>
 											<div className={"form-element"}>
+												<Autocomplete
+													freeSolo
+													aria-required
+													options={services.map(service => service.name)}
+													getOptionLabel={option => option}
+													id={"service"}
+													value={service.name ? service.name : ""}
+													includeInputInList
+													renderInput={params => (
+														<TextField
+															{...params}
+															label={"Dienstleistung"}
+															variant={"outlined"}
+														/>
+													)}
+												/>
+											</div>
+										</div>
+										<div className={"form-group"}>
+											<div className={"form-element"}>
 												<TextField
 													required={true}
 													name={"message"}
@@ -115,6 +144,6 @@ export default class Contact extends React.Component {
 					</Container>
 				</main>
 			</>
-		);
-	}
+		</>
+	);
 }
