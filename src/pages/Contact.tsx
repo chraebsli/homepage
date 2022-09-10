@@ -3,31 +3,32 @@ import Head from "../components/common/Head";
 import servicesList from "./Services/services-list";
 import { Alert, Autocomplete, Button, Container, TextField, Typography } from "@mui/material";
 import { Line, PageTitle, SectionTitle } from "../components/Text";
+import SendIcon from "@mui/icons-material/Send";
 
 // assets and styles
 import "../components/form/FormSubmissionHandler.js";
 import FormGroup from "../components/form/FormGroup";
 import FormElement from "../components/form/FormElement";
 
-export default function Contact() {
+export default function Contact(){
 	const pageName = "Kontakt";
-	const service = { name: new URLSearchParams(window.location.search).get("service") };
-	const services = servicesList.map(service => {
+	const service = { name: new URLSearchParams( window.location.search ).get( "service" ) };
+	const services = servicesList.map( service => {
 		return { name: service.title };
-	});
+	} );
 
-	useEffect(() => {
-		document.getElementById("service")?.setAttribute("name", "service");
-	});
+	useEffect( () => {
+		document.getElementById( "service" )?.setAttribute( "name", "service" );
+	} );
 
 	return (
 		<>
-			<Head title={pageName} />
+			<Head title={ pageName } />
 			<main>
 				<Container>
 					<section>
-						<PageTitle>{pageName}</PageTitle>
-						<Line bottom={2} />
+						<PageTitle>{ pageName }</PageTitle>
+						<Line bottom={ 2 } />
 					</section>
 
 					<article>
@@ -49,32 +50,32 @@ export default function Contact() {
 
 						<section>
 							<form
-								className={"gform"}
+								className={ "gform" }
 								action={
 									"https://script.google.com/macros/s/AKfycbyGX_jTNlOlP0eU2nAqu5dhgh9bJxqw4goiI8j0sHYmdKi6o2QXLd0ejo8aPexM5O1Egw/exec"
 								}
-								method={"POST"}>
+								method={ "POST" }>
 								<div>
-									<Typography sx={{ marginBottom: "2rem" }}>
+									<Typography sx={ { marginBottom: "2rem" } }>
 										oder kontaktieren Sie mich mit diesem Formular:
 									</Typography>
 									<FormGroup>
-										<FormElement pos={"left"}>
+										<FormElement pos={ "left" }>
 											<TextField
-												name={"firstname"}
-												id={"firstname"}
-												variant={"outlined"}
-												label={"Vorname"}
+												name={ "firstname" }
+												id={ "firstname" }
+												variant={ "outlined" }
+												label={ "Vorname" }
 												fullWidth
 											/>
 										</FormElement>
-										<FormElement pos={"right"}>
+										<FormElement pos={ "right" }>
 											<TextField
 												required
-												name={"lastname"}
-												id={"lastname"}
-												variant={"outlined"}
-												label={"Nachname"}
+												name={ "lastname" }
+												id={ "lastname" }
+												variant={ "outlined" }
+												label={ "Nachname" }
 												fullWidth
 											/>
 										</FormElement>
@@ -83,11 +84,11 @@ export default function Contact() {
 										<FormElement>
 											<TextField
 												required
-												name={"email"}
-												id={"email"}
-												variant={"outlined"}
-												label={"E-Mail Adresse"}
-												type={"email"}
+												name={ "email" }
+												id={ "email" }
+												variant={ "outlined" }
+												label={ "E-Mail Adresse" }
+												type={ "email" }
 												fullWidth
 											/>
 										</FormElement>
@@ -97,18 +98,18 @@ export default function Contact() {
 											<Autocomplete
 												freeSolo
 												aria-required
-												options={services.map(service => service.name)}
-												getOptionLabel={option => option}
-												id={"service"}
-												value={service.name ? service.name : ""}
+												options={ services.map( service => service.name ) }
+												getOptionLabel={ option => option }
+												id={ "service" }
+												value={ service.name ? service.name : "" }
 												includeInputInList
-												renderInput={params => (
+												renderInput={ params => (
 													<TextField
-														{...params}
-														label={"Dienstleistung"}
-														variant={"outlined"}
+														{ ...params }
+														label={ "Dienstleistung" }
+														variant={ "outlined" }
 													/>
-												)}
+												) }
 												fullWidth
 											/>
 										</FormElement>
@@ -117,13 +118,13 @@ export default function Contact() {
 										<FormElement>
 											<TextField
 												required
-												name={"message"}
-												id={"message"}
-												variant={"outlined"}
-												label={"Nachricht"}
+												name={ "message" }
+												id={ "message" }
+												variant={ "outlined" }
+												label={ "Nachricht" }
 												fullWidth
 												multiline
-												rows={5}
+												rows={ 5 }
 											/>
 										</FormElement>
 									</FormGroup>
@@ -132,13 +133,17 @@ export default function Contact() {
 									</div>
 									<FormGroup>
 										<FormElement>
-											<Button variant="contained" type={"submit"}>
+											<Button
+												variant="contained"
+												type={ "submit" }
+												size={ "large" }
+												endIcon={ <SendIcon color={ "secondary" } /> }>
 												Absenden
 											</Button>
 										</FormElement>
 									</FormGroup>
 								</div>
-								<div className={"after-submit"}>
+								<div className={ "after-submit" }>
 									<Alert severity="success">
 										Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.
 									</Alert>
