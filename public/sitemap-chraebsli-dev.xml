@@ -25,14 +25,14 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.chraebsli.dev/service/build-pc</loc>
-        <lastmod>2022-07-29</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://www.chraebsli.dev/service/develop-webapp</loc>
         <lastmod>2022-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.chraebsli.dev/service/database</loc>
+        <lastmod>2022-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -40,7 +40,7 @@
         <loc>https://www.chraebsli.dev/projects</loc>
         <lastmod>2022-07-29</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/project/fischlehrpfad</loc>
@@ -63,6 +63,12 @@
     <url>
         <loc>https://www.chraebsli.dev/project/mgrumisberg</loc>
         <lastmod>2022-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.chraebsli.dev/project/home-dashboard</loc>
+        <lastmod>2022-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>

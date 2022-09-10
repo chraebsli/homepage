@@ -25,14 +25,14 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.nicholas-krebs.ch/service/build-pc</loc>
-        <lastmod>2022-07-29</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
         <loc>https://www.nicholas-krebs.ch/service/develop-webapp</loc>
         <lastmod>2022-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.nicholas-krebs.ch/service/database</loc>
+        <lastmod>2022-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -40,7 +40,7 @@
         <loc>https://www.nicholas-krebs.ch/projects</loc>
         <lastmod>2022-07-29</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.nicholas-krebs.ch/project/fischlehrpfad</loc>
@@ -63,6 +63,12 @@
     <url>
         <loc>https://www.nicholas-krebs.ch/project/mgrumisberg</loc>
         <lastmod>2022-07-29</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.nicholas-krebs.ch/project/home-dashboard</loc>
+        <lastmod>2022-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
@@ -90,4 +96,4 @@
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
-</urlset>
+</urlset><?xml version="1.0" encoding="UTF-8"?>
