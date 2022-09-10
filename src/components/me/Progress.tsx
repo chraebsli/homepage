@@ -1,4 +1,5 @@
 import React from "react";
+import { Box, Typography } from "@mui/material";
 
 export default function Progress({
 	text,
@@ -12,11 +13,11 @@ export default function Progress({
 	max?: number;
 }) {
 	return (
-		<div>
-			<span className={"progress-text"}>
+		<Box>
+			<Typography component={"span"}>
 				{icon} {text}
-			</span>
+			</Typography>
 			<progress className={"progress"} value={progress} max={max} />
-		</div>
+		</Box>
 	);
 }

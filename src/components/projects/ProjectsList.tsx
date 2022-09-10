@@ -1,10 +1,10 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
 	Box,
 	Button,
+	Card,
 	CardActions,
 	CardContent,
 	CardHeader,
@@ -13,11 +13,11 @@ import {
 	Skeleton,
 	Typography,
 } from "@mui/material";
+import Tag from "../projects/Tag";
 
-// assets and sass
+// assets and styles
 import projectsList from "../../pages/Projects/projects-list";
 import Project from "@models/project";
-import Tag from "../projects/Tag";
 
 export default function ProjectsList({
 	loading = false,
@@ -45,8 +45,7 @@ export default function ProjectsList({
 			modules={[Mousewheel, Autoplay, Pagination, Navigation]}
 			className="services-carousel">
 			{projects?.map(project => (
-				// eslint-disable-next-line react/jsx-key
-				<SwiperSlide>
+				<SwiperSlide key={project.id}>
 					<Grid item key={project.title} xs={12} sm={9} md={6}>
 						<Card>
 							{loading ? (
@@ -62,12 +61,11 @@ export default function ProjectsList({
 
 							<CardHeader title={project.title} titleTypographyProps={{ align: "center" }} />
 							<CardContent>
-								<div>
+								<Box>
 									{project.tags?.map(tag => (
-										// eslint-disable-next-line react/jsx-key
-										<Tag name={tag} />
+										<Tag name={tag} key={tag} />
 									))}
-								</div>
+								</Box>
 								<Box
 									sx={{
 										display: "flex",

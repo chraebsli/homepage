@@ -1,10 +1,10 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import {
 	Box,
 	Button,
+	Card,
 	CardActions,
 	CardContent,
 	CardHeader,
@@ -14,7 +14,7 @@ import {
 	Typography,
 } from "@mui/material";
 
-// assets and sass
+// assets and styles
 import servicesList from "../../pages/Services/services-list";
 import Service from "@models/service";
 
@@ -38,10 +38,12 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 			modules={[Mousewheel, Autoplay, Pagination, Navigation]}
 			className="services-carousel">
 			{services.map(service => (
-				// eslint-disable-next-line react/jsx-key
-				<SwiperSlide>
+				<SwiperSlide key={service.id}>
 					<Grid item key={service.title} xs={12} sm={9} md={6}>
-						<Card>
+						<Card
+							sx={{
+								backgroundColor: "background.default",
+							}}>
 							{loading ? (
 								<Skeleton animation="wave" variant="rectangular" height={200} />
 							) : (
@@ -63,18 +65,10 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 										alignItems: "baseline",
 										mb: 2,
 									}}>
-									<Typography
-										component="p"
-										className="service-teaser"
-										variant="body1"
-										color="text.primary">
+									<Typography component="p" className="service-teaser">
 										{service.teaser}
 									</Typography>
-									<Typography
-										component="p"
-										className="service-description"
-										variant="body1"
-										color="text.primary">
+									<Typography component="p" className="service-description">
 										{service.description}
 									</Typography>
 								</Box>

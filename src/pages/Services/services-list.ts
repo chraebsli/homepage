@@ -7,9 +7,9 @@ import Service from "../../models/service";
 const servicesList = () => {
 	return [
 		new Service({
-			id: "it-support",
+			id: "support",
 			title: "IT Support",
-			href: "/service/it-support",
+			href: "/service/support",
 			image: ImageSupport,
 			teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
 			description:
@@ -26,9 +26,9 @@ const servicesList = () => {
 		}),
 
 		new Service({
-			id: "create-website",
+			id: "website",
 			title: "Website erstellen",
-			href: "/service/create-website",
+			href: "/service/website",
 			image: ImageWebsite,
 			teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
 			description:
@@ -40,9 +40,9 @@ const servicesList = () => {
 		}),
 
 		new Service({
-			id: "develop-webapp",
+			id: "webapp",
 			title: "Webapplikation entwickeln",
-			href: "/service/develop-webapp",
+			href: "/service/webapp",
 			image: ImageWebapp,
 			teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
 			description:
@@ -54,8 +54,8 @@ const servicesList = () => {
 		}),
 
 		new Service({
-			id: "databases",
-			title: "Datenbanken",
+			id: "database",
+			title: "Datenbank",
 			href: "/service/database",
 			image: ImageDatabase,
 			teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Date übernehmen?",

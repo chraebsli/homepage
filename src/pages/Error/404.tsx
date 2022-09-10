@@ -1,35 +1,36 @@
 import React from "react";
-import { Container, Stack } from "@mui/material";
+import { Container, Stack, Typography } from "@mui/material";
 import Head from "../../components/common/Head";
+import { Image, Line, PageTitle, SectionTitle } from "@components/Text";
 
-// assets and sass
-import "./Error.sass";
+// assets
 import ImageError404 from "./assets/404.jpg";
 
-export default class NotFound404 extends React.Component {
-	pageName = "Error 404";
+export default function NotFound404() {
+	const pageName = "Error 404";
+	return (
+		<>
+			<Head title={pageName} />
+			<main className={"page-content"}>
+				<Container>
+					<section>
+						<PageTitle>{pageName}</PageTitle>
+						<Line bottom={2} />
+					</section>
 
-	render() {
-		return (
-			<>
-				<Head title={this.pageName} />
-				<main className={"page-content"}>
-					<Container>
-						<section className={"page-title"}>
-							<h2>{this.pageName}</h2>
-						</section>
-
-						<article className="page-content">
-							<img src={ImageError404} alt={"Illustration Datenbank"} height={200} />
-							<Stack spacing={3}>
-								<section>
-									<h2>Error 404: Die Seite existiert nicht.</h2>
-								</section>
-							</Stack>
-						</article>
-					</Container>
-				</main>
-			</>
-		);
-	}
+					<article className="page-content">
+						<Image src={ImageError404} alt={"Illustration Datenbank"} height={200} m />
+						<Stack spacing={3}>
+							<section>
+								<SectionTitle>Error 404: Die Seite existiert nicht.</SectionTitle>
+								<Typography>
+									Es tut uns leid, aber die Seite, die Sie aufgerufen haben, existiert nicht.
+								</Typography>
+							</section>
+						</Stack>
+					</article>
+				</Container>
+			</main>
+		</>
+	);
 }

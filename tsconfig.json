@@ -27,18 +27,18 @@
 			//"@assets/*": [
 			//	"assets/*"
 			//],
-			//"@components/*": [
-			//	"components/*"
-			//],
-			//"@sass/*": [
-			//	"sass/*"
-			//],
+			"@components/*": [
+				"components/*"
+			],
+			"@styles/*": [
+				"styles/*"
+			],
 			"@models/*": [
 				"models/*"
 			],
-			//"@pages/*": [
-			//	"pages/*"
-			//],
+			"@pages/*": [
+				"pages/*"
+			],
 		}
 	},
 	"include": [

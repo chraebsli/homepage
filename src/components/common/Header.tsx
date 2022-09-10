@@ -1,8 +1,8 @@
 import React from "react";
-import { AppBar, Container } from "@mui/material";
+import { AppBar, Container, Typography } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
 
-// assets and sass
+// assets
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
 
 const pages = [
@@ -25,7 +25,14 @@ export default function Header() {
 							height={50}
 							className={"d-inline-block align-center"}
 						/>
-						<span className={"brand-name"}>chraebsli IT-Services</span>
+						<Typography
+							component={"span"}
+							variant={"h6"}
+							sx={{
+								marginLeft: "1rem",
+							}}>
+							chraebsli IT-Services
+						</Typography>
 					</Navbar.Brand>
 
 					<Navbar.Toggle aria-controls={"header-nav"} />
@@ -44,6 +51,4 @@ export default function Header() {
 			</Container>
 		</AppBar>
 	);
-};
-
-
+}

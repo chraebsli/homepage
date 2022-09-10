@@ -4,7 +4,6 @@ import { Box, CircularProgress } from "@mui/material";
 export default function Loader() {
 	return (
 		<Box
-			className={"loader"}
 			sx={{
 				position: "absolute",
 				top: "50%",

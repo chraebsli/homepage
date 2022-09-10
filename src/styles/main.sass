@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,3000,5001,300&display=swap")
 
+@import "components"
+@import "form"
+@import "image"
+@import "responsive"
+
 /* ********************************************* colors ********************************************* */
 \:root
 	--primary-color: #507cff
@@ -35,23 +40,6 @@ body
 	overflow-x: hidden
 
 
-/* ********************************************* shortforms ********************************************* */
-.f
-	display: flex
-
-.c
-	justify-content: center
-
-.a
-	align-items: center
-
-.col
-	flex-direction: column
-
-.row
-	flex-direction: row
-
-
 /* ********************************************* links ********************************************* */
 a.n
 	text-decoration: none
@@ -71,7 +59,6 @@ hr
 	border: 2px solid var(--primary-color)
 
 /* ********************************************* other ********************************************* */
-p,
-span
+p:not(.MuiTypography-root),
+span:not(.MuiTypography-root)
 	color: var(--text-primary-color)
-

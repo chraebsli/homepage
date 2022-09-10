@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack } from "@mui/material";
 
-// assets and sass
+// assets and styles
 import "../pages/SocialMedia/SocialMedia.sass";
 import socialMediaList from "../pages/SocialMedia/social-media-list";
 import SocialMedia from "../models/socialMedia";
