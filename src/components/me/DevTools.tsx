@@ -9,7 +9,7 @@ import ConstructionIcon from "@mui/icons-material/Construction";
 export default function DevTools({ size }: { size: { xs: number; sm: number; md: number } }) {
 	return (
 		<Grid item xs={ size.xs } sm={ size.sm } md={ size.md }>
-			<Card id={ "skills-soft" }>
+			<Card id={ "skills-soft" } sx={ { padding: "1rem" } }>
 				<h3>
 					<ConstructionIcon /> dev tools
 				</h3>

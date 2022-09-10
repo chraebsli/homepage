@@ -9,7 +9,7 @@ import StorageIcon from "@mui/icons-material/Storage";
 export default function Server({ size }: { size: { xs: number; sm: number; md: number } }) {
 	return (
 		<Grid item xs={ size.xs } sm={ size.sm } md={ size.md }>
-			<Card id={ "skills-soft" }>
+			<Card id={ "skills-soft" } sx={ { padding: "1rem" } }>
 				<h3>
 					<StorageIcon /> server
 				</h3>

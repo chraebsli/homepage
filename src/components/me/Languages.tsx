@@ -9,7 +9,7 @@ import CodeIcon from "@mui/icons-material/Code";
 export default function Languages({ size }: { size: { xs: number; sm: number; md: number } }) {
 	return (
 		<Grid item xs={ size.xs } sm={ size.sm } md={ size.md }>
-			<Card id={ "skills-techs" }>
+			<Card id={ "skills-techs" } sx={ { padding: "1rem" } }>
 				<h3>
 					<CodeIcon /> languages
 				</h3>
