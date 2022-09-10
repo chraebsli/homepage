@@ -14,11 +14,12 @@ export function Line({ top, bottom }: { top?: number; bottom?: number }) {
 }
 
 export function Image({ src, alt, height, m }: { src: any; alt: string; height: number; m?: boolean }) {
-	return <img className={ "r" }
-	            src={ src }
-	            alt={ alt }
-	            height={ height }
-	            style={ { marginBottom: m ? "2rem" : 0 } } />;
+	return <img
+		className={ "r" }
+		src={ src }
+		alt={ alt }
+		height={ height }
+		style={ { marginBottom: m ? "2rem" : 0 } } />;
 }
 
 export function PageTitle({ children }: { children: React.ReactNode }) {
