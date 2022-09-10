@@ -1,6 +1,7 @@
 import React from "react";
 import { AppBar, Container, Typography } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
+import { MaterialUISwitch } from "./ThemeSwitch";
 
 // assets
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
@@ -12,9 +13,9 @@ const pages = [
 	{ href: "/contact", label: "Kontakt" },
 ];
 
-export default function Header() {
+export default function Header({ toggleTheme, checked }: { toggleTheme: () => void; checked: boolean }) {
 	return (
-		<AppBar position="static">
+		<AppBar position={"static"} enableColorOnDark>
 			<Container>
 				<Navbar collapseOnSelect expand={"sm"} bg={"none"} variant={"dark"}>
 					<Navbar.Brand href={"/"}>
@@ -47,6 +48,8 @@ export default function Header() {
 							))}
 						</Nav>
 					</Navbar.Collapse>
+
+					<MaterialUISwitch sx={{ m: 1 }} onChange={toggleTheme} checked={checked} />
 				</Navbar>
 			</Container>
 		</AppBar>

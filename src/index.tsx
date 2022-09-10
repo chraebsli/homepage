@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { Box, createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import { Box, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useCookies } from "react-cookie";
 
 // styles
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -51,11 +52,28 @@ const dark = createTheme({
 });
 
 function App() {
+	const [cookies, setCookie] = useCookies(["colorScheme"]);
+	const colorScheme = cookies.colorScheme;
+	if (!colorScheme) {
+		const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/" });
+	}
+
+	const [theme, setTheme] = useState<"light" | "dark">(colorScheme);
+	const [checked, setChecked] = React.useState<boolean>(theme !== "light");
+
+	const toggleTheme = () => {
+		setChecked(!checked);
+		const newTheme = theme === "light" ? "dark" : "light";
+		setTheme(newTheme);
+		setCookie("colorScheme", newTheme, { path: "/" });
+	};
+
 	return (
-		<ThemeProvider theme={light}>
+		<ThemeProvider theme={theme === "light" ? light : dark}>
 			<Router>
 				<CssBaseline />
-				<Header />
+				<Header toggleTheme={toggleTheme} checked={checked} />
 				<React.Suspense fallback={<Loader />}>
 					<Routes>
 						<Route path="/" element={<Home />} />
