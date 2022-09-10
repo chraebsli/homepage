@@ -17,11 +17,12 @@ export default function SocialMediaList({ items = socialMediaList }: { items?: S
 			justifyContent={ "center" }
 			marginY={ 10 }>
 			{ items?.map(item => (
-				<SocialMediaItem href={ item.href }
-				                 icon={ item.icon }
-				                 name={ item.name }
-				                 user={ item.user }
-				                 key={ item.name } />
+				<SocialMediaItem
+					href={ item.href }
+					icon={ item.icon }
+					name={ item.name }
+					user={ item.user }
+					key={ item.name } />
 			)) }
 		</Stack>
 	);
