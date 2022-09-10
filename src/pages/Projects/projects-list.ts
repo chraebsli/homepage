@@ -11,7 +11,7 @@ const projectsList = () => {
 			id: "fischlehrpfad",
 			title: "Fischlehrpfad",
 			href: "/project/fischlehrpfad",
-			tags: ["web", "client", "deployed"],
+			tags: [ "web", "client", "deployed" ],
 			image: ImageFischlehrpfad,
 			description:
 				"Der Fischlehrpfad war mein erstes Projekt. Ich habe es im 2. Lehrjahr mit einem Kollegen" +
@@ -25,7 +25,7 @@ const projectsList = () => {
 			id: "personal-website",
 			title: "eigene Website",
 			href: "/project/personal",
-			tags: ["web", "personal", "development"],
+			tags: [ "web", "personal", "development" ],
 			image: ImagePersonal,
 			description:
 				"Dieses Projekt ist die Website auf der sie sich befinden. Ich habe diese Website selber" +
@@ -39,7 +39,7 @@ const projectsList = () => {
 			id: "sgrumisberg",
 			title: "SG Rumisberg",
 			href: "/project/sgrumisberg",
-			tags: ["web", "client", "deployed"],
+			tags: [ "web", "client", "deployed" ],
 			image: ImageSGRumisberg,
 			description:
 				"Die erste Website für einen privaten Kunden. Sie ist für ein Verein aus meinem Dorf, der eine " +
@@ -47,13 +47,13 @@ const projectsList = () => {
 				" und konnte viele Erfahrungen sammeln.",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
-			wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/sgrumisberg.ch",
+			wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/sgrumisberg.ch",
 		}),
 		new Project({
 			id: "mgrumisberg",
 			title: "MG Rumisberg",
 			href: "/project/mgrumisberg",
-			tags: ["web", "client", "development"],
+			tags: [ "web", "client", "development" ],
 			image: ImageMGRumisberg,
 			description:
 				"Das ist eine Website für die Musikgesellschaft Rumisberg, in der ich aktiv als Musikant bin. Unsere" +
@@ -67,7 +67,7 @@ const projectsList = () => {
 			id: "home-dashboard",
 			title: "Home Dashboard",
 			href: "/project/home-dashboard",
-			tags: ["web", "personal", "development"],
+			tags: [ "web", "personal", "development" ],
 			image: ImageHomeDasboard,
 			description:
 				"Dieses Projekt ist ein Dashboard für mein Smart Home. Die Daten werden mit einer API von Next.js" +

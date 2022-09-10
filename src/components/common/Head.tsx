@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 export default function Head({ title }: { title: string }) {
 	return (
 		<Helmet>
-			<title>{`${title} | chraebsli IT-Services`}</title>
+			<title>{ `${ title } | chraebsli IT-Services` }</title>
 		</Helmet>
 	);
 }

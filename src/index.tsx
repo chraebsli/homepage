@@ -1,14 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { createTheme, CssBaseline, ThemeProvider } from "@mui/material";
+import React, { useState } from "react";
+import { createRoot } from "react-dom/client";
+import { Box, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { useCookies } from "react-cookie";
 
-// sass
+// styles
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./sass/main.sass";
-import "./sass/components.sass";
-import "./sass/responsive.sass";
-import "./sass/form.sass";
+import "./styles/main.sass";
 
 // components
 import Header from "./components/common/Header";
@@ -18,10 +16,10 @@ import Loader from "./components/common/Loader";
 // pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
-import CreateWebsite from "./pages/Services/single/CreateWebsite";
-import ITSupport from "./pages/Services/single/ITSupport";
-import BuildPC from "./pages/Services/single/BuildPC";
-import DevelopWebapp from "./pages/Services/single/DevelopWebapp";
+import Website from "./pages/Services/single/Website";
+import Support from "./pages/Services/single/Support";
+import Database from "./pages/Services/single/Database";
+import Webapp from "./pages/Services/single/Webapp";
 
 import Projects from "./pages/Projects/Projects";
 import Fischlehrpfad from "./pages/Projects/single/fischlehrpfad";
@@ -36,54 +34,76 @@ import Me from "./pages/Me/Me";
 import Imprint from "./pages/Imprint";
 import Privacy from "./pages/Privacy";
 
-import Error404 from "./pages/Error/404";
+import NotFound404 from "./pages/Error/404";
 
-const defaultTheme = createTheme({
+const light = createTheme({
 	palette: {
+		mode: "light",
 		primary: { main: "#507cff" },
 		secondary: { main: "#ffffff" },
-		text: {
-			primary: "#000000",
-			secondary: "#ffffff",
-		},
-		background: {
-			default: "#ffffff",
-		},
+	},
+});
+const dark = createTheme({
+	palette: {
+		mode: "dark",
+		primary: { main: "#507cff" },
+		secondary: { main: "#ffffff" },
 	},
 });
 
-ReactDOM.render(
-	<ThemeProvider theme={defaultTheme}>
-		<Router>
-			<CssBaseline />
-			<Header />
-			<React.Suspense fallback={Loader}>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="*" element={<Error404 />} />
-					<Route path="/services" element={<Services />} />
-					<Route path="/service/create-website" element={<CreateWebsite />} />
-					<Route path="/service/it-support" element={<ITSupport />} />
-					<Route path="/service/build-pc" element={<BuildPC />} />
-					<Route path="/service/develop-webapp" element={<DevelopWebapp />} />
+function App() {
+	const [ cookies, setCookie ] = useCookies([ "colorScheme" ]);
+	const colorScheme = cookies.colorScheme;
+	if (!colorScheme) {
+		const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/" });
+	}
 
-					<Route path="/projects" element={<Projects />} />
-					<Route path="/project/fischlehrpfad" element={<Fischlehrpfad />} />
-					<Route path="/project/personal" element={<Personal />} />
-					<Route path="/project/sgrumisberg" element={<SGRumisberg />} />
-					<Route path="/project/mgrumisberg" element={<MGRumisberg />} />
-					<Route path="/project/home-dashboard" element={<HomeDashboard />} />
+	const [ theme, setTheme ] = useState<"light" | "dark">(colorScheme);
+	const [ checked, setChecked ] = React.useState<boolean>(theme !== "light");
 
-					<Route path="/me" element={<Me />} />
-					<Route path="/contact" element={<Contact />} />
+	const toggleTheme = () => {
+		setChecked(!checked);
+		const newTheme = theme === "light" ? "dark" : "light";
+		setTheme(newTheme);
+		setCookie("colorScheme", newTheme, { path: "/" });
+	};
 
-					<Route path="/imprint" element={<Imprint />} />
-					<Route path="/privacy" element={<Privacy />} />
-				</Routes>
-			</React.Suspense>
-			<Footer />
-		</Router>
-	</ThemeProvider>,
+	return (
+		<ThemeProvider theme={ theme === "light" ? light : dark }>
+			<Router>
+				<CssBaseline />
+				<Header toggleTheme={ toggleTheme } checked={ checked } />
+				<React.Suspense fallback={ <Loader /> }>
+					<Routes>
+						<Route path="/" element={ <Home /> } />
+						<Route path="*" element={ <NotFound404 /> } />
+						<Route path="/services" element={ <Services /> } />
+						<Route path="/service/website" element={ <Website /> } />
+						<Route path="/service/support" element={ <Support /> } />
+						<Route path="/service/webapp" element={ <Webapp /> } />
+						<Route path="/service/database" element={ <Database /> } />
 
-	document.getElementById("root")
-);
+						<Route path="/projects" element={ <Projects /> } />
+						<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
+						<Route path="/project/personal" element={ <Personal /> } />
+						<Route path="/project/sgrumisberg" element={ <SGRumisberg /> } />
+						<Route path="/project/mgrumisberg" element={ <MGRumisberg /> } />
+						<Route path="/project/home-dashboard" element={ <HomeDashboard /> } />
+
+						<Route path="/me" element={ <Me /> } />
+						<Route path="/contact" element={ <Contact /> } />
+
+						<Route path="/imprint" element={ <Imprint /> } />
+						<Route path="/privacy" element={ <Privacy /> } />
+					</Routes>
+				</React.Suspense>
+				<Box sx={ { height: "3rem" } } />
+				<Footer />
+			</Router>
+		</ThemeProvider>
+	);
+}
+
+const root = createRoot(document.getElementById("root")!);
+root.render(<App />);

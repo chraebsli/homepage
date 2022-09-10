@@ -1,16 +1,16 @@
-import ImageCreateWebsite from "./assets/create-website.jpg";
-import ImageBuildPC from "./assets/build-pc.jpg";
-import ImageITSupport from "./assets/it-support.jpg";
-import ImageDevelopWebapp from "./assets/develop-webapp.jpg";
+import ImageWebsite from "./assets/website.jpg";
+import ImageSupport from "./assets/support.jpg";
+import ImageWebapp from "./assets/webapp.jpg";
+import ImageDatabase from "./assets/database.jpg";
 import Service from "../../models/service";
 
 const servicesList = () => {
 	return [
 		new Service({
-			id: "it-support",
+			id: "support",
 			title: "IT Support",
-			href: "/service/it-support",
-			image: ImageITSupport,
+			href: "/service/support",
+			image: ImageSupport,
 			teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
 			description:
 				"Kommen Sie nicht mehr weiter bei Apps von Ihrem Computer oder ihrem Smartphone oder Fragen zu" +
@@ -26,43 +26,48 @@ const servicesList = () => {
 		}),
 
 		new Service({
-			id: "create-website",
+			id: "website",
 			title: "Website erstellen",
-			href: "/service/create-website",
-			image: ImageCreateWebsite,
+			href: "/service/website",
+			image: ImageWebsite,
 			teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
 			description:
 				"Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen " +
 				"persönlichen Zweck nach Ihren Wünschen.",
-			features: ["professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen"],
-			buttonText: "Mehr erfahren",
-			buttonVariant: "contained",
-		}),
-
-		new Service({
-			id: "develop-webapp",
-			title: "Webapplikation entwickeln",
-			href: "/service/develop-webapp",
-			image: ImageDevelopWebapp,
-			teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
-			description:
-				"Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen" +
-				" Zweck mit Login und anderen Funktionen.",
-			features: ["moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten"],
+			features: [ "professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen" ],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
 		}),
 
 		new Service({
-			id: "build-pc",
-			title: "PC bauen",
-			href: "/service/build-pc",
-			image: ImageBuildPC,
-			teaser: "Möchten Sie einen neuen PC oder Laptop für zu Hause der Ihren Anfordern entspricht?",
+			id: "webapp",
+			title: "Webapplikation erstellen",
+			href: "/service/webapp",
+			image: ImageWebapp,
+			teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
 			description:
-				"Ich helfe Ihnen bei der Auswahl eines neuen PCs oder Laptops optimal für Ihren Gebrauch oder baue" +
-				" einen PC nach ihren Vorstellungen.",
-			features: ["persönliche Beratung", "optimiert für Sie", "günstig", "nach Ihren Wünschen"],
+				"Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen" +
+				" Zweck mit Login und anderen Funktionen.",
+			features: [ "moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten" ],
+			buttonText: "Mehr erfahren",
+			buttonVariant: "outlined",
+		}),
+
+		new Service({
+			id: "database",
+			title: "Datenbank",
+			href: "/service/database",
+			image: ImageDatabase,
+			teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Date übernehmen?",
+			description:
+				"Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine" +
+				" neue, egal ob SQL oder NoSQL.",
+			features: [
+				"vollständiges Datenbanksystem",
+				"überlegte Struktur",
+				"einfach zu verwalten",
+				"schnelle Abfragen",
+			],
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
 		}),

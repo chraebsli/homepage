@@ -2,91 +2,97 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://www.chraebsli.dev/</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/services</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.chraebsli.dev/service/create-website</loc>
-        <lastmod>2022-07-29</lastmod>
+        <loc>https://www.chraebsli.dev/service/website</loc>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.chraebsli.dev/service/it-support</loc>
-        <lastmod>2022-07-29</lastmod>
+        <loc>https://www.chraebsli.dev/service/support</loc>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://www.chraebsli.dev/service/build-pc</loc>
-        <lastmod>2022-07-29</lastmod>
+        <loc>https://www.chraebsli.dev/service/webapp</loc>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://www.chraebsli.dev/service/develop-webapp</loc>
-        <lastmod>2022-07-29</lastmod>
+        <loc>https://www.chraebsli.dev/service/database</loc>
+        <lastmod>2022-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/projects</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+        <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/project/fischlehrpfad</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/project/personal</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/project/sgrumisberg</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/project/mgrumisberg</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.4</priority>
+    </url>
+    <url>
+        <loc>https://www.chraebsli.dev/project/home-dashboard</loc>
+        <lastmod>2022-10-09</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.4</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/me</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/contact</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/imprint</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
         <loc>https://www.chraebsli.dev/privacy</loc>
-        <lastmod>2022-07-29</lastmod>
+        <lastmod>2022-10-10</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.3</priority>
     </url>

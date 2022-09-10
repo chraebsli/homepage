@@ -1,8 +1,0 @@
-# Ignore artifacts:
-build
-coverage
-
-.eslintrc.json
-package.json
-package-lock.json
-tsconfig.json

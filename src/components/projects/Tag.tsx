@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Chip } from "@mui/material";
+import { Avatar, Chip, Typography } from "@mui/material";
 
 export default function Tag({ name }: { name: string }) {
 	let color: "secondary" | "default" | "success" | "warning" | "error" | "primary" | "info";
@@ -30,5 +30,17 @@ export default function Tag({ name }: { name: string }) {
 		avatar = "?";
 	}
 
-	return <Chip variant="outlined" color={color} avatar={<Avatar>{avatar}</Avatar>} label={name.toUpperCase()} />;
+	return (
+		<Chip
+			variant="outlined"
+			color={ color }
+			avatar={ <Avatar>{ avatar }</Avatar> }
+			label={
+				<Typography variant={ "subtitle2" } color={ "text.primary" }>
+					{ " " }
+					{ name }{ " " }
+				</Typography>
+			}
+		/>
+	);
 }

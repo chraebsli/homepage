@@ -4,37 +4,30 @@ import Head from "../../components/common/Head";
 import { Container } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Line, PageTitle } from "../../components/Text";
 
-// assets and sass
+// assets and styles
 import "./Services.sass";
-import servicesList from "../Services/services-list";
 import ServicesList from "../../components/services/ServicesList";
 
-export default class Services extends React.Component<{
-	loading?: boolean;
-}> {
-	static defaultProps = {
-		loading: false,
-	};
-	pageName = "Services";
-	services = servicesList;
+export default function Services() {
+	const pageName = "Services";
 
-	render(){
-		return (
-			<>
-				<Head title={ this.pageName } />
-				<main className={ this.pageName.toLowerCase() }>
-					<Container>
-						<section className={ "page-title" }>
-							<p>Dienstleistungen</p>
-						</section>
+	return (
+		<>
+			<Head title={ pageName } />
+			<main>
+				<Container>
+					<section>
+						<PageTitle>Dienstleistungen</PageTitle>
+						<Line bottom={ 2 } />
+					</section>
 
-						<article className="page-content">
-							<ServicesList />
-						</article>
-					</Container>
-				</main>
-			</>
-		);
-	}
+					<article>
+						<ServicesList />
+					</article>
+				</Container>
+			</main>
+		</>
+	);
 }

@@ -3,37 +3,30 @@ import Head from "../../components/common/Head";
 import { Container } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Line, PageTitle } from "../../components/Text";
 
-// assets and sass
+// assets and styles
 import "./Projects.sass";
-import projectsList from "../Projects/projects-list";
 import ProjectsList from "../../components/projects/ProjectsList";
 
-export default class Projects extends React.Component<{
-	loading?: boolean;
-}> {
-	static defaultProps = {
-		loading: false,
-	};
-	pageName = "Projects";
-	projects = projectsList;
+export default function Projects() {
+	const pageName = "Projects";
 
-	render() {
-		return (
-			<>
-				<Head title={this.pageName} />
-				<main className={this.pageName.toLowerCase()}>
-					<Container>
-						<section className={"page-title"}>
-							<p>Projekte</p>
-						</section>
+	return (
+		<>
+			<Head title={ pageName } />
+			<main className={ pageName.toLowerCase() }>
+				<Container>
+					<section className={ "page-title" }>
+						<PageTitle>Projekte</PageTitle>
+						<Line bottom={ 2 } />
+					</section>
 
-						<article className="page-content">
-							<ProjectsList />
-						</article>
-					</Container>
-				</main>
-			</>
-		);
-	}
+					<article className="page-content">
+						<ProjectsList />
+					</article>
+				</Container>
+			</main>
+		</>
+	);
 }
