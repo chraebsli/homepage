@@ -1,11 +1,12 @@
 import React from "react";
-import { Container, Stack, Typography } from "@mui/material";
+import { Button, Container, Stack, Typography } from "@mui/material";
 import Head from "../../../components/common/Head";
 import { Line, PageTitle } from "../../../components/Text";
 
 // assets and styles
 import "../Services.sass";
 import ImageITSupport from "../assets/support.jpg";
+import SendIcon from "@mui/icons-material/Send";
 
 export default function Support() {
 	const pageName = "IT Support";
@@ -26,8 +27,8 @@ export default function Support() {
 							height={ 200 }
 							style={ { marginBottom: "2rem" } }
 						/>
-						<Stack spacing={ 3 }>
-							<section>
+						<section>
+							<Stack spacing={ 3 }>
 								<Typography className={ "italic" }>
 									Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?
 								</Typography>
@@ -49,8 +50,15 @@ export default function Support() {
 										<li>Weiterbildung und Aufklärung</li>
 									</ul>
 								</Typography>
-							</section>
-						</Stack>
+								<Button
+									href={ `/contact?service=${ pageName }` }
+									variant="contained"
+									endIcon={ <SendIcon color={ "secondary" } /> }
+									sx={ { width: "20rem" } }>
+									Anfrage senden
+								</Button>
+							</Stack>
+						</section>
 					</article>
 				</Container>
 			</main>

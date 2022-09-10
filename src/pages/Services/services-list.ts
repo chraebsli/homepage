@@ -41,7 +41,7 @@ const servicesList = () => {
 
 		new Service({
 			id: "webapp",
-			title: "Webapplikation entwickeln",
+			title: "Webapplikation erstellen",
 			href: "/service/webapp",
 			image: ImageWebapp,
 			teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",

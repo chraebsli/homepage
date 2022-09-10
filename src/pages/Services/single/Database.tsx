@@ -1,14 +1,15 @@
 import React from "react";
-import { Container, Stack, Typography } from "@mui/material";
+import { Button, Container, Stack, Typography } from "@mui/material";
 import Head from "../../../components/common/Head";
 import { Line, PageTitle } from "../../../components/Text";
+import SendIcon from "@mui/icons-material/Send";
 
 // assets and styles
 import "../Services.sass";
 import ImageDatabase from "../assets/database.jpg";
 
 export default function Database() {
-	const pageName = "Database";
+	const pageName = "Datenbank";
 	return (
 		<>
 			<Head title={ pageName } />
@@ -26,8 +27,8 @@ export default function Database() {
 							height={ 200 }
 							style={ { marginBottom: "2rem" } }
 						/>
-						<Stack spacing={ 3 }>
-							<section>
+						<section>
+							<Stack spacing={ 3 }>
 								<Typography className={ "italic" }>
 									Möchten Sie eine Datenbank erstellen oder von einer anderen alle Daten in eine neue
 									übernehmen?
@@ -47,8 +48,15 @@ export default function Database() {
 										<li>schnelle Abfragen</li>
 									</ul>
 								</Typography>
-							</section>
-						</Stack>
+								<Button
+									href={ `/contact?service=${ pageName }` }
+									variant="contained"
+									endIcon={ <SendIcon color={ "secondary" } /> }
+									sx={ { width: "20rem" } }>
+									Anfrage senden
+								</Button>
+							</Stack>
+						</section>
 					</article>
 				</Container>
 			</main>
