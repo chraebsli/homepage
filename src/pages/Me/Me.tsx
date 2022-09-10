@@ -51,7 +51,7 @@ export default class Me extends React.Component {
 												<b>neben meiner Ausbildung</b> zu entwickeln für mich oder für Kunden.
 												<br />
 												Ich habe bereits für 2 Vereine aus meiner Umgebung eine Website
-												entwickelt oder bin aktiv in der Entwicklung. Mehr dazu bei den
+												entwickelt oder bin aktiv in der Entwicklung. Mehr dazu bei den{" "}
 												<a href={"#projects"}>Projekten</a>
 											</p>
 										</Card.Text>
@@ -101,7 +101,10 @@ export default class Me extends React.Component {
 											</h2>
 										</Card.Title>
 										<Card.Text>
-											<p>WakaTime Statistiken zu Sprachen und Aktivität </p>
+											<p>
+												WakaTime Statistiken zu Programmiersprachen und Aktivität in den letzten
+												30 Tagen{" "}
+											</p>
 										</Card.Text>
 										<Stack
 											className={"card-container"}
@@ -111,7 +114,7 @@ export default class Me extends React.Component {
 												<embed src="https://wakatime.com/share/@chraebsli/e7bc95fa-f16d-45da-bae8-2320d8191b65.svg" />
 											</figure>
 											<figure>
-												<embed src="https://wakatime.com/share/@chraebsli/ec37c5b1-ba15-4ac0-b6d6-4b93866d58cc.svg" />
+												<embed src="https://wakatime.com/share/@chraebsli/661154cf-54c3-4aea-ab11-2530d09ad145.svg" />
 											</figure>
 										</Stack>
 									</Card.Body>
