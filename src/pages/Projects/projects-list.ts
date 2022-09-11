@@ -33,7 +33,7 @@ const projectsList = () => {
 				" die ich währenddessen erlernt habe.",
 			buttonText: "Mehr erfahren",
 			buttonVariant: "outlined",
-			wakaTimeBadge: "https://wakatime.com/badge/github/chraebsli/homepage",
+			wakaTimeBadge: "https://wakatime.com/badge/github/chraebslii/homepage",
 		}),
 		new Project({
 			id: "sgrumisberg",
