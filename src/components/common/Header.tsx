@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
-import { useCookies } from "react-cookie";
-import { AppBar, Button, ButtonGroup, Container, Stack, Typography } from "@mui/material";
+import React from "react";
+import { AppBar, Container, Stack, Typography } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
 import { MaterialUISwitch } from "./ThemeSwitch";
-import { defaultLanguage } from "./i18n";
+import { LanguageSwitcher } from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
 // assets
@@ -62,23 +61,3 @@ export default function Header({ toggleTheme, checked }: { toggleTheme: () => vo
 		</AppBar>
 	);
 }
-
-const LanguageSwitcher = () => {
-	const [ language, setLanguage ] = React.useState(defaultLanguage);
-	const [ cookies, setCookie ] = useCookies([ "i18next" ]);
-
-	useEffect(() => { cookies.i18next ? setLanguage(cookies.i18next) : null; }, [ cookies, setCookie ]);
-
-	const handleChange = (lang: string) => {
-		setCookie("i18next", lang, { path: "/" });
-		setLanguage(lang);
-		window.location.reload();
-	};
-
-	return (
-		<ButtonGroup variant="text" aria-label="language" color={ "secondary" }>
-			<Button onClick={ () => {handleChange("en");} }>EN</Button>
-			<Button onClick={ () => {handleChange("de");} }>DE</Button>
-		</ButtonGroup>
-	);
-};
