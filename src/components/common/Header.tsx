@@ -17,7 +17,7 @@ const pages = [
 ];
 
 export default function Header({ toggleTheme, checked }: { toggleTheme: () => void; checked: boolean }) {
-	const { t } = useTranslation("header");
+	const { t } = useTranslation("components");
 	return (
 		<AppBar position={ "static" } enableColorOnDark>
 			<Container>
@@ -36,7 +36,7 @@ export default function Header({ toggleTheme, checked }: { toggleTheme: () => vo
 							sx={ {
 								marginLeft: "1rem",
 							} }>
-							{ t("title") }
+							{ t("header.title") }
 						</Typography>
 					</Navbar.Brand>
 
@@ -47,7 +47,7 @@ export default function Header({ toggleTheme, checked }: { toggleTheme: () => vo
 						<Nav>
 							{ pages.map(page => (
 								<Nav.Link key={ page.key } href={ page.href }>
-									{ t(`links.${ page.key }`) }
+									{ t(`header.links.${ page.key }`) }
 								</Nav.Link>
 							)) }
 						</Nav>

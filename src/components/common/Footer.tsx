@@ -9,7 +9,7 @@ const links = [
 ];
 
 export default function Footer() {
-	const { t } = useTranslation("footer", {});
+	const { t } = useTranslation("components");
 	return (
 		<Box
 			sx={ {
@@ -26,14 +26,14 @@ export default function Footer() {
 							{ links.map((link, index) => (
 								<>
 									<Link href={ link.href } sx={ { color: "secondary.main" } } key={ index }>
-										{ t(`links.${ link.key }`) }
+										{ t(`footer.links.${ link.key }`) }
 									</Link>
 									<Typography key={ index + 100 }>{ index < links.length - 1 && "|" }</Typography>
 								</>
 							)) }
 						</Stack>
 						<Typography component={ "span" } sx={ { color: "secondary.main" } }>
-							&copy; { new Date().getFullYear() } { t("copyright") }
+							&copy; { new Date().getFullYear() } { t("footer.copyright") }
 						</Typography>
 					</Stack>
 				</nav>

@@ -23,19 +23,15 @@ i18n
 		react: {
 			transSupportBasicHtmlNodes: true,
 		},
-		ns: [ "common", "footer", "header", "pages" ],
+		ns: [ "common", "components", "pages" ],
 		defaultNS: "common",
 		resources: {
 			de: {
 				common: { ...de().common },
-				header: { ...de().components.header },
-				footer: { ...de().components.footer },
+				components: { ...de().components },
 				pages: { ...de().pages },
 			},
-			en: {
-				header: { ...en().components.header },
-				footer: { ...en().components.footer },
-			},
+			en: {},
 		},
 	});
 
