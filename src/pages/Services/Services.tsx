@@ -1,6 +1,6 @@
 // import libraries
 import React from "react";
-import Head from "../../components/common/Head";
+import Page from "../../components/common/Page";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Line, PageTitle } from "../../components/Text";
@@ -13,18 +13,14 @@ export default function Services() {
 	const pageName = "Services";
 
 	return (
-		<>
-			<Head title={ pageName } />
-			<main>
-				<section>
-					<PageTitle>Dienstleistungen</PageTitle>
-					<Line bottom={ 2 } />
-				</section>
-
-				<article>
-					<ServicesList />
-				</article>
-			</main>
-		</>
+		<Page pageName={ pageName }>
+			<section>
+				<PageTitle>Dienstleistungen</PageTitle>
+				<Line bottom={ 2 } />
+			</section>
+			<article>
+				<ServicesList />
+			</article>
+		</Page>
 	);
 }
