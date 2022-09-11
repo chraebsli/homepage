@@ -4,7 +4,7 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import de from "../../locales/de";
 import en from "../../locales/en";
 
-export const defaultLanguage = "de";
+export const defaultLanguage = "en";
 
 i18n
 	// detect user language
@@ -15,6 +15,9 @@ i18n
 	// init i18next
 	// for all options read: https://www.i18next.com/overview/configuration-options
 	.init({
+		detection: {
+			order: [ "cookie", "querystring", "localStorage", "navigator", "htmlTag", "path", "subdomain" ],
+		},
 		debug: true,
 		fallbackLng: defaultLanguage,
 		interpolation: {
