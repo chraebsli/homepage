@@ -12,6 +12,7 @@ import "./styles/main.sass";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 // pages
 import Home from "./pages/Home/Home";
@@ -98,6 +99,7 @@ function App() {
 						<Route path="/privacy" element={ <Privacy /> } />
 					</Routes>
 				</React.Suspense>
+				<ScrollToTop />
 				<Box sx={ { height: "3rem" } } />
 				<Footer />
 			</Router>
