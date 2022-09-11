@@ -69,7 +69,7 @@ export default function Contact() {
 										name={ "lastname" }
 										id={ "lastname" }
 										variant={ "outlined" }
-										label={ t("contact.form.lastname") }
+										label={ t("contact.form.lastName") }
 										fullWidth
 									/>
 								</FormElement>
@@ -123,7 +123,7 @@ export default function Contact() {
 								</FormElement>
 							</FormGroup>
 							<div>
-								<Typography>* Pflichtfeld</Typography>
+								<Typography>{ t("contact.form.required") }</Typography>
 							</div>
 							<FormGroup>
 								<FormElement>

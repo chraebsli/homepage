@@ -125,7 +125,7 @@ export default function en() {
 				title: "Contact",
 				contactMe: "If you have any questions, please contact me via the e-mail address below. I will usually get back to you within 2-4 days. <br /> You are also welcome to give me feedback and suggestions for improving this website.",
 				emailAddress: "E-Mail address",
-				or: "oder contact me with this form:",
+				or: "or contact me with this form:",
 				form: {
 					firstName: "Firstname",
 					lastName: "Lastname",
@@ -133,6 +133,7 @@ export default function en() {
 					service: "Service",
 					message: "Message",
 					send: "Send",
+					required: "* required",
 					success: "Thanks for your message! I will get back to you as soon as possible.",
 				},
 			},

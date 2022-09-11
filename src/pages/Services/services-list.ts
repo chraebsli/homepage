@@ -10,7 +10,7 @@ export default function servicesList(): Service[] {
 	return [
 		new Service({
 			id: "support",
-			title: "IT Support",
+			title: t("services.itSupport.title"),
 			href: "/service/support",
 			image: ImageSupport,
 			teaser: t("services.itSupport.teaser"),
@@ -20,7 +20,7 @@ export default function servicesList(): Service[] {
 
 		new Service({
 			id: "website",
-			title: "Website erstellen",
+			title: t("services.website.title"),
 			href: "/service/website",
 			image: ImageWebsite,
 			teaser: t("services.website.teaser"),
@@ -30,7 +30,7 @@ export default function servicesList(): Service[] {
 
 		new Service({
 			id: "webapp",
-			title: "Webapplikation erstellen",
+			title: t("services.webapp.title"),
 			href: "/service/webapp",
 			image: ImageWebapp,
 			teaser: t("services.webapp.teaser"),
@@ -40,7 +40,7 @@ export default function servicesList(): Service[] {
 
 		new Service({
 			id: "database",
-			title: "Datenbank",
+			title: t("services.database.title"),
 			href: "/service/database",
 			image: ImageDatabase,
 			teaser: t("services.database.teaser"),

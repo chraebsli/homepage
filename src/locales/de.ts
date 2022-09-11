@@ -49,22 +49,19 @@ export default function de() {
 				website: {
 					title: "Website erstellen",
 					teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
-					description:
-						"Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.",
+					description: "Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.",
 					features: [ "professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen" ],
 				},
 				webapp: {
 					title: "Webapp erstellen",
 					teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
-					description:
-						"Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen Zweck mit Login und anderen Funktionen.",
+					description: "Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen Zweck mit Login und anderen Funktionen.",
 					features: [ "moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten" ],
 				},
 				database: {
 					title: "Datenbank",
 					teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Date übernehmen?",
-					description:
-						"Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL.",
+					description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL.",
 					features: [
 						"vollständiges Datenbanksystem",
 						"überlegte Struktur",
@@ -135,6 +132,7 @@ export default function de() {
 					email: "E-Mail Adresse",
 					service: "Dienstleistung",
 					message: "Nachricht",
+					required: "* Pflichtfeld",
 					send: "Senden",
 					success: "Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.",
 				},
