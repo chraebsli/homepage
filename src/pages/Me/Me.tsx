@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Grid, Stack, Typography } from "@mui/material";
+import { Card, Container, Grid, Stack, Typography, useTheme } from "@mui/material";
 import Head from "../../components/common/Head";
 import ProjectsList from "../../components/projects/ProjectsList";
 import Frontend from "../../components/me/Frontend";
@@ -16,6 +16,17 @@ import PollIcon from "@mui/icons-material/Poll";
 
 export default function Me() {
 	const pageName = "Me";
+	const scheme = useTheme().palette.mode;
+	const wakaTimeStats = {
+		activity: {
+			light: "e7bc95fa-f16d-45da-bae8-2320d8191b65",
+			dark: "c00be785-7e1e-4e58-bb64-2193669eadfb",
+		},
+		languages: {
+			light: "661154cf-54c3-4aea-ab11-2530d09ad145",
+			dark: "ae7c9e87-454d-4942-8133-b8c11c34274d",
+		},
+	};
 
 	return (
 		<>
@@ -77,10 +88,10 @@ export default function Me() {
 								</Typography>
 								<Stack direction={ { xs: "column", md: "row" } } spacing={ 3 }>
 									<figure>
-										<embed src="https://wakatime.com/share/@chraebsli/e7bc95fa-f16d-45da-bae8-2320d8191b65.svg" />
+										<embed src={ `https://wakatime.com/share/@chraebsli/${ wakaTimeStats.activity[scheme] }.svg` } />
 									</figure>
 									<figure>
-										<embed src="https://wakatime.com/share/@chraebsli/661154cf-54c3-4aea-ab11-2530d09ad145.svg" />
+										<embed src={ `https://wakatime.com/share/@chraebsli/${ wakaTimeStats.languages[scheme] }.svg` } />
 									</figure>
 								</Stack>
 							</Card>
