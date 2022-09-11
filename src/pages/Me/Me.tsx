@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Grid, Stack, Typography, useTheme } from "@mui/material";
+import { Card, Grid, Stack, Typography, useTheme } from "@mui/material";
 import Head from "../../components/common/Head";
 import ProjectsList from "../../components/projects/ProjectsList";
 import Frontend from "../../components/me/Frontend";
@@ -32,72 +32,70 @@ export default function Me() {
 		<>
 			<Head title={ pageName } />
 			<main className={ pageName.toLowerCase() }>
-				<Container>
-					<article>
-						<Stack spacing={ 3 }>
-							<Card id={ "me" } sx={ { padding: "2rem" } }>
-								<h2>
-									<PersonIcon /> Über mich
-								</h2>
-								<Typography>
-									Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling Fachrichtung
-									Betriebsinformatik im 3. Lehrjahr in der{ " " }
-									<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
-									interessiere mich sehr für die Informatik und am meisten für die{ " " }
-									<b>Webentwicklung</b>, in der ich mich dieses Jahr auch spezialisieren werde.
-									<br />
-									In meiner Freizeit investiere ich meine Zeit gerne in das Weiterbilden von
-									JavaScript/ TypeScript und anderen Programmiersprachen für Web und Bibliotheken wie
-									React. Früher habe ich kleinere Projekte erstellt, um mit praktischen Aufgaben
-									lernen zu können. Das waren aber nur Projekte wie Tic-Tac-Toe. Nun möchte ich aber
-									grössere Projekte <b>neben meiner Ausbildung</b> zu entwickeln für mich oder für
-									Kunden.
-									<br />
-									Ich habe bereits für 2 Vereine aus meiner Umgebung eine Website entwickelt oder bin
-									aktiv in der Entwicklung. Mehr dazu bei den <a href={ "#projects" }>Projekten</a>
-								</Typography>
-							</Card>
-							<Card id={ "skills" } sx={ { padding: "2rem" } }>
-								<h2>
-									<SchoolIcon /> Skills
-								</h2>
-								<Typography>
-									Hier sind einzelne Skills, die ich in meiner Freizeit oder bei der Ausbildung
-									erlernt und weiterentwickelt habe.
-								</Typography>
-								<Grid container spacing={ 3 } sx={ { padding: "1rem 0" } }>
-									<Frontend size={ { xs: 12, sm: 6 } } />
-									<Backend size={ { xs: 12, sm: 6 } } />
-									<DevTools size={ { xs: 12, sm: 6 } } />
-									<General size={ { xs: 12, sm: 6 } } />
-								</Grid>
-							</Card>
-							<Card id={ "projects" } sx={ { padding: "2rem" } }>
-								<h2>
-									<WebIcon /> Projekte
-								</h2>
-								<Typography>Projekte, die ich realisiert habe:</Typography>
-								<ProjectsList />
-							</Card>
-							<Card id={ "stats" } sx={ { padding: "2rem" } }>
-								<h2>
-									<PollIcon /> Statistiken
-								</h2>
-								<Typography>
-									WakaTime Statistiken zu Programmiersprachen und Aktivität in den letzten 30 Tagen
-								</Typography>
-								<Stack direction={ { xs: "column", md: "row" } } spacing={ 3 }>
-									<figure>
-										<embed src={ `https://wakatime.com/share/@chraebsli/${ wakaTimeStats.activity[scheme] }.svg` } />
-									</figure>
-									<figure>
-										<embed src={ `https://wakatime.com/share/@chraebsli/${ wakaTimeStats.languages[scheme] }.svg` } />
-									</figure>
-								</Stack>
-							</Card>
-						</Stack>
-					</article>
-				</Container>
+				<article>
+					<Stack spacing={ 3 }>
+						<Card id={ "me" } sx={ { padding: "2rem" } }>
+							<h2>
+								<PersonIcon /> Über mich
+							</h2>
+							<Typography>
+								Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling Fachrichtung
+								Betriebsinformatik im 3. Lehrjahr in der{ " " }
+								<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
+								interessiere mich sehr für die Informatik und am meisten für die{ " " }
+								<b>Webentwicklung</b>, in der ich mich dieses Jahr auch spezialisieren werde.
+								<br />
+								In meiner Freizeit investiere ich meine Zeit gerne in das Weiterbilden von
+								JavaScript/ TypeScript und anderen Programmiersprachen für Web und Bibliotheken wie
+								React. Früher habe ich kleinere Projekte erstellt, um mit praktischen Aufgaben
+								lernen zu können. Das waren aber nur Projekte wie Tic-Tac-Toe. Nun möchte ich aber
+								grössere Projekte <b>neben meiner Ausbildung</b> zu entwickeln für mich oder für
+								Kunden.
+								<br />
+								Ich habe bereits für 2 Vereine aus meiner Umgebung eine Website entwickelt oder bin
+								aktiv in der Entwicklung. Mehr dazu bei den <a href={ "#projects" }>Projekten</a>
+							</Typography>
+						</Card>
+						<Card id={ "skills" } sx={ { padding: "2rem" } }>
+							<h2>
+								<SchoolIcon /> Skills
+							</h2>
+							<Typography>
+								Hier sind einzelne Skills, die ich in meiner Freizeit oder bei der Ausbildung
+								erlernt und weiterentwickelt habe.
+							</Typography>
+							<Grid container spacing={ 3 } sx={ { padding: "1rem 0" } }>
+								<Frontend size={ { xs: 12, sm: 6 } } />
+								<Backend size={ { xs: 12, sm: 6 } } />
+								<DevTools size={ { xs: 12, sm: 6 } } />
+								<General size={ { xs: 12, sm: 6 } } />
+							</Grid>
+						</Card>
+						<Card id={ "projects" } sx={ { padding: "2rem" } }>
+							<h2>
+								<WebIcon /> Projekte
+							</h2>
+							<Typography>Projekte, die ich realisiert habe:</Typography>
+							<ProjectsList />
+						</Card>
+						<Card id={ "stats" } sx={ { padding: "2rem" } }>
+							<h2>
+								<PollIcon /> Statistiken
+							</h2>
+							<Typography>
+								WakaTime Statistiken zu Programmiersprachen und Aktivität in den letzten 30 Tagen
+							</Typography>
+							<Stack direction={ { xs: "column", md: "row" } } spacing={ 3 }>
+								<figure>
+									<embed src={ `https://wakatime.com/share/@chraebsli/${ wakaTimeStats.activity[scheme] }.svg` } />
+								</figure>
+								<figure>
+									<embed src={ `https://wakatime.com/share/@chraebsli/${ wakaTimeStats.languages[scheme] }.svg` } />
+								</figure>
+							</Stack>
+						</Card>
+					</Stack>
+				</article>
 			</main>
 		</>
 	);

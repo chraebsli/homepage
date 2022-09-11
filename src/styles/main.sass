@@ -1,64 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,3000,5001,300&display=swap")
 
-@import "components"
 @import "form"
 @import "image"
-@import "responsive"
 
 /* ********************************************* colors ********************************************* */
 \:root
 	--primary-color: #507cff
-	--secondary-color: #ffffff
-	--text-primary-color: #000000
-	--text-secondary-color: #ffffff
-	--background-color: #ffffff
-
-/* ********************************************* sizes ********************************************* */
-\:root
-	/* gaps */
-	--padding-gap-huge: 2rem
-	--padding-gap-big: 1.5rem
-	--padding-gap-normal: 1rem
-	--padding-gap-small: 0.5rem
-	--padding-gap-mini: 0.3rem
-
-	/* font */
-	--font-size-big: 1.8rem
-	--font-size-normal: 1.5rem
-	--font-size-small: 1.2rem
-	--font-size-mini: 1rem
-	--font-size-micro: 0.8rem
-
-	--text-space-normal: 0.5rem
 
 body
 	position: relative
-	background-color: var(--background-color)
 	width: 100vw
 	min-height: 100vh
 	font-family: "Roboto", sans-serif
 	overflow-x: hidden
 
-
-/* ********************************************* links ********************************************* */
-a.n
-	text-decoration: none
-
+main
+	padding-left: .5rem
+	padding-right: .5rem
 
 /* ********************************************* texts ********************************************* */
 .italic
 	font-style: italic
-
-.text-sec
-	color: var(--text-secondary-color) !important
-
-.text-center
-	text-align: center
-
-hr
-	border: 2px solid var(--primary-color)
-
-/* ********************************************* other ********************************************* */
-p:not(.MuiTypography-root),
-span:not(.MuiTypography-root)
-	color: var(--text-primary-color)

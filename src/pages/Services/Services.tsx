@@ -1,7 +1,6 @@
 // import libraries
 import React from "react";
 import Head from "../../components/common/Head";
-import { Container } from "@mui/material";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Line, PageTitle } from "../../components/Text";
@@ -17,16 +16,14 @@ export default function Services() {
 		<>
 			<Head title={ pageName } />
 			<main>
-				<Container>
-					<section>
-						<PageTitle>Dienstleistungen</PageTitle>
-						<Line bottom={ 2 } />
-					</section>
+				<section>
+					<PageTitle>Dienstleistungen</PageTitle>
+					<Line bottom={ 2 } />
+				</section>
 
-					<article>
-						<ServicesList />
-					</article>
-				</Container>
+				<article>
+					<ServicesList />
+				</article>
 			</main>
 		</>
 	);

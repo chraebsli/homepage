@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Container, Stack, Typography } from "@mui/material";
+import { Button, Stack, Typography } from "@mui/material";
 import Head from "../../../components/common/Head";
 import { Line, PageTitle } from "../../../components/Text";
 
@@ -16,58 +16,56 @@ export default function Website() {
 		<>
 			<Head title={ pageName } />
 			<main className={ "single-service" }>
-				<Container>
-					<section>
-						<PageTitle>{ pageName }</PageTitle>
-						<Line bottom={ 2 } />
-					</section>
+				<section>
+					<PageTitle>{ pageName }</PageTitle>
+					<Line bottom={ 2 } />
+				</section>
 
-					<article>
-						<img
-							src={ ImageCreateWebsite }
-							alt={ "Illustration Website erstellen" }
-							height={ 200 }
-							style={ { marginBottom: "2rem" } }
-						/>
-						<section>
-							<Stack spacing={ 3 }>
-								<Typography className={ "italic" }>
-									Brauchen Sie eine kleine und einfache Website für Ihren Verein, Startup oder für
-									einen persönlichen Zweck?
-								</Typography>
-								<Typography>
-									Dann sind Sie hier richtig. Ich erstelle günstig für Sie die perfekte Website für
-									Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.
-									<br />
-									Das handhaben der Website ist sehr einfach, auch für Sie. Mit dem CMS Grav können
-									Sie ohne grosses technisches Verständnis Seiten oder Inhalte wie Text, Bilder,
-									Videos, Tabellen, etc. erstellen, bearbeiten und löschen. Dazu gibt es eine
-									Seitenstatistik wo Sie die Aufrufe sehen können.
-								</Typography>
-								<Typography>
-									Folgende Features sind inbegriffen:
-									<ul>
-										<li>professionelle Website nach Ihren Vorstellungen</li>
-										<li>Konfiguration der Website</li>
-										<li>Domain und Hosting nach Wunsch</li>
-										<li>E-Mail Adressen nach Wunsch</li>
-									</ul>
-								</Typography>
-								<Button
-									href={ `/contact?service=${ pageName }` }
-									variant="contained"
-									endIcon={ <SendIcon color={ "secondary" } /> }
-									sx={ { width: "20rem" } }>
-									Anfrage senden
-								</Button>
-								<section>
-									<Typography>Lassen Sie sich gerne von folgenden Projekten inspirieren:</Typography>
-									<ProjectsList space={ 70 } projects={ getMatchingProjects() } />
-								</section>
-							</Stack>
-						</section>
-					</article>
-				</Container>
+				<article>
+					<img
+						src={ ImageCreateWebsite }
+						alt={ "Illustration Website erstellen" }
+						height={ 200 }
+						style={ { marginBottom: "2rem" } }
+					/>
+					<section>
+						<Stack spacing={ 3 }>
+							<Typography className={ "italic" }>
+								Brauchen Sie eine kleine und einfache Website für Ihren Verein, Startup oder für
+								einen persönlichen Zweck?
+							</Typography>
+							<Typography>
+								Dann sind Sie hier richtig. Ich erstelle günstig für Sie die perfekte Website für
+								Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.
+								<br />
+								Das handhaben der Website ist sehr einfach, auch für Sie. Mit dem CMS Grav können
+								Sie ohne grosses technisches Verständnis Seiten oder Inhalte wie Text, Bilder,
+								Videos, Tabellen, etc. erstellen, bearbeiten und löschen. Dazu gibt es eine
+								Seitenstatistik wo Sie die Aufrufe sehen können.
+							</Typography>
+							<Typography>
+								Folgende Features sind inbegriffen:
+								<ul>
+									<li>professionelle Website nach Ihren Vorstellungen</li>
+									<li>Konfiguration der Website</li>
+									<li>Domain und Hosting nach Wunsch</li>
+									<li>E-Mail Adressen nach Wunsch</li>
+								</ul>
+							</Typography>
+							<Button
+								href={ `/contact?service=${ pageName }` }
+								variant="contained"
+								endIcon={ <SendIcon color={ "secondary" } /> }
+								sx={ { width: "20rem" } }>
+								Anfrage senden
+							</Button>
+							<section>
+								<Typography>Lassen Sie sich gerne von folgenden Projekten inspirieren:</Typography>
+								<ProjectsList space={ 70 } projects={ getMatchingProjects() } />
+							</section>
+						</Stack>
+					</section>
+				</article>
 			</main>
 		</>
 	);

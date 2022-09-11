@@ -1,13 +1,14 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 
 export function Line({ top, bottom }: { top?: number; bottom?: number }) {
+	const primary = useTheme().palette.primary.main;
 	return (
 		<hr
 			style={ {
+				border: `2px solid ${ primary }`,
 				marginTop: `${ top }rem` ?? 0,
 				marginBottom: `${ bottom }rem` ?? 0,
-				border: "2px solid primary.main",
 			} }
 		/>
 	);

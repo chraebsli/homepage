@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { Box, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
+import { Box, Container, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
@@ -75,33 +75,35 @@ function App() {
 			<Router>
 				<CssBaseline />
 				<Header toggleTheme={ toggleTheme } checked={ checked } />
-				<React.Suspense fallback={ <Loader /> }>
-					<Routes>
-						<Route path="/" element={ <Home /> } />
-						<Route path="*" element={ <NotFound404 /> } />
-						<Route path="/services" element={ <Services /> } />
-						<Route path="/service/website" element={ <Website /> } />
-						<Route path="/service/support" element={ <Support /> } />
-						<Route path="/service/webapp" element={ <Webapp /> } />
-						<Route path="/service/database" element={ <Database /> } />
+				<Container sx={ { mt: "2rem", mb: "2rem" } }>
+					<React.Suspense fallback={ <Loader /> }>
+						<Routes>
+							<Route path="/" element={ <Home /> } />
+							<Route path="*" element={ <NotFound404 /> } />
+							<Route path="/services" element={ <Services /> } />
+							<Route path="/service/website" element={ <Website /> } />
+							<Route path="/service/support" element={ <Support /> } />
+							<Route path="/service/webapp" element={ <Webapp /> } />
+							<Route path="/service/database" element={ <Database /> } />
 
-						<Route path="/projects" element={ <Projects /> } />
-						<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
-						<Route path="/project/personal" element={ <Personal /> } />
-						<Route path="/project/sgrumisberg" element={ <SGRumisberg /> } />
-						<Route path="/project/mgrumisberg" element={ <MGRumisberg /> } />
-						<Route path="/project/home-dashboard" element={ <HomeDashboard /> } />
+							<Route path="/projects" element={ <Projects /> } />
+							<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
+							<Route path="/project/personal" element={ <Personal /> } />
+							<Route path="/project/sgrumisberg" element={ <SGRumisberg /> } />
+							<Route path="/project/mgrumisberg" element={ <MGRumisberg /> } />
+							<Route path="/project/home-dashboard" element={ <HomeDashboard /> } />
 
-						<Route path="/me" element={ <Me /> } />
-						<Route path="/contact" element={ <Contact /> } />
+							<Route path="/me" element={ <Me /> } />
+							<Route path="/contact" element={ <Contact /> } />
 
-						<Route path="/imprint" element={ <Imprint /> } />
-						<Route path="/privacy" element={ <Privacy /> } />
-					</Routes>
-				</React.Suspense>
-				<ScrollToTop />
-				<Box sx={ { height: "3rem" } } />
+							<Route path="/imprint" element={ <Imprint /> } />
+							<Route path="/privacy" element={ <Privacy /> } />
+						</Routes>
+					</React.Suspense>
+				</Container>
+				<Box sx={ { height: "5rem" } } />
 				<Footer />
+				<ScrollToTop />
 			</Router>
 		</ThemeProvider>
 	);

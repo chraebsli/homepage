@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Stack, Typography } from "@mui/material";
+import { Stack, Typography } from "@mui/material";
 import Head from "../../components/common/Head";
 import { Image, Line, PageTitle, SectionTitle } from "../../components/Text";
 
@@ -12,24 +12,22 @@ export default function NotFound404() {
 		<>
 			<Head title={ pageName } />
 			<main className={ "page-content" }>
-				<Container>
-					<section>
-						<PageTitle>{ pageName }</PageTitle>
-						<Line bottom={ 2 } />
-					</section>
+				<section>
+					<PageTitle>{ pageName }</PageTitle>
+					<Line bottom={ 2 } />
+				</section>
 
-					<article className="page-content">
-						<Image src={ ImageError404 } alt={ "Illustration Datenbank" } height={ 200 } m />
-						<Stack spacing={ 3 }>
-							<section>
-								<SectionTitle>Error 404: Die Seite existiert nicht.</SectionTitle>
-								<Typography>
-									Es tut uns leid, aber die Seite, die Sie aufgerufen haben, existiert nicht.
-								</Typography>
-							</section>
-						</Stack>
-					</article>
-				</Container>
+				<article className="page-content">
+					<Image src={ ImageError404 } alt={ "Illustration Datenbank" } height={ 200 } m />
+					<Stack spacing={ 3 }>
+						<section>
+							<SectionTitle>Error 404: Die Seite existiert nicht.</SectionTitle>
+							<Typography>
+								Es tut uns leid, aber die Seite, die Sie aufgerufen haben, existiert nicht.
+							</Typography>
+						</section>
+					</Stack>
+				</article>
 			</main>
 		</>
 	);
