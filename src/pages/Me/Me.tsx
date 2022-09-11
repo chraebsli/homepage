@@ -2,9 +2,10 @@ import React from "react";
 import { Card, Container, Grid, Stack, Typography } from "@mui/material";
 import Head from "../../components/common/Head";
 import ProjectsList from "../../components/projects/ProjectsList";
-import Languages from "../../components/me/Languages";
+import Frontend from "../../components/me/Frontend";
+import Backend from "../../components/me/Backend";
 import DevTools from "../../components/me/DevTools";
-import Server from "../../components/me/Server";
+import General from "../../components/me/General";
 
 // assets and styles
 import "./Me.sass";
@@ -54,9 +55,10 @@ export default function Me() {
 									erlernt und weiterentwickelt habe.
 								</Typography>
 								<Grid container spacing={ 3 } sx={ { padding: "1rem 0" } }>
-									<Languages size={ { xs: 12, sm: 6, md: 4 } } />
-									<DevTools size={ { xs: 12, sm: 6, md: 4 } } />
-									<Server size={ { xs: 12, sm: 6, md: 4 } } />
+									<Frontend size={ { xs: 12, sm: 6 } } />
+									<Backend size={ { xs: 12, sm: 6 } } />
+									<DevTools size={ { xs: 12, sm: 6 } } />
+									<General size={ { xs: 12, sm: 6 } } />
 								</Grid>
 							</Card>
 							<Card id={ "projects" } sx={ { padding: "2rem" } }>
