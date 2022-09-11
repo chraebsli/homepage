@@ -13,6 +13,7 @@ import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
 import ScrollToTop from "./components/common/ScrollToTop";
+import CookieDisclaimer from "./components/common/CookieDisclaimer";
 
 // pages
 import Home from "./pages/Home/Home";
@@ -104,6 +105,7 @@ function App() {
 				<Box sx={ { height: "5rem" } } />
 				<Footer />
 				<ScrollToTop />
+				<CookieDisclaimer />
 			</Router>
 		</ThemeProvider>
 	);

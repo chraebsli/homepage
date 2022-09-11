@@ -89,6 +89,11 @@ export default function de() {
 					privacy: "Datenschutz",
 				},
 			},
+			cookieDisclaimer: {
+				title: "Diese Website verwendet Cookies um die Benutzererfahrung zu verbessern.",
+				learnMore: "Mehr erfahren",
+				accept: "Akzeptieren",
+			},
 		},
 		pages: {
 			error: {

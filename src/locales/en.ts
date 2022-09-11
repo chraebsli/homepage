@@ -89,6 +89,11 @@ export default function en() {
 					privacy: "Privacy",
 				},
 			},
+			cookieDisclaimer: {
+				title: "This website uses cookies to enhance the user experience.",
+				learnMore: "Learn more",
+				accept: "Accept",
+			},
 		},
 		pages: {
 			error: {
