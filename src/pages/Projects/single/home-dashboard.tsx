@@ -11,7 +11,7 @@ import projectsList from "../projects-list";
 
 export default function HomeDashboard() {
 	const pageName = "Home Dashboard";
-	const project = projectsList.find(project => project.id === "home-dashboard");
+	const project = projectsList().find(project => project.id === "home-dashboard");
 	return (
 		<Page pageName={ pageName } className={ "single-project" }>
 			<section>

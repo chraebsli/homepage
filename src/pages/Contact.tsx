@@ -2,7 +2,8 @@ import React, { useEffect } from "react";
 import Page from "../components/common/Page";
 import servicesList from "./Services/services-list";
 import { Alert, Autocomplete, Button, TextField, Typography } from "@mui/material";
-import { Line, PageTitle, SectionTitle } from "../components/Text";
+import { Line, PageTitle } from "../components/Text";
+import { useTranslation } from "react-i18next";
 import SendIcon from "@mui/icons-material/Send";
 
 // assets and styles
@@ -11,9 +12,10 @@ import FormGroup from "../components/form/FormGroup";
 import FormElement from "../components/form/FormElement";
 
 export default function Contact() {
-	const pageName = "Kontakt";
+	const { t } = useTranslation("pages");
+	const pageName = t("contact.title");
 	const service = { name: new URLSearchParams(window.location.search).get("service") };
-	const services = servicesList.map(service => {
+	const services = servicesList().map(service => {
 		return { name: service.title };
 	});
 
@@ -30,22 +32,20 @@ export default function Contact() {
 
 			<article>
 				<section>
-					<SectionTitle>Kontaktangaben</SectionTitle>
+					<Typography dangerouslySetInnerHTML={
+						{ __html: t("contact.contactMe", { interpolation: { escapeValue: false } }) } }
+					/>
 					<Typography>
-						Bei Fragen oder Anregungen können Sie gerne per Mail due unten stehende Adresse
-						kontaktieren. Im Normalfall werde ich mich innerhalb von 2-4 Tagen bei ihnen melden.
-						<br />
-						Natürlich dürfen Sie mir auch eine Rückmeldung und Verbesserungsvorschläge für diese
-						Website geben.
-					</Typography>
-					<Typography>
-						E-Mail Adresse:
+						{ t("contact.emailAddress") }
 						<br />
 						<a href="mailto:contact@nicholas-krebs.ch">contact@nicholas-krebs.ch</a>
 					</Typography>
 				</section>
 
 				<section>
+					<Typography sx={ { marginBottom: "2rem" } }>
+						{ t("contact.or") }
+					</Typography>
 					<form
 						className={ "gform" }
 						action={
@@ -53,16 +53,13 @@ export default function Contact() {
 						}
 						method={ "POST" }>
 						<div>
-							<Typography sx={ { marginBottom: "2rem" } }>
-								oder kontaktieren Sie mich mit diesem Formular:
-							</Typography>
 							<FormGroup>
 								<FormElement pos={ "left" }>
 									<TextField
 										name={ "firstname" }
 										id={ "firstname" }
 										variant={ "outlined" }
-										label={ "Vorname" }
+										label={ t("contact.form.firstName") }
 										fullWidth
 									/>
 								</FormElement>
@@ -72,7 +69,7 @@ export default function Contact() {
 										name={ "lastname" }
 										id={ "lastname" }
 										variant={ "outlined" }
-										label={ "Nachname" }
+										label={ t("contact.form.lastname") }
 										fullWidth
 									/>
 								</FormElement>
@@ -84,7 +81,7 @@ export default function Contact() {
 										name={ "email" }
 										id={ "email" }
 										variant={ "outlined" }
-										label={ "E-Mail Adresse" }
+										label={ t("contact.form.email") }
 										type={ "email" }
 										fullWidth
 									/>
@@ -103,7 +100,7 @@ export default function Contact() {
 										renderInput={ params => (
 											<TextField
 												{ ...params }
-												label={ "Dienstleistung" }
+												label={ t("contact.form.service") }
 												variant={ "outlined" }
 											/>
 										) }
@@ -118,7 +115,7 @@ export default function Contact() {
 										name={ "message" }
 										id={ "message" }
 										variant={ "outlined" }
-										label={ "Nachricht" }
+										label={ t("contact.form.message") }
 										fullWidth
 										multiline
 										rows={ 5 }
@@ -135,14 +132,14 @@ export default function Contact() {
 										type={ "submit" }
 										size={ "large" }
 										endIcon={ <SendIcon color={ "secondary" } /> }>
-										Absenden
+										{ t("contact.form.send") }
 									</Button>
 								</FormElement>
 							</FormGroup>
 						</div>
 						<div className={ "after-submit" }>
 							<Alert severity="success">
-								Danke für Ihre Nachricht. Ich werde mich in Kürze bei Ihnen melden.
+								{ t("contact.form.success") }
 							</Alert>
 						</div>
 					</form>

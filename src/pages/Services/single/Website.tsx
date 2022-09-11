@@ -70,5 +70,5 @@ export default function Website() {
 
 const getMatchingProjects = () => {
 	const projects = [ "fischlehrpfad", "sgrumisberg", "mgrumisberg" ];
-	return projectsList.filter(project => projects.includes(project.id));
+	return projectsList().filter(project => projects.includes(project.id));
 };

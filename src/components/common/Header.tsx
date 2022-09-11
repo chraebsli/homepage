@@ -1,19 +1,23 @@
-import React from "react";
-import { AppBar, Container, Typography } from "@mui/material";
+import React, { useEffect } from "react";
+import { useCookies } from "react-cookie";
+import { AppBar, Box, Container, FormControl, MenuItem, Select, SelectChangeEvent, Typography } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
 import { MaterialUISwitch } from "./ThemeSwitch";
+import { defaultLanguage, languages } from "./i18n";
+import { useTranslation } from "react-i18next";
 
 // assets
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";
 
 const pages = [
-	{ href: "/me", label: "Über mich" },
-	{ href: "/services", label: "Services" },
-	{ href: "/projects", label: "Projekte" },
-	{ href: "/contact", label: "Kontakt" },
+	{ key: "about", href: "/me" },
+	{ key: "services", href: "/services" },
+	{ key: "projects", href: "/projects" },
+	{ key: "contact", href: "/contact" },
 ];
 
 export default function Header({ toggleTheme, checked }: { toggleTheme: () => void; checked: boolean }) {
+	const { t } = useTranslation("header");
 	return (
 		<AppBar position={ "static" } enableColorOnDark>
 			<Container>
@@ -32,7 +36,7 @@ export default function Header({ toggleTheme, checked }: { toggleTheme: () => vo
 							sx={ {
 								marginLeft: "1rem",
 							} }>
-							chraebsli IT-Services
+							{ t("title") }
 						</Typography>
 					</Navbar.Brand>
 
@@ -42,16 +46,51 @@ export default function Header({ toggleTheme, checked }: { toggleTheme: () => vo
 						<Nav className={ "me-auto" } />
 						<Nav>
 							{ pages.map(page => (
-								<Nav.Link key={ page.label } href={ page.href }>
-									{ page.label }
+								<Nav.Link key={ page.key } href={ page.href }>
+									{ t(`links.${ page.key }`) }
 								</Nav.Link>
 							)) }
 						</Nav>
 					</Navbar.Collapse>
 
-					<MaterialUISwitch sx={ { m: 1 } } onChange={ toggleTheme } checked={ checked } />
+					<Box>
+						<LanguageSwitcher />
+						<MaterialUISwitch sx={ { m: 1 } } onChange={ toggleTheme } checked={ checked } />
+					</Box>
 				</Navbar>
 			</Container>
 		</AppBar>
 	);
 }
+
+const LanguageSwitcher = () => {
+	const [ language, setLanguage ] = React.useState(defaultLanguage);
+	const [ cookies, setCookie ] = useCookies([ "i18next" ]);
+
+	useEffect(() => {
+		cookies.i18next
+			? setLanguage(cookies.i18next)
+			: (setCookie("i18next", defaultLanguage, { path: "/" }));
+	}, [ cookies, setCookie ]);
+
+	const handleChange = (event: SelectChangeEvent) => {
+		setCookie("i18next", event.target.value, { path: "/" });
+		setLanguage(event.target.value);
+	};
+
+	return (
+		<FormControl variant={ "standard" }>
+			<Select
+				labelId="language-label"
+				id="language"
+				value={ language }
+				label="Age"
+				onChange={ handleChange }
+			>
+				{ languages.map(language =>
+					<MenuItem key={ language.code } value={ language.code }>{ language.name }</MenuItem>)
+				}
+			</Select>
+		</FormControl>
+	);
+};

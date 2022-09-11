@@ -13,7 +13,7 @@ export default function Fischlehrpfad() {
 	const pageName = "Fischlehrpfad";
 	const urlName = "fischlehrpfad.ch";
 	const url = `https://${ urlName }`;
-	const project = projectsList.find(project => project.id === "fischlehrpfad");
+	const project = projectsList().find(project => project.id === "fischlehrpfad");
 	return (
 		<Page pageName={ pageName } className={ "single-project" }>
 			<section>

@@ -5,17 +5,20 @@ import ServicesList from "../../components/services/ServicesList";
 import ProjectsList from "../../components/projects/ProjectsList";
 import SocialMediaList from "../../components/SocialMediaList";
 import { Line, SectionTitle } from "../../components/Text";
+import { useTranslation } from "react-i18next";
 
 // assets and styles
 import "./Home.sass";
 
 export default function Home() {
+	const { t } = useTranslation("pages");
+
 	return (
 		<Page pageName={ "Home" }>
 			<article>
 				<section id={ "welcome" } style={ { marginTop: "10rem" } }>
 					<Typography variant={ "h3" } component={ "h1" } sx={ { color: "primary.main" } }>
-						Willkommen bei chraebsli IT-Services!
+						{ t("home.welcome") }
 					</Typography>
 					<Typography
 						sx={ {
@@ -23,29 +26,28 @@ export default function Home() {
 							fontSize: "1.5rem",
 						} }>
 						<Typography component={ "span" } variant={ "h5" } sx={ { fontStyle: "italic" } }>
-							- IT-Dienstleistungen jeglicher Art -
+							{ t("home.subWelcome") }
 						</Typography>
 						<br />
-						Ich biete verschiedene IT Dienstleistungen an, um neben meiner schulischen Lehre als
-						Informatiker etwas Geld zu verdienen.
+						{ t("home.description") }
 					</Typography>
 				</section>
 				<Line top={ 5 } bottom={ 5 } />
 				<section>
-					<SectionTitle>Dienstleistungen</SectionTitle>
-					<Typography>Ich biete folgende Dienstleistungen an:</Typography>
+					<SectionTitle> { t("home.sections.servicesTitle") } </SectionTitle>
+					<Typography>{ t("home.sections.servicesDescription") }</Typography>
 					<ServicesList space={ 70 } />
 				</section>
 				<Line top={ 5 } bottom={ 5 } />
 				<section>
-					<SectionTitle>Projekte</SectionTitle>
-					<Typography>Diese Projekte habe ich realisiert:</Typography>
+					<SectionTitle>{ t("home.sections.projectsTitle") }</SectionTitle>
+					<Typography>{ t("home.sections.projectsDescription") }</Typography>
 					<ProjectsList space={ 70 } />
 				</section>
 				<Line top={ 5 } bottom={ 5 } />
 				<section>
-					<SectionTitle>Social Media</SectionTitle>
-					<Typography>Ich bin auf folgenden Social Media Plattformen:</Typography>
+					<SectionTitle>{ t("home.sections.socialTitle") }</SectionTitle>
+					<Typography>{ t("home.sections.socialDescription") }</Typography>
 					<SocialMediaList />
 				</section>
 			</article>

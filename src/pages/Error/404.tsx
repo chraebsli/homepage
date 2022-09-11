@@ -2,11 +2,14 @@ import React from "react";
 import { Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Image, Line, PageTitle, SectionTitle } from "../../components/Text";
+import { useTranslation } from "react-i18next";
 
 // assets
 import ImageError404 from "./assets/404.jpg";
 
 export default function NotFound404() {
+	const { t } = useTranslation("pages");
+
 	return (
 		<Page pageName={ "Error 404" }>
 			<section>
@@ -18,9 +21,9 @@ export default function NotFound404() {
 				<Image src={ ImageError404 } alt={ "Illustration Datenbank" } height={ 200 } m />
 				<Stack spacing={ 3 }>
 					<section>
-						<SectionTitle>Error 404: Die Seite existiert nicht.</SectionTitle>
+						<SectionTitle>{ t("error.404.title") }</SectionTitle>
 						<Typography>
-							Es tut uns leid, aber die Seite, die Sie aufgerufen haben, existiert nicht.
+							{ t("error.404.description") }
 						</Typography>
 					</section>
 				</Stack>

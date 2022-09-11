@@ -13,8 +13,10 @@ import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
 import WebIcon from "@mui/icons-material/Web";
 import PollIcon from "@mui/icons-material/Poll";
+import { useTranslation } from "react-i18next";
 
 export default function Me() {
+	const { t } = useTranslation("pages");
 	const scheme = useTheme().palette.mode;
 	const wakaTimeStats = {
 		activity: {
@@ -33,7 +35,7 @@ export default function Me() {
 				<Stack spacing={ 3 }>
 					<Card id={ "me" } sx={ { padding: "2rem" } }>
 						<h2>
-							<PersonIcon /> Über mich
+							<PersonIcon /> { t("me.title") }
 						</h2>
 						<Typography>
 							Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling Fachrichtung
@@ -55,11 +57,10 @@ export default function Me() {
 					</Card>
 					<Card id={ "skills" } sx={ { padding: "2rem" } }>
 						<h2>
-							<SchoolIcon /> Skills
+							<SchoolIcon /> { t("me.skills.title") }
 						</h2>
 						<Typography>
-							Hier sind einzelne Skills, die ich in meiner Freizeit oder bei der Ausbildung
-							erlernt und weiterentwickelt habe.
+							{ t("me.skills.description") }
 						</Typography>
 						<Grid container spacing={ 3 } sx={ { padding: "1rem 0" } }>
 							<Frontend size={ { xs: 12, sm: 6 } } />
@@ -70,17 +71,17 @@ export default function Me() {
 					</Card>
 					<Card id={ "projects" } sx={ { padding: "2rem" } }>
 						<h2>
-							<WebIcon /> Projekte
+							<WebIcon /> { t("me.projectsTitle") }
 						</h2>
-						<Typography>Projekte, die ich realisiert habe:</Typography>
+						<Typography>{ t("me.projectsDescription") }</Typography>
 						<ProjectsList />
 					</Card>
 					<Card id={ "stats" } sx={ { padding: "2rem" } }>
 						<h2>
-							<PollIcon /> Statistiken
+							<PollIcon /> { t("me.statsTitle") }
 						</h2>
 						<Typography>
-							WakaTime Statistiken zu Programmiersprachen und Aktivität in den letzten 30 Tagen
+							{ t("me.statsDescription") }
 						</Typography>
 						<Stack direction={ { xs: "column", md: "row" } } spacing={ 3 }>
 							<figure>

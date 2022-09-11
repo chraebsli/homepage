@@ -2,22 +2,18 @@ export default class Project {
 	id: string;
 	title: string;
 	href: string;
-	tags?: string[];
+	tags: string[];
 	image: string;
 	description: string;
-	buttonText: string;
-	buttonVariant: string;
 	wakaTimeBadge: string;
 
 	constructor(s: {
 		id: string;
 		title: string;
 		href: string;
-		tags?: string[];
+		tags: string[];
 		image: string;
 		description: string;
-		buttonText: string;
-		buttonVariant: string;
 		wakaTimeBadge: string;
 	}) {
 		this.id = s.id;
@@ -26,8 +22,6 @@ export default class Project {
 		this.tags = s.tags;
 		this.image = s.image;
 		this.description = s.description;
-		this.buttonText = s.buttonText;
-		this.buttonVariant = s.buttonVariant;
 		this.wakaTimeBadge = s.wakaTimeBadge;
 	}
 }

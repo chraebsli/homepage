@@ -13,7 +13,7 @@ export default function SGRumisberg() {
 	const pageName = "SG Rumisberg";
 	const urlName = "sgrumisberg.ch";
 	const url = `https://${ urlName }`;
-	const project = projectsList.find(project => project.id === "sgrumisberg");
+	const project = projectsList().find(project => project.id === "sgrumisberg");
 	return (
 		<Page pageName={ pageName } className={ "single-project" }>
 			<section>

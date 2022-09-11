@@ -1,6 +1,6 @@
-// import libraries
 import React from "react";
 import Page from "../../components/common/Page";
+import { useTranslation } from "react-i18next";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Line, PageTitle } from "../../components/Text";
@@ -10,12 +10,12 @@ import "./Services.sass";
 import ServicesList from "../../components/services/ServicesList";
 
 export default function Services() {
-	const pageName = "Services";
+	const { t } = useTranslation("common");
 
 	return (
-		<Page pageName={ pageName }>
+		<Page pageName={ "Services" }>
 			<section>
-				<PageTitle>Dienstleistungen</PageTitle>
+				<PageTitle>{ t("services.title") }</PageTitle>
 				<Line bottom={ 2 } />
 			</section>
 			<article>

@@ -13,7 +13,7 @@ export default function MGRumisberg() {
 	const pageName = "MG Rumisberg";
 	const urlName = "mgrumisberg.chraebsli.dev";
 	const url = `https://${ urlName }`;
-	const project = projectsList.find(project => project.id === "mgrumisberg");
+	const project = projectsList().find(project => project.id === "mgrumisberg");
 	return (
 		<Page pageName={ pageName } className={ "single-project" }>
 			<section>

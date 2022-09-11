@@ -13,13 +13,16 @@ import {
 	Skeleton,
 	Typography,
 } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 // assets and styles
 import servicesList from "../../pages/Services/services-list";
 import Service from "@models/service";
 
 export default function ServicesList({ loading = false, space = 30 }: { loading?: boolean; space?: number }) {
-	const services: Service[] = servicesList;
+	const services: Service[] = servicesList();
+	console.log(services);
+	const { t } = useTranslation("common");
 
 	return (
 		<Swiper
@@ -51,7 +54,7 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 									component={ "img" }
 									height={ "200" }
 									image={ service.image }
-									alt={ `Illustration ${ service.title }` }
+									alt={ `${ t("services.illustration") } ${ service.title }` }
 								/>
 							) }
 
@@ -83,9 +86,9 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 							<CardActions>
 								<Button
 									fullWidth
-									variant={ service.buttonVariant as "outlined" | "contained" }
+									variant={ "outlined" }
 									href={ service.href }>
-									{ service.buttonText }
+									{ t("services.learnMore") }
 								</Button>
 							</CardActions>
 						</Card>

@@ -13,6 +13,7 @@ import {
 	Skeleton,
 	Typography,
 } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import Tag from "../projects/Tag";
 
 // assets and styles
@@ -22,12 +23,13 @@ import Project from "@models/project";
 export default function ProjectsList({
 	loading = false,
 	space = 30,
-	projects = projectsList,
+	projects = projectsList(),
 }: {
 	loading?: boolean;
 	space?: number;
 	projects?: Project[];
 }) {
+	const { t } = useTranslation("common");
 	return (
 		<Swiper
 			slidesPerView={ "auto" }
@@ -55,7 +57,7 @@ export default function ProjectsList({
 									component={ "img" }
 									height={ "200" }
 									image={ project.image }
-									alt={ `Bild Projekt ${ project.title }` }
+									alt={ `${ t("projects.imageAlt") } ${ project.title }` }
 								/>
 							) }
 
@@ -86,9 +88,9 @@ export default function ProjectsList({
 							<CardActions>
 								<Button
 									fullWidth
-									variant={ project.buttonVariant as "outlined" | "contained" }
+									variant={ "outlined" }
 									href={ project.href }>
-									{ project.buttonText }
+									{ t("projects.learnMore") }
 								</Button>
 							</CardActions>
 						</Card>
