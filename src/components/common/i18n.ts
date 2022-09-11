@@ -31,7 +31,11 @@ i18n
 				components: { ...de().components },
 				pages: { ...de().pages },
 			},
-			en: {},
+			en: {
+				common: { ...en().common },
+				components: { ...en().components },
+				pages: { ...en().pages },
+			},
 		},
 	});
 
