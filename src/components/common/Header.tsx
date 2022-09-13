@@ -20,7 +20,7 @@ export default function Header({ toggleTheme, checked }: { toggleTheme: () => vo
 	return (
 		<AppBar position={ "static" } enableColorOnDark>
 			<Container>
-				<Navbar collapseOnSelect expand={ "sm" } bg={ "none" } variant={ "dark" }>
+				<Navbar collapseOnSelect expand={ "md" } bg={ "none" } variant={ "dark" }>
 					<Navbar.Brand href={ "/" }>
 						<img
 							src={ LogoWhiteTransparent }
@@ -50,12 +50,14 @@ export default function Header({ toggleTheme, checked }: { toggleTheme: () => vo
 								</Nav.Link>
 							)) }
 						</Nav>
+						<Stack direction={ "row" } sx={ {
+							alignItems: "center",
+							justifyContent: "start",
+						} }>
+							<LanguageSwitcher />
+							<MaterialUISwitch sx={ { m: 1 } } onChange={ toggleTheme } checked={ checked } />
+						</Stack>
 					</Navbar.Collapse>
-
-					<Stack direction={ { xs: "column", sm: "row" } } sx={ { alignItems: "center" } }>
-						<LanguageSwitcher />
-						<MaterialUISwitch sx={ { m: 1 } } onChange={ toggleTheme } checked={ checked } />
-					</Stack>
 				</Navbar>
 			</Container>
 		</AppBar>
