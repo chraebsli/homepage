@@ -13,9 +13,9 @@ export function Line({ top, bottom }: { top?: number; bottom?: number }) {
 	);
 }
 
-export function Image({ src, alt, height, m }: { src: any; alt: string; height: number; m?: boolean }) {
+export function Image({ src, alt, height, m, r }: { src: any; alt: string; height: number; m?: boolean, r?: boolean }) {
 	return <img
-		className={ "r" }
+		className={ r ? "r" : "" }
 		src={ src }
 		alt={ alt }
 		height={ height }
