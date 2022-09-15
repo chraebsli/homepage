@@ -1,11 +1,11 @@
 import React from "react";
 import { Button, Container, Stack, Typography } from "@mui/material";
 import Head from "../../../components/common/Head";
-import { Line, PageTitle } from "../../../components/Text";
+import { Image, Line, PageTitle } from "../../../components/Text";
+import { Picture } from "../../../components/Picture";
 
 // assets and styles
 import "../Services.sass";
-import ImageDevelopWebapp from "../assets/webapp.jpg";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function Webapp() {
@@ -21,12 +21,13 @@ export default function Webapp() {
 					</section>
 
 					<article>
-						<img
-							src={ ImageDevelopWebapp }
-							alt={ "Illustration Webapplikation erstellen" }
-							height={ 200 }
-							style={ { marginBottom: "2rem" } }
-						/>
+						<Picture
+							path={ "services/webapp" } name={ "webapp" }
+							sizes={ [ 720, 480 ] }>
+							<Image
+								src={ "/media/services/webapp/webapp-720-min.jpg" }
+								alt={ "Illustration Webapp" } height={ 200 } m />
+						</Picture>
 						<section>
 							<Stack spacing={ 3 }>
 								<Typography className={ "italic" }>

@@ -1,7 +1,3 @@
-import ImageWebsite from "./assets/website.jpg";
-import ImageSupport from "./assets/support.jpg";
-import ImageWebapp from "./assets/webapp.jpg";
-import ImageDatabase from "./assets/database.jpg";
 import Service from "../../models/service";
 
 const servicesList = () => {
@@ -10,7 +6,6 @@ const servicesList = () => {
 			id: "support",
 			title: "IT Support",
 			href: "/service/support",
-			image: ImageSupport,
 			teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
 			description:
 				"Kommen Sie nicht mehr weiter bei Apps von Ihrem Computer oder ihrem Smartphone oder Fragen zu" +
@@ -29,7 +24,6 @@ const servicesList = () => {
 			id: "website",
 			title: "Website erstellen",
 			href: "/service/website",
-			image: ImageWebsite,
 			teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
 			description:
 				"Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen " +
@@ -43,7 +37,6 @@ const servicesList = () => {
 			id: "webapp",
 			title: "Webapplikation erstellen",
 			href: "/service/webapp",
-			image: ImageWebapp,
 			teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
 			description:
 				"Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen" +
@@ -57,7 +50,6 @@ const servicesList = () => {
 			id: "database",
 			title: "Datenbank",
 			href: "/service/database",
-			image: ImageDatabase,
 			teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Date übernehmen?",
 			description:
 				"Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine" +

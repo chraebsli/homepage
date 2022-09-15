@@ -1,12 +1,12 @@
 import React from "react";
 import { Button, Container, Stack, Typography } from "@mui/material";
 import Head from "../../../components/common/Head";
-import { Line, PageTitle } from "../../../components/Text";
+import { Image, Line, PageTitle } from "../../../components/Text";
+import { Picture } from "../../../components/Picture";
 import SendIcon from "@mui/icons-material/Send";
 
 // assets and styles
 import "../Services.sass";
-import ImageDatabase from "../assets/database.jpg";
 
 export default function Database() {
 	const pageName = "Datenbank";
@@ -21,12 +21,14 @@ export default function Database() {
 					</section>
 
 					<article>
-						<img
-							src={ ImageDatabase }
-							alt={ "Illustration Datenbank" }
-							height={ 200 }
-							style={ { marginBottom: "2rem" } }
-						/>
+						<Picture
+							path={ "services/database" } name={ "database" }
+							sizes={ [ 720, 480 ] }>
+							<Image
+								src={ "/media/services/database/database-720-min.jpg" }
+								alt={ "Illustration Datenbank" } height={ 480 } m />
+						</Picture>
+
 						<section>
 							<Stack spacing={ 3 }>
 								<Typography className={ "italic" }>
