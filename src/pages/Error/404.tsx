@@ -5,8 +5,6 @@ import { Image, Line, PageTitle, SectionTitle } from "../../components/Text";
 import { Picture } from "../../components/Picture";
 import { useTranslation } from "react-i18next";
 
-// assets
-
 export default function NotFound404() {
 	const { t } = useTranslation("pages");
 
@@ -30,21 +28,6 @@ export default function NotFound404() {
 						</Typography>
 					</section>
 				</Stack>
-
-				<article className="page-content">
-					<Picture path={ "404" } name={ "404" } sizes={ [ 720, 480 ] }>
-						<Image
-							src={ "/media/404/404-min.jpg" } alt={ "Illustration Error 404" } height={ 200 } m r />
-					</Picture>
-					<Stack spacing={ 3 }>
-						<section>
-							<SectionTitle>{ t("error.404.title") }</SectionTitle>
-							<Typography>
-								{ t("error.404.description") }
-							</Typography>
-						</section>
-					</Stack>
-				</article>
 			</article>
 		</Page>
 	);
