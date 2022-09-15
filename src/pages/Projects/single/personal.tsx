@@ -11,7 +11,7 @@ import projectsList from "../projects-list";
 
 export default function Personal() {
 	const pageName = "Persönliche Website";
-	const urlName = "homepage.dev.chraebsli.dev";
+	const urlName = "www.chraebsli.dev";
 	const url = `https://${ urlName }`;
 	const project = projectsList.find(project => project.id === "personal-website");
 	return (

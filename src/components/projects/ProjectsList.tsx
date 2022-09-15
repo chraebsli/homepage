@@ -1,19 +1,10 @@
 import React from "react";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-	Box,
-	Button,
-	Card,
-	CardActions,
-	CardContent,
-	CardHeader,
-	CardMedia,
-	Grid,
-	Skeleton,
-	Typography,
-} from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton, Typography } from "@mui/material";
 import Tag from "../projects/Tag";
+import { Picture } from "../Picture";
+import { Image } from "../Text";
 
 // assets and styles
 import projectsList from "../../pages/Projects/projects-list";
@@ -47,16 +38,17 @@ export default function ProjectsList({
 			{ projects?.map(project => (
 				<SwiperSlide key={ project.id }>
 					<Grid item key={ project.title } xs={ 12 } sm={ 9 } md={ 6 }>
-						<Card>
+						<Card sx={ { p: "1rem" } }>
 							{ loading ? (
 								<Skeleton animation="wave" variant="rectangular" height={ 200 } />
 							) : (
-								<CardMedia
-									component={ "img" }
-									height={ "200" }
-									image={ project.image }
-									alt={ `Bild Projekt ${ project.title }` }
-								/>
+								<Picture
+									path={ `projects/${ project.id }` } name={ `${ project.id }` }
+									sizes={ [ 1280, 853, 533 ] } r>
+									<Image
+										src={ `/media/projects/${ project.id }/${ project.id }-853-min.jpg` }
+										alt={ `Bild ${ project.title }` } height={ 200 } />
+								</Picture>
 							) }
 
 							<CardHeader title={ project.title } titleTypographyProps={ { align: "center" } } />

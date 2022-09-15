@@ -33,6 +33,7 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 					<Grid item key={ service.title } xs={ 12 } sm={ 9 } md={ 6 }>
 						<Card
 							sx={ {
+								p: "1rem",
 								backgroundColor: "background.default",
 							} }>
 							{ loading ? (

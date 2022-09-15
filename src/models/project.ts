@@ -3,7 +3,6 @@ export default class Project {
 	title: string;
 	href: string;
 	tags?: string[];
-	image: string;
 	description: string;
 	buttonText: string;
 	buttonVariant: string;
@@ -14,7 +13,6 @@ export default class Project {
 		title: string;
 		href: string;
 		tags?: string[];
-		image: string;
 		description: string;
 		buttonText: string;
 		buttonVariant: string;
@@ -24,7 +22,6 @@ export default class Project {
 		this.title = s.title;
 		this.href = s.href;
 		this.tags = s.tags;
-		this.image = s.image;
 		this.description = s.description;
 		this.buttonText = s.buttonText;
 		this.buttonVariant = s.buttonVariant;
