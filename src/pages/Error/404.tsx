@@ -20,7 +20,8 @@ export default function NotFound404() {
 
 					<article className="page-content">
 						<Picture path={ "404" } name={ "404" } sizes={ [ 720, 480 ] }>
-							<Image src={ "/media/404/404-min.jpg" } alt={ "Illustration Error 404" } height={ 200 } m />
+							<Image
+								src={ "/media/404/404-min.jpg" } alt={ "Illustration Error 404" } height={ 200 } m r />
 						</Picture>
 						<Stack spacing={ 3 }>
 							<section>
