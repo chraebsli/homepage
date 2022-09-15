@@ -18,10 +18,7 @@ import CookieDisclaimer from "./components/common/CookieDisclaimer";
 // pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
-import Website from "./pages/Services/single/Website";
-import Support from "./pages/Services/single/Support";
-import Database from "./pages/Services/single/Database";
-import Webapp from "./pages/Services/single/Webapp";
+import SingleService from "./pages/Services/SingleService";
 
 import Projects from "./pages/Projects/Projects";
 import Fischlehrpfad from "./pages/Projects/single/fischlehrpfad";
@@ -82,10 +79,7 @@ function App() {
 							<Route path="/" element={ <Home /> } />
 							<Route path="*" element={ <NotFound404 /> } />
 							<Route path="/services" element={ <Services /> } />
-							<Route path="/service/website" element={ <Website /> } />
-							<Route path="/service/support" element={ <Support /> } />
-							<Route path="/service/webapp" element={ <Webapp /> } />
-							<Route path="/service/database" element={ <Database /> } />
+							<Route path="/service/:service" element={ <SingleService /> } />
 
 							<Route path="/projects" element={ <Projects /> } />
 							<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
