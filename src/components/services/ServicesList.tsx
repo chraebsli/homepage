@@ -8,11 +8,10 @@ import { useTranslation } from "react-i18next";
 
 // assets and styles
 import servicesList from "../../pages/Services/services-list";
-import Service from "@models/service";
+import FullService from "@models/service";
 
 export default function ServicesList({ loading = false, space = 30 }: { loading?: boolean; space?: number }) {
-	const services: Service[] = servicesList();
-	console.log(services);
+	const services: FullService[] = servicesList();
 	const { t } = useTranslation("common");
 
 	return (
@@ -62,10 +61,10 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 										mb: 2,
 									} }>
 									<Typography component="p" className="service-teaser">
-										{ service.teaser }
+										{ service.card.teaser }
 									</Typography>
 									<Typography component="p" className="service-description">
-										{ service.description }
+										{ service.card.description }
 									</Typography>
 								</Box>
 								<ul>

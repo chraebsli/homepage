@@ -37,37 +37,64 @@ export default function de() {
 				illustration: "Illustration",
 				itSupport: {
 					title: "IT Support",
-					teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
-					description: "Kommen Sie nicht mehr weiter bei Apps von Ihrem Computer oder ihrem Smartphone oder Fragen zu Sicherheit und Datenschutz?",
 					features: [
 						"professioneller Support",
 						"schnelle Hilfe über Chat/ Anruf",
 						"remote/ vor Ort Hilfestellung",
 						"Weiterbildung und Aufklärung",
 					],
+					card: {
+						teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
+						description: "Kommen Sie nicht mehr weiter bei Apps von Ihrem Computer oder ihrem Smartphone oder Fragen zu Sicherheit und Datenschutz?",
+					},
+					page: {
+						teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
+						description: "Kommen Sie nicht mehr weiter mit Ihrem Computer oder ihrem Smartphone? Zum Beispiel beim Installieren von Apps auf einem neuen Gerät oder dessen Konfiguration oder Verwendung? Oder haben Fragen bezüglich Sicherheit und Datenschutz oder anderer Themen der Computerwelt?\n" +
+							"Ich helfe Ihnen gerne weiter und möchte Sie dabei unterstützen, damit Sie in Zukunft weniger Fragen und Probleme bezüglich Ihres Computers oder Ihres Smartphones haben.",
+					},
 				},
 				website: {
 					title: "Website erstellen",
-					teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
-					description: "Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.",
 					features: [ "professionelle Website", "Konfiguration", "Domain & Hosting", "E-Mail Adressen" ],
+					card: {
+						teaser: "Brauchen Sie eine Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
+						description: "Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.",
+					},
+					page: {
+						teaser: "Brauchen Sie eine kleine und einfache Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
+						description: "Dann sind Sie hier richtig. Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.\n" +
+							"Das handhaben der Website ist sehr einfach, auch für Sie. Mit dem CMS Grav können Sie ohne grosses technisches Verständnis Seiten oder Inhalte wie Text, Bilder, Videos, Tabellen, etc. erstellen, bearbeiten und löschen. Dazu gibt es eine Seitenstatistik wo Sie die Aufrufe sehen können.",
+					},
 				},
 				webapp: {
 					title: "Webapp erstellen",
-					teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
-					description: "Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen Zweck mit Login und anderen Funktionen.",
 					features: [ "moderne Webapplikation", "einfach zu bedienen", "einfach erweiterbar", "sichere Daten" ],
+					card: {
+						teaser: "Benötigen Sie eine Webapp für zum Beispiel bei ihrem Startup Arbeitszeiten zu erfassen?",
+						description: "Ich entwickle für Sie die perfekte Webapplikation für Ihr Startup oder für einen persönlichen Zweck mit Login und anderen Funktionen.",
+					},
+					page: {
+						teaser: "Benötigen Sie eine Webapplikation um zum Beispiel bei ihrem Startup Arbeitszeiten oder ähnliches zu erfassen?",
+						description: "Ich entwickle für Sie die perfekte Webapplikation um bei Startup oder für einen persönlichen Zweck mit einem Login System und vielen weiteren Funktionen, die Sie möchten.\n" +
+							"Die Webapplikation ist sicher und schnell und hat ein modernes Design nach ihren Vorstellungen. Dazu wird sie auch mit einer mobile Version erreichbar sein für unterwegs. Wenn Sie später weitere Funktionen wünschen, können diese durch den cleveren Aufbau auch durch andere Entwickler erweitert werden.",
+					},
 				},
 				database: {
 					title: "Datenbank",
-					teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Date übernehmen?",
-					description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL.",
 					features: [
 						"vollständiges Datenbanksystem",
 						"überlegte Struktur",
 						"einfach zu verwalten",
 						"schnelle Abfragen",
 					],
+					card: {
+						teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Date übernehmen?",
+						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL.",
+					},
+					page: {
+						teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen alle Daten in eine neue übernehmen?",
+						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL. Dabei können Sie selbst entscheiden, welche Datenbank Sie verwenden möchten. Es spielt keine Rolle, welche Art von Daten Sie speichern möchten, ob Dokumente oder zum Beispiel ein Login-System.",
+					},
 				},
 			},
 		},
