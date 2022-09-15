@@ -2,10 +2,10 @@ import React from "react";
 import { Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Image, Line, PageTitle, SectionTitle } from "../../components/Text";
+import { Picture } from "../../components/Picture";
 import { useTranslation } from "react-i18next";
 
 // assets
-import ImageError404 from "./assets/404.jpg";
 
 export default function NotFound404() {
 	const { t } = useTranslation("pages");
@@ -18,7 +18,10 @@ export default function NotFound404() {
 			</section>
 
 			<article className="page-content">
-				<Image src={ ImageError404 } alt={ "Illustration Datenbank" } height={ 200 } m />
+				<Picture path={ "404" } name={ "404" } sizes={ [ 720, 480 ] }>
+					<Image
+						src={ "/media/404/404-min.jpg" } alt={ "Illustration Error 404" } height={ 200 } m r />
+				</Picture>
 				<Stack spacing={ 3 }>
 					<section>
 						<SectionTitle>{ t("error.404.title") }</SectionTitle>
@@ -27,6 +30,21 @@ export default function NotFound404() {
 						</Typography>
 					</section>
 				</Stack>
+
+				<article className="page-content">
+					<Picture path={ "404" } name={ "404" } sizes={ [ 720, 480 ] }>
+						<Image
+							src={ "/media/404/404-min.jpg" } alt={ "Illustration Error 404" } height={ 200 } m r />
+					</Picture>
+					<Stack spacing={ 3 }>
+						<section>
+							<SectionTitle>{ t("error.404.title") }</SectionTitle>
+							<Typography>
+								{ t("error.404.description") }
+							</Typography>
+						</section>
+					</Stack>
+				</article>
 			</article>
 		</Page>
 	);

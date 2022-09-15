@@ -1,18 +1,9 @@
 import React from "react";
 import { Autoplay, Mousewheel, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-	Box,
-	Button,
-	Card,
-	CardActions,
-	CardContent,
-	CardHeader,
-	CardMedia,
-	Grid,
-	Skeleton,
-	Typography,
-} from "@mui/material";
+import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton, Typography } from "@mui/material";
+import { Picture } from "../Picture";
+import { Image } from "../Text";
 import { useTranslation } from "react-i18next";
 
 // assets and styles
@@ -45,17 +36,19 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 					<Grid item key={ service.title } xs={ 12 } sm={ 9 } md={ 6 }>
 						<Card
 							sx={ {
+								p: "1rem",
 								backgroundColor: "background.default",
 							} }>
 							{ loading ? (
 								<Skeleton animation="wave" variant="rectangular" height={ 200 } />
 							) : (
-								<CardMedia
-									component={ "img" }
-									height={ "200" }
-									image={ service.image }
-									alt={ `${ t("services.illustration") } ${ service.title }` }
-								/>
+								<Picture
+									path={ `services/${ service.id }` } name={ `${ service.id }` }
+									sizes={ [ 720, 480 ] } r>
+									<Image
+										src={ `/media/services/${ service.id }/${ service.id }-min.jpg` }
+										alt={ `${ t("services.illustration") } ${ service.title }` } height={ 200 } />
+								</Picture>
 							) }
 
 							<CardHeader title={ service.title } titleTypographyProps={ { align: "center" } } />

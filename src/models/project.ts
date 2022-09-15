@@ -1,27 +1,10 @@
 export default class Project {
-	id: string;
-	title: string;
-	href: string;
-	tags: string[];
-	image: string;
-	description: string;
-	wakaTimeBadge: string;
-
-	constructor(s: {
-		id: string;
-		title: string;
-		href: string;
-		tags: string[];
-		image: string;
-		description: string;
-		wakaTimeBadge: string;
-	}) {
-		this.id = s.id;
-		this.title = s.title;
-		this.href = s.href;
-		this.tags = s.tags;
-		this.image = s.image;
-		this.description = s.description;
-		this.wakaTimeBadge = s.wakaTimeBadge;
-	}
+	constructor(
+		public readonly id: string,
+		public readonly title: string,
+		public readonly href: string,
+		public readonly tags: string[],
+		public readonly description: string,
+		public readonly wakaTimeBadge: string,
+	) {}
 }

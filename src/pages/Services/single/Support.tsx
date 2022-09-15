@@ -1,11 +1,11 @@
 import React from "react";
 import { Button, Stack, Typography } from "@mui/material";
 import Page from "../../../components/common/Page";
-import { Line, PageTitle } from "../../../components/Text";
+import { Image, Line, PageTitle } from "../../../components/Text";
+import { Picture } from "../../../components/Picture";
 
 // assets and styles
 import "../Services.sass";
-import ImageITSupport from "../assets/support.jpg";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function Support() {
@@ -18,12 +18,13 @@ export default function Support() {
 			</section>
 
 			<article>
-				<img
-					src={ ImageITSupport }
-					alt={ "Illustration Support" }
-					height={ 200 }
-					style={ { marginBottom: "2rem" } }
-				/>
+				<Picture
+					path={ "services/support" } name={ "support" }
+					sizes={ [ 720, 480 ] }>
+					<Image
+						src={ "/media/services/support/support-720-min.jpg" }
+						alt={ "Illustration Support" } height={ 200 } m />
+				</Picture>
 				<section>
 					<Stack spacing={ 3 }>
 						<Typography className={ "italic" }>

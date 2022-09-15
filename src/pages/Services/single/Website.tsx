@@ -1,13 +1,13 @@
 import React from "react";
 import { Button, Stack, Typography } from "@mui/material";
 import Page from "../../../components/common/Page";
-import { Line, PageTitle } from "../../../components/Text";
+import { Image, Line, PageTitle } from "../../../components/Text";
+import { Picture } from "../../../components/Picture";
 
 // assets and styles
 import "../Services.sass";
 import ProjectsList from "../../../components/projects/ProjectsList";
 import projectsList from "../../Projects/projects-list";
-import ImageCreateWebsite from "../assets/website.jpg";
 import SendIcon from "@mui/icons-material/Send";
 
 export default function Website() {
@@ -20,12 +20,13 @@ export default function Website() {
 			</section>
 
 			<article>
-				<img
-					src={ ImageCreateWebsite }
-					alt={ "Illustration Website erstellen" }
-					height={ 200 }
-					style={ { marginBottom: "2rem" } }
-				/>
+				<Picture
+					path={ "services/website" } name={ "website" }
+					sizes={ [ 720, 480 ] }>
+					<Image
+						src={ "/media/services/website/website-720-min.jpg" }
+						alt={ "Illustration Website" } height={ 200 } m />
+				</Picture>
 				<section>
 					<Stack spacing={ 3 }>
 						<Typography className={ "italic" }>
