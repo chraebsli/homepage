@@ -13,7 +13,7 @@ import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
 import WebIcon from "@mui/icons-material/Web";
 import PollIcon from "@mui/icons-material/Poll";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Me() {
 	const { t } = useTranslation("pages");
@@ -38,21 +38,19 @@ export default function Me() {
 							<PersonIcon /> { t("me.title") }
 						</h2>
 						<Typography>
-							Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling Fachrichtung
-							Betriebsinformatik im 3. Lehrjahr in der{ " " }
-							<a href="https://www.tfbern.ch/">Technischen Fachschule</a> in Bern. Ich
-							interessiere mich sehr für die Informatik und am meisten für die{ " " }
-							<b>Webentwicklung</b>, in der ich mich dieses Jahr auch spezialisieren werde.
-							<br />
-							In meiner Freizeit investiere ich meine Zeit gerne in das Weiterbilden von
-							JavaScript/ TypeScript und anderen Programmiersprachen für Web und Bibliotheken wie
-							React. Früher habe ich kleinere Projekte erstellt, um mit praktischen Aufgaben
-							lernen zu können. Das waren aber nur Projekte wie Tic-Tac-Toe. Nun möchte ich aber
-							grössere Projekte <b>neben meiner Ausbildung</b> zu entwickeln für mich oder für
-							Kunden.
-							<br />
-							Ich habe bereits für 2 Vereine aus meiner Umgebung eine Website entwickelt oder bin
-							aktiv in der Entwicklung. Mehr dazu bei den <a href={ "#projects" }>Projekten</a>
+							<Trans i18nKey="me.description" t={ t }>
+								Mein Name ist Nicholas Krebs und ich bin ein Informatiklehrling Fachrichtung
+								Betriebsinformatik im 3. Lehrjahr in der <a href="https://www.tfbern.ch/">Technischen
+								Fachschule</a> in Bern. Ich interessiere mich sehr für die Informatik und am meisten für
+								die Webentwicklung, in der ich mich dieses Jahr auch spezialisieren werde. <br />
+								In meiner Freizeit investiere ich meine Zeit gerne in das Weiterbilden von
+								JavaScript/ TypeScript und anderen Programmiersprachen für Web und Bibliotheken wie
+								React. Früher habe ich kleinere Projekte erstellt, um mit praktischen Aufgaben
+								lernen zu können. Das waren aber nur Projekte wie Tic-Tac-Toe. Nun möchte ich aber
+								grössere Projekte neben meiner Ausbildung zu entwickeln für mich oder für Kunden. <br />
+								Ich habe bereits für 2 Vereine aus meiner Umgebung eine Website entwickelt oder bin
+								aktiv in der Entwicklung. Mehr dazu bei den <a href={ "#projects" }>Projekten</a>
+							</Trans>
 						</Typography>
 					</Card>
 					<Card id={ "skills" } sx={ { padding: "2rem" } }>

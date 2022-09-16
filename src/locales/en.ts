@@ -191,6 +191,7 @@ export default function en() {
 			},
 			me: {
 				title: "About me",
+				description: "My name is Nicholas Krebs, and I am a third-year IT apprentice specializing in business IT at the <1>Technischen Fachschule</1> in Bern. I am very interested in computer science and most of all in web development, which I will also specialize in this year. \nIn my spare time, I like to invest my time in further training in JavaScript/ TypeScript and other programming languages for the web and libraries such as React. I used to create smaller projects to be able to learn with hands-on tasks. But those were just projects like Tic-Tac-Toe. But now I would like to develop larger projects alongside my training, for myself or for customers. \nI have already developed a website for 2 clubs in my area or I am actively developing it. More on this under <1>Projects</1>",
 				skills: {
 					title: "Skills",
 					description: "These are some of my skills I learned oder trained in my free time or while my apprenticeship as a computer scientist.",
