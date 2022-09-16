@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
-import { Box, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
+import { Box, Container, createTheme, CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useCookies } from "react-cookie";
 
@@ -12,21 +12,16 @@ import "./styles/main.sass";
 import Header from "./components/common/Header";
 import Footer from "./components/common/Footer";
 import Loader from "./components/common/Loader";
+import ScrollToTop from "./components/common/ScrollToTop";
+import CookieDisclaimer from "./components/common/CookieDisclaimer";
 
 // pages
 import Home from "./pages/Home/Home";
 import Services from "./pages/Services/Services";
-import Website from "./pages/Services/single/Website";
-import Support from "./pages/Services/single/Support";
-import Database from "./pages/Services/single/Database";
-import Webapp from "./pages/Services/single/Webapp";
+import SingleService from "./pages/Services/SingleService";
 
 import Projects from "./pages/Projects/Projects";
-import Fischlehrpfad from "./pages/Projects/single/fischlehrpfad";
-import Personal from "./pages/Projects/single/personal";
-import SGRumisberg from "./pages/Projects/single/sgrumisberg";
-import MGRumisberg from "./pages/Projects/single/mgrumisberg";
-import HomeDashboard from "./pages/Projects/single/home-dashboard";
+import SingleProject from "./pages/Projects/SingleProject";
 
 import Contact from "./pages/Contact";
 import Me from "./pages/Me/Me";
@@ -53,20 +48,21 @@ const dark = createTheme({
 
 function App() {
 	const [ cookies, setCookie ] = useCookies([ "colorScheme" ]);
+	const expires = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 365);
+	const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 	const colorScheme = cookies.colorScheme;
 	if (!colorScheme) {
-		const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/" });
+		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/", expires: expires });
 	}
 
-	const [ theme, setTheme ] = useState<"light" | "dark">(colorScheme);
+	const [ theme, setTheme ] = useState<"light" | "dark">(!colorScheme ? (prefersDarkMode ? "dark" : "light") : colorScheme);
 	const [ checked, setChecked ] = React.useState<boolean>(theme !== "light");
 
 	const toggleTheme = () => {
-		setChecked(!checked);
 		const newTheme = theme === "light" ? "dark" : "light";
+		setCookie("colorScheme", newTheme, { path: "/", expires: expires });
 		setTheme(newTheme);
-		setCookie("colorScheme", newTheme, { path: "/" });
+		setChecked(!checked);
 	};
 
 	return (
@@ -74,32 +70,29 @@ function App() {
 			<Router>
 				<CssBaseline />
 				<Header toggleTheme={ toggleTheme } checked={ checked } />
-				<React.Suspense fallback={ <Loader /> }>
-					<Routes>
-						<Route path="/" element={ <Home /> } />
-						<Route path="*" element={ <NotFound404 /> } />
-						<Route path="/services" element={ <Services /> } />
-						<Route path="/service/website" element={ <Website /> } />
-						<Route path="/service/support" element={ <Support /> } />
-						<Route path="/service/webapp" element={ <Webapp /> } />
-						<Route path="/service/database" element={ <Database /> } />
+				<Container sx={ { mt: "2rem", mb: "2rem" } }>
+					<React.Suspense fallback={ <Loader /> }>
+						<Routes>
+							<Route path="/" element={ <Home /> } />
+							<Route path="*" element={ <NotFound404 /> } />
+							<Route path="/services" element={ <Services /> } />
+							<Route path="/service/:service" element={ <SingleService /> } />
 
-						<Route path="/projects" element={ <Projects /> } />
-						<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
-						<Route path="/project/personal" element={ <Personal /> } />
-						<Route path="/project/sgrumisberg" element={ <SGRumisberg /> } />
-						<Route path="/project/mgrumisberg" element={ <MGRumisberg /> } />
-						<Route path="/project/home-dashboard" element={ <HomeDashboard /> } />
+							<Route path="/projects" element={ <Projects /> } />
+							<Route path="/project/:project" element={ <SingleProject /> } />
 
-						<Route path="/me" element={ <Me /> } />
-						<Route path="/contact" element={ <Contact /> } />
+							<Route path="/me" element={ <Me /> } />
+							<Route path="/contact" element={ <Contact /> } />
 
-						<Route path="/imprint" element={ <Imprint /> } />
-						<Route path="/privacy" element={ <Privacy /> } />
-					</Routes>
-				</React.Suspense>
-				<Box sx={ { height: "3rem" } } />
+							<Route path="/imprint" element={ <Imprint /> } />
+							<Route path="/privacy" element={ <Privacy /> } />
+						</Routes>
+					</React.Suspense>
+				</Container>
+				<Box sx={ { height: "5rem" } } />
 				<Footer />
+				<ScrollToTop />
+				<CookieDisclaimer />
 			</Router>
 		</ThemeProvider>
 	);

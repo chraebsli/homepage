@@ -7,9 +7,9 @@ export default function FormElement({ children, pos }: { children: React.ReactNo
 			spacing={ 2 }
 			sx={ {
 				width: "100%",
-				paddingRight: { md: pos === "left" ? ".5rem" : 0, xs: 0 },
-				paddingLeft: { md: pos === "right" ? ".5rem" : 0, xs: 0 },
-				paddingBottom: { xs: pos === "left" ? "1rem" : 0, md: 0 },
+				paddingRight: { sm: pos === "left" ? ".5rem" : 0, xs: 0 },
+				paddingLeft: { sm: pos === "right" ? ".5rem" : 0, xs: 0 },
+				paddingBottom: { xs: pos === "left" ? "1rem" : 0, sm: 0 },
 			} }>
 			{ children }
 		</Stack>

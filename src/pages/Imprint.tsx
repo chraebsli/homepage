@@ -1,67 +1,64 @@
 import React from "react";
-import Head from "../components/common/Head";
-import { Container, Typography } from "@mui/material";
+import Page from "../components/common/Page";
+import { Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import { Line, PageTitle, SectionTitle } from "../components/Text";
 
 export default function Imprint() {
-	const pageName = "Imprint";
+	const { t } = useTranslation("pages");
 	return (
-		<>
-			<Head title={ pageName } />
-			<main>
-				<Container>
-					<section>
-						<PageTitle>{ pageName }</PageTitle>
-						<Line bottom={ 2 } />
-					</section>
+		<Page pageName={ "Imprint" }>
+			<section>
+				<PageTitle>{ t("imprint.title") }</PageTitle>
+				<Line bottom={ 2 } />
+			</section>
 
-					<article>
-						<section>
-							<SectionTitle>Betreiber</SectionTitle>
-							<Typography>Diese Website wurde erstellt und wird Betrieben von:</Typography>
-							<address>
-								Nicholas Krebs
-								<br />
-								Breitebüneweg 5
-								<br />
-								4539 Rumisberg
-								<br />
-								Bern, CH
-							</address>
-							<Typography>
-								Bitte melden Sie sich bei Fragen oder Anmerkungen an die unten angegebene Email-Adresse.
-								<br />
-								<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
-							</Typography>
-						</section>
-						<Line />
-						<section>
-							<SectionTitle>Personen</SectionTitle>
-							<Typography>Folgende Personen haben an dieser Website beteiligt:</Typography>
-							<ul>
-								<li>Design: Nicholas Krebs</li>
-								<li>Programmierung: Nicholas Krebs</li>
-								<li>Inhalt: Nicholas Krebs</li>
-							</ul>
-						</section>
-						<Line />
-						<section>
-							<SectionTitle>Ressourcen</SectionTitle>
-							<Typography>
-								Bilder, Grafiken, Videos, und andere Ressourcen wurden von folgenden Quellen verwendet:
-							</Typography>
-							<ul>
-								<li>
-									Illustrationen: <a href="https://www.freepik.com">vectorjuice / Freepik</a>
-								</li>
-								<li>
-									Icons: <a href="https://mui.com/">Material UI</a>
-								</li>
-							</ul>
-						</section>
-					</article>
-				</Container>
-			</main>
-		</>
+			<article>
+				<section>
+					<SectionTitle>{ t("imprint.operator") }</SectionTitle>
+					<Typography>{ t("imprint.operatorText") }</Typography>
+					<address>
+						Nicholas Krebs
+						<br />
+						Breitebüneweg 5
+						<br />
+						4539 Rumisberg
+						<br />
+						Bern, CH
+					</address>
+					<Typography>
+						{ t("imprint.contactMe") }
+						<br />
+						<a href="mailto:contact@chraebsli.dev">contact@chraebsli.dev</a>
+					</Typography>
+				</section>
+				<Line />
+				<section>
+					<SectionTitle>{ t("imprint.involved") }</SectionTitle>
+					<Typography>{ t("imprint.involvedText") }</Typography>
+					<ul>
+						<li>{ t("imprint.roles.design") }: Nicholas Krebs</li>
+						<li>{ t("imprint.roles.development") }: Nicholas Krebs</li>
+						<li>{ t("imprint.roles.content") }: Nicholas Krebs</li>
+					</ul>
+				</section>
+				<Line />
+				<section>
+					<SectionTitle>{ t("imprint.resources") }</SectionTitle>
+					<Typography>
+						{ t("imprint.resourcesText") }
+					</Typography>
+					<ul>
+						<li>
+							{ t("imprint.links.illustrations") }: <a href="https://www.freepik.com">vectorjuice /
+							Freepik</a>
+						</li>
+						<li>
+							{ t("imprint.links.icons") }: <a href="https://mui.com/">Material UI</a>
+						</li>
+					</ul>
+				</section>
+			</article>
+		</Page>
 	);
 }

@@ -1,3 +1,4 @@
+import React from "react";
 import SocialMedia from "../../models/socialMedia";
 import {
 	BsEnvelopeOpenFill,
@@ -9,7 +10,6 @@ import {
 	BsTelegram,
 	BsTwitter,
 } from "react-icons/bs";
-import React from "react";
 
 const socialMediaList = () => {
 	return [

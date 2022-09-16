@@ -5,20 +5,22 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton
 import Tag from "../projects/Tag";
 import { Picture } from "../Picture";
 import { Image } from "../Text";
+import { useTranslation } from "react-i18next";
 
 // assets and styles
-import projectsList from "../../pages/Projects/projects-list";
+import projectsList from "./projects-list";
 import Project from "@models/project";
 
 export default function ProjectsList({
 	loading = false,
 	space = 30,
-	projects = projectsList,
+	projects = projectsList(),
 }: {
 	loading?: boolean;
 	space?: number;
 	projects?: Project[];
 }) {
+	const { t } = useTranslation("common");
 	return (
 		<Swiper
 			slidesPerView={ "auto" }
@@ -47,14 +49,14 @@ export default function ProjectsList({
 									sizes={ [ 1280, 853, 533 ] } r>
 									<Image
 										src={ `/media/projects/${ project.id }/${ project.id }-853-min.jpg` }
-										alt={ `Bild ${ project.title }` } height={ 200 } />
+										alt={ `${ t("projects.imageAlt") } ${ project.title }` } height={ 200 } />
 								</Picture>
 							) }
 
 							<CardHeader title={ project.title } titleTypographyProps={ { align: "center" } } />
 							<CardContent>
 								<Box>
-									{ project.tags?.map(tag => (
+									{ project.card.tags.map(tag => (
 										<Tag name={ tag } key={ tag } />
 									)) }
 								</Box>
@@ -71,16 +73,16 @@ export default function ProjectsList({
 										className="project-description"
 										variant="body1"
 										color="text.primary">
-										{ project.description }
+										{ project.card.description }
 									</Typography>
 								</Box>
 							</CardContent>
 							<CardActions>
 								<Button
 									fullWidth
-									variant={ project.buttonVariant as "outlined" | "contained" }
+									variant={ "outlined" }
 									href={ project.href }>
-									{ project.buttonText }
+									{ t("projects.learnMore") }
 								</Button>
 							</CardActions>
 						</Card>

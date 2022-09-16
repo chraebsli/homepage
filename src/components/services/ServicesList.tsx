@@ -4,13 +4,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton, Typography } from "@mui/material";
 import { Picture } from "../Picture";
 import { Image } from "../Text";
+import { useTranslation } from "react-i18next";
 
 // assets and styles
-import servicesList from "../../pages/Services/services-list";
-import Service from "@models/service";
+import servicesList from "./services-list";
+import FullService from "@models/service";
 
 export default function ServicesList({ loading = false, space = 30 }: { loading?: boolean; space?: number }) {
-	const services: Service[] = servicesList;
+	const services: FullService[] = servicesList();
+	const { t } = useTranslation("common");
 
 	return (
 		<Swiper
@@ -44,7 +46,7 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 									sizes={ [ 720, 480 ] } r>
 									<Image
 										src={ `/media/services/${ service.id }/${ service.id }-min.jpg` }
-										alt={ `Illustration ${ service.title }` } height={ 200 } />
+										alt={ `${ t("services.illustration") } ${ service.title }` } height={ 200 } />
 								</Picture>
 							) }
 
@@ -59,10 +61,10 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 										mb: 2,
 									} }>
 									<Typography component="p" className="service-teaser">
-										{ service.teaser }
+										{ service.card.teaser }
 									</Typography>
 									<Typography component="p" className="service-description">
-										{ service.description }
+										{ service.card.description }
 									</Typography>
 								</Box>
 								<ul>
@@ -76,9 +78,9 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 							<CardActions>
 								<Button
 									fullWidth
-									variant={ service.buttonVariant as "outlined" | "contained" }
+									variant={ "outlined" }
 									href={ service.href }>
-									{ service.buttonText }
+									{ t("services.learnMore") }
 								</Button>
 							</CardActions>
 						</Card>
