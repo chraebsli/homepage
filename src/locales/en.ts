@@ -232,6 +232,24 @@ export default function en() {
 					icons: "Icons",
 				},
 			},
+			privacy: {
+				title: "Privacy",
+				copyright: "Copyright",
+				copyrightText: "All content on this website is copyrighted (all rights reserved). Any further publication (in electronic, written or other form) or other use of the content on this website is therefore prohibited without the express consent of the Management Board or the relevant rights holder, but in particular for public or commercial purposes.",
+				privacy: "Privacy and Cookies",
+				privacyTexts: [
+					"We take the protection of your personal data seriously. We treat your personal data confidentially and in accordance with the statutory data protection regulations and this data protection declaration.",
+					"Based on Article 13 of the Swiss Federal Constitution and the data protection regulations of the federal government (Data Protection Act, DSG), every person has the right to protection of their privacy and protection against misuse of their personal data. We comply with these regulations.",
+					"Our websites and online services can generally be used without providing any personal data. Insofar as personal data (e.g. name, address or e-mail addresses) is collected on our platforms, this is always done on a voluntary basis as far as possible. This data will not be passed on to third parties without your express consent.",
+					"We would like to point out that data transmission on the Internet (e.g. when communicating by e-mail) can have security gaps. A complete protection of the data against access by third parties is not possible.",
+					"When accessing our websites or online services, the following data is stored in log files: IP address, date, time, browser request and general information transmitted about the operating system or. browsers. This usage data forms the basis for statistical, anonymous evaluations so that trends can be identified, which we can use to improve our offers accordingly.",
+					"Our websites and web-based online services use so-called cookies. Cookies do not damage your computer and do not contain viruses. Cookies serve to make our offer more user-friendly, effective and secure. These are small text files that are stored on your computer and saved by your browser. Some of the cookies we use are so-called \"session cookies\". They are automatically deleted after your visit. Other cookies remain stored on your end device until you delete them. These cookies enable us to recognize your browser on your next visit.",
+					"You can set your browser so that you are informed about the setting of cookies and only allow cookies in individual cases, exclude the acceptance of cookies for certain cases or in general and activate the automatic deletion of cookies when the browser is closed. If cookies are deactivated, the functionality of the websites and online services used may be restricted.",
+				],
+				applicableLaw: "Applicable law",
+				applicableLawText: "Subject to other legal provisions, this online offer and its use as well as services related to the online offer are exclusively subject to Swiss law.",
+			},
+
 		},
 	};
 }

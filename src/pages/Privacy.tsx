@@ -23,9 +23,11 @@ export default function Privacy() {
 				<Line />
 				<section>
 					<SectionTitle>{ t("privacy.privacy") }</SectionTitle>
-					<Typography dangerouslySetInnerHTML={
-						{ __html: t("privacy.privacyTexts", { returnObjects: true }) }
-					} />
+					<Typography>
+						{ (t("privacy.privacyTexts", { returnObjects: true }) as string[]).map((text) => (
+							<>{ text } <br /><br /></>
+						)) }
+					</Typography>
 				</section>
 				<Line />
 				<section>
