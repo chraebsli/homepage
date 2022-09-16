@@ -56,7 +56,7 @@ export default function ProjectsList({
 							<CardHeader title={ project.title } titleTypographyProps={ { align: "center" } } />
 							<CardContent>
 								<Box>
-									{ project.tags?.map(tag => (
+									{ project.card.tags?.map(tag => (
 										<Tag name={ tag } key={ tag } />
 									)) }
 								</Box>
@@ -73,7 +73,7 @@ export default function ProjectsList({
 										className="project-description"
 										variant="body1"
 										color="text.primary">
-										{ project.description }
+										{ project.card.description }
 									</Typography>
 								</Box>
 							</CardContent>

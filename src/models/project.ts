@@ -3,8 +3,18 @@ export default class Project {
 		public readonly id: string,
 		public readonly title: string,
 		public readonly href: string,
-		public readonly tags: string[],
-		public readonly description: string,
-		public readonly wakaTimeBadge: string,
+		public readonly card: {
+			description: string,
+			tags: string[],
+		},
+		public readonly page: {
+			wakaTimeBadge: string,
+			textDescription: string,
+			textContent: string,
+			textVorgehen: string,
+			textFazit: string,
+			tools: string[],
+			website?: string
+		},
 	) {}
 }

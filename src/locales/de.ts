@@ -5,30 +5,77 @@ export default function de() {
 				title: "Projekte",
 				learnMore: "Mehr erfahren",
 				imageAlt: "Bild Projekt",
+				single: {
+					titleDescription: "Beschreibung",
+					titleContent: "Inhalt",
+					titleVorgehen: "Vorgehen",
+					titleFazit: "Fazit",
+				},
 				fischlehrpfad: {
 					title: "Fischlehrpfad",
-					description: "Der Fischlehrpfad war mein erstes Projekt. Ich habe es im 2. Lehrjahr mit einem Kollegen entwickelt. Das Projekt ist eine kleine Website für einen Fischereiverein. Sie wurde mit dem CMS Grav entwickelt.",
-					tags: [ "web", "client", "deployed" ],
+					card: {
+						description: "Der Fischlehrpfad war mein erstes Projekt. Ich habe es im 2. Lehrjahr mit einem Kollegen entwickelt. Das Projekt ist eine kleine Website für einen Fischereiverein. Sie wurde mit dem CMS Grav entwickelt.",
+						tags: [ "web", "client", "deployed" ],
+					},
+					page: {
+						textDescription: "Der Fischlehrpfad war mein erstes grösseres Projekt, das ich entwickelt habe. Im 2. Lehrjahr meiner Ausbildung habe ich mit einem Kollegen das Projekt für den Fischereiverein an der Emme in Burgdorf geplant und anschliessend entwickelt. Der Verein wollte einen Lernpfad über Fische und andere Tierarten in der Emme erstellen, bei dem Schulen und Familien etwas über die verschiedenen Tierarten lernen können.",
+						textContent: "Der Besucher kann einen QR-Code an einem Posten einscannen und wird auf die jeweilige Seite weitergeleitet. Auf dieser Seite befinden sich Inhalte wie Text, Bilder, Videos, Audios bei denen man etwas lernt. Es hat aber auch interaktive Elemente, wie zB ein Slider, ein Quiz und andere, bei dem man dann das gelernte überprüfen kann.",
+						textVorgehen: "Zuerst haben wird das Projekt mit einem GANTT Diagramm geplant. Danach haben wir verschiedene Mockups erstellt und gemeinsam mit dem Kunden ein passendes Design ausgewählt. Anschliessend erstellten wir mit dem CMS Grav in knapp 6 Monaten eine Website erstellt. Anfangs hatten wir Schwierigkeiten, da das CMS komplett neu für uns war unf wir die ganzen Grundlagen gleichzeitig mit den Programmiersprachen PHP und Twig zuerst erlernen mussten.",
+						textFazit: "Schlussendlich konnten wir das Projekt erfolgreich abschliessen und bekamen viele positive Rückmeldungen. Rückblickend war es ziemlich stressig eine Website zu erstellen mit einem Tool das man nicht kennt, aber es hat uns Spass gemacht und wir haben viele Fähigkeiten gelernt oder weiterentwickelt.",
+					},
 				},
 				personal: {
 					title: "eigene Website",
-					description: "Dieses Projekt ist die Website auf der sie sich befinden. Ich habe diese Website selber designed und anschliessen programmiert. Dazu habe ich TypeScript mit React verwendet, die ich währenddessen erlernt habe.",
-					tags: [ "web", "personal", "development" ],
+					card: {
+						description: "Dieses Projekt ist die Website auf der sie sich befinden. Ich habe diese Website selber designed und anschliessen programmiert. Dazu habe ich TypeScript mit React verwendet, die ich währenddessen erlernt habe.",
+						tags: [ "web", "personal", "development" ],
+					},
+					page: {
+						textDescription: "Ich wollte schon längere Zeit eine eigene Website haben, die ich ohne CMS entwickelt habe. So kann ich zusätzlich lernen, was mich interessiert und bin frei, wie ich es umsetzten möchte. Ich habe mehrmals angefangen aber immer wieder aufgehört, weil ich keine Zeit mehr hatte. Schlussendlich konnte ich mich überreden und war motiviert, mit der JavaScript Bibliothek React die Website zu erstellen.",
+						textContent: "Auf meiner Website biete ich Dienstleistungen an, um in meiner Freizeit zu arbeiten und mich weiterzubilden. Zusätzlich möchte ich Geld verdienen, da ich in meiner Ausbildung kein Lohn erhalte. Ich möchte auch meine vergangenen Projekte zeigen, die ich erstellt habe und so meine Erfahrung zeigen.",
+						textVorgehen: "Da ich mich in der Programmiersprache JavaScript/ TypeScript weiterbilden will, habe ich angefangen mit React die Website zu entwickeln. Ich werde an dieser Website öfters Verbesserungen vornehmen, da ich immer wieder neue Ideen habe.",
+						textFazit: "Es macht sehr Spass und ich habe viel Motivation, an dieser Website zu arbeiten. Vor allem weil ich sehr viel Zeit und Aufwand hatte, um die Technologien zu lernen und zu verwenden. Ich will ohne Planung an diesem Projekt arbeiten, da ich so machen kann was ich möchte und weniger Stress habe, mich möglichst an die Planung zu halten.",
+					},
 				},
 				sgrumisberg: {
 					title: "SG Rumisberg",
-					description: "Die erste Website für einen privaten Kunden. Sie ist für ein Verein aus meinem Dorf, der eine Website für ihren Schützenverein eröffnen wollte. Ich habe die Website mit dem CMS Grav entwickelt und konnte viele Erfahrungen sammeln.",
-					tags: [ "web", "client", "deployed" ],
+					card: {
+						description: "Die erste Website für einen privaten Kunden. Sie ist für ein Verein aus meinem Dorf, der eine Website für ihren Schützenverein eröffnen wollte. Ich habe die Website mit dem CMS Grav entwickelt und konnte viele Erfahrungen sammeln.",
+						tags: [ "web", "client", "deployed" ],
+					},
+					page: {
+						textDescription: "Diese Website ist die erste Website, die ich für einen privaten Kunden entwickelt habe. Der Kunde ist ein Verein aus meinem Dorf, der eine neue Website möchte. Sie wollen ihren Verein vorstellen und Bilder von Events teilen.",
+						textContent: "Die Website simpel gestaltet, da auch ältere Mitglieder auf der Seite zurecht kommen und die Inhalte einfach finden können. Die verschiedenen Seiten enthalten Inhalte von Events, Bilder, Ranglisten, etc. Auf ein paar Seiten gibt es auch Inhalte über den Verein und wie man ein Mitglied werden kann.",
+						textVorgehen: "Ich habe diese Website mit dem CMS Grav entwickelt. Durch meine Arbeit am Projekt Fischlehrpfad konnte ich das Grunddesign und einzelne Elemente aus dem Projekt verwenden und konnte so Aufwand und Zeit zu sparen.",
+						textFazit: "Es war ein bisschen stressig, da ich zurzeit am Ende des 2. Lehrjahr gewesen bin und für viele Prüfungen lernen musste. Ich finde aber, dass es sich gelohnt weil ich jetzt mehr Erfahrung im Projektmanagement und den Umgang mit Kunden sowie dem CMS Grav habe.",
+					},
 				},
 				mgrumisberg: {
 					title: "MG Rumisberg",
-					description: "Das ist eine Website für die Musikgesellschaft Rumisberg, in der ich aktiv als Musikant bin. Unsere alte Website war mühsam zu verwalten und deshalb sollte ich eine neue erstellen. Ich habe mich wieder für das CMS Grav entschieden.",
-					tags: [ "web", "client", "development" ],
+					card: {
+						description: "Das ist eine Website für die Musikgesellschaft Rumisberg, in der ich aktiv als Musikant bin. Unsere alte Website war mühsam zu verwalten und deshalb sollte ich eine neue erstellen. Ich habe mich wieder für das CMS Grav entschieden.",
+						tags: [ "web", "client", "development" ],
+					},
+					page: {
+						textDescription: "Diese Website ist für die Musikgesellschaft Rumisberg, in der ich seit mehreren Jahren Mitglied bin. Unsere alte Website war schwierig zu verwalten und ändern. Aus diesem Grund sollte ich eine neue Website erstellen, die einfach zu verwalten ist.\n" +
+							"Dieses Projekt ist in Entwicklung.",
+						textContent: "Auf der Website sollen Daten für unsere Auftritte gelistet und wir möchten unseren Verein vorstellen. Es soll aber auch eine Art blogging Beiträge geben, bei denen wir Aktuelles aus dem Verein öffentlich teilen wollen. Dazu gehört zB das Teilen von Erfolgen und Veränderungen.",
+						textVorgehen: "Die Website wird mit dem CMS Grav erstellen, da ich bereits viel Erfahrung mit diesem CMS gemacht habe und auch gutes Feedback von den Benutzern erhalten habe. Das Design wurde bereits festgelegt und ich arbeite im Moment am Inhalt der Website.",
+						textFazit: "Bis jetzt läuft alles wie geplant und ich freue mich, als jüngstes Mitglied nun auch einen Beitrag zu meinem Verein leisten zu können, sobald die Website fertig ist.",
+					},
 				},
 				homeDashboard: {
 					title: "Home Dashboard",
-					description: "Dieses Projekt ist ein Dashboard für mein Smart Home. Die Daten werden mit einer API von Next.js verarbeitet und anschliessend mit TypeScript React bereitgestellt. Es gibt Elemente für Zeit, Wetter und Kalender. Weitere kommen.",
-					tags: [ "web", "personal", "development" ],
+					card: {
+						description: "Dieses Projekt ist ein Dashboard für mein Smart Home. Die Daten werden mit einer API von Next.js verarbeitet und anschliessend mit TypeScript React bereitgestellt. Es gibt Elemente für Zeit, Wetter und Kalender. Weitere kommen.",
+						tags: [ "web", "personal", "development" ],
+					},
+					page: {
+						textDescription: "Vor etwas längerer Zeit hatte ich im Internet das Projekt Magic Mirror gesehen. Meine Mutter hat dann etwas Geld ausgegeben für einen TouchScreen und einen Raspberry Pi, auf dem die Software laufen soll. Den Bildschirm haben wir beim Eingang der Wohnung aufgehängt. Da aber viele Features nicht existieren die wir wollten, habe ich angefangen, selber so ein Dashboard zu erstellen.",
+						textContent: "Es soll ein Dashboard sein, welches die wichtigsten Informationen anzeigt. Dazu gehören Zeit & Datum, Wetter und die wichtigsten Termine. Außerdem soll die digitale Einkaufsliste angezeigt werden. Auch die Lampen wollen wir über dieses Dashboard steuern können, die bereits über die Google Home App verbunden sind. Weitere Features sind in Planung.",
+						textVorgehen: "Das Dashboard läuft mit TypeScript und React. Für das Backend verwende ich Next.js, welches Daten von verschiedenen APIs aufbereitet und für das Frontend bereitstellt. Vom Design übernehme ich vieles vom Magic Mirror.",
+						textFazit: "Das Dashboard ist noch nicht fertig, aber es funktioniert schon sehr gut. Features wie Uhr, Wetter und Kalender sind bereits implementiert. Die Einkaufsliste und die Steuerung der Lampen sind noch in Arbeit.",
+					},
 				},
 			},
 			services: {

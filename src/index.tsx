@@ -21,11 +21,7 @@ import Services from "./pages/Services/Services";
 import SingleService from "./pages/Services/SingleService";
 
 import Projects from "./pages/Projects/Projects";
-import Fischlehrpfad from "./pages/Projects/single/fischlehrpfad";
-import Personal from "./pages/Projects/single/personal";
-import SGRumisberg from "./pages/Projects/single/sgrumisberg";
-import MGRumisberg from "./pages/Projects/single/mgrumisberg";
-import HomeDashboard from "./pages/Projects/single/home-dashboard";
+import SingleProject from "./pages/Projects/SingleProject";
 
 import Contact from "./pages/Contact";
 import Me from "./pages/Me/Me";
@@ -82,11 +78,7 @@ function App() {
 							<Route path="/service/:service" element={ <SingleService /> } />
 
 							<Route path="/projects" element={ <Projects /> } />
-							<Route path="/project/fischlehrpfad" element={ <Fischlehrpfad /> } />
-							<Route path="/project/personal" element={ <Personal /> } />
-							<Route path="/project/sgrumisberg" element={ <SGRumisberg /> } />
-							<Route path="/project/mgrumisberg" element={ <MGRumisberg /> } />
-							<Route path="/project/home-dashboard" element={ <HomeDashboard /> } />
+							<Route path="/project/:project" element={ <SingleProject /> } />
 
 							<Route path="/me" element={ <Me /> } />
 							<Route path="/contact" element={ <Contact /> } />
