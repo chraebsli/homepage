@@ -83,6 +83,7 @@ export default function de() {
 				title: "Dienstleistungen",
 				learnMore: "Mehr erfahren",
 				illustration: "Illustration",
+				includedFeatures: "Folgende Features sind inbegriffen:",
 				itSupport: {
 					title: "IT Support",
 					features: [
@@ -97,8 +98,7 @@ export default function de() {
 					},
 					page: {
 						teaser: "Brauchen Sie Hilfe bezüglich Computer oder Smartphones und wissen nicht mehr weiter?",
-						description: "Kommen Sie nicht mehr weiter mit Ihrem Computer oder ihrem Smartphone? Zum Beispiel beim Installieren von Apps auf einem neuen Gerät oder dessen Konfiguration oder Verwendung? Oder haben Fragen bezüglich Sicherheit und Datenschutz oder anderer Themen der Computerwelt?\n" +
-							"Ich helfe Ihnen gerne weiter und möchte Sie dabei unterstützen, damit Sie in Zukunft weniger Fragen und Probleme bezüglich Ihres Computers oder Ihres Smartphones haben.",
+						description: "Kommen Sie nicht mehr weiter mit Ihrem Computer oder ihrem Smartphone? Zum Beispiel beim Installieren von Apps auf einem neuen Gerät oder dessen Konfiguration oder Verwendung? Oder haben Fragen bezüglich Sicherheit und Datenschutz oder anderer Themen der Computerwelt?\n Ich helfe Ihnen gerne weiter und möchte Sie dabei unterstützen, damit Sie in Zukunft weniger Fragen und Probleme bezüglich Ihres Computers oder Ihres Smartphones haben.",
 					},
 				},
 				website: {
@@ -110,8 +110,7 @@ export default function de() {
 					},
 					page: {
 						teaser: "Brauchen Sie eine kleine und einfache Website für Ihren Verein, Startup oder für einen persönlichen Zweck?",
-						description: "Dann sind Sie hier richtig. Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.\n" +
-							"Das handhaben der Website ist sehr einfach, auch für Sie. Mit dem CMS Grav können Sie ohne grosses technisches Verständnis Seiten oder Inhalte wie Text, Bilder, Videos, Tabellen, etc. erstellen, bearbeiten und löschen. Dazu gibt es eine Seitenstatistik wo Sie die Aufrufe sehen können.",
+						description: "Dann sind Sie hier richtig. Ich erstelle günstig für Sie die perfekte Website für Ihren Verein, Startup oder für einen persönlichen Zweck nach Ihren Wünschen.\nDas handhaben der Website ist sehr einfach, auch für Sie. Mit dem CMS Grav können Sie ohne grosses technisches Verständnis Seiten oder Inhalte wie Text, Bilder, Videos, Tabellen, etc. erstellen, bearbeiten und löschen. Dazu gibt es eine Seitenstatistik wo Sie die Aufrufe sehen können.",
 					},
 				},
 				webapp: {
@@ -123,8 +122,7 @@ export default function de() {
 					},
 					page: {
 						teaser: "Benötigen Sie eine Webapplikation um zum Beispiel bei ihrem Startup Arbeitszeiten oder ähnliches zu erfassen?",
-						description: "Ich entwickle für Sie die perfekte Webapplikation um bei Startup oder für einen persönlichen Zweck mit einem Login System und vielen weiteren Funktionen, die Sie möchten.\n" +
-							"Die Webapplikation ist sicher und schnell und hat ein modernes Design nach ihren Vorstellungen. Dazu wird sie auch mit einer mobile Version erreichbar sein für unterwegs. Wenn Sie später weitere Funktionen wünschen, können diese durch den cleveren Aufbau auch durch andere Entwickler erweitert werden.",
+						description: "Ich entwickle für Sie die perfekte Webapplikation um bei Startup oder für einen persönlichen Zweck mit einem Login System und vielen weiteren Funktionen, die Sie möchten.\nDie Webapplikation ist sicher und schnell und hat ein modernes Design nach ihren Vorstellungen. Dazu wird sie auch mit einer mobile Version erreichbar sein für unterwegs. Wenn Sie später weitere Funktionen wünschen, können diese durch den cleveren Aufbau auch durch andere Entwickler erweitert werden.",
 					},
 				},
 				database: {

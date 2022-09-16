@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 import { Button, Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
@@ -12,6 +13,8 @@ import NotFound404 from "../Error/404";
 import "./Services.sass";
 
 export default function SingleService() {
+	const { t } = useTranslation("common");
+
 	const pages = useLocation().pathname.split("/");
 	const page = pages[pages.length - 1];
 
@@ -41,7 +44,7 @@ export default function SingleService() {
 						<Typography className={ "italic" }> { teaser } </Typography>
 						<Typography> { description } </Typography>
 						<Typography>
-							Folgende Features sind inbegriffen:
+							{ t("services.includedFeatures") }
 							<ul>
 								{ features.map((feature, i) => (
 									<li key={ i }>{ feature }</li>

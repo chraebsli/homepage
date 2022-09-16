@@ -82,39 +82,66 @@ export default function en() {
 				title: "Services",
 				learnMore: "learn more",
 				illustration: "illustration",
+				includedFeatures: "Following services are included:",
 				itSupport: {
 					title: "IT Support",
-					teaser: "Do you need help with your computer or smartphone and don’t know what to do?",
-					description: "Are you having trouble with apps on your computer or smartphone or have questions about security and data protection?",
 					features: [
 						"professional support",
 						"fast help via chat/ call",
 						"remote/ on site help",
 						"training and education",
 					],
+					card: {
+						teaser: "Do you need help with your computer or smartphone and don’t know what to do?",
+						description: "Are you having trouble with apps on your computer or smartphone or have questions about security and data protection?",
+					},
+					page: {
+						teaser: "Do you need help with computers or smartphones and don't know what to do?",
+						description: "Are you stuck with your computer or smartphone? For example installing apps on a new device or configuring it or using it? Or do you have questions about security and data protection or other topics in the computer world?\\n I would be happy to help you and would like to support you so that you have fewer questions and problems regarding your computer or smartphone in the future.",
+					},
 				},
 				website: {
 					title: "create a website",
-					teaser: "Do you need a website for your club, startup or for a personal purpose?",
-					description: "I will create a perfect and favorable website for your club, startup or for a personal purpose according to your wishes.",
 					features: [ "professional website", "configuration", "domain & hosting", "E-Mail addresses" ],
+					card: {
+						teaser: "Do you need a website for your club, startup or for a personal purpose?",
+						description: "I will create a perfect and favorable website for your club, startup or for a personal purpose according to your wishes.",
+					},
+					page: {
+						teaser: "Do you need a small and simple website for your association, startup or for a personal purpose?",
+						description: "Then you are right here. I create the perfect website for your club, startup or for a personal purpose according to your wishes.\n" +
+							"Navigating the website is very easy, also for you. With the CMS Grav you can create, edit and delete pages or content such as text, images, videos, tables, etc. without a great deal of technical knowledge. There is also a page statistic where you can see the views.",
+					},
 				},
 				webapp: {
 					title: "create a webapp",
-					teaser: "Do you need a web application for example to record working hours for your startup?",
-					description: "I can develop the perfect web application for your startup or for a personal purpose with login and other helpful features.",
 					features: [ "modern web application", "easy to operate", "expandable", "secure data" ],
+					card: {
+						teaser: "Do you need a web application for example to record working hours for your startup?",
+						description: "I can develop the perfect web application for your startup or for a personal purpose with login and other helpful features.",
+					},
+					page: {
+						teaser: "Do you need a web application, for example to record working times or something similar for your startup?",
+						description: "I will develop for you the perfect web application for startup or for a personal purpose with a login system and many other features you want.\n" +
+							"The web application is safe and fast and has a modern design according to your ideas. In addition, it will also be available with a mobile version for on the go. If you later want more functions, these can also be expanded by other developers thanks to the clever structure.",
+					},
 				},
 				database: {
 					title: "Database",
-					teaser: "Do you want to create a new database or import from an old database?",
-					description: "I can create a new database for you or transfer data from another database to a new one, regardless of SQL or NoSQL.",
 					features: [
 						"complete database system",
 						"clever structure",
 						"easy to manage",
 						"fast queries",
 					],
+					card: {
+						teaser: "Do you want to create a new database or import from an old database?",
+						description: "I can create a new database for you or transfer data from another database to a new one, regardless of SQL or NoSQL.",
+					},
+					page: {
+						teaser: "Do you want to create a database or transfer all data from another to a new one?",
+						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL. Dabei können Sie selbst entscheiden, welche Datenbank Sie verwenden möchten. Es spielt keine Rolle, welche Art von Daten Sie speichern möchten, ob Dokumente oder zum Beispiel ein Login-System.",
+					},
 				},
 			},
 		},
