@@ -11,8 +11,8 @@ export default class Project {
 			wakaTimeBadge: string,
 			textDescription: string,
 			textContent: string,
-			textVorgehen: string,
-			textFazit: string,
+			titleProceed: string,
+			titleConclusion: string,
 			tools: string[],
 			website?: string
 		},

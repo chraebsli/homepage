@@ -24,7 +24,7 @@ export default function SingleProject$() {
 	if (!possibleProjects) return <NotFound404 />;
 	const {
 		id, title, page: {
-			wakaTimeBadge, textDescription, textContent, textVorgehen, textFazit, tools, website,
+			wakaTimeBadge, textDescription, textContent, titleProceed, titleConclusion, tools, website,
 		},
 	} = possibleProjects;
 	const url = `https://${ website }`;
@@ -48,15 +48,15 @@ export default function SingleProject$() {
 						<Typography> { textContent } </Typography>
 					</section>
 					<section>
-						<SectionTitle> { t("projects.single.titleVorgehen") } </SectionTitle>
-						<Typography> { textVorgehen } </Typography>
+						<SectionTitle> { t("projects.single.titleProceed") } </SectionTitle>
+						<Typography> { titleProceed } </Typography>
 					</section>
 					<section>
-						<SectionTitle> { t("projects.single.titleFazit") } </SectionTitle>
-						<Typography> { textFazit } </Typography>
+						<SectionTitle> { t("projects.single.titleConclusion") } </SectionTitle>
+						<Typography> { titleConclusion } </Typography>
 					</section>
 					<section>
-						<SectionTitle>Tools</SectionTitle>
+						<SectionTitle> { t("projects.single.titleTools") } </SectionTitle>
 						<div className={ "project-tools" } data-count={ 6 }>
 							{ tools.map((tool: string, i: number) => <ToolImage key={ i } name={ tool } />) }
 						</div>
