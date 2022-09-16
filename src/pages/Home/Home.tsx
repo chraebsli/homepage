@@ -3,7 +3,7 @@ import { Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import ServicesList from "../../components/services/ServicesList";
 import ProjectsList from "../../components/projects/ProjectsList";
-import SocialMediaList from "../../components/SocialMediaList";
+import SocialMediaList from "../../components/social-media/SocialMediaList";
 import { Line, SectionTitle } from "../../components/Text";
 import { useTranslation } from "react-i18next";
 

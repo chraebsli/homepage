@@ -8,7 +8,7 @@ import { Image } from "../Text";
 import { useTranslation } from "react-i18next";
 
 // assets and styles
-import projectsList from "../../pages/Projects/projects-list";
+import projectsList from "./projects-list";
 import Project from "@models/project";
 
 export default function ProjectsList({

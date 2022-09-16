@@ -6,7 +6,7 @@ import Page from "../../components/common/Page";
 import { Image, Line, PageTitle } from "../../components/Text";
 import { Picture } from "../../components/Picture";
 import SendIcon from "@mui/icons-material/Send";
-import servicesList from "./services-list";
+import servicesList from "../../components/services/services-list";
 import NotFound404 from "../Error/404";
 
 // assets and styles

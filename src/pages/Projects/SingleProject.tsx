@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 import "./Projects.sass";
 import ToolImage from "../../components/projects/ToolImage";
 import WakaTimeBadge from "../../components/projects/WakaTimeBadge";
-import projectsList from "./projects-list";
+import projectsList from "../../components/projects/projects-list";
 
 export default function SingleProject$() {
 	const { t } = useTranslation("common");

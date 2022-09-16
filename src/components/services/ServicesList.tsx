@@ -7,7 +7,7 @@ import { Image } from "../Text";
 import { useTranslation } from "react-i18next";
 
 // assets and styles
-import servicesList from "../../pages/Services/services-list";
+import servicesList from "./services-list";
 import FullService from "@models/service";
 
 export default function ServicesList({ loading = false, space = 30 }: { loading?: boolean; space?: number }) {

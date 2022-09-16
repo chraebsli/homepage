@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Page from "../components/common/Page";
-import servicesList from "./Services/services-list";
+import servicesList from "../components/services/services-list";
 import { Alert, Autocomplete, Button, TextField, Typography } from "@mui/material";
 import { Line, PageTitle } from "../components/Text";
 import { useTranslation } from "react-i18next";
