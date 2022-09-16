@@ -49,13 +49,13 @@ const dark = createTheme({
 function App() {
 	const [ cookies, setCookie ] = useCookies([ "colorScheme" ]);
 	const expires = new Date(new Date().getTime() + 1000 * 60 * 60 * 24 * 365);
+	const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 	const colorScheme = cookies.colorScheme;
 	if (!colorScheme) {
-		const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/", expires: expires });
 	}
 
-	const [ theme, setTheme ] = useState<"light" | "dark">(colorScheme);
+	const [ theme, setTheme ] = useState<"light" | "dark">(prefersDarkMode ? "dark" : "light");
 	const [ checked, setChecked ] = React.useState<boolean>(theme !== "light");
 
 	const toggleTheme = () => {
@@ -63,7 +63,6 @@ function App() {
 		setCookie("colorScheme", newTheme, { path: "/", expires: expires });
 		setTheme(newTheme);
 		setChecked(!checked);
-		!colorScheme && window.location.reload();
 	};
 
 	return (
