@@ -55,7 +55,7 @@ function App() {
 		setCookie("colorScheme", prefersDarkMode ? "dark" : "light", { path: "/", expires: expires });
 	}
 
-	const [ theme, setTheme ] = useState<"light" | "dark">(prefersDarkMode ? "dark" : "light");
+	const [ theme, setTheme ] = useState<"light" | "dark">(!colorScheme ? (prefersDarkMode ? "dark" : "light") : colorScheme);
 	const [ checked, setChecked ] = React.useState<boolean>(theme !== "light");
 
 	const toggleTheme = () => {
