@@ -4,12 +4,10 @@ import servicesList from "../components/services/services-list";
 import { Alert, Autocomplete, Button, TextField, Typography } from "@mui/material";
 import { Line, PageTitle } from "../components/Text";
 import { useTranslation } from "react-i18next";
-import SendIcon from "@mui/icons-material/Send";
-
-// assets and styles
-import "../components/form/FormSubmissionHandler.js";
 import FormGroup from "../components/form/FormGroup";
 import FormElement from "../components/form/FormElement";
+import SendIcon from "@mui/icons-material/Send";
+import { loaded } from "../components/form/FormSubmissionHandler";
 
 export default function Contact() {
 	const { t } = useTranslation("pages");
@@ -20,8 +18,9 @@ export default function Contact() {
 	});
 
 	useEffect(() => {
+		loaded();
 		document.getElementById("service")?.setAttribute("name", "service");
-	});
+	}, []);
 
 	return (
 		<Page pageName={ pageName }>
