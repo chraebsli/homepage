@@ -1,23 +1,32 @@
 import React, { useEffect } from "react";
 import Page from "../components/common/Page";
 import servicesList from "../components/services/services-list";
-import { Alert, Autocomplete, Button, TextField, Typography } from "@mui/material";
+import { Alert, Autocomplete, Button, CircularProgress, TextField, Typography } from "@mui/material";
 import { Line, PageTitle } from "../components/Text";
 import { useTranslation } from "react-i18next";
 import { FormElements, FormGroup } from "../components/form/FormElements";
+import { handleFormSubmit } from "../components/form/FormSubmissionHandler";
 import SendIcon from "@mui/icons-material/Send";
-import { loaded } from "../components/form/FormSubmissionHandler";
 
 export default function Contact() {
 	const { t } = useTranslation("pages");
 	const pageName = t("contact.title");
 	const service = { name: new URLSearchParams(window.location.search).get("service") };
-	const services = servicesList().map(service => {
-		return { name: service.title };
-	});
+	const services = servicesList().map(service => { return { name: service.title }; });
+
+	const [ sending, setSending ] = React.useState(false);
+	const [ status, setStatus ] = React.useState({ code: 0, message: "" });
+	const formSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+		setSending(true);
+		handleFormSubmit(event)
+			.then((response) => {
+				setSending(false);
+				const { status, statusText } = response;
+				setStatus({ code: status, message: statusText });
+			});
+	};
 
 	useEffect(() => {
-		loaded();
 		document.getElementById("service")?.setAttribute("name", "service");
 	}, []);
 
@@ -49,6 +58,7 @@ export default function Contact() {
 						action={
 							"https://script.google.com/macros/s/AKfycbyGX_jTNlOlP0eU2nAqu5dhgh9bJxqw4goiI8j0sHYmdKi6o2QXLd0ejo8aPexM5O1Egw/exec"
 						}
+						onSubmit={ formSubmit }
 						method={ "POST" }>
 						<div>
 							<FormGroup>
@@ -129,16 +139,25 @@ export default function Contact() {
 										variant={ "contained" }
 										type={ "submit" }
 										size={ "large" }
-										endIcon={ <SendIcon color={ "secondary" } /> }>
-										{ t("contact.form.send") }
+										endIcon={ !sending && <SendIcon color={ "secondary" } /> }>
+										{ sending
+											? <CircularProgress color={ "secondary" } size={ 30 } />
+											: t("contact.form.send")
+										}
 									</Button>
 								</FormElements>
 							</FormGroup>
 						</div>
 						<div className={ "after-submit" }>
-							<Alert severity="success">
-								{ t("contact.form.success") }
-							</Alert>
+							{ !sending && status.code === 200 ? (
+								<Alert severity="success">
+									{ t("contact.form.success") }
+								</Alert>
+							) : !sending && status.code !== 0 ? (
+								<Alert severity="error">
+									Error { status.code }: { status.message }
+								</Alert>
+							) : null }
 						</div>
 					</form>
 				</section>

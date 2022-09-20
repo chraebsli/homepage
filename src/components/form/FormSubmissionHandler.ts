@@ -1,3 +1,5 @@
+import axios from "axios";
+
 function getFormData(form: any) {
 	const elements = form.elements;
 	let honeypot;
@@ -39,41 +41,20 @@ function getFormData(form: any) {
 	return { data: formData, honeypot: honeypot };
 }
 
-function handleFormSubmit(event: any) {
+export function handleFormSubmit(event: any) {
 	event.preventDefault();
 	const form = event.target;
 	const formData = getFormData(form);
 	const data = formData.data;
 
-	if (formData.honeypot) return false;
-
 	disableAllButtons(form);
 	const url = form.action;
-	const xhr = new XMLHttpRequest();
-	xhr.open("POST", url);
-	xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-	xhr.onreadystatechange = function() {
-		if (xhr.readyState === 4 && xhr.status === 200) {
-			form.reset();
-			const formElements = form.querySelector(".form-data");
-			if (formElements) formElements.style.display = "none";
-
-			const thankYouMessage = form.querySelector(".after-submit");
-			if (thankYouMessage) thankYouMessage.style.display = "block";
-		}
-	};
 
 	const encoded = Object.keys(data)
 		.map(k => encodeURIComponent(k) + "=" + encodeURIComponent(data[k]))
 		.join("&");
-	xhr.send(encoded);
-}
 
-export function loaded() {
-	const forms = document.querySelectorAll("form.gform");
-	for (let i = 0; i < forms.length; i++) {
-		forms[i].addEventListener("submit", handleFormSubmit, false);
-	}
+	return axios.post(url, encoded, { headers: { "Content-Type": "application/x-www-form-urlencoded" } });
 }
 
 function disableAllButtons(form: HTMLFormElement) {
