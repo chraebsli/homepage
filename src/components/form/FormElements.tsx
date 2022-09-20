@@ -1,7 +1,20 @@
 import React from "react";
 import { Stack } from "@mui/material";
 
-export default function FormElement({ children, pos }: { children: React.ReactNode; pos?: "left" | "right" }) {
+export function FormGroup({ children }: { children: React.ReactNode }) {
+	return (
+		<Stack
+			direction={ { xs: "column", sm: "row" } }
+			sx={ {
+				justifyContent: "space-between",
+				paddingBottom: "1rem",
+			} }>
+			{ children }
+		</Stack>
+	);
+}
+
+export function FormElements({ children, pos }: { children: React.ReactNode; pos?: "left" | "right" }) {
 	return (
 		<Stack
 			spacing={ 2 }
