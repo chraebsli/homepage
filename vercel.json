@@ -20,10 +20,6 @@
 					"value": "strict-origin-when-cross-origin"
 				},
 				{
-					"key": "Content-Security-Policy",
-					"value": "default-src 'self'; form-action 'self' script.google.com;"
-				},
-				{
 					"key": "Permissions-Policy",
 					"value": "battery=(), camera=(), geolocation=(), microphone=()"
 				}
