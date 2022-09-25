@@ -21,7 +21,7 @@
 				},
 				{
 					"key": "Content-Security-Policy",
-					"value": "default-src 'self' chraebsli.dev *.chraebsli.dev nicholas-krebs.ch *.nicholas-krebs.ch; img-src 'self' data:; style-src 'self' *; form-action 'self' script.google.com;  "
+					"value": "default-src 'self'; form-action 'self' script.google.com;"
 				},
 				{
 					"key": "Permissions-Policy",
