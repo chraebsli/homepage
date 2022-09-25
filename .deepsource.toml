@@ -1,6 +1,6 @@
 version = 1
 
-exclude_patterns = ["src/components/form/FormSubmissionHandler.js"]
+exclude_patterns = ["src/components/form/FormSubmissionHandler.ts"]
 
 [[analyzers]]
 name = "javascript"
