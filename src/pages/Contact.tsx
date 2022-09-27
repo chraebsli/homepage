@@ -31,7 +31,7 @@ export default function Contact() {
 	}, []);
 
 	return (
-		<Page pageName={ pageName }>
+		<Page page={ "contact" }>
 			<section>
 				<PageTitle>{ pageName }</PageTitle>
 				<Line bottom={ 2 } />

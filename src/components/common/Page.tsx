@@ -1,13 +1,13 @@
 import React from "react";
-import Head from "./Head";
+import Meta from "./Meta";
 
 export default function Page({
-	pageName, className, children,
-}: { pageName: string, className?: string, children: React.ReactNode }) {
+	page, className, children,
+}: { page: string, className?: string, children: React.ReactNode }) {
 	return (
 		<>
-			<Head title={ pageName } />
-			<main className={ `${ pageName.toLowerCase() } ${ className }` }>
+			<Meta page={ page } />
+			<main className={ `${ page.toLowerCase() } ${ className }` }>
 				{ children }
 			</main>
 		</>

@@ -7,7 +7,7 @@ import { Line, PageTitle, SectionTitle } from "../components/Text";
 export default function Imprint() {
 	const { t } = useTranslation("pages");
 	return (
-		<Page pageName={ "Imprint" }>
+		<Page page={ "imprint" }>
 			<section>
 				<PageTitle>{ t("imprint.title") }</PageTitle>
 				<Line bottom={ 2 } />

@@ -7,7 +7,7 @@ import { Line, PageTitle, SectionTitle } from "../components/Text";
 export default function Privacy() {
 	const { t } = useTranslation("pages");
 	return (
-		<Page pageName={ "Privacy" }>
+		<Page page={ "privacy" }>
 			<section>
 				<PageTitle>{ t("privacy.title") }</PageTitle>
 				<Line bottom={ 2 } />

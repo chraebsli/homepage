@@ -9,7 +9,7 @@ export default function NotFound404() {
 	const { t } = useTranslation("pages");
 
 	return (
-		<Page pageName={ "Error 404" }>
+		<Page page={ "error.404" }>
 			<section>
 				<PageTitle>Error 404</PageTitle>
 				<Line bottom={ 2 } />

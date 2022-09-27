@@ -1,5 +1,77 @@
 export default function de() {
 	return {
+		meta: {
+			home: {
+				title: "Startseite",
+				description: "Ich biete verschiedene IT Dienstleistungen an, um neben meiner schulischen Lehre als Informatiker etwas Geld zu verdienen.",
+			},
+			about: {
+				title: "Über mich",
+				description: "Ich bin ein 17-jähriger Informatiklehrling aus der Schweiz im 3. Lehrjahr. Ich erstelle gerne Websites und Webapps und habe bereits einige Projekte realisiert.",
+			},
+			projects: {
+				title: "Projekte",
+				description: "Hier finden Sie eine Übersicht über meine Projekte.",
+				personal: {
+					title: "eigene Website",
+					description: "Diese Website, die Sie gerade besuchen, wurde mit React und TypeScript erstellt.",
+				},
+				fischlehrpfad: {
+					title: "Fischlehrpfad Burgdorf",
+					description: "Die Website des Fischlehrpfad Burgdorf wurde mit Grav erstellt. Es ist meine erste Website, die ich erstellt habe.",
+				},
+				sgrumisberg: {
+					title: "Schützengesellschaft Rumisberg",
+					description: "Die Website der Schützengesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für meinen ersten Kunden",
+				},
+				mgrumisberg: {
+					title: "Musikgesellschaft Rumisberg",
+					description: "Die Website der Musikgesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für einen Verein, dem ich angehöre.",
+				},
+				"home-dashboard": {
+					title: "Home Dashboard",
+					description: "Home Dashboard ist die erste Webapp, die ich erstellt habe. Darauf wird das aktuelle Wetter angezeigt, sowie aktuelle Termine.",
+				},
+			},
+			services: {
+				title: "Dienstleistungen",
+				description: "Hier finden Sie eine Übersicht über meine Dienstleistungen.",
+				website: {
+					title: "Website erstellen",
+					description: "Ich erstelle für Sie eine Website nach Ihren Wünschen. Dazu kann ich zusätzlich eine Domain registrieren und einen geeigneten Hosting Anbieter finden.",
+				},
+				webapp: {
+					title: "Webapp erstellen",
+					description: "Ich erstelle für Sie eine Webapplikation nach Ihren Wünschen. Sie können diese dann zum Beispiel in Ihrer Firma verwenden.",
+				},
+				database: {
+					title: "Datenbank erstellen",
+					description: "Ich erstelle für Sie eine beliebige Datenbank. Dabei kann es sich um eine SQL oder NoSQL Datenbank handeln.",
+				},
+				support: {
+					title: "IT Support",
+					description: "Ich biete Ihnen IT Support an. Dazu kann ich Ihnen Beispielsweise bei der Installation von einem neuen PC helfen oder Aufklärung über diverse IT Themen geben.",
+				},
+			},
+			contact: {
+				title: "Kontakt",
+				description: "Kontaktieren Sie mich, wenn Sie Fragen haben oder ein Projekt mit mir realisieren möchten.",
+			},
+			imprint: {
+				title: "Impressum",
+				description: "Hier finden Sie das Impressum dieser Website.",
+			},
+			privacy: {
+				title: "Datenschutz",
+				description: "Hier finden Sie die Datenschutzerklärung dieser Website.",
+			},
+			error: {
+				404: {
+					title: "Seite nicht gefunden",
+					description: "Die angeforderte Seite konnte nicht gefunden werden.",
+				},
+			},
+		},
 		common: {
 			projects: {
 				title: "Projekte",

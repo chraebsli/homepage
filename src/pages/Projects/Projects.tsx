@@ -12,7 +12,7 @@ import ProjectsList from "../../components/projects/ProjectsList";
 export default function Projects() {
 	const { t } = useTranslation();
 	return (
-		<Page pageName={ "Projects" }>
+		<Page page={ "projects" }>
 			<section>
 				<PageTitle>{ t("projects.title") }</PageTitle>
 				<Line bottom={ 2 } />

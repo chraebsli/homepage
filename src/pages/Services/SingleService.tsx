@@ -25,7 +25,7 @@ export default function SingleService() {
 	const { id, title, features, page: { description, teaser } } = possibleServices;
 
 	return (
-		<Page pageName={ title } className={ "single-service" }>
+		<Page page={ `services.${ id }` } className={ "single-service" }>
 			<section>
 				<PageTitle>{ title }</PageTitle>
 				<Line bottom={ 2 } />
@@ -53,6 +53,7 @@ export default function SingleService() {
 						</Typography>
 						<Button
 							href={ `/contact?service=${ title }` }
+							rel={ "canonical" }
 							variant="contained"
 							endIcon={ <SendIcon color={ "secondary" } /> }
 							sx={ { width: "20rem" } }>
