@@ -53,6 +53,7 @@ export default function SingleService() {
 						</Typography>
 						<Button
 							href={ `/contact?service=${ title }` }
+							rel={ "canonical" }
 							variant="contained"
 							endIcon={ <SendIcon color={ "secondary" } /> }
 							sx={ { width: "20rem" } }>

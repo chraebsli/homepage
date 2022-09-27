@@ -64,7 +64,7 @@ export default function SingleProject$() {
 					{ website ? (
 						<section>
 							<SectionTitle>
-								Website - <a href={ url }>{ website }</a>
+								Website - <a href={ url } rel={ "noopener noreferrer" }>{ website }</a>
 							</SectionTitle>
 							<div className={ "iframe-container" }>
 								<iframe
