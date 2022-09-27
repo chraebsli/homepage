@@ -1,5 +1,71 @@
 export default function en() {
 	return {
+		meta: {
+			home: {
+				title: "Home",
+				description: "I am offering different IT services to earn some money besides my school apprenticeship as an IT specialist.",
+			},
+			about: {
+				title: "About me",
+				description: "I am a 17 year old IT specialist apprentice from Switzerland. I am interested in web development and software development.",
+			},
+			projects: {
+				title: "Projects",
+				description: "Here you can find some of my projects.",
+				homepage: {
+					title: "personal website",
+					description: "The website you are currently visiting was created with React and TypeScript.",
+				},
+				fischlehrpfad: {
+					title: "Fischlehrpfad Burgdorf",
+					description: "The Fischlehrpfad Burgdorf is a website for a fish path in Burgdorf, Switzerland. It was the first website I created.",
+				},
+				sgrumisberg: {
+					title: "Schützengesellschaft Rumisberg",
+					description: "This is a website for a shooting club. It was created with Grav. It also was my first customer project.",
+				},
+				mgrumisberg: {
+					title: "Musikgesellschaft Rumisberg",
+					description: "This is a website for a music club, that I am a member of. It was created with Grav.",
+				},
+				homeDashboard: {
+					title: "Home dashboard",
+					description: "This is the first webapp I created. I use it at home to see the current weather and my calendar.",
+				},
+			},
+			services: {
+				title: "Services",
+				description: "Here you can find some of my services.",
+				website: {
+					title: "Create a website",
+					description: "I can create a website for you according to your wishes. In addition, I can register a domain and find a suitable hosting provider.",
+				},
+				webapp: {
+					title: "Create a webapp",
+					description: "I can create a web application for you according to your wishes. You can then use it, for example, in your company.",
+				},
+				database: {
+					title: "Database",
+					description: "I can create any database for you. It can be a SQL or NoSQL database.",
+				},
+				support: {
+					title: "IT Support",
+					description: "I can help you with your IT problems. I can help you with the installation of a new PC or I can give you information about IT topics.",
+				},
+			},
+			contact: {
+				title: "Contact",
+				description: "Contact me if you have any questions or want to work with me on a project.",
+			},
+			imprint: {
+				title: "Imprint",
+				description: "Imprint of the website.",
+			},
+			privacy: {
+				title: "Privacy",
+				description: "Privacy policy of the website.",
+			},
+		},
 		common: {
 			projects: {
 				title: "Projects",
