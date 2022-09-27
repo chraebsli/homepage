@@ -26,18 +26,20 @@ i18n
 		react: {
 			transSupportBasicHtmlNodes: true,
 		},
-		ns: [ "common", "components", "pages" ],
+		ns: [ "common", "components", "pages", "meta" ],
 		defaultNS: "common",
 		resources: {
 			de: {
 				common: { ...de().common },
 				components: { ...de().components },
 				pages: { ...de().pages },
+				meta: { ...de().meta },
 			},
 			en: {
 				common: { ...en().common },
 				components: { ...en().components },
 				pages: { ...en().pages },
+				meta: { ...en().meta },
 			},
 		},
 	});

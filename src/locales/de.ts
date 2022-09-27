@@ -12,8 +12,8 @@ export default function de() {
 			projects: {
 				title: "Projekte",
 				description: "Hier finden Sie eine Übersicht über meine Projekte.",
-				homepage: {
-					title: "Persönliche Website",
+				personal: {
+					title: "eigene Website",
 					description: "Diese Website, die Sie gerade besuchen, wurde mit React und TypeScript erstellt.",
 				},
 				fischlehrpfad: {
@@ -28,7 +28,7 @@ export default function de() {
 					title: "Musikgesellschaft Rumisberg",
 					description: "Die Website der Musikgesellschaft Rumisberg wurde mit Grav erstellt. Die Website war für einen Verein, dem ich angehöre.",
 				},
-				homeDashboard: {
+				"home-dashboard": {
 					title: "Home Dashboard",
 					description: "Home Dashboard ist die erste Webapp, die ich erstellt habe. Darauf wird das aktuelle Wetter angezeigt, sowie aktuelle Termine.",
 				},
@@ -64,6 +64,12 @@ export default function de() {
 			privacy: {
 				title: "Datenschutz",
 				description: "Hier finden Sie die Datenschutzerklärung dieser Website.",
+			},
+			error: {
+				404: {
+					title: "Seite nicht gefunden",
+					description: "Die angeforderte Seite konnte nicht gefunden werden.",
+				},
 			},
 		},
 		common: {

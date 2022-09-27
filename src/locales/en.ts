@@ -12,7 +12,7 @@ export default function en() {
 			projects: {
 				title: "Projects",
 				description: "Here you can find some of my projects.",
-				homepage: {
+				personal: {
 					title: "personal website",
 					description: "The website you are currently visiting was created with React and TypeScript.",
 				},
@@ -28,7 +28,7 @@ export default function en() {
 					title: "Musikgesellschaft Rumisberg",
 					description: "This is a website for a music club, that I am a member of. It was created with Grav.",
 				},
-				homeDashboard: {
+				"home-dashboard": {
 					title: "Home dashboard",
 					description: "This is the first webapp I created. I use it at home to see the current weather and my calendar.",
 				},
@@ -64,6 +64,12 @@ export default function en() {
 			privacy: {
 				title: "Privacy",
 				description: "Privacy policy of the website.",
+			},
+			error: {
+				404: {
+					title: "Page not found",
+					description: "The page you are looking for does not exist.",
+				},
 			},
 		},
 		common: {

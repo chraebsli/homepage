@@ -13,7 +13,7 @@ export default function Services() {
 	const { t } = useTranslation("common");
 
 	return (
-		<Page pageName={ "Services" }>
+		<Page page={ "services" }>
 			<section>
 				<PageTitle>{ t("services.title") }</PageTitle>
 				<Line bottom={ 2 } />

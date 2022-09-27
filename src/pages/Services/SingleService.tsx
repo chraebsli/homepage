@@ -25,7 +25,7 @@ export default function SingleService() {
 	const { id, title, features, page: { description, teaser } } = possibleServices;
 
 	return (
-		<Page pageName={ title } className={ "single-service" }>
+		<Page page={ `services.${ id }` } className={ "single-service" }>
 			<section>
 				<PageTitle>{ title }</PageTitle>
 				<Line bottom={ 2 } />

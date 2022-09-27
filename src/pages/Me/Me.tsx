@@ -30,7 +30,7 @@ export default function Me() {
 	};
 
 	return (
-		<Page pageName={ "Me" }>
+		<Page page={ "about" }>
 			<article>
 				<Stack spacing={ 3 }>
 					<Card id={ "me" } sx={ { padding: "2rem" } }>

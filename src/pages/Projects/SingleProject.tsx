@@ -30,7 +30,7 @@ export default function SingleProject$() {
 	const url = `https://${ website }`;
 
 	return (
-		<Page pageName={ title } className={ "single-project" }>
+		<Page page={ `projects.${ id }` } className={ "single-project" }>
 			<section>
 				<PageTitle>{ title }</PageTitle>
 				<WakaTimeBadge url={ wakaTimeBadge } />

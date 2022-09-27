@@ -14,7 +14,7 @@ export default function Home() {
 	const { t } = useTranslation("pages");
 
 	return (
-		<Page pageName={ "Home" }>
+		<Page page={ "home" }>
 			<article>
 				<section id={ "welcome" } style={ { marginTop: "10rem" } }>
 					<Typography variant={ "h3" } component={ "h1" } sx={ { color: "primary.main" } }>
