@@ -1,0 +1,24 @@
+{
+	"header": {
+		"title": "chraebsli IT-Services",
+		"links": {
+			"about": "About",
+			"services": "Services",
+			"projects": "Projects",
+			"contact": "Contact"
+		}
+	},
+	"footer": {
+		"copyright": "chraebsli IT-Services",
+		"links": {
+			"imprint": "Imprint",
+			"contact": "Contact",
+			"privacy": "Privacy"
+		}
+	},
+	"cookieDisclaimer": {
+		"title": "This website uses cookies to enhance the user experience.",
+		"learnMore": "Learn more",
+		"accept": "Accept"
+	}
+}
