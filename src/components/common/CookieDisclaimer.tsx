@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useCookies } from "react-cookie";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { Box, Button, Stack, Typography } from "@mui/material";
 import CookieIcon from "@mui/icons-material/Cookie";
 
@@ -18,7 +18,7 @@ export default function CookieDisclaimer() {
 		!cookies.cookiesAccepted
 			? setShowDisclaimer(true)
 			: (setShowDisclaimer(false),
-				setCookie("cookiesAccepted", true, { path: "/", maxAge: 60 * 60 * 24 * 7 }));
+			setCookie("cookiesAccepted", true, { path: "/", maxAge: 60 * 60 * 24 * 7 }));
 	}, [ cookies ]);
 
 	return showDisclaimer ? (

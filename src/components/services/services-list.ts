@@ -1,10 +1,10 @@
-import { useTranslation } from "react-i18next";
-import FullService from "../../models/service";
+import { useTranslation } from "next-i18next";
+import Service from "../../models/service";
 
-export default function servicesList(): FullService[] {
+export default function servicesList(): Service[] {
 	const { t } = useTranslation("common");
 	return [
-		new FullService(
+		new Service(
 			"support",
 			t("services.itSupport.title"),
 			"/service/support",
@@ -18,7 +18,7 @@ export default function servicesList(): FullService[] {
 				description: t("services.itSupport.page.description"),
 			},
 		),
-		new FullService(
+		new Service(
 			"website",
 			t("services.website.title"),
 			"/service/website",
@@ -32,7 +32,7 @@ export default function servicesList(): FullService[] {
 				description: t("services.website.page.description"),
 			},
 		),
-		new FullService(
+		new Service(
 			"webapp",
 			t("services.webapp.title"),
 			"/service/webapp",
@@ -46,7 +46,7 @@ export default function servicesList(): FullService[] {
 				description: t("services.webapp.page.description"),
 			},
 		),
-		new FullService(
+		new Service(
 			"database",
 			t("services.database.title"),
 			"/service/database",

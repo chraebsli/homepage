@@ -1,21 +1,18 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 import { Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Line, PageTitle, SectionTitle } from "../../components/Text";
-import NotFound404 from "../Error/404";
-import { useTranslation } from "react-i18next";
-
-// assets and styles
-import "./Projects.sass";
+import NotFound404 from "../error/404";
+import { useTranslation } from "next-i18next";
 import ToolImage from "../../components/projects/ToolImage";
 import WakaTimeBadge from "../../components/projects/WakaTimeBadge";
 import projectsList from "../../components/projects/projects-list";
 
-export default function SingleProject$() {
+export default function Project() {
 	const { t } = useTranslation("common");
 
-	const pages = useLocation().pathname.split("/");
+	const pages = useRouter().pathname.split("/");
 	const page = pages[pages.length - 1];
 
 	const projects = projectsList();

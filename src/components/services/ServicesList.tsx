@@ -4,14 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton, Typography } from "@mui/material";
 import { Picture } from "../Picture";
 import { Image } from "../Text";
-import { useTranslation } from "react-i18next";
-
-// assets and styles
+import { useTranslation } from "next-i18next";
 import servicesList from "./services-list";
-import FullService from "@models/service";
+import Service from "@models/service";
 
 export default function ServicesList({ loading = false, space = 30 }: { loading?: boolean; space?: number }) {
-	const services: FullService[] = servicesList();
+	const services: Service[] = servicesList();
 	const { t } = useTranslation("common");
 
 	return (
@@ -19,9 +17,7 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 			slidesPerView={ "auto" }
 			spaceBetween={ space }
 			loop={ true }
-			pagination={ {
-				clickable: true,
-			} }
+			pagination={ { clickable: true } }
 			navigation={ true }
 			mousewheel={ true }
 			autoplay={ {
@@ -80,7 +76,7 @@ export default function ServicesList({ loading = false, space = 30 }: { loading?
 									fullWidth
 									variant={ "outlined" }
 									href={ service.href }>
-									{ t("services.learnMore") }
+									{ t("service.learnMore") }
 								</Button>
 							</CardActions>
 						</Card>

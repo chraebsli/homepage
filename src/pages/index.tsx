@@ -1,14 +1,11 @@
 import React from "react";
 import { Typography } from "@mui/material";
-import Page from "../../components/common/Page";
-import ServicesList from "../../components/services/ServicesList";
-import ProjectsList from "../../components/projects/ProjectsList";
-import SocialMediaList from "../../components/social-media/SocialMediaList";
-import { Line, SectionTitle } from "../../components/Text";
-import { useTranslation } from "react-i18next";
-
-// assets and styles
-import "./Home.sass";
+import Page from "../components/common/Page";
+import ServicesList from "../components/services/ServicesList";
+import ProjectsList from "../components/projects/ProjectsList";
+import SocialMediaList from "../components/social-media/SocialMediaList";
+import { Line, SectionTitle } from "../components/Text";
+import { useTranslation } from "next-i18next";
 
 export default function Home() {
 	const { t } = useTranslation("pages");

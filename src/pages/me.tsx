@@ -1,19 +1,16 @@
 import React from "react";
 import { Card, Grid, Stack, Typography, useTheme } from "@mui/material";
-import Page from "../../components/common/Page";
-import ProjectsList from "../../components/projects/ProjectsList";
-import Frontend from "../../components/me/Frontend";
-import Backend from "../../components/me/Backend";
-import DevTools from "../../components/me/DevTools";
-import General from "../../components/me/General";
-
-// assets and styles
-import "./Me.sass";
+import Page from "../components/common/Page";
+import ProjectsList from "../components/projects/ProjectsList";
+import Frontend from "../components/me/Frontend";
+import Backend from "../components/me/Backend";
+import DevTools from "../components/me/DevTools";
+import General from "../components/me/General";
 import PersonIcon from "@mui/icons-material/Person";
 import SchoolIcon from "@mui/icons-material/School";
 import WebIcon from "@mui/icons-material/Web";
 import PollIcon from "@mui/icons-material/Poll";
-import { Trans, useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "next-i18next";
 
 export default function Me() {
 	const { t } = useTranslation("pages");

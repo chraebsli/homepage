@@ -1,7 +1,7 @@
 import React from "react";
 import Page from "../components/common/Page";
 import { Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { Line, PageTitle, SectionTitle } from "../components/Text";
 
 export default function Imprint() {

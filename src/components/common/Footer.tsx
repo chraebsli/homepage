@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Link, Stack, Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const links = [
 	{ key: "imprint", href: "/imprint" },

@@ -5,7 +5,7 @@ import { Box, Button, Card, CardActions, CardContent, CardHeader, Grid, Skeleton
 import Tag from "../projects/Tag";
 import { Picture } from "../Picture";
 import { Image } from "../Text";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 // assets and styles
 import projectsList from "./projects-list";

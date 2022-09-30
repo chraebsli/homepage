@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
+import { useRouter } from "next/router";
 import Page from "../components/common/Page";
 import servicesList from "../components/services/services-list";
 import { Alert, Autocomplete, Button, CircularProgress, TextField, Typography } from "@mui/material";
 import { Line, PageTitle } from "../components/Text";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { FormElements, FormGroup } from "../components/form/FormElements";
 import { handleFormSubmit } from "../components/form/FormSubmissionHandler";
 import SendIcon from "@mui/icons-material/Send";
@@ -11,7 +12,7 @@ import SendIcon from "@mui/icons-material/Send";
 export default function Contact() {
 	const { t } = useTranslation("pages");
 	const pageName = t("contact.title");
-	const service = { name: new URLSearchParams(window.location.search).get("service") };
+	const service = { name: useRouter().query.service as string };
 	const services = servicesList().map(service => { return { name: service.title }; });
 
 	const [ sending, setSending ] = React.useState(false);

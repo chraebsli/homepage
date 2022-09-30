@@ -1,8 +1,6 @@
 import React from "react";
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-import { Helmet } from "react-helmet";
-import { useTranslation } from "react-i18next";
+import Head from "next/head";
+import { useTranslation } from "next-i18next";
 
 const specialPages = {
 	noFollow: [ "projects", "imprint" ],
@@ -18,11 +16,11 @@ export default function Meta({ page }: { page: string }) {
 	const follow = specialPages.noFollow.includes(parentPage) ? "nofollow" : "follow";
 	const index = specialPages.noIndex.includes(parentPage) ? "noindex" : "index";
 	return (
-		<Helmet>
+		<Head>
 			<title>{ `${ title } | chraebsli IT-Services` }</title>
 			<meta name="description" content={ description } />
 			<meta name="robots" content={ `${ follow }, ${ index }` } />
 			<meta name="googlebot" content={ `${ follow }, ${ index }` } />
-		</Helmet>
+		</Head>
 	);
 }

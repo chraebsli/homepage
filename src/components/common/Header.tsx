@@ -3,7 +3,7 @@ import { AppBar, Container, Stack, Typography } from "@mui/material";
 import { Nav, Navbar } from "react-bootstrap";
 import { MaterialUISwitch } from "./ThemeSwitch";
 import { LanguageSwitcher } from "./LanguageSwitcher";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 // assets
 import LogoWhiteTransparent from "../../assets/logo-white-transparent.svg";

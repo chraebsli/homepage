@@ -1,21 +1,18 @@
 import React from "react";
-import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { useTranslation } from "next-i18next";
+import { useRouter } from "next/router";
 import { Button, Stack, Typography } from "@mui/material";
 import Page from "../../components/common/Page";
 import { Image, Line, PageTitle } from "../../components/Text";
 import { Picture } from "../../components/Picture";
 import SendIcon from "@mui/icons-material/Send";
 import servicesList from "../../components/services/services-list";
-import NotFound404 from "../Error/404";
+import NotFound404 from "../error/404";
 
-// assets and styles
-import "./Services.sass";
-
-export default function SingleService() {
+export default function Service() {
 	const { t } = useTranslation("common");
 
-	const pages = useLocation().pathname.split("/");
+	const pages = useRouter().pathname.split("/");
 	const page = pages[pages.length - 1];
 
 	const services = servicesList();

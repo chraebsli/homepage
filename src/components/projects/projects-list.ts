@@ -1,4 +1,4 @@
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import Project from "../../models/project";
 
 export default function projectsList(): Project[] {
