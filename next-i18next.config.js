@@ -1,7 +1,7 @@
 const nextI18nextConfig = {
 	i18n: {
 		defaultLocale: "de",
-		locales: [ "en", "de" ],
+		locales: ["de", "en"],
 		//domains: [
 		//	{
 		//		domain: "www.chraebsli.dev",
@@ -20,4 +20,4 @@ const nextI18nextConfig = {
 	},
 };
 
-export default nextI18nextConfig;
+module.exports = nextI18nextConfig;
