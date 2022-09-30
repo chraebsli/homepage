@@ -18,7 +18,7 @@
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"noEmit": true,
-		"jsx": "react-jsx",
+		"jsx": "preserve",
 		"typeRoots": [
 			"node_modules/@types"
 		],
@@ -26,10 +26,14 @@
 		"paths": {
 			"@models/*": [
 				"models/*"
-			],
-		}
+			]
+		},
+		"incremental": true
 	},
 	"include": [
 		"src"
+	],
+	"exclude": [
+		"node_modules"
 	]
 }
