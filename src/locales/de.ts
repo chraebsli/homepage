@@ -206,7 +206,7 @@ export default function de() {
 						"schnelle Abfragen",
 					],
 					card: {
-						teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Date übernehmen?",
+						teaser: "Möchten Sie eine Datenbank erstellen oder von einer anderen Datenbank die Daten übernehmen?",
 						description: "Ich erstelle für Sie eine neue Datenbank oder übernehme Daten von einer anderen Datenbank in eine neue, egal ob SQL oder NoSQL.",
 					},
 					page: {
